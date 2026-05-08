@@ -1,0 +1,46 @@
+import QRCode from "qrcode";
+
+export const metadata = {
+  title: "Untap — Scan to install",
+};
+
+const APP_URL = "https://getuntap.com";
+
+export default async function QRPage() {
+  const qrSvg = await QRCode.toString(APP_URL, {
+    type: "svg",
+    color: {
+      dark: "#1a1108",
+      light: "#fffaf3",
+    },
+    margin: 1,
+    width: 280,
+    errorCorrectionLevel: "M",
+  });
+
+  return (
+    <section className="flex flex-1 items-center justify-center px-6 py-20 sm:py-28">
+      <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
+        <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
+          Scan To{" "}
+          <span className="text-[var(--accent)]">Unblock Apps</span>.
+        </p>
+
+        <p className="mt-6 max-w-lg text-balance text-base leading-7 text-[var(--muted)] sm:text-lg">
+          Point your phone&apos;s camera at the code below. We&apos;ll send you
+          to the right store, no app store search required.
+        </p>
+
+        <div
+          className="mt-12 rounded-3xl border border-[var(--border)] bg-[var(--card)] p-5 sm:p-6"
+          aria-label="QR code linking to the Untap download page"
+          dangerouslySetInnerHTML={{ __html: qrSvg }}
+        />
+
+        <p className="mt-6 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
+          getuntap.com
+        </p>
+      </div>
+    </section>
+  );
+}
