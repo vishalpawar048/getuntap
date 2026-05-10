@@ -1,53 +1,66 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navLinks = [
-  { href: "/qr", label: "QR" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/how-it-works", label: "How it works" },
-];
+import { useEffect, useState } from "react";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const isHome = pathname === "/";
 
   return (
-    <header className="w-full">
-      <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
+    <header
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "bg-[var(--dark-bg)]/90 backdrop-blur-md"
+          : isHome
+            ? "bg-transparent"
+            : "bg-[var(--dark-bg)]"
+      }`}
+    >
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 sm:h-20">
         <Link
           href="/"
-          className="flex items-center gap-2 font-semibold tracking-tight"
+          className="flex items-center gap-2.5 text-white"
         >
-          <span
-            aria-hidden
-            className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--accent)]"
+          <Image
+            src="/logo.png"
+            alt="Untap logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-xl object-cover ring-1 ring-white/20"
           />
-          Untap
+          <span className="text-lg font-semibold tracking-tight lowercase">
+            untap
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm text-[var(--muted)] sm:flex">
-          {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname?.startsWith(link.href);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                aria-current={isActive ? "page" : undefined}
-                className={
-                  isActive
-                    ? "text-[var(--foreground)]"
-                    : "transition-colors hover:text-[var(--foreground)]"
-                }
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="flex items-center gap-6">
+          <nav className="flex items-center gap-7 text-sm text-white/60">
+            <Link
+              href="/qr"
+              className="transition-colors hover:text-white"
+            >
+              QR
+            </Link>
+          </nav>
+
+          <a
+            href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
+            className="rounded-full bg-white/15 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/25"
+          >
+            download
+          </a>
+        </div>
       </div>
     </header>
   );

@@ -1,4 +1,5 @@
 import QRCode from "qrcode";
+import { PrintButton } from "./print-button";
 
 export const metadata = {
   title: "Untap — Scan to install",
@@ -19,7 +20,7 @@ export default async function QRPage() {
   });
 
   return (
-    <section className="flex flex-1 items-center justify-center px-6 py-20 sm:py-28">
+    <section className="flex flex-1 items-center justify-center px-6 pb-20 pt-32 sm:pb-28 sm:pt-36">
       <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
         <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
           Scan To{" "}
@@ -27,8 +28,7 @@ export default async function QRPage() {
         </p>
 
         <p className="mt-6 max-w-lg text-balance text-base leading-7 text-[var(--muted)] sm:text-lg">
-          Point your phone&apos;s camera at the code below. We&apos;ll send you
-          to the right store, no app store search required.
+          Point your phone&apos;s camera at the code below when Untap asks you to scan a QR code.
         </p>
 
         <div
@@ -40,6 +40,8 @@ export default async function QRPage() {
         <p className="mt-6 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
           getuntap.com
         </p>
+
+        <PrintButton qrSvg={qrSvg} />
       </div>
     </section>
   );

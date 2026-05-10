@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff4ea;
-  --foreground: #1a1108;
-  --muted: #8a6d5c;
-  --border: #f1d9c1;
+  --background: #f5f0eb;
+  --foreground: #111111;
+  --muted: #6b6b6b;
+  --border: #e0d8cf;
   --accent: #f8711b;
   --accent-foreground: #ffffff;
   --accent-soft: #ffe2cb;
-  --card: #fffaf3;
+  --card: #ffffff;
+  --dark-bg: #111111;
+  --dark-fg: #f5f0eb;
+  --dark-muted: #999999;
 }
 
 @theme inline {
@@ -24,21 +27,86 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #15100a;
-    --foreground: #fff4ea;
-    --muted: #c9a98f;
-    --border: #2e2218;
-    --accent: #f8711b;
-    --accent-foreground: #ffffff;
-    --accent-soft: #3a2418;
-    --card: #1d150e;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-slide-left {
+  animation: slide-in-left 0.8s ease-out both;
+}
+
+.animate-slide-right {
+  animation: slide-in-right 0.8s ease-out both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+.section-dark {
+  background: var(--dark-bg);
+  color: var(--dark-fg);
+}
+
+.section-dark .text-muted {
+  color: var(--dark-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-slide-left,
+  .animate-slide-right {
+    animation: none;
+  }
 }

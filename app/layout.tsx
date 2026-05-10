@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Untap — Take back your time",
+  title: "untap — less scrolling. more living.",
   description:
-    "Untap is a screen time control app that helps you stop doomscrolling and reclaim hours of your day.",
+    "Untap is a screen time control app that helps you stop doomscrolling, break phone addiction, and reclaim hours of your day.",
 };
 
 export default function RootLayout({
@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen">
         <SiteHeader />
-        <main className="flex flex-1 flex-col">{children}</main>
+        <main>{children}</main>
         <SiteFooter />
       </body>
     </html>
