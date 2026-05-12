@@ -37,7 +37,7 @@ export function SiteFooter() {
                 iOS app
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.Untapapp.screencontrol"
+                href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
                 className="text-white/60 transition hover:text-white"
               >
                 Android app

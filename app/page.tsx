@@ -159,7 +159,7 @@ export default function Home() {
                 download for iOS
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.Untapapp.screencontrol"
+                href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
                 className="group flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
@@ -420,7 +420,7 @@ export default function Home() {
               download for iOS
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=com.Untapapp.screencontrol"
+              href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="group flex items-center gap-3 rounded-full border border-[var(--border)] px-7 py-4 text-base font-medium text-[var(--foreground)] transition hover:bg-[var(--foreground)]/5"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
