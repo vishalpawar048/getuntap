@@ -1,3 +1,5 @@
+import QRCode from "qrcode";
+
 const testimonials = [
   {
     quote:
@@ -128,7 +130,20 @@ const features = [
   },
 ];
 
-export default function Home() {
+const APP_URL = "https://getuntap.com";
+
+export default async function Home() {
+  const qrSvg = await QRCode.toString(APP_URL, {
+    type: "svg",
+    color: {
+      dark: "#1a1108",
+      light: "#fffaf3",
+    },
+    margin: 1,
+    width: 220,
+    errorCorrectionLevel: "M",
+  });
+
   return (
     <>
       {/* Hero */}
@@ -192,34 +207,92 @@ export default function Home() {
                 phone intentionally — not impulsively.
               </p>
             </div>
-        
+            <div className="flex justify-center md:justify-end">
+              <div className="w-full max-w-xs rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 text-center shadow-sm">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
+                  scan QR code
+                </p>
+                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight lowercase">
+                  unlock the app
+                </p>
+                <div
+                  className="mx-auto mt-6 rounded-2xl bg-[#fffaf3] p-4"
+                  aria-label="QR code linking to the Untap app"
+                  dangerouslySetInnerHTML={{ __html: qrSvg }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features - dark section */}
-      <section className="section-dark px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
-            designed to reduce your{" "}
-            <span className="text-[var(--accent)]">dopamine addiction</span>
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/50">
-            if the first thing you reach for when you open your eyes is your
-            phone, untap is for you.
-          </p>
+      <section className="section-dark relative isolate overflow-hidden px-6 py-24 sm:py-32">
+        <div className="absolute left-1/2 top-0 -z-10 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[var(--accent)]/20 blur-3xl" />
+        <div className="absolute -bottom-40 right-0 -z-10 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(248,113,27,0.18),transparent_32rem)]" />
 
-          <div className="mt-16 grid gap-8 sm:grid-cols-2">
-            {features.map((feature) => (
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+            <div>
+              <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
+                mindful friction
+              </p>
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+                designed to reduce your{" "}
+                <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
+                  dopamine addiction
+                </span>
+              </h2>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
+              <p className="text-lg leading-relaxed text-white/65">
+                if the first thing you reach for when you open your eyes is your
+                phone, untap gives that impulse a pause before it becomes a
+                spiral.
+              </p>
+              <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
+                {["autopilot", "pause", "choice"].map((step) => (
+                  <div
+                    key={step}
+                    className="border-r border-white/10 px-3 py-4 last:border-r-0"
+                  >
+                    <p className="text-sm font-semibold lowercase text-white">
+                      {step}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-5 lg:grid-cols-12">
+            {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.08]"
+                className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.09] sm:p-8 ${
+                  index === 0
+                    ? "lg:col-span-7"
+                    : index === 1
+                      ? "lg:col-span-5"
+                      : "lg:col-span-4"
+                }`}
               >
-                <div className="text-[var(--accent)]">{feature.icon}</div>
-                <h3 className="mt-5 text-xl font-bold lowercase text-white">
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--accent)]/10 transition duration-300 group-hover:bg-[var(--accent)]/20" />
+                <div className="relative flex items-start justify-between gap-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[var(--accent)]/30 bg-[var(--accent)]/15 text-[var(--accent)] shadow-lg shadow-[var(--accent)]/10">
+                    {feature.icon}
+                  </div>
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold text-white/35">
+                    0{index + 1}
+                  </span>
+                </div>
+                <h3 className="relative mt-8 text-2xl font-bold lowercase tracking-tight text-white">
                   {feature.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-white/50">
+                <p className="relative mt-4 max-w-xl leading-relaxed text-white/55">
                   {feature.description}
                 </p>
               </div>
