@@ -24,7 +24,7 @@ export function SiteFooter() {
         </p>
 
         {/* Links grid */}
-        <div className="mt-12 grid grid-cols-2 gap-8 text-sm sm:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-8 text-sm sm:grid-cols-3 lg:grid-cols-5">
           <div>
             <p className="font-semibold uppercase tracking-widest text-white/30 text-xs">
               Product
@@ -59,6 +59,26 @@ export function SiteFooter() {
                 className="text-white/60 transition hover:text-white"
               >
                 QR code
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <p className="font-semibold uppercase tracking-widest text-white/30 text-xs">
+              Solutions
+            </p>
+            <nav className="mt-4 flex flex-col gap-3">
+              <Link
+                href="/for-schools"
+                className="text-white/60 transition hover:text-white"
+              >
+                for schools &amp; colleges
+              </Link>
+              <Link
+                href="/enterprise"
+                className="text-white/60 transition hover:text-white"
+              >
+                untap enterprise
               </Link>
             </nav>
           </div>

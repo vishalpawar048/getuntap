@@ -47,29 +47,41 @@ export function SiteHeader() {
         <div className="flex items-center gap-6">
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-6 text-sm text-white/60 md:flex"
+            className="hidden items-center gap-5 text-sm text-white/60 md:flex"
           >
             <Link
-              href="/blog"
+              href="/for-schools"
               className="transition-colors hover:text-white"
+            >
+              for schools
+            </Link>
+            <Link
+              href="/enterprise"
+              className="transition-colors hover:text-white"
+            >
+              enterprise
+            </Link>
+            <Link
+              href="/blog"
+              className="hidden transition-colors hover:text-white lg:inline"
             >
               blog
             </Link>
             <Link
               href="/case-studies"
-              className="transition-colors hover:text-white"
+              className="hidden transition-colors hover:text-white lg:inline"
             >
               case studies
             </Link>
             <Link
               href="/research"
-              className="transition-colors hover:text-white"
+              className="hidden transition-colors hover:text-white lg:inline"
             >
               research
             </Link>
             <Link
               href="/qr"
-              className="transition-colors hover:text-white"
+              className="hidden transition-colors hover:text-white lg:inline"
             >
               QR
             </Link>
