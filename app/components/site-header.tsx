@@ -45,7 +45,28 @@ export function SiteHeader() {
         </Link>
 
         <div className="flex items-center gap-6">
-          <nav className="flex items-center gap-7 text-sm text-white/60">
+          <nav
+            aria-label="Primary"
+            className="hidden items-center gap-6 text-sm text-white/60 md:flex"
+          >
+            <Link
+              href="/blog"
+              className="transition-colors hover:text-white"
+            >
+              blog
+            </Link>
+            <Link
+              href="/case-studies"
+              className="transition-colors hover:text-white"
+            >
+              case studies
+            </Link>
+            <Link
+              href="/research"
+              className="transition-colors hover:text-white"
+            >
+              research
+            </Link>
             <Link
               href="/qr"
               className="transition-colors hover:text-white"

@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import QRCode from "qrcode";
 import { PrintButton } from "./print-button";
 
-export const metadata = {
-  title: "Untap — Scan to install",
+export const metadata: Metadata = {
+  title: "Scan to Unblock Apps with Untap",
+  description:
+    "Scan this QR code to unblock apps inside Untap, or to install the Untap screen time control app on iPhone and Android.",
+  alternates: { canonical: "/qr" },
+  robots: { index: true, follow: true },
 };
 
 const APP_URL = "https://getuntap.com";

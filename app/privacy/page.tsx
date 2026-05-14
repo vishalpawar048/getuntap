@@ -1,5 +1,11 @@
-export const metadata = {
-  title: "Untap — Privacy Policy",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Untap's privacy policy. All your screen time data stays on your device. No analytics, no tracking, no advertising SDKs. We never collect or transmit personal data.",
+  alternates: { canonical: "/privacy" },
+  robots: { index: true, follow: true },
 };
 
 const localDataItems = [

@@ -24,7 +24,7 @@ export function SiteFooter() {
         </p>
 
         {/* Links grid */}
-        <div className="mt-12 grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-2 gap-8 text-sm sm:grid-cols-4">
           <div>
             <p className="font-semibold uppercase tracking-widest text-white/30 text-xs">
               Product
@@ -43,10 +43,48 @@ export function SiteFooter() {
                 Android app
               </a>
               <Link
+                href="/how-it-works"
+                className="text-white/60 transition hover:text-white"
+              >
+                how it works
+              </Link>
+              <Link
+                href="/reviews"
+                className="text-white/60 transition hover:text-white"
+              >
+                reviews
+              </Link>
+              <Link
                 href="/qr"
                 className="text-white/60 transition hover:text-white"
               >
                 QR code
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <p className="font-semibold uppercase tracking-widest text-white/30 text-xs">
+              Learn
+            </p>
+            <nav className="mt-4 flex flex-col gap-3">
+              <Link
+                href="/blog"
+                className="text-white/60 transition hover:text-white"
+              >
+                blog
+              </Link>
+              <Link
+                href="/case-studies"
+                className="text-white/60 transition hover:text-white"
+              >
+                case studies
+              </Link>
+              <Link
+                href="/research"
+                className="text-white/60 transition hover:text-white"
+              >
+                research
               </Link>
             </nav>
           </div>

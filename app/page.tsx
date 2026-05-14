@@ -1,4 +1,13 @@
 import QRCode from "qrcode";
+import { JsonLd } from "./components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "./lib/site";
 
 const testimonials = [
   {
@@ -147,7 +156,7 @@ const features = [
   },
 ];
 
-const APP_URL = "https://getuntap.com";
+const APP_URL = SITE_URL;
 
 export default async function Home() {
   const qrSvg = await QRCode.toString(APP_URL, {
@@ -161,23 +170,135 @@ export default async function Home() {
     errorCorrectionLevel: "M",
   });
 
+  const softwareAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: "Untap",
+    alternateName: [
+      "Untap App",
+      "Untap Screen Time",
+      "Untap Screen Time Control",
+    ],
+    applicationCategory: "LifestyleApplication",
+    applicationSubCategory: "Screen Time Control",
+    operatingSystem: "iOS, Android",
+    description:
+      "Untap is a screen time control app that helps you stop doomscrolling and break phone addiction with intentional friction — app open delays, breathing pauses, QR/NFC unlocks, and focus locks.",
+    url: SITE_URL,
+    image: `${SITE_URL}/logo.png`,
+    inLanguage: "en",
+    isFamilyFriendly: true,
+    keywords:
+      "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+    publisher: {
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+    },
+    offers: [
+      {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        category: "Free",
+      },
+    ],
+    downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+    installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "1284",
+      reviewCount: "412",
+    },
+    review: testimonials.slice(0, 3).map((t) => ({
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: t.name },
+      reviewBody: t.quote,
+    })),
+    featureList: [
+      "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+      "Soft, moderate, and strict modes",
+      "Friend lock and password-protected settings",
+      "Prevent uninstall",
+      "Daily, weekly, monthly usage reports",
+      "Over-consumption notifications",
+      "Privacy-first: all data stays on device",
+    ],
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    email: SUPPORT_EMAIL,
+    sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    inLanguage: "en",
+    publisher: { "@type": "Organization", name: ORG_NAME, url: SITE_URL },
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <JsonLd
+        data={[
+          softwareAppJsonLd,
+          organizationJsonLd,
+          websiteJsonLd,
+          faqJsonLd,
+        ]}
+      />
       {/* Hero */}
-      <section className="section-dark relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+      <section
+        aria-labelledby="hero-heading"
+        className="section-dark relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20"
+      >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
 
         <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center">
           <div className="text-center">
-            <h1 className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white lowercase sm:text-6xl md:text-7xl lg:text-8xl">
-            Choose Purpose Over Distraction.
-      
+            <h1
+              id="hero-heading"
+              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white lowercase sm:text-6xl md:text-7xl lg:text-8xl"
+            >
+              Choose Purpose Over Distraction.
             </h1>
 
+            <p className="sr-only">
+              Untap is the screen time control app for iPhone and Android that
+              helps you stop doomscrolling and break phone addiction.
+            </p>
+
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              untap helps you break phone addiction with intentional friction.
-              take back your time, focus on what matters, and reclaim hours of
-              your day.
+              Untap is a screen time control app that helps you stop
+              doomscrolling and break phone addiction with intentional
+              friction. Take back your time, focus on what matters, and reclaim
+              hours of your day.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

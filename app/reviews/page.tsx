@@ -1,5 +1,17 @@
-export const metadata = {
-  title: "Untap — Reviews",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reviews — What People Say About Untap",
+  description:
+    "Real user reviews of the Untap screen time control app. See why people who care about their time use Untap to break phone addiction and stop doomscrolling.",
+  alternates: { canonical: "/reviews" },
+  openGraph: {
+    title: "Untap reviews — real people, real time back",
+    description:
+      "Read user reviews of the Untap screen time control app for iOS and Android.",
+    url: "/reviews",
+    type: "website",
+  },
 };
 
 const reviews = [

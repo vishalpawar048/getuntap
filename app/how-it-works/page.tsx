@@ -1,5 +1,24 @@
-export const metadata = {
-  title: "Untap — How it works",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How Untap Works — 3 Steps to a Quieter Phone",
+  description:
+    "How the Untap screen time control app works: pick your noisy apps, get a gentle intentional-friction pause, and watch your hours return. Free for iPhone and Android.",
+  alternates: { canonical: "/how-it-works" },
+  keywords: [
+    "how Untap works",
+    "screen time control app how it works",
+    "intentional friction",
+    "app delay",
+    "phone addiction tool",
+  ],
+  openGraph: {
+    title: "How Untap works — 3 steps to a quieter phone",
+    description:
+      "Pick noisy apps, get a gentle pause, watch your hours return.",
+    url: "/how-it-works",
+    type: "website",
+  },
 };
 
 const steps = [

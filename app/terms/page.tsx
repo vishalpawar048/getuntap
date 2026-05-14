@@ -1,5 +1,11 @@
-export const metadata = {
-  title: "Untap — Terms & Conditions",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
+  alternates: { canonical: "/terms" },
+  robots: { index: true, follow: true },
 };
 
 const permissions = [
