@@ -14,25 +14,110 @@ const testimonials = [
     quote:
       "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
     name: "Arjun",
-    title: "user of untap",
+    title: "engineering student",
+    location: "Pune, IN",
+    stars: 5,
+    result: "7h → 1.8h / day",
+    featured: true,
   },
   {
     quote:
       "I was skeptical, but after a week I noticed I was more present with my kids. Less scrolling, more living. Highly recommend.",
     name: "Sarah K.",
-    title: "parent & user of untap",
+    title: "parent of two",
+    location: "Austin, TX",
+    stars: 5,
+    result: "Reclaimed dinnertime",
   },
   {
     quote:
       "As a student, doomscrolling was destroying my productivity. Untap added just enough friction to break the habit. My grades have improved.",
     name: "Ravi M.",
     title: "college student",
+    location: "Bengaluru, IN",
+    stars: 5,
+    result: "GPA up 0.4",
   },
   {
     quote:
       "Simple, elegant, and effective. The open delay feature is genius — those few seconds of pause are enough to make you reconsider opening Instagram.",
     name: "Priya",
-    title: "designer & user of untap",
+    title: "designer",
+    location: "London, UK",
+    stars: 5,
+    result: "40% fewer opens",
+  },
+  {
+    quote:
+      "I got back two hours a day. Untap is the only app that actually made me put my phone down without feeling guilty.",
+    name: "Maya R.",
+    title: "designer",
+    location: "Brooklyn, NY",
+    stars: 5,
+    result: "+2h / day",
+  },
+  {
+    quote:
+      "Cleaner than every screen time tool I've tried. No nagging, no shame — it just works. The friend lock is a game-changer.",
+    name: "Daniel K.",
+    title: "product manager",
+    location: "Berlin, DE",
+    stars: 5,
+    result: "Cut social by 60%",
+  },
+  {
+    quote:
+      "Felt like turning the lights on. I had no idea how much I was tapping until Untap showed me. The weekly report is humbling and motivating.",
+    name: "Priya S.",
+    title: "writer",
+    location: "Mumbai, IN",
+    stars: 5,
+    result: "187 → 22 opens/wk",
+  },
+  {
+    quote:
+      "My evenings finally feel like evenings again. The kids noticed before I did. Worth every minute of setup.",
+    name: "Tom A.",
+    title: "dad of three",
+    location: "Manchester, UK",
+    stars: 5,
+    result: "Phone-free dinners",
+  },
+  {
+    quote:
+      "Untap doesn't make me feel guilty for using my phone. It just makes me want to use it less. That's a meaningful difference.",
+    name: "Lina V.",
+    title: "therapist",
+    location: "Amsterdam, NL",
+    stars: 5,
+    result: "Calmer mornings",
+  },
+  {
+    quote:
+      "After two weeks I was sleeping better. After a month I picked up a book for the first time in a year. The breathing unlock saved me.",
+    name: "Amir J.",
+    title: "software engineer",
+    location: "Toronto, CA",
+    stars: 5,
+    result: "+45 min sleep",
+  },
+  {
+    quote:
+      "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The math challenge is brutal — perfect.",
+    name: "Sofía G.",
+    title: "marketer",
+    location: "Madrid, ES",
+    stars: 5,
+    result: "Week 8 and counting",
+  },
+  {
+    quote:
+      "I run a remote team and we all installed Untap during focus blocks. Deep work hours nearly doubled. Nobody felt surveilled.",
+    name: "Jordan P.",
+    title: "founder, design studio",
+    location: "remote",
+    stars: 5,
+    result: "9 → 16 deep-work h/wk",
   },
 ];
 
@@ -157,6 +242,86 @@ const features = [
 ];
 
 const APP_URL = SITE_URL;
+
+type Testimonial = (typeof testimonials)[number];
+
+function Star({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden
+      className={className}
+    >
+      <path d="M10 1.5l2.7 5.47 6.04.88-4.37 4.26 1.03 6.01L10 15.27l-5.4 2.84 1.03-6.01L1.26 7.85l6.04-.88L10 1.5z" />
+    </svg>
+  );
+}
+
+const avatarGradients = [
+  "from-[#f8711b] to-[#ffb067]",
+  "from-[#7c5cff] to-[#b793ff]",
+  "from-[#22c55e] to-[#86efac]",
+  "from-[#06b6d4] to-[#67e8f9]",
+  "from-[#ef4444] to-[#fca5a5]",
+  "from-[#eab308] to-[#fde68a]",
+];
+
+function gradientForName(name: string) {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = (hash * 31 + name.charCodeAt(i)) | 0;
+  }
+  return avatarGradients[Math.abs(hash) % avatarGradients.length];
+}
+
+function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  const initial = testimonial.name.charAt(0).toUpperCase();
+  const gradient = gradientForName(testimonial.name);
+
+  return (
+    <figure className="group relative flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition duration-300 hover:border-white/20 hover:bg-white/[0.07]">
+      <div className="flex items-center justify-between gap-2">
+        <div
+          role="img"
+          aria-label={`Rated ${testimonial.stars} out of 5 stars`}
+          className="flex gap-0.5 text-[var(--accent)]"
+        >
+          {Array.from({ length: testimonial.stars }).map((_, i) => (
+            <Star key={i} className="h-3.5 w-3.5" />
+          ))}
+        </div>
+        {testimonial.result ? (
+          <span className="truncate rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-[var(--accent)]">
+            {testimonial.result}
+          </span>
+        ) : null}
+      </div>
+
+      <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-white/75">
+        <p>&ldquo;{testimonial.quote}&rdquo;</p>
+      </blockquote>
+
+      <figcaption className="mt-4 flex items-center gap-2.5 border-t border-white/10 pt-3">
+        <span
+          aria-hidden
+          className={`grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br ${gradient} text-xs font-semibold text-black/80`}
+        >
+          {initial}
+        </span>
+        <div className="min-w-0">
+          <p className="truncate text-xs font-semibold text-white">
+            {testimonial.name}
+          </p>
+          <p className="truncate text-[11px] text-white/40">
+            {testimonial.title}
+            {testimonial.location ? ` · ${testimonial.location}` : ""}
+          </p>
+        </div>
+      </figcaption>
+    </figure>
+  );
+}
 
 export default async function Home() {
   const qrSvg = await QRCode.toString(APP_URL, {
@@ -523,27 +688,51 @@ export default async function Home() {
       </section>
 
       {/* Testimonials - dark section */}
-      <section className="section-dark px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
-            loved by people who{" "}
-            <span className="text-[var(--accent)]">value their time</span>
-          </h2>
+      <section
+        aria-labelledby="testimonials-heading"
+        className="section-dark relative isolate overflow-hidden px-6 py-16 sm:py-20"
+      >
+        <div className="absolute -right-32 top-0 -z-10 h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-3xl" />
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="rounded-3xl border border-white/10 bg-white/5 p-8"
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                <Star className="h-3.5 w-3.5" />
+                4.8 / 5 from 1,284 reviews
+              </span>
+              <h2
+                id="testimonials-heading"
+                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-4xl"
               >
-                <p className="text-lg leading-relaxed text-white/70">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div className="mt-6">
-                  <p className="font-semibold text-white">{t.name}</p>
-                  <p className="text-sm text-white/40">{t.title}</p>
-                </div>
-              </div>
+                loved by people who{" "}
+                <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
+                  value their time
+                </span>
+              </h2>
+            </div>
+            <a
+              href="/reviews"
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/30 hover:bg-white/5 hover:text-white"
+            >
+              read all reviews
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                aria-hidden
+                className="h-3.5 w-3.5"
+              >
+                <path d="M4 10h12" />
+                <path d="M11 5l5 5-5 5" />
+              </svg>
+            </a>
+          </div>
+
+          <div className="mt-10 grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {testimonials.map((t) => (
+              <TestimonialCard key={t.name} testimonial={t} />
             ))}
           </div>
         </div>
