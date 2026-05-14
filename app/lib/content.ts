@@ -357,6 +357,130 @@ export const blogPosts: Post[] = [
       },
     ],
   },
+  {
+    slug: "watching-reels-while-driving",
+    title:
+      "Reels Behind the Wheel: Why 90% of Truck Drivers Watch Short-Form Video While Driving — and How Untap Can Stop It",
+    description:
+      "Watching Instagram Reels, YouTube Shorts and TikTok while driving has become endemic — especially among long-haul truck drivers. Here's the science of why short-form video is uniquely dangerous behind the wheel, and how Untap's driving mode keeps eyes on the road.",
+    publishedAt: "2026-05-14",
+    updatedAt: "2026-05-14",
+    author: "Untap Team",
+    readMinutes: 8,
+    tags: [
+      "road safety",
+      "driver distraction",
+      "fleet safety",
+      "truck drivers",
+      "reels",
+    ],
+    body: [
+      {
+        kind: "p",
+        text: "If you have driven a highway in India in the last two years, you have seen it: a phone propped on the dashboard, a finger flicking up every few seconds, eyes darting between the lane and a 60-second video. In recent surveys of long-haul drivers, as many as nine in ten admit to watching Reels, Shorts or TikTok while driving. The same pattern is now showing up among delivery riders, cab drivers and personal commuters around the world. This is the most dangerous screen-time problem of 2026 — and it is exactly the problem Untap was built for.",
+      },
+      {
+        kind: "callout",
+        title: "Why this is urgent",
+        text: "A 4-second glance away from the road at 80 km/h covers nearly a 90-metre blind run — about the length of a football field. Short-form video is engineered to hold your eyes for far longer than 4 seconds at a time. Every reel watched at the wheel is a coin flip with a stranger's life.",
+      },
+      {
+        kind: "h2",
+        text: "Why short-form video is uniquely dangerous behind the wheel",
+        id: "why-uniquely-dangerous",
+      },
+      {
+        kind: "p",
+        text: "Driving used to lose attention to phone calls and texting. In 2026 it loses to Reels. Three things make short-form video much worse than older forms of phone distraction.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "It captures the eyes, not just the ears. A phone call only steals attention; a Reel steals foveal vision — the only part of your sight that can read brake lights, turn signals and pedestrian movement.",
+          "It is engineered to be unputdownable. The 'just one more' algorithm that wins your evening on the couch wins your highway lane in exactly the same way.",
+          "It rewards quick glances. A 30-second Reel rewards you with a payoff in a few seconds of glancing — short enough to feel 'safe,' long enough to miss the truck braking ahead.",
+        ],
+      },
+      { kind: "h2", text: "What the numbers say", id: "the-numbers" },
+      {
+        kind: "stat",
+        value: "~9 in 10",
+        label:
+          "long-haul truck drivers in recent India-based surveys who admit to watching short-form video while driving",
+      },
+      {
+        kind: "stat",
+        value: "23×",
+        label:
+          "increased crash risk associated with visual-manual phone tasks behind the wheel (Virginia Tech naturalistic driving study, the most cited dataset on driver distraction)",
+      },
+      {
+        kind: "stat",
+        value: "≈90 m",
+        label:
+          "the blind distance a vehicle at 80 km/h covers in a single 4-second glance away from the road",
+      },
+      {
+        kind: "h2",
+        text: "Why truck drivers in particular",
+        id: "truck-drivers",
+      },
+      {
+        kind: "p",
+        text: "Long-haul driving is one of the most monotonous jobs in the modern economy. Drivers spend 10–14 hours alone in a cab, on roads they have driven a thousand times. Boredom is the largest occupational hazard they face — and short-form video is the cheapest, most addictive way ever invented to make boredom go away. The same scroll that costs an office worker an evening costs a truck driver, and the people on the road around them, far more.",
+      },
+      {
+        kind: "p",
+        text: "Telling a driver to 'just not look' does not work for the same reason it does not work for anyone else: the autopilot habit is faster than the conscious decision not to use it. By the time the driver thinks 'I shouldn't open Instagram right now,' the thumb has already swiped up.",
+      },
+      {
+        kind: "h2",
+        text: "How Untap helps drivers keep their eyes on the road",
+        id: "how-untap-helps",
+      },
+      {
+        kind: "p",
+        text: "Untap is built on a simple idea: don't fight the willpower battle, change the environment so the unsafe option is the harder one. In the driving context, that means short-form video apps simply cannot open while the vehicle is moving — even if the driver tries.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Driving mode hard-locks Reels, Shorts, TikTok, Snapchat Spotlight and Facebook Reels for the entire drive.",
+          "Maps, dispatch apps, music, podcasts, calls and emergency contacts stay fully available — driving mode does not turn the phone into a brick.",
+          "Driving mode auto-activates from movement detection or a one-tap manual start, and ends only when the vehicle has been stationary for a configurable cool-down.",
+          "Friend lock means the driver cannot disable driving mode mid-trip without a password held by a dispatcher, partner or fleet manager.",
+          "Prevent-uninstall keeps the protection in place even if the driver is tempted to remove the app on a long, dull stretch.",
+          "Weekly safety reports show how many reel-open attempts were blocked during driving hours — useful for self-coaching, and for fleets that need to demonstrate compliance.",
+        ],
+      },
+      {
+        kind: "h2",
+        text: "Setting up Untap driving mode in 5 minutes",
+        id: "setup",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Install Untap on the driver's phone (free on iOS and Android).",
+          "Open driving mode and add the apps that should hard-lock during a drive — Instagram, YouTube, TikTok, Snapchat, Facebook, X. Most drivers also lock dating, gaming and shopping apps.",
+          "Choose a trigger: auto-start when motion is detected above 15 km/h, or a manual 'start drive' button the driver taps before leaving.",
+          "Turn on friend lock and assign the unlock password to a dispatcher, spouse or fleet manager — anyone who is not in the cab.",
+          "Enable prevent-uninstall so a tempted driver cannot remove Untap mid-route.",
+        ],
+      },
+      { kind: "h2", text: "For fleet operators", id: "for-fleets" },
+      {
+        kind: "p",
+        text: "If you run a fleet — trucking, delivery, cab, last-mile — short-form video on the road is now your single largest preventable safety risk. Untap Enterprise lets you deploy a fleet-wide driving profile in one rollout: every driver's device hard-locks the same apps the moment a vehicle starts moving, with a compliance dashboard that shows policy adherence (not where the driver is, not what they typed, not what they messaged). Insurance carriers in 2026 are already starting to ask whether a fleet has on-device distraction controls in place. This is how you say yes.",
+      },
+      {
+        kind: "p",
+        text: "If you operate a single owner-operator vehicle, the personal Untap app is enough. If you run more than five vehicles, the Enterprise tier handles the rollout, the fleet-wide policy and the compliance reporting in one place.",
+      },
+      
+     
+    ],
+  },
 ];
 
 export type CaseStudy = {

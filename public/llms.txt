@@ -36,6 +36,8 @@ Untap supports five friction types, three intensity modes (soft, moderate, stric
 - Blog (in-depth guides): https://getuntap.com/blog
 - Case studies (real-user outcomes): https://getuntap.com/case-studies
 - Research (peer-reviewed evidence): https://getuntap.com/research
+- For schools & colleges: https://getuntap.com/for-schools
+- Untap Enterprise (workplaces): https://getuntap.com/enterprise
 - Privacy policy: https://getuntap.com/privacy
 - Terms: https://getuntap.com/terms
 - Sitemap: https://getuntap.com/sitemap.xml
@@ -47,6 +49,7 @@ Untap supports five friction types, three intensity modes (soft, moderate, stric
 - https://getuntap.com/blog/science-of-doomscrolling — neuroscience explainer
 - https://getuntap.com/blog/screen-time-and-mental-health — research summary 2020–2026
 - https://getuntap.com/blog/intentional-friction-behavior-design — design philosophy behind the app
+- https://getuntap.com/blog/watching-reels-while-driving — why ~90% of long-haul truck drivers watch Reels at the wheel and how Untap's driving mode prevents it
 
 ## Contact
 
