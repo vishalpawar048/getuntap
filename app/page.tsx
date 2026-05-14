@@ -65,29 +65,20 @@ const features = [
         className="h-8 w-8"
       >
         <circle cx="12" cy="12" r="10" />
-        <polyline points="12 6 12 12 16 14" />
+        <path d="M8 12h8" />
+        <path d="M12 8v8" />
       </svg>
     ),
-    title: "open delays",
+    title: "intentional app opening",
     description:
-      "add a customizable pause before distracting apps open. those few seconds of friction are often enough to break the autopilot loop.",
-  },
-  {
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        className="h-8 w-8"
-      >
-        <rect x="3" y="3" width="18" height="18" rx="3" />
-        <path d="M9 12l2 2 4-4" />
-      </svg>
-    ),
-    title: "session limits",
-    description:
-      "set daily time caps for each app. once your limit is reached, untap steps in so you can step away.",
+      "choose what someone must do before opening a distracting app, from a tiny pause to a real challenge.",
+    highlights: [
+      "scan QR code",
+      "scan NFC tag",
+      "solve math challenge",
+      "suggest alternate app",
+      "breathing exercise",
+    ],
   },
   {
     icon: (
@@ -103,9 +94,36 @@ const features = [
         <path d="M8 11V7a4 4 0 118 0v4" />
       </svg>
     ),
-    title: "hard locks",
+    title: "locks you cannot bypass",
     description:
-      "for apps you want to completely avoid during focus hours, hard lock prevents access entirely until your schedule allows.",
+      "friend lock lets someone you trust protect your settings with a password, while prevent uninstall keeps the app in place.",
+    highlights: ["friend lock", "password-protected settings", "prevent uninstall"],
+  },
+  {
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        className="h-8 w-8"
+      >
+        <path d="M4 19V5" />
+        <path d="M4 19h16" />
+        <path d="M8 15v-4" />
+        <path d="M12 15V8" />
+        <path d="M16 15v-6" />
+      </svg>
+    ),
+    title: "usage reports and alerts",
+    description:
+      "see where your attention goes and get notified when consumption crosses the line you set.",
+    highlights: [
+      "daily reports",
+      "weekly reports",
+      "monthly reports",
+      "over-consumption notifications",
+    ],
   },
   {
     icon: (
@@ -117,16 +135,15 @@ const features = [
         className="h-8 w-8"
       >
         <circle cx="12" cy="12" r="10" />
-        <path d="M12 8v4l3 3" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
+        <path d="M8 12h8" />
+        <path d="M8 8h8" />
+        <path d="M8 16h8" />
       </svg>
     ),
-    title: "focus mode",
+    title: "soft to strict control",
     description:
-      "schedule distraction-free windows. during focus time, only your chosen productive apps are accessible.",
+      "start gently or make the boundaries firm. untap adapts to how much help you need in the moment.",
+    highlights: ["soft mode", "moderate mode", "strict mode"],
   },
 ];
 
@@ -249,11 +266,12 @@ export default async function Home() {
             <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
               <p className="text-lg leading-relaxed text-white/65">
                 if the first thing you reach for when you open your eyes is your
-                phone, untap gives that impulse a pause before it becomes a
-                spiral.
+                phone, untap adds the right kind of friction: QR and NFC unlocks,
+                math challenges, breathing pauses, alternate app suggestions,
+                reports, alerts, and stronger locks when you need them.
               </p>
               <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
-                {["autopilot", "pause", "choice"].map((step) => (
+                {["soft", "moderate", "strict"].map((step) => (
                   <div
                     key={step}
                     className="border-r border-white/10 px-3 py-4 last:border-r-0"
@@ -295,6 +313,16 @@ export default async function Home() {
                 <p className="relative mt-4 max-w-xl leading-relaxed text-white/55">
                   {feature.description}
                 </p>
+                <div className="relative mt-6 flex flex-wrap gap-2">
+                  {feature.highlights.map((highlight) => (
+                    <span
+                      key={highlight}
+                      className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium lowercase text-white/55"
+                    >
+                      {highlight}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
