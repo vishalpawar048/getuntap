@@ -102,11 +102,69 @@ body {
   color: var(--dark-muted);
 }
 
+/* Scroll-triggered reveal animations.
+   The <Reveal> component toggles data-visible="true" via IntersectionObserver. */
+.reveal {
+  opacity: 0;
+  transition-property: opacity, transform, filter;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal[data-variant="up"] {
+  transform: translate3d(0, 32px, 0);
+}
+.reveal[data-variant="down"] {
+  transform: translate3d(0, -32px, 0);
+}
+.reveal[data-variant="left"] {
+  transform: translate3d(-40px, 0, 0);
+}
+.reveal[data-variant="right"] {
+  transform: translate3d(40px, 0, 0);
+}
+.reveal[data-variant="scale"] {
+  transform: scale(0.92);
+}
+.reveal[data-variant="fade"] {
+  transform: none;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Smooth section scrolling. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax helper. */
+.parallax {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.05s linear;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .animate-fade-up,
   .animate-fade-in,
   .animate-slide-left,
   .animate-slide-right {
     animation: none;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .parallax {
+    transform: none !important;
   }
 }

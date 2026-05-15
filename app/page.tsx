@@ -1,5 +1,7 @@
 import QRCode from "qrcode";
 import { JsonLd } from "./components/json-ld";
+import { Reveal } from "./components/reveal";
+import { Parallax } from "./components/parallax";
 import {
   ANDROID_APP_URL,
   IOS_APP_URL,
@@ -444,8 +446,24 @@ export default async function Home() {
         className="section-dark relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+        <Parallax
+          speed={0.3}
+          className="pointer-events-none absolute left-1/2 top-1/3 -z-10 -translate-x-1/2"
+        >
+          <div className="h-[34rem] w-[34rem] rounded-full bg-[var(--accent)]/30 blur-3xl" />
+        </Parallax>
+        <Parallax
+          speed={-0.18}
+          className="pointer-events-none absolute -bottom-32 -right-32 -z-10"
+        >
+          <div className="h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        </Parallax>
 
-        <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center">
+        <Parallax
+          speed={-0.12}
+          ariaHidden={false}
+          className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center"
+        >
           <div className="text-center">
             <h1
               id="hero-heading"
@@ -487,14 +505,14 @@ export default async function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </Parallax>
       </section>
 
       {/* Introduction */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-            <div>
+            <Reveal variant="left">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
                 your attention is{" "}
                 <span className="text-[var(--accent)]">precious</span>
@@ -509,8 +527,8 @@ export default async function Home() {
                 untap is a mindful screen time tool that helps you use your
                 phone intentionally — not impulsively.
               </p>
-            </div>
-            <div className="flex justify-center md:justify-end">
+            </Reveal>
+            <Reveal variant="right" delay={120} className="flex justify-center md:justify-end">
               <div className="w-full max-w-xs rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 text-center shadow-sm">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
                   scan QR code
@@ -524,20 +542,27 @@ export default async function Home() {
                   dangerouslySetInnerHTML={{ __html: qrSvg }}
                 />
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* Features - dark section */}
       <section className="section-dark relative isolate overflow-hidden px-6 py-24 sm:py-32">
-        <div className="absolute left-1/2 top-0 -z-10 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[var(--accent)]/20 blur-3xl" />
-        <div className="absolute -bottom-40 right-0 -z-10 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        <Parallax
+          speed={0.2}
+          className="absolute left-1/2 top-0 -z-10 -translate-x-1/2"
+        >
+          <div className="h-[28rem] w-[28rem] rounded-full bg-[var(--accent)]/20 blur-3xl" />
+        </Parallax>
+        <Parallax speed={-0.15} className="absolute -bottom-40 right-0 -z-10">
+          <div className="h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        </Parallax>
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(248,113,27,0.18),transparent_32rem)]" />
 
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
-            <div>
+            <Reveal variant="up">
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 mindful friction
               </p>
@@ -547,35 +572,39 @@ export default async function Home() {
                   dopamine addiction
                 </span>
               </h2>
-            </div>
+            </Reveal>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
-              <p className="text-lg leading-relaxed text-white/65">
-                if the first thing you reach for when you open your eyes is your
-                phone, untap adds the right kind of friction: QR and NFC unlocks,
-                math challenges, breathing pauses, alternate app suggestions,
-                reports, alerts, and stronger locks when you need them.
-              </p>
-              <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
-                {["soft", "moderate", "strict"].map((step) => (
-                  <div
-                    key={step}
-                    className="border-r border-white/10 px-3 py-4 last:border-r-0"
-                  >
-                    <p className="text-sm font-semibold lowercase text-white">
-                      {step}
-                    </p>
-                  </div>
-                ))}
+            <Reveal variant="up" delay={150}>
+              <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
+                <p className="text-lg leading-relaxed text-white/65">
+                  if the first thing you reach for when you open your eyes is your
+                  phone, untap adds the right kind of friction: QR and NFC unlocks,
+                  math challenges, breathing pauses, alternate app suggestions,
+                  reports, alerts, and stronger locks when you need them.
+                </p>
+                <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
+                  {["soft", "moderate", "strict"].map((step) => (
+                    <div
+                      key={step}
+                      className="border-r border-white/10 px-3 py-4 last:border-r-0"
+                    >
+                      <p className="text-sm font-semibold lowercase text-white">
+                        {step}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
 
           <div className="mt-16 grid gap-5 lg:grid-cols-12">
             {features.map((feature, index) => (
-              <div
+              <Reveal
                 key={feature.title}
-                className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.09] sm:p-8 ${
+                variant="up"
+                delay={index * 100}
+                className={`${
                   index === 0
                     ? "lg:col-span-7"
                     : index === 1
@@ -583,6 +612,9 @@ export default async function Home() {
                       : "lg:col-span-4"
                 }`}
               >
+                <div
+                  className="group relative h-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.09] sm:p-8"
+                >
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
                 <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--accent)]/10 transition duration-300 group-hover:bg-[var(--accent)]/20" />
                 <div className="relative flex items-start justify-between gap-6">
@@ -609,7 +641,8 @@ export default async function Home() {
                     </span>
                   ))}
                 </div>
-              </div>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -619,8 +652,8 @@ export default async function Home() {
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-            <div className="order-2 flex items-center justify-center md:order-1">
-              <div className="relative">
+            <Reveal variant="left" className="order-2 flex items-center justify-center md:order-1">
+              <Parallax speed={0.08} ariaHidden={false} className="relative">
                 <div className="flex h-[420px] w-[220px] flex-col rounded-[2.5rem] border-2 border-[var(--foreground)]/10 bg-[var(--dark-bg)] p-6 shadow-2xl">
                   <div className="flex items-center justify-between">
                     <div className="h-3 w-3 rounded-full bg-[var(--accent)]" />
@@ -662,10 +695,10 @@ export default async function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Parallax>
+            </Reveal>
 
-            <div className="order-1 md:order-2">
+            <Reveal variant="right" delay={120} className="order-1 md:order-2">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
                 you control your phone{" "}
                 <span className="text-[var(--muted)]">
@@ -682,7 +715,7 @@ export default async function Home() {
                 open the apps that you need and avoid the apps that are
                 distractions.
               </p>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -692,11 +725,13 @@ export default async function Home() {
         aria-labelledby="testimonials-heading"
         className="section-dark relative isolate overflow-hidden px-6 py-16 sm:py-20"
       >
-        <div className="absolute -right-32 top-0 -z-10 h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-3xl" />
+        <Parallax speed={0.18} className="absolute -right-32 top-0 -z-10">
+          <div className="h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-3xl" />
+        </Parallax>
 
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
+            <Reveal variant="up">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
                 <Star className="h-3.5 w-3.5" />
                 4.8 / 5 from 1,284 reviews
@@ -710,29 +745,38 @@ export default async function Home() {
                   value their time
                 </span>
               </h2>
-            </div>
-            <a
-              href="/reviews"
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/30 hover:bg-white/5 hover:text-white"
-            >
-              read all reviews
-              <svg
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={1.5}
-                aria-hidden
-                className="h-3.5 w-3.5"
+            </Reveal>
+            <Reveal variant="up" delay={120}>
+              <a
+                href="/reviews"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/30 hover:bg-white/5 hover:text-white"
               >
-                <path d="M4 10h12" />
-                <path d="M11 5l5 5-5 5" />
-              </svg>
-            </a>
+                read all reviews
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  aria-hidden
+                  className="h-3.5 w-3.5"
+                >
+                  <path d="M4 10h12" />
+                  <path d="M11 5l5 5-5 5" />
+                </svg>
+              </a>
+            </Reveal>
           </div>
 
           <div className="mt-10 grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {testimonials.map((t) => (
-              <TestimonialCard key={t.name} testimonial={t} />
+            {testimonials.map((t, index) => (
+              <Reveal
+                key={t.name}
+                variant="up"
+                delay={(index % 4) * 80}
+                duration={600}
+              >
+                <TestimonialCard testimonial={t} />
+              </Reveal>
             ))}
           </div>
         </div>
@@ -741,16 +785,18 @@ export default async function Home() {
       {/* Mindful section */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-            use your phone in a{" "}
-            <span className="text-[var(--accent)]">mindful way</span>
-          </h2>
-          <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-            when you use untap, you quickly start to realize the unhealthy
-            usage patterns your phone was causing. the peace of mind and
-            happiness this brings is something you won&apos;t want to go back
-            from.
-          </p>
+          <Reveal variant="up">
+            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              use your phone in a{" "}
+              <span className="text-[var(--accent)]">mindful way</span>
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
+              when you use untap, you quickly start to realize the unhealthy
+              usage patterns your phone was causing. the peace of mind and
+              happiness this brings is something you won&apos;t want to go back
+              from.
+            </p>
+          </Reveal>
           <div className="mt-12 grid gap-6 text-left sm:grid-cols-3">
             {[
               {
@@ -765,18 +811,21 @@ export default async function Home() {
                 stat: "4.8",
                 label: "average rating from our users",
               },
-            ].map((item) => (
-              <div
+            ].map((item, index) => (
+              <Reveal
                 key={item.label}
-                className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6"
+                variant="scale"
+                delay={index * 120}
               >
-                <p className="text-3xl font-bold text-[var(--accent)]">
-                  {item.stat}
-                </p>
-                <p className="mt-2 text-sm leading-snug text-[var(--muted)]">
-                  {item.label}
-                </p>
-              </div>
+                <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6">
+                  <p className="text-3xl font-bold text-[var(--accent)]">
+                    {item.stat}
+                  </p>
+                  <p className="mt-2 text-sm leading-snug text-[var(--muted)]">
+                    {item.label}
+                  </p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -786,24 +835,28 @@ export default async function Home() {
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
-            <div>
+            <Reveal variant="left">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
                 all you need to know
               </h2>
-            </div>
+            </Reveal>
             <div className="space-y-8">
-              {faqs.map((faq) => (
-                <div
+              {faqs.map((faq, index) => (
+                <Reveal
                   key={faq.q}
-                  className="border-b border-white/10 pb-8 last:border-0"
+                  variant="up"
+                  delay={index * 60}
+                  duration={600}
                 >
-                  <h3 className="text-xl font-bold lowercase text-white">
-                    {faq.q}
-                  </h3>
-                  <p className="mt-3 leading-relaxed text-white/50">
-                    {faq.a}
-                  </p>
-                </div>
+                  <div className="border-b border-white/10 pb-8 last:border-0">
+                    <h3 className="text-xl font-bold lowercase text-white">
+                      {faq.q}
+                    </h3>
+                    <p className="mt-3 leading-relaxed text-white/50">
+                      {faq.a}
+                    </p>
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -812,7 +865,7 @@ export default async function Home() {
 
       {/* CTA */}
       <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-4xl text-center">
+        <Reveal variant="scale" className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:text-6xl">
             download untap now and{" "}
             <span className="text-[var(--accent)]">
@@ -840,7 +893,7 @@ export default async function Home() {
               download for android
             </a>
           </div>
-        </div>
+        </Reveal>
       </section>
     </>
   );
