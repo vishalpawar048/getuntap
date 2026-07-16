@@ -7,7 +7,7 @@ import { SiteFooter } from "./components/site-footer";
 import Script from "next/script";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  variable: "--font-geist-sans",  
   subsets: ["latin"],
 });
 
@@ -162,6 +162,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
+      <head>
+      <meta
+        name="google-site-verification"
+        content="tv-p3MaVuhhHOw0wkDEwdN7Mv7Anjzb3XZ4gTyQiLKU"
+      />
+    </head>
      <GoogleTagManager gtmId="GTM-PDNG6VFT" />
       <body className="min-h-screen">
         <SiteHeader />
