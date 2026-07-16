@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { SiteHeader } from "./components/site-header";
 import { SiteFooter } from "./components/site-footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -160,6 +162,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
+     <GoogleTagManager gtmId="GTM-PDNG6VFT" />
       <body className="min-h-screen">
         <SiteHeader />
         <main>{children}</main>
