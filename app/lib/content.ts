@@ -477,10 +477,194 @@ export const blogPosts: Post[] = [
         kind: "p",
         text: "If you operate a single owner-operator vehicle, the personal Untap app is enough. If you run more than five vehicles, the Enterprise tier handles the rollout, the fleet-wide policy and the compliance reporting in one place.",
       },
-      
-     
     ],
   },
+  {
+  slug: "break-addiction-to-phone",
+  title: "Break Addiction to Phone: Why a Digital Wellbeing App Makes It Easier",
+  description:
+    "Trying to break addiction to phone use? See why a digital wellbeing app works better than willpower alone, with real numbers and honest tips.",
+  publishedAt: "2026-07-29",
+  author: "Untap Team",
+  readMinutes: 6,
+  tags: [
+    "phone addiction",
+    "digital wellbeing",
+    "screen time",
+    "doomscrolling",
+  ],
+  body: [
+    {
+      kind: "p",
+      text: "Put the phone in another room. Turn off notifications. Set a bedtime for your apps.",
+    },
+    {
+      kind: "p",
+      text: "You've heard all of it. Maybe tried all of it. And a few days later you're scrolling again before your eyes have even properly adjusted to the morning light.",
+    },
+    {
+      kind: "p",
+      text: "We're the team behind Untap, and people tell us this exact story on repeat. Not because they're undisciplined. Because the habit runs deeper than a to-do list item.",
+    },
+    {
+      kind: "h2",
+      text: "The Problem Isn't Effort",
+      id: "the-problem-isnt-effort",
+    },
+    {
+      kind: "p",
+      text: "Think about the last time you opened Instagram. Did you decide to? Or did it just... happen?",
+    },
+    {
+      kind: "p",
+      text: "For most people it's the second one. Thumb moves, app opens, twenty minutes vanish. There's no moment of choice in between — that's what makes this hard to fix with advice alone. You can't out-discipline a reflex.",
+    },
+    {
+      kind: "p",
+      text: "A digital wellbeing app exists for exactly this reason. Not to punish you for wanting to check your phone. Just to slow down the half-second where the reflex takes over, so a real decision gets a chance to happen instead.",
+    },
+    {
+      kind: "h2",
+      text: "What This Looks Like in Practice",
+      id: "what-this-looks-like-in-practice",
+    },
+    {
+      kind: "p",
+      text: "With Untap, opening a distracting app triggers a small speed bump first a QR scan, a short math problem, a breathing pause, sometimes just a suggestion to open something else.",
+    },
+    {
+      kind: "p",
+      text: "You can still get through it. Nothing's locked away for good. But most people don't. That pause is usually enough.",
+    },
+    {
+      kind: "callout",
+      title: "The numbers reflect this",
+      text: "Not because the app forced anything because it gave the brain a beat to catch up.",
+    },
+    {
+      kind: "stat",
+      value: "3.5 hrs",
+      label: "Users save an average of 3.5 hours of screen time a day",
+    },
+    {
+      kind: "stat",
+      value: "85%",
+      label: "notice less doomscrolling within the first week",
+    },
+    {
+      kind: "h2",
+      text: "Limits That Fit, Not Limits That Snap",
+      id: "limits-that-fit",
+    },
+    {
+      kind: "p",
+      text: "Here's where most attempts fail. People either go too soft (\"I'll try to use it less\") or too hard (deleting everything on day one, which lasts about four days).",
+    },
+    {
+      kind: "p",
+      text: "Untap lets you set actual numbers. 20 minutes on Instagram. TikTok locked till 6pm. Whatever fits. And there's a soft mode for starting out, plus stricter settings once you're ready.",
+    },
+    {
+      kind: "p",
+      text: "One thing that surprises people: a friend lock. Someone you trust puts a password on your settings so you can't undo your own rules at midnight when your resolve is at its weakest. It sounds unnecessary until you realize how often that exact moment is the one that breaks the streak.",
+    },
+    {
+      kind: "h2",
+      text: "The Reports Do Half the Work",
+      id: "the-reports-do-half-the-work",
+    },
+    {
+      kind: "p",
+      text: "Ask anyone who's used a tracker like this for a month what surprised them, and it's almost always the same answer — the number. Not the feeling of scrolling too much. The actual hour count.",
+    },
+    {
+      kind: "p",
+      text: "Untap's daily, weekly, and monthly reports show that number plainly. Alerts fire if you go over. And somehow that's more motivating than any pep talk.",
+    },
+    {
+      kind: "h2",
+      text: "Where People Go Wrong",
+      id: "where-people-go-wrong",
+    },
+    {
+      kind: "p",
+      text: "A few patterns show up again and again:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Deleting the app cold turkey reinstalled within a week, usually to message someone.",
+        "Setting an unrealistic target, like four hours down to twenty minutes overnight. Doesn't hold.",
+        "Skipping the weekly report entirely, which is honestly the one part that matters most.",
+        "Switching the whole thing off the second it's inconvenient this is the exact gap friend lock is built to close.",
+        "Blocking apps you actually need for work, which just makes the whole system feel like a punishment instead of a tool.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "And Privacy, Since People Ask",
+      id: "privacy",
+    },
+    {
+      kind: "p",
+      text: "Everything stays on your device. No tracking, no ad network getting a look at your habits, nothing shipped to a server somewhere. If the goal is being more mindful, the last thing you want is another company quietly profiting off exactly how distracted you are.",
+    },
+    {
+      kind: "h2",
+      text: "FAQ",
+      id: "faq",
+    },
+    {
+      kind: "h3",
+      text: "Can a digital wellbeing app actually help break addiction to phone use?",
+    },
+    {
+      kind: "p",
+      text: "Friction-based ones like Untap tend to, yes slowing the moment before an app opens interrupts the habit more reliably than a hard block does.",
+    },
+    {
+      kind: "h3",
+      text: "Does it delete or ban apps?",
+    },
+    {
+      kind: "p",
+      text: "No. Just adds a pause. You're always the one in control.",
+    },
+    {
+      kind: "h3",
+      text: "How fast do people see a change?",
+    },
+    {
+      kind: "p",
+      text: "Often within the first week, going by Untap's own usage data.",
+    },
+    {
+      kind: "h3",
+      text: "iPhone or Android?",
+    },
+    {
+      kind: "p",
+      text: "Both, using each platform's official screen-time tools.",
+    },
+    {
+      kind: "h3",
+      text: "Is my data private?",
+    },
+    {
+      kind: "p",
+      text: "Yes — stored locally, nothing tracked or sold.",
+    },
+    {
+      kind: "h2",
+      text: "Last Bit",
+      id: "last-bit",
+    },
+    {
+      kind: "p",
+      text: "Nobody breaks a phone habit by trying harder. You break it by putting something anything between the impulse and the tap. A few seconds of friction, repeated enough times, and the habit loses its grip on its own. That's the whole idea behind Untap.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
