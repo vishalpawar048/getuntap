@@ -56,6 +56,12 @@ export function SiteHeader() {
               app blocker
             </Link>
              <Link
+              href="/features/focus-mode"
+              className="transition-colors hover:text-white"
+            >
+              focus mode
+            </Link>
+             <Link
               href="/for-schools"
               className="transition-colors hover:text-white"
             >
