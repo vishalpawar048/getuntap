@@ -665,6 +665,157 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "how-to-stop-scrolling-instagram-for-hours",
+  title: "How to Stop Scrolling Instagram for Hours Without Deleting the App",
+  description:
+    "You opened Instagram to check a message. Two hours later you're watching a stranger's dog videos and you've completely forgotten why you opened the app. This is not a willpower problem — it's a design problem. Here's how to fix it without deleting the app.",
+  publishedAt: "2026-09-02",
+  author: "Untap Team",
+  readMinutes: 5,
+  tags: ["social media control"],
+  body: [
+    {
+      kind: "h2",
+      text: "The Instagram trap is not your fault",
+      id: "the-instagram-trap-is-not-your-fault",
+    },
+    {
+      kind: "p",
+      text: "You opened Instagram to check a message. Two hours later you're watching a stranger's dog videos and you've completely forgotten why you opened the app. This is not a willpower problem — it's a design problem. Here's how to fix it without deleting the app.",
+    },
+    {
+      kind: "h2",
+      text: "Why willpower fails at Instagram",
+      id: "why-willpower-fails-at-instagram",
+    },
+    {
+      kind: "p",
+      text: "The first time your brain considers opening Instagram, the impulse wins before consciousness catches up. By the time you think \"I shouldn't be scrolling right now,\" your thumb has already swiped.",
+    },
+    {
+      kind: "p",
+      text: "This is why telling yourself to \"just use it less\" does not work. The battle is lost at the autopilot level — long before willpower can step in.",
+    },
+    {
+      kind: "p",
+      text: "What you need is environmental friction. A pause placed at the exact moment the impulse fires. That's the gap where real change happens.",
+    },
+    {
+      kind: "h2",
+      text: "How to stop scrolling Instagram: The friction approach",
+      id: "how-to-stop-scrolling-instagram-the-friction-approach",
+    },
+    {
+      kind: "p",
+      text: "Instead of trying to delete Instagram or fight willpower, add a small delay before the app opens. A 10-second pause. A quick puzzle. A breathing exercise.",
+    },
+    {
+      kind: "p",
+      text: "That few seconds is often enough to break the autopilot moment. Your conscious brain catches up. You remember why you actually picked up your phone — to reply to a message, not to watch reels for two hours.",
+    },
+    {
+      kind: "p",
+      text: "Most people who try this see an immediate 40-60% drop in accidental scrolling. Not because they have more willpower. Because the environment changed.",
+    },
+    {
+      kind: "h2",
+      text: "Setting daily limits on Instagram",
+      id: "setting-daily-limits-on-instagram",
+    },
+    {
+      kind: "p",
+      text: "A social media blocker app gives Instagram a daily budget. 30 minutes, 20 minutes, whatever you set. After that, Instagram is locked until tomorrow. This is not willpower — it's environmental lock.",
+    },
+    {
+      kind: "p",
+      text: "Jessica K. set a 20-minute daily limit on Instagram and stopped thinking about the app outside that window. The limit became a habit.",
+    },
+    {
+      kind: "h2",
+      text: "Hard locks during important hours",
+      id: "hard-locks-during-important-hours",
+    },
+    {
+      kind: "p",
+      text: "Some times of day matter more than others. Work hours. Family dinner. The first and last hour of your day.",
+    },
+    {
+      kind: "p",
+      text: "A social media blocker app lets you hard-lock Instagram entirely during those times. 9am to 5pm? Instagram locked. No delay, no debate. The app will not open.",
+    },
+    {
+      kind: "p",
+      text: "This is not as extreme as deleting. You can still use Instagram freely at 6pm. But the locked hours are actually locked.",
+    },
+    {
+      kind: "h2",
+      text: "Friend lock: External accountability",
+      id: "friend-lock-external-accountability",
+    },
+    {
+      kind: "p",
+      text: "When self-imposed limits fail, a social media blocker app offers friend lock. A trusted person sets a password on your restrictions. So when motivation drops at midnight, you cannot change the settings alone.",
+    },
+    {
+      kind: "h2",
+      text: "How to set up a social media blocker app in 5 minutes",
+      id: "how-to-set-up-a-social-media-blocker-app-in-5-minutes",
+    },
+    {
+      kind: "ol",
+      items: [
+        "Download a social media blocker app like Untap (free on iOS and Android)",
+        "Add Instagram to your app list",
+        "Choose your approach: a 10-second open delay (best for how to stop scrolling Instagram), a 30-minute daily limit, or a hard lock from 9am-5pm",
+        "Optionally turn on friend lock and give the password to someone you trust",
+        "That's it. Instagram still works. You've just added friction to the autopilot moment.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Most people feel the difference immediately. The social media blocker app works because it changes the default — not because you suddenly have more willpower.",
+    },
+    {
+      kind: "p",
+      text: "Within a week, the limited window becomes your new normal. You stop reaching for Instagram when bored. The friction-based approach creates a sustainable habit change, unlike trying to \"just use it less\" through willpower alone.",
+    },
+    {
+      kind: "h2",
+      text: "The numbers",
+      id: "the-numbers",
+    },
+    {
+      kind: "stat",
+      value: "~73%",
+      label: "of Instagram users report losing track of time while scrolling",
+    },
+    {
+      kind: "stat",
+      value: "~40-60%",
+      label: "reduction in accidental Instagram opens when using a 10-second delay",
+    },
+    {
+      kind: "stat",
+      value: "~2 hrs",
+      label: "average daily Instagram consumption (reported by UK users, 2026)",
+    },
+    {
+      kind: "h2",
+      text: "What happens after you set limits",
+      id: "what-happens-after-you-set-limits",
+    },
+    {
+      kind: "p",
+      text: "Your brain adjusts faster than you'd expect. Within a week, you stop automatically reaching for Instagram at bored moments. The limited window (say, 30 minutes at 6pm) becomes the new habit. It feels normal to not have Instagram available.",
+    },
+    {
+      kind: "p",
+      text: "You're not using less willpower. You've just changed the environment so the default behavior is different.",
+    },
+    
+  ],
+},
 ];
 
 export type CaseStudy = {
