@@ -816,6 +816,213 @@ export const blogPosts: Post[] = [
     
   ],
 },
+{
+  slug: "timer-lock-for-apps",
+  title: "Timer Lock for Apps: How to Use One to Stop Mindless Scrolling",
+  description:
+    "You pick up your phone to check one message. Twenty minutes later, you're still on Instagram. You don't even remember opening it. If this happens to you every single day, you don't have a willpower problem. You have a design problem. These apps are built so that you never get a moment to stop and think — you just keep swiping.",
+  publishedAt: "2026-09-30",
+  author: "Untap Team",
+  readMinutes: 7,
+  tags: ["timer lock", "app blocker", "mindless scrolling"],
+  body: [
+    {
+      kind: "p",
+      text: "You pick up your phone to check one message.",
+    },
+    {
+      kind: "p",
+      text: "Twenty minutes later, you're still on Instagram. You don't even remember opening it.",
+    },
+    {
+      kind: "p",
+      text: "If this happens to you every single day, you don't have a willpower problem. You have a design problem. These apps are built so that you never get a moment to stop and think — you just keep swiping.",
+    },
+    {
+      kind: "p",
+      text: "A timer lock for apps gives that moment back to you. It puts a small pause, or a hard stop, between you and the app. And that tiny gap is often all it takes.",
+    },
+    {
+      kind: "h2",
+      text: "What a Timer Lock for Apps Really Does",
+      id: "what-a-timer-lock-for-apps-really-does",
+    },
+    {
+      kind: "p",
+      text: "Here is the thing — a timer lock is not the same as an app lock.",
+    },
+    {
+      kind: "p",
+      text: "An app lock just needs a password to open something. A timer lock goes further. It watches how long you have used an app and, once your time is up, it shuts the app down or makes you wait before you can open it again.",
+    },
+    {
+      kind: "p",
+      text: "Some apps do this with a strict countdown. Others add a soft delay — a 10-second wait, a small math problem, or even a breathing pause — before the app opens. That short delay is enough to break the \"open app without thinking\" habit most of us have built over years.",
+    },
+    {
+      kind: "p",
+      text: "Either way, the goal is the same. You decide when and how much you use an app. The app doesn't decide for you.",
+    },
+    {
+      kind: "h2",
+      text: "Why So Many People Are Searching for This Right Now",
+      id: "why-so-many-people-are-searching-for-this-right-now",
+    },
+    {
+      kind: "p",
+      text: "If you search \"app blocker Android\" today, you'll notice most people have already tried the built-in Digital Wellbeing settings on their phone and given up.",
+    },
+    {
+      kind: "p",
+      text: "And honestly, it's easy to see why. You can turn off Digital Wellbeing limits in two taps. There's no real friction. It's more of a suggestion than a rule.",
+    },
+    {
+      kind: "p",
+      text: "That's why apps built only for this one job — locking or delaying specific apps — tend to work better. A little bit of friction, like solving a small puzzle before Instagram opens, does more than a plain warning ever could.",
+    },
+    {
+      kind: "p",
+      text: "One student in Pune shared that her screen time dropped from about 7 hours a day to under 2, just by adding a delay before her social apps during study hours. Nothing fancy. Just a pause she had to sit through before opening the app.",
+    },
+    {
+      kind: "h2",
+      text: "How to Set Up a Timer Lock for Apps (Without Overdoing It)",
+      id: "how-to-set-up-a-timer-lock-for-apps-without-overdoing-it",
+    },
+    {
+      kind: "p",
+      text: "You don't need to lock every app on your phone on day one. That usually backfires — you get frustrated and turn it off within a week.",
+    },
+    {
+      kind: "p",
+      text: "Here's a simpler way to start:",
+    },
+    {
+      kind: "p",
+      text: "Pick one or two apps first. Usually the ones you open without even deciding to — Instagram, YouTube, or whatever you check first thing in the morning.",
+    },
+    {
+      kind: "p",
+      text: "Set a soft limit, not a total ban. A 30-minute daily limit, or a 10-second delay before the app opens, works better than blocking it completely. A full block often makes people find workarounds.",
+    },
+    {
+      kind: "p",
+      text: "Choose your trigger times. Work hours, dinner time, or after 9 pm are common choices. You don't have to lock the app all day.",
+    },
+    {
+      kind: "p",
+      text: "Add a \"friend lock\" if you can. Some apps let a partner or friend set a password on your restrictions, so you can't quietly switch it off at midnight when your willpower is lowest. This one feature makes a bigger difference than people expect.",
+    },
+    {
+      kind: "p",
+      text: "Loosen it as needed. If a limit feels too strict, adjust it. This is not a punishment. It's a tool you're allowed to shape around your own habits.",
+    },
+    {
+      kind: "h2",
+      text: "Timer Lock for Apps on Android vs iPhone",
+      id: "timer-lock-for-apps-on-android-vs-iphone",
+    },
+    {
+      kind: "p",
+      text: "A lot of people assume this kind of app only works well on one type of phone. That's not really true anymore.",
+    },
+    {
+      kind: "p",
+      text: "On Android, most timer lock apps use the accessibility settings to notice when you've crossed your limit and then close the app.",
+    },
+    {
+      kind: "p",
+      text: "On iPhone, apps use Apple's own Screen Time framework, called FamilyControls, so the lock works properly and doesn't break every time Apple pushes an update.",
+    },
+    {
+      kind: "p",
+      text: "If your house has one Android and one iPhone — which is common in a lot of Indian families — look for an app that supports both. It saves you from setting up two different systems for the same habit.",
+    },
+    {
+      kind: "h2",
+      text: "Common Mistakes People Make With App Timers",
+      id: "common-mistakes-people-make-with-app-timers",
+    },
+    {
+      kind: "p",
+      text: "Locking everything at once. Start with one or two apps. If you try to lock ten apps on the first day, you'll disable the whole thing within a week out of sheer frustration.",
+    },
+    {
+      kind: "p",
+      text: "Picking the strictest setting first. A full block feels good on day one and exhausting by day three. Start with a soft delay and tighten it slowly.",
+    },
+    {
+      kind: "p",
+      text: "Not tracking usage before blocking. If you don't know where your time is actually going, you're just guessing at what to restrict. Most good apps show you a daily or weekly report first — look at that before you set any limits.",
+    },
+    {
+      kind: "p",
+      text: "Giving yourself the password. If you can turn off your own restriction whenever you want, it won't hold up on a bad day. That's exactly why the friend lock feature exists in apps like Untap.",
+    },
+    {
+      kind: "p",
+      text: "Expecting it to fix everything overnight. A timer lock is a tool, not magic. It works because it slows you down enough to make a choice. The actual change still comes from you.",
+    },
+    {
+      kind: "h2",
+      text: "Frequently Asked Questions",
+      id: "frequently-asked-questions",
+    },
+    {
+      kind: "h3",
+      text: "What does a timer lock for apps actually do?",
+    },
+    {
+      kind: "p",
+      text: "It puts a delay or a hard stop in front of an app once you've crossed a time limit you set, so you get a moment to decide instead of opening it out of habit.",
+    },
+    {
+      kind: "h3",
+      text: "Will a timer lock delete my apps or my data?",
+    },
+    {
+      kind: "p",
+      text: "No. It only adds a delay or a lock screen before the app opens. Nothing is removed, and you can adjust or turn off the setting whenever you like.",
+    },
+    {
+      kind: "h3",
+      text: "Does a timer lock work the same on Android and iPhone?",
+    },
+    {
+      kind: "p",
+      text: "The methods are different behind the scenes — Android uses accessibility settings, iPhone uses Apple's Screen Time framework — but for you as a user, the experience of setting limits and getting reports is much the same on both.",
+    },
+    {
+      kind: "h3",
+      text: "Can I use a timer lock just for my child's phone?",
+    },
+    {
+      kind: "p",
+      text: "Yes. Many apps let you set stricter locks for a child's device and protect them with a parent password so the child can't remove the limit on their own.",
+    },
+    {
+      kind: "h3",
+      text: "Is a timer lock free to use?",
+    },
+    {
+      kind: "p",
+      text: "Most apps have a free version with the basic delay and limit features. Deeper reports and unlimited app locks are usually part of a paid plan.",
+    },
+    {
+      kind: "h2",
+      text: "The Bottom Line",
+      id: "the-bottom-line",
+    },
+    {
+      kind: "p",
+      text: "You don't need more willpower to stop mindless scrolling. You need a small pause built into the habit loop that's already working against you.",
+    },
+    {
+      kind: "p",
+      text: "Start with one app. Set a soft limit. See how it feels for a week. That's really all a timer lock for apps is meant to do — give you back the moment where you get to choose.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
