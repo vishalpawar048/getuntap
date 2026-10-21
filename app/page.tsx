@@ -469,19 +469,15 @@ export default async function Home() {
               id="hero-heading"
               className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white lowercase sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Choose Purpose Over Distraction.
+              Study Your Notes to Unlock Your Phone.
             </h1>
 
             <p className="sr-only">
-              Untap is the screen time control app for iPhone and Android that
-              helps you stop doomscrolling and break phone addiction.
+              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time for students.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              Untap is a screen time control app that helps you stop
-              doomscrolling and break phone addiction with intentional
-              friction. Take back your time, focus on what matters, and reclaim
-              hours of your day.
+              The app blocker designed for students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

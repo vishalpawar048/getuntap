@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reviews — What People Say About Untap",
+  title: "Reviews – Students Love Untap",
   description:
-    "Real user reviews of the Untap screen time control app. See why people who care about their time use Untap to break phone addiction and stop doomscrolling.",
+    "See what students say about Untap: improved focus, better grades, less phone addiction. Real reviews from students using the quiz-to-unlock app blocker.",
   alternates: { canonical: "/reviews" },
   openGraph: {
-    title: "Untap reviews — real people, real time back",
+    title: "Untap reviews — students reclaim their focus",
     description:
-      "Read user reviews of the Untap screen time control app for iOS and Android.",
+      "Read real student reviews of Untap, the study app blocker that turns screen time into study time.",
     url: "/reviews",
     type: "website",
   },
@@ -58,6 +58,9 @@ export default function ReviewsPage() {
     <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto flex w-full max-w-5xl flex-col">
         <div className="flex flex-col items-center text-center">
+          <h1 className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
+            Student Reviews: Focus Restored
+          </h1>
           <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
             Real people. Real{" "}
             <span className="text-[var(--accent)]">time back</span>.

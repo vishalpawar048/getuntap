@@ -50,10 +50,16 @@ export function SiteHeader() {
             className="hidden items-center gap-5 text-sm text-white/60 md:flex"
           >
             <Link
-              href="/features/app-blocker"
+              href="/study-app-blocker"
               className="transition-colors hover:text-white"
             >
-              app blocker
+              study blocker
+            </Link>
+            <Link
+              href="/for-students"
+              className="transition-colors hover:text-white"
+            >
+              for students
             </Link>
              <Link
               href="/features/focus-mode"

@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Screen Time Parental Control App | Apps to Control Children's Screen Time | Untap",
+  title: "Parental Controls – Screen Time for Kids",
   description:
-    "Untap is the screen time parental control app that helps parents limit kids' app use on iPhone and Android. Apps to control children's screen time — try it free today!",
+    "Parental control app to manage kids' screen time on iPhone and Android. Set limits, block apps, and help kids build healthy phone habits. Free trial.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/parental-control/",
+    canonical: "/features/parental-controls",
   },
 };
 

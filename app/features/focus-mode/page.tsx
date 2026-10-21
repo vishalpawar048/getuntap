@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Brain Focus App | Best Focus App for Android & iPhone | Untap",
+  title: "Focus Mode – Brain Focus App",
   description:
-    "Untap is the brain focus app that helps you stop distractions and actually get things done. Best focus app for Android & iPhone. Try it free today!",
+    "Brain focus app that stops distractions and helps you get things done. Focus mode for deep work. Free for Android & iPhone.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/focus-mode/",
+    canonical: "/features/focus-mode",
   },
 };
 

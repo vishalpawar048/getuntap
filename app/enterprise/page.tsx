@@ -5,10 +5,9 @@ import { LeadDialogTrigger } from "../components/lead-dialog";
 import { SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Untap Enterprise — Distraction-Free Workplaces & Deep Work at Scale",
+  title: "Untap Enterprise – Focus for Teams",
   description:
-    "Untap Enterprise helps companies create distraction-free workplaces. Deploy focus policies for teams, schedule deep-work hours, block social and entertainment apps during work, and protect employee privacy.",
+    "Deploy focus policies across teams. Schedule deep-work hours, block distractions during work, and boost productivity without surveillance. Free trial.",
   keywords: [
     "untap enterprise",
     "workplace screen time",

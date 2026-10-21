@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Timer Lock for Apps | Block Instagram App on Android & iPhone",
+  title: "App Blocker – Timer Lock for Apps",
   description:
-    "Timer Lock for Apps to block Instagram, social media & distracting apps. App Usage Tracker & Blocker for Android & iPhone. Take back your time. Try it free today!",
+    "Timer lock for apps to block Instagram & social media on Android & iPhone. App usage tracker & blocker. Take back your time. Free trial.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/app-blocker/",
+    canonical: "/features/app-blocker",
   },
 };
 

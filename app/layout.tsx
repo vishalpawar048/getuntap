@@ -16,18 +16,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://getuntap.com";
+const SITE_URL = "https://www.getuntap.com";
 const SITE_NAME = "Untap";
 const TITLE =
-  "Untap — Screen Time Control App to Stop Doomscrolling & Break Phone Addiction";
+  "Untap: App Blocker for Studying – Limit Screen Time";
 const DESCRIPTION =
-  "Untap is the #1 screen time control app for iPhone and Android. Stop doomscrolling, break phone addiction with intentional friction, app delays, focus locks, and mindful usage reports. Free to start.";
+  "Study app blocker that helps you focus. Quiz from your notes to unlock apps. Limit screen time for students with intentional friction. Free for iPhone & Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: "%s | Untap — Screen Time Control App",
+    template: "%s | Untap",
   },
   description: DESCRIPTION,
   applicationName: SITE_NAME,
@@ -40,39 +40,21 @@ export const metadata: Metadata = {
   classification: "Digital Wellbeing, Productivity, Screen Time Control",
   keywords: [
     "untap",
-    "untap app",
-    "getuntap",
-    "screen time control app",
-    "screen time control",
-    "screen time app",
-    "screen time tracker",
-    "screen time limit app",
-    "screen time iOS",
-    "screen time Android",
-    "stop doomscrolling",
-    "doomscrolling app",
-    "phone addiction app",
-    "break phone addiction",
-    "reduce screen time",
+    "study app blocker",
+    "app blocker for studying",
+    "limit screen time for students",
+    "quiz to unlock apps",
     "app blocker",
-    "app blocker iOS",
-    "app blocker Android",
-    "focus app",
-    "focus mode",
+    "screen time app",
+    "screen time control",
+    "focus app for students",
+    "phone block app",
+    "stop doomscrolling",
+    "break phone addiction",
     "digital wellbeing",
-    "digital detox app",
-    "mindful phone usage",
-    "intentional phone use",
-    "stop scrolling instagram",
-    "stop scrolling tiktok",
-    "block social media apps",
-    "best screen time app 2026",
-    "alternative to one sec",
+    "best screen time app",
     "alternative to opal",
-    "alternative to apple screen time",
-    "FamilyControls",
-    "ManagedSettings",
-    "DeviceActivity",
+    "student productivity app",
   ],
   alternates: {
     canonical: "/",

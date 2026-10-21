@@ -68,18 +68,24 @@ export function SiteFooter() {
               Solutions
             </p>
             <nav className="mt-4 flex flex-col gap-3">
-               <Link
-              href="/features/app-blocker"
-              className="transition-colors hover:text-white"
-            >
-              app blocker
-            </Link>
-             <Link
-              href="/features/focus-mode"
-              className="transition-colors hover:text-white"
-            >
-              focus mode
-            </Link>
+              <Link
+                href="/study-app-blocker"
+                className="text-white/60 transition hover:text-white"
+              >
+                study app blocker
+              </Link>
+              <Link
+                href="/study-to-unlock"
+                className="text-white/60 transition hover:text-white"
+              >
+                study to unlock
+              </Link>
+              <Link
+                href="/for-students"
+                className="text-white/60 transition hover:text-white"
+              >
+                for students
+              </Link>
               <Link
                 href="/for-schools"
                 className="text-white/60 transition hover:text-white"
