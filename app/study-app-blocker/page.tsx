@@ -138,7 +138,7 @@ export default function StudyAppBlockerPage() {
             </span>
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/65 sm:text-xl">
-            Upload your study notes. Try to open Instagram. Untap shows you a quiz question from your notes. Answer correctly or keep studying. Every distraction becomes a study session.
+            Set focus hours so study time stays protected, then limit the rest of the day. Session caps stop brain-rotting apps from running on. Students can also quiz from their notes before Instagram or TikTok opens.
           </p>
 
           <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">

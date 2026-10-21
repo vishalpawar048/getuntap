@@ -126,7 +126,7 @@ const testimonials = [
 const faqs = [
   {
     q: "How Does It Work?",
-    a: "Untap adds intentional friction before you open distracting apps. Set open delays, session limits, or hard locks to break the autopilot habit of reaching for your phone. It uses Apple's screen time APIs to work seamlessly on iOS.",
+    a: "Set the focus hours you need to protect. During that block, distracting apps stay limited. After focus hours, Untap still limits the rest of the day, including session caps on brain-rotting apps like TikTok and Instagram. It uses Apple's screen time APIs on iOS.",
   },
   {
     q: "What Plans Does Untap Offer?",
@@ -165,14 +165,13 @@ const features = [
         <path d="M12 8v8" />
       </svg>
     ),
-    title: "Intentional App Opening",
-    description: "Choose what someone must do before opening a distracting app, from a tiny pause to a real challenge.",
+    title: "Set Focus Hours",
+    description: "Pick the hours you need to protect. Class, study, or deep work. During that block, distracting apps stay limited so your focus holds.",
     highlights: [
-      "Scan QR Code",
-      "Scan NFC Tag",
-      "Solve Math Challenge",
-      "Suggest Alternate App",
-      "Breathing Exercise",
+      "Class Blocks",
+      "Study Blocks",
+      "Deep Work",
+      "Custom Hours",
     ],
   },
   {
@@ -189,9 +188,9 @@ const features = [
         <path d="M8 11V7a4 4 0 118 0v4" />
       </svg>
     ),
-    title: "Locks You Cannot Bypass",
-    description: "Friend lock lets someone you trust protect your settings with a password, while prevent uninstall keeps the app in place.",
-    highlights: ["Friend Lock", "Password-Protected Settings", "Prevent Uninstall"],
+    title: "Limit The Rest Of The Day",
+    description: "Focus hours come first. After they end, Untap still limits how much of the day those apps can take, so the scroll does not fill every gap.",
+    highlights: ["Daily Caps", "After Focus Hours", "Hard Stops"],
   },
   {
     icon: (
@@ -209,14 +208,9 @@ const features = [
         <path d="M16 15v-6" />
       </svg>
     ),
-    title: "Usage Reports And Alerts",
-    description: "See where your attention goes and get notified when consumption crosses the line you set.",
-    highlights: [
-      "Daily Reports",
-      "Weekly Reports",
-      "Monthly Reports",
-      "Over-Consumption Notifications",
-    ],
+    title: "Session Limits On Brain-Rotting Apps",
+    description: "Cap each session on TikTok, Instagram, YouTube, and the rest. When the session ends, the app stops instead of pulling you into another hour.",
+    highlights: ["TikTok", "Instagram", "YouTube", "Short Sessions"],
   },
   {
     icon: (
@@ -233,9 +227,9 @@ const features = [
         <path d="M8 16h8" />
       </svg>
     ),
-    title: "Soft To Strict Control",
-    description: "Start gently or make the boundaries firm. Untap adapts to how much help you need in the moment.",
-    highlights: ["Soft Mode", "Moderate Mode", "Strict Mode"],
+    title: "Quiz From Your Notes",
+    description: "Students can require a quiz from their study notes before a distracting app opens. Answer correctly, or stay with the work.",
+    highlights: ["Study Notes", "Quiz To Unlock", "Exam Blocks"],
   },
 ];
 
@@ -345,7 +339,7 @@ export default async function Home() {
     applicationCategory: "LifestyleApplication",
     applicationSubCategory: "Screen Time Control",
     operatingSystem: "iOS, Android",
-    description: "Untap is a screen time control app that helps you stop doomscrolling and break phone addiction with intentional friction — app open delays, breathing pauses, QR/NFC unlocks, and focus locks.",
+    description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
     url: SITE_URL,
     image: `${SITE_URL}/logo.png`,
     inLanguage: "en",
@@ -464,15 +458,15 @@ export default async function Home() {
               id="hero-heading"
               className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Study Your Notes To Unlock Your Phone.
+              Set Focus Hours. Limit The Rest Of The Day.
             </h1>
 
             <p className="sr-only">
-              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time for students.
+              Untap is an app blocker that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              The app blocker designed for students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
+              Protect the hours that matter, then limit everything after. Untap caps sessions on brain-rotting apps like TikTok and Instagram so a quick check does not turn into an hour. Students can also quiz from their notes to unlock.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -505,18 +499,18 @@ export default async function Home() {
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
             <Reveal variant="left">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                Your Attention Is{" "}
-                <span className="text-[var(--accent)]">Precious</span>
+                Protect Your Focus{" "}
+                <span className="text-[var(--accent)]">First</span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                Smartphone addiction affects your mental health, your
-                relationships, and your productivity. Endless scrolling and
-                dopamine-driven notifications steal hours of your day without
-                you even realizing it.
+                The day falls apart when brain-rotting apps are available the
+                whole time. Untap starts with the hours you need to protect,
+                then keeps a limit on the rest of the day.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-                Untap is a mindful screen time tool that helps you use your
-                phone intentionally — not impulsively.
+                During focus hours, distracting apps stay limited. Outside
+                them, session caps stop TikTok, Instagram, and the rest from
+                taking whatever time is left.
               </p>
             </Reveal>
             <Reveal variant="right" delay={120} className="flex justify-center md:justify-end">
@@ -555,12 +549,12 @@ export default async function Home() {
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
             <Reveal variant="up">
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                Mindful friction
+                Focus hours
               </p>
               <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-                Designed To Reduce Your{" "}
+                Focus Hours First.{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  Dopamine Addiction
+                  Limits After That.
                 </span>
               </h2>
             </Reveal>
@@ -568,13 +562,12 @@ export default async function Home() {
             <Reveal variant="up" delay={150}>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
                 <p className="text-lg leading-relaxed text-white/65">
-                  If the first thing you reach for when you open your eyes is your
-                  phone, Untap adds the right kind of friction: QR and NFC unlocks,
-                  math challenges, breathing pauses, alternate app suggestions,
-                  reports, alerts, and stronger locks when you need them.
+                  Set the block you need to protect. Untap limits distracting
+                  apps during those hours, then limits the rest of the day with
+                  session caps on the apps that rot your attention.
                 </p>
                 <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
-                  {["soft", "moderate", "strict"].map((step) => (
+                  {["Focus Hours", "Rest Of Day", "Sessions"].map((step) => (
                     <div
                       key={step}
                       className="border-r border-white/10 px-3 py-4 last:border-r-0"
@@ -654,18 +647,18 @@ export default async function Home() {
                   <div className="mt-8 flex-1 space-y-4">
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        Instagram
+                        Focus Hours
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        5s delay · 30min limit
+                        9am–1pm · apps limited
                       </p>
                     </div>
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        Twitter/X
+                        Instagram
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        10s delay · 15min limit
+                        15 min session cap
                       </p>
                     </div>
                     <div className="rounded-xl bg-[var(--accent)]/20 p-3">
@@ -673,15 +666,15 @@ export default async function Home() {
                         TikTok
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        Hard locked until 6pm
+                        blocked in focus hours
                       </p>
                     </div>
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        YouTube
+                        Rest Of Day
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        8s delay · 45min limit
+                        daily cap after focus
                       </p>
                     </div>
                   </div>
@@ -697,14 +690,14 @@ export default async function Home() {
                 </span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                A lot of thought went into the design of Untap. It was created
-                to improve your productivity and reduce your screen time to
-                break your phone addiction.
+                Untap protects your focus by starting with the hours that
+                matter, then limiting the rest of the day. Brain-rotting apps
+                get a session cap instead of an open tab.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-                With Untap, you consciously decide which app to open and when.
-                Open the apps that you need and avoid the apps that are
-                distractions.
+                You still choose the schedule. Focus hours stay protected, and
+                the rest of the day stays limited so those apps cannot take
+                whatever time is left.
               </p>
             </Reveal>
           </div>

@@ -19,8 +19,8 @@ export function SiteFooter() {
           </span>
         </div>
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/40">
-          Take back your time. Reduce screen time and build healthier digital
-          habits.
+          Set focus hours, then limit the rest of the day. Cap sessions on
+          brain-rotting apps.
         </p>
 
         {/* Links grid */}

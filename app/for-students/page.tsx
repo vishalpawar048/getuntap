@@ -170,7 +170,7 @@ export default function ForStudentsPage() {
             </span>
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/65 sm:text-xl">
-            The screen time app built for students who want better grades, not just better screen time stats. Quiz from your notes to unlock distracting apps.
+            Set focus hours around class and study, then limit the rest of the day. Session caps keep brain-rotting apps short. Quiz from your notes when you still want to unlock one.
           </p>
 
           <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
