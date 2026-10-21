@@ -13,8 +13,8 @@ const permissions = [
     body: "Required for the App to monitor app usage and apply restrictions to your selected apps.",
   },
   {
-    title: "Camera Access",
-    body: "Optional. Used for QR code scanning (rear camera, processed on-device, nothing captured or stored) and Own Your Morning photo verification (single photo sent to Google Gemini API to verify coffee or sunlight; not stored by Untap). Untap does not use the TrueDepth camera, face tracking, or collect any face data.",
+    title: "Camera Access (including TrueDepth)",
+    body: "Optional. Used for Smile unlock task (TrueDepth camera via ARKit face tracking on supported devices, reading only mouth smile blend-shape values to detect a smile; or front camera with Vision face landmarks on non-TrueDepth devices), push-up and plank counting (front camera with Vision body pose detection), QR code scanning (rear camera), and Own Your Morning photo verification (rear camera photo sent to Google Gemini API). All face and body data processed in real-time on device and immediately discarded; nothing stored, logged, or transmitted except morning photo to Gemini.",
   },
   {
     title: "NFC Access",

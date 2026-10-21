@@ -21,8 +21,8 @@ const permissions = [
     body: "Required to monitor app usage and apply shields/blocks to restricted apps. This uses Apple's FamilyControls, ManagedSettings, and DeviceActivity frameworks. The data accessed through these APIs stays on your device and is governed by Apple's privacy protections.",
   },
   {
-    title: "Camera",
-    body: "Optional. Used for QR code scanning (to unlock apps) and for the Own Your Morning feature (to verify a photo shows coffee or outdoor sunlight). Uses only the rear camera. QR scanning is processed on-device; nothing is captured or stored. Morning photos are sent to Google Gemini API solely for verification and are not stored by Untap.",
+    title: "Camera (including TrueDepth)",
+    body: "Optional. Used for QR code scanning, Smile unlock task (uses TrueDepth camera on supported devices to detect a smile), push-up and plank counting, and Own Your Morning photo verification. All face and body data is processed in real-time on your device and immediately discarded. Nothing is saved, logged, or transmitted except the morning photo which is sent only to Google Gemini API for verification.",
   },
   {
     title: "NFC",
@@ -116,18 +116,49 @@ export default function PrivacyPage() {
               Camera, Face Data And TrueDepth
             </h2>
             <p className="mt-3">
-              <span className="font-medium text-[var(--foreground)]">
-                Untap does not use the TrueDepth camera, ARKit face tracking,
-                or any face recognition technology.
-              </span>{" "}
-              We do not collect, access, store, or share any face data,
-              including face geometry, depth maps, facial features, facial
-              landmarks, blend shapes, or Face ID biometric data.
-            </p>
-            <p className="mt-4">
-              Untap uses the device camera only for the following purposes:
+              Untap uses the TrueDepth camera and ARKit face tracking for one
+              optional feature: the Smile unlock task. Here is exactly what data
+              is accessed and how it is used:
             </p>
             <div className="mt-4 space-y-4">
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  Smile Unlock Task (TrueDepth Camera)
+                </span>{" "}
+                — When you choose the Smile unlock intervention, Untap uses the
+                TrueDepth camera via ARKit face tracking (ARSession with
+                ARFaceTrackingConfiguration) to detect whether you are smiling.
+                The app reads only two specific values from ARFaceAnchor
+                blendShapes: <code>.mouthSmileLeft</code> and{" "}
+                <code>.mouthSmileRight</code>. These values are analyzed in
+                real-time, on your device, solely to determine if you are smiling
+                and to count how long you hold the smile to complete the unlock
+                task. On devices without TrueDepth support, the app falls back to
+                the front-facing wide-angle camera with Vision framework face
+                landmark detection (VNDetectFaceLandmarks, analyzing lip
+                landmarks) for the same purpose. All processing happens entirely
+                on your device in real-time. No camera frames, blend-shape
+                values, facial landmarks, or images are saved, logged, uploaded,
+                transmitted to any server, sent to analytics, or shared with any
+                third party. All data is discarded immediately after each frame is
+                processed. The camera session stops when the task ends or the view
+                disappears. This data is not used for identification,
+                authentication, advertising, profiling, machine learning training,
+                or any purpose other than detecting a smile to complete the unlock
+                task.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  Push-Up and Plank Counting (Body Pose, Not Face Data)
+                </span>{" "}
+                — When you use push-up or plank unlock tasks, Untap uses the
+                front-facing camera with Vision framework body pose detection
+                (VNDetectHumanBodyPose) to detect body joint positions and count
+                repetitions or hold time. This does not access or analyze face
+                data. All processing happens on your device in real-time. No body
+                pose data, joint positions, or camera frames are saved, logged, or
+                transmitted. All data is discarded immediately after processing.
+              </p>
               <p>
                 <span className="font-medium text-[var(--foreground)]">
                   QR Code Scanning
@@ -162,15 +193,27 @@ export default function PrivacyPage() {
               </p>
               <p>
                 <span className="font-medium text-[var(--foreground)]">
+                  Storage, Retention, and Deletion
+                </span>{" "}
+                — No face data, blend-shape values, facial landmarks, body pose
+                data, or camera frames are stored anywhere. All camera and sensor
+                data from the Smile, push-up, and plank tasks is processed in
+                real-time on your device and immediately discarded after each
+                frame. Nothing persists in memory, device storage, logs, caches,
+                or analytics. There is nothing to delete because nothing is
+                retained.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
                   User Control
                 </span>{" "}
-                — Camera-based features are entirely optional. You can choose
-                alternative unlock methods (such as timers or math challenges)
-                that do not require camera access. You can revoke camera
-                permission at any time in your device Settings → Untap → Camera.
-                When camera permission is disabled, camera-based features will be
-                unavailable, but all other App functionality continues to work
-                normally.
+                — All camera-based unlock tasks (Smile, push-ups, planks, QR
+                scanning) are entirely optional. You can choose alternative unlock
+                methods (such as timers, math challenges, or NFC tags) that do not
+                require camera access. You can revoke camera permission at any
+                time in your device Settings → Untap → Camera. When camera
+                permission is disabled, camera-based features will be unavailable,
+                but all other App functionality continues to work normally.
               </p>
             </div>
           </section>
