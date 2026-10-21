@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./lib/site";
-import { blogPosts, caseStudies, researchEntries } from "./lib/content";
+import { blogPosts, caseStudies } from "./lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -11,6 +11,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
+    },
+    {
+      url: `${SITE_URL}/study-app-blocker`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${SITE_URL}/study-to-unlock`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/for-students`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/how-it-works`,
@@ -55,12 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${SITE_URL}/qr`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.4,
-    },
-    {
       url: `${SITE_URL}/privacy`,
       lastModified: now,
       changeFrequency: "yearly",
@@ -88,17 +100,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const researchRoutes: MetadataRoute.Sitemap = researchEntries.map((r) => ({
-    url: `${SITE_URL}/research#${r.slug}`,
-    lastModified: now,
-    changeFrequency: "yearly",
-    priority: 0.5,
-  }));
-
   return [
     ...staticRoutes,
     ...blogRoutes,
     ...caseStudyRoutes,
-    ...researchRoutes,
   ];
 }

@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "How Untap Works — 3 Steps to a Quieter Phone",
+  title: "How It Works – Quiz to Unlock Apps",
   description:
-    "How the Untap screen time control app works: pick your noisy apps, get a gentle intentional-friction pause, and watch your hours return. Free for iPhone and Android.",
-  alternates: { canonical: "/how-it-works" },
+    "See how Untap's quiz-to-unlock feature works: upload your study notes, answer questions to unblock distracting apps, and study more. Free for students.",
+  alternates: { canonical: "https://www.getuntap.com/how-it-works" },
   keywords: [
     "how Untap works",
+    "quiz to unlock apps",
+    "study to unlock phone",
     "screen time control app how it works",
     "intentional friction",
-    "app delay",
-    "phone addiction tool",
   ],
   openGraph: {
-    title: "How Untap works — 3 steps to a quieter phone",
+    title: "How Untap works — quiz your notes to unlock apps",
     description:
-      "Pick noisy apps, get a gentle pause, watch your hours return.",
+      "Upload study notes, answer quiz questions, unlock your phone. Turn distractions into study sessions.",
     url: "/how-it-works",
     type: "website",
   },
@@ -40,10 +41,29 @@ const steps = [
 ];
 
 export default function HowItWorksPage() {
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Use Untap App Blocker to Study More",
+    description:
+      "Learn how to use Untap's quiz-to-unlock feature to turn phone distractions into study opportunities.",
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.title,
+      text: step.body,
+    })),
+  };
+
   return (
-    <section className="px-6 py-20 sm:py-28">
+    <>
+      <JsonLd data={howToJsonLd} />
+      <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto flex w-full max-w-4xl flex-col">
         <div className="flex flex-col items-center text-center">
+          <h1 className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
+            How Untap Works: Study to Unlock
+          </h1>
           <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
             Three small steps to a{" "}
             <span className="text-[var(--accent)]">quieter phone</span>.
@@ -82,5 +102,6 @@ export default function HowItWorksPage() {
         </p>
       </div>
     </section>
+    </>
   );
 }

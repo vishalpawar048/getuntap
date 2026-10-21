@@ -5,10 +5,9 @@ import { LeadDialogTrigger } from "../components/lead-dialog";
 import { SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Untap for Schools & Colleges — Distraction-Free Classrooms",
+  title: "Untap for Schools – Distraction-Free Classrooms",
   description:
-    "Untap for schools and colleges helps students stay focused in class. Block social and gaming apps inside school premises, schedule phone-free classroom hours, and give teachers a calm room to teach in.",
+    "Help students focus in class. Block social media in school, schedule phone-free hours, and create distraction-free classrooms. Free trial for schools.",
   keywords: [
     "untap for schools",
     "untap for colleges",
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
     "geofence school apps",
     "education digital wellbeing",
   ],
-  alternates: { canonical: "/for-schools" },
+  alternates: { canonical: "https://www.getuntap.com/for-schools" },
   openGraph: {
     title: "Untap for Schools & Colleges — Distraction-Free Classrooms",
     description:

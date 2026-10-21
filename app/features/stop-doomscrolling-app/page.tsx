@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Stop Doomscrolling App | App to Stop Doomscrolling on iPhone & Android | Untap",
+  title: "Stop Doomscrolling – Break the Loop",
   description:
-    "Untap is the stop doomscrolling app that puts real friction between you and the scroll. App to stop doomscrolling on iPhone & Android. Try it free today!",
+    "App to stop doomscrolling on Instagram, TikTok & social media. Add friction to break the scroll loop. Free for iPhone & Android.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/stop-doomscrolling/",
+    canonical: "https://www.getuntap.com/features/stop-doomscrolling-app",
   },
 };
 

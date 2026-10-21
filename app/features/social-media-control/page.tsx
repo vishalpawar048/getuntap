@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "App to Limit Use of Social Media | Social Media Blocker App | Untap",
+  title: "Social Media Blocker – Limit Instagram & TikTok",
   description:
-    "Untap is the social media blocker app that limits Instagram, TikTok & more on Android & iPhone. Social media timing app with real friction. Try it free today!",
+    "Social media blocker app that limits Instagram, TikTok & more on Android & iPhone. Add friction to social apps. Free to start.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/social-media-control/",
+    canonical: "https://www.getuntap.com/features/social-media-control",
   },
 };
 

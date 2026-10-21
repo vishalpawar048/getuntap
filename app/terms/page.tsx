@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
     "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: "https://www.getuntap.com/terms" },
   robots: { index: true, follow: true },
 };
 

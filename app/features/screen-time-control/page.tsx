@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Screen Time Control App | Reduce Screen Time App for iOS & Android | Untap",
+  title: "Screen Time Control – Reduce Screen Time",
   description:
-    "Untap is the screen time control app that helps you reduce screen time on iPhone and Android. Screen lock time app with real friction. Try it free today!",
+    "Reduce screen time on iPhone and Android with real friction. Screen lock time app with intentional delays and limits. Free to start.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/screen-time-control/",
+    canonical: "https://www.getuntap.com/features/screen-time-control",
   },
 };
 
