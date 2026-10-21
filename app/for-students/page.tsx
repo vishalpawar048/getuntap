@@ -96,7 +96,7 @@ const testimonials = [
 const faqs = [
   {
     q: "How Does Untap Help Students Specifically?",
-    a: "Most app blockers just lock your phone. Untap makes you study to unlock it. Upload your class notes and Untap generates quiz questions. Try to open Instagram and you have to answer a question from your biology notes first. It's like having a tutor that intercepts every distraction.",
+    a: "Set study hours so notifications cannot pull you into Instagram, then limit those apps for the rest of the day. When you do open one, answer a few questions from your notes, or read, do pushups, or smile first, so you see your progress and your mood before the scroll starts.",
   },
   {
     q: "Can I Use It To Limit Screen Time During Finals?",
@@ -199,18 +199,26 @@ export default function ForStudentsPage() {
                 The student problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                Procrastination Isn't a Discipline Problem
+                One Notification Ends The Study Block
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
               <p>
-                You sit down to study. You open your laptop or textbook. Five minutes in, you're "just checking" Instagram. Twenty minutes later you're three subreddits deep and haven't reviewed a single flashcard.
+                Students want to concentrate, and they also want social media
+                in control. A friend&apos;s status, a post, or cheap content
+                brings FOMO and the fear of being left behind. Other
+                people&apos;s lives should not decide the mood of the day.
               </p>
               <p>
-                It's not because you're lazy. It's because every app on your phone was engineered by teams of PhDs to be maximally addictive. You're not fighting fair.
+                Study starts. A notification appears. Instagram opens, the
+                mind switches, and the app is built to keep the scroll going.
+                The mood drains. The work does not get done.
               </p>
               <p>
-                Untap evens the odds. It doesn't shame you or guilt-trip you. It just adds friction where you need it most.
+                Set study hours, then limit those apps for the rest of the
+                day. When you do open one, answer a few questions from your
+                notes, or read, do pushups, or smile first, so you see your
+                progress and your mental state before the feed takes over.
               </p>
             </div>
           </div>

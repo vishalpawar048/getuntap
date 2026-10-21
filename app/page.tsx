@@ -1,4 +1,3 @@
-import QRCode from "qrcode";
 import { JsonLd } from "./components/json-ld";
 import { Reveal } from "./components/reveal";
 import { Parallax } from "./components/parallax";
@@ -126,7 +125,7 @@ const testimonials = [
 const faqs = [
   {
     q: "How Does It Work?",
-    a: "Set the focus hours you need to protect. During that block, distracting apps stay limited. After focus hours, Untap still limits the rest of the day, including session caps on brain-rotting apps like TikTok and Instagram. It uses Apple's screen time APIs on iOS.",
+    a: "Set the hours you need to protect, such as study or a hobby, and limit distracting apps for the rest of the day. Before Instagram or TikTok opens, Untap can ask a few questions from your study notes, or ask you to read, do pushups, or smile. That pause is a check on your mood before cheap content takes over. It uses Apple's screen time APIs on iOS.",
   },
   {
     q: "What Plans Does Untap Offer?",
@@ -142,7 +141,7 @@ const faqs = [
   },
   {
     q: "Can I Still Access My Apps?",
-    a: "Yes! Untap doesn't permanently block any apps. It adds a mindful pause — a customizable delay — before opening apps you've flagged as distracting. You're always in control and can adjust or remove restrictions at any time.",
+    a: "Yes. Untap does not delete your apps. Outside your focus hours you can still open them, with a limit on the rest of the day and a pause first: a quiz from your notes, a few pages of a book, pushups, or a smile so you notice your mental state before you scroll.",
   },
   {
     q: "Is It Safe For My Phone?",
@@ -227,13 +226,11 @@ const features = [
         <path d="M8 16h8" />
       </svg>
     ),
-    title: "Quiz From Your Notes",
-    description: "Students can require a quiz from their study notes before a distracting app opens. Answer correctly, or stay with the work.",
-    highlights: ["Study Notes", "Quiz To Unlock", "Exam Blocks"],
+    title: "A Pause Before The App Opens",
+    description: "Answer a few questions from your study notes, read a book, do pushups, or smile. You notice your mood and your progress before cheap content takes the wheel.",
+    highlights: ["Quiz From Notes", "Read A Book", "Pushups", "A Smile"],
   },
 ];
-
-const APP_URL = SITE_URL;
 
 type Testimonial = (typeof testimonials)[number];
 
@@ -315,18 +312,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   );
 }
 
-export default async function Home() {
-  const qrSvg = await QRCode.toString(APP_URL, {
-    type: "svg",
-    color: {
-      dark: "#1a1108",
-      light: "#fffaf3",
-    },
-    margin: 1,
-    width: 220,
-    errorCorrectionLevel: "M",
-  });
-
+export default function Home() {
   const softwareAppJsonLd = {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
@@ -466,7 +452,7 @@ export default async function Home() {
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              Protect the hours that matter, then limit everything after. Untap caps sessions on brain-rotting apps like TikTok and Instagram so a quick check does not turn into an hour. Students can also quiz from their notes to unlock.
+              Students lose the study session the moment Instagram opens. Everyone else opens it when they are bored and stays until their energy is gone. Set the hours you protect, limit the rest of the day, and check in before the app opens.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -493,42 +479,107 @@ export default async function Home() {
         </Parallax>
       </section>
 
-      {/* Introduction */}
+      {/* Problems Untap solves */}
       <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-            <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                Protect Your Focus{" "}
-                <span className="text-[var(--accent)]">First</span>
-              </h2>
-              <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                The day falls apart when brain-rotting apps are available the
-                whole time. Untap starts with the hours you need to protect,
-                then keeps a limit on the rest of the day.
-              </p>
-              <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-                During focus hours, distracting apps stay limited. Outside
-                them, session caps stop TikTok, Instagram, and the rest from
-                taking whatever time is left.
-              </p>
+        <div className="mx-auto max-w-6xl">
+          <Reveal variant="up">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
+              The problem
+            </p>
+            <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+              Social Media Takes The Hour You Meant To Keep
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            <Reveal variant="up">
+              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                  Students
+                </p>
+                <h3 className="mt-4 text-2xl font-bold tracking-tight">
+                  Study Starts. One Notification Ends It.
+                </h3>
+                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                  <p>
+                    Students want to study, and they also want social media in
+                    control so other people&apos;s lives do not wreck the day.
+                    A status, a friend&apos;s post, or cheap content is enough
+                    to spark FOMO and the fear of being left behind.
+                  </p>
+                  <p>
+                    They sit down to study. A notification appears. Instagram
+                    opens, the mind switches, and the scroll keeps going. Mood
+                    drops. The study block is gone.
+                  </p>
+                </div>
+              </article>
             </Reveal>
-            <Reveal variant="right" delay={120} className="flex justify-center md:justify-end">
-              <div className="w-full max-w-xs rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 text-center shadow-sm">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-                  Scan QR code
+            <Reveal variant="up" delay={120}>
+              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                  Everyone else
                 </p>
-                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight">
-                  Unlock the app
-                </p>
-                <div
-                  className="mx-auto mt-6 rounded-2xl bg-[#fffaf3] p-4"
-                  aria-label="QR code linking to the Untap app"
-                  dangerouslySetInnerHTML={{ __html: qrSvg }}
-                />
-              </div>
+                <h3 className="mt-4 text-2xl font-bold tracking-tight">
+                  Boredom Opens The App. The App Keeps You.
+                </h3>
+                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                  <p>
+                    People open Instagram because they are bored. Once it is
+                    open, the scroll continues. Attention gets shorter, the
+                    content stays in mind, and comparing your life with someone
+                    else&apos;s leaves you low or guilty.
+                  </p>
+                  <p>
+                    There is a passion, a job, a side project, a hobby, or a
+                    book waiting. The time goes to social media instead. By the
+                    time the app closes, energy and motivation are gone.
+                  </p>
+                </div>
+              </article>
             </Reveal>
           </div>
+
+          <Reveal variant="up" className="mt-6">
+            <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8 sm:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                How Untap solves it
+              </p>
+              <h3 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
+                Protect The Hours That Matter. Limit The Rest Of The Day.
+              </h3>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+                Set study hours, or the time for a hobby, work, or a book.
+                During that block there is no distraction. For the rest of the
+                day, social media stays limited, so you can still use it as
+                entertainment without letting it rot the day or your mood.
+              </p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+                When an app does open, Untap asks for a pause first. Students
+                answer a few questions from their notes and see where their
+                study actually stands. Anyone can read a book, do pushups, or
+                simply smile, a short self-check so cheap content does not
+                take the mood with it.
+              </p>
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {[
+                  "Focus Hours",
+                  "Limit The Rest Of The Day",
+                  "Quiz From Your Notes",
+                  "Read A Book",
+                  "Pushups",
+                  "A Smile",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-full border border-[var(--border)] px-3 py-1.5 text-sm font-medium"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
         </div>
       </section>
 

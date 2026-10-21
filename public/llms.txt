@@ -6,7 +6,13 @@
 
 Untap is a screen time control app for iPhone and Android. You set focus hours, and distracting apps stay limited during that block. After focus hours, Untap still limits the rest of the day. Session caps stop brain-rotting apps such as TikTok and Instagram from turning a short check into an hour. Students can also quiz from their notes before an app unlocks.
 
-**Core Feature**: Focus hours first, then limits for the rest of the day, plus session caps on brain-rotting apps.
+**Core Feature**: Focus hours first, then limits for the rest of the day, plus a pause before social apps open (quiz from study notes, read a book, pushups, or a smile).
+
+## Problems Untap Solves
+
+Students cannot concentrate because social media interrupts study. A notification opens Instagram, the scroll continues, mood drops, and the study block is lost. They still want social media, under control, so other people's lives do not wreck the day. Untap sets study hours, limits apps for the rest of the day, and can ask a few questions from their notes before an app opens.
+
+Other people open Instagram when they are bored. The scroll shortens attention, sticks in the mind, and turns into comparison and guilt. Passion, work, side projects, hobbies, and books never get the hour. Untap sets time for that work, limits social media the rest of the day, and asks for a short self-check (read, pushups, or a smile) before the app opens so entertainment stays entertainment.
 
 **Target Audience**: Students (high school, college), educators, parents of students.
 
