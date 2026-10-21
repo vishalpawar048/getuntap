@@ -4,7 +4,7 @@ import { JsonLd } from "@/app/components/json-ld";
 export const metadata: Metadata = {
   title: "Study App Blocker – Quiz Your Notes to Unlock",
   description:
-    "Best study app blocker for students. Answer quiz questions from your study notes to unlock distracting apps. Turn phone time into study time. Free for iPhone & Android.",
+    "Best study app blocker For Students. Answer quiz questions from your study notes to unlock distracting apps. Turn phone time into study time. Free for iPhone & Android.",
   alternates: {
     canonical: "https://www.getuntap.com/study-app-blocker",
   },
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "study app blocker",
     "app blocker for studying",
     "phone block app",
-    "best app blocker for students",
+    "best app blocker For Students",
     "study to unlock apps",
-    "focus app for students",
+    "focus app For Students",
   ],
   openGraph: {
     title: "Study App Blocker — Quiz Your Notes to Unlock Apps",
@@ -66,7 +66,7 @@ const faqs = [
     a: "If you study from notes, flashcards, slides, or any text-based material, yes. Untap works with PDFs, photos of handwritten notes, typed documents, and more. Upload what you're already using.",
   },
   {
-    q: "Is it free for students?",
+    q: "Is it free For Students?",
     a: "There's a free tier with core features. Paid plans add unlimited quiz banks, deeper analytics, and group study mode. Many students start free and upgrade during finals.",
   },
   {
@@ -94,7 +94,7 @@ export default function StudyAppBlockerPage() {
     applicationSubCategory: "Study App Blocker",
     operatingSystem: "iOS, Android",
     description:
-      "Study app blocker that generates quizzes from your notes. Answer correctly to unlock distracting apps. Designed for students preparing for exams.",
+      "Study app blocker that generates quizzes from your notes. Answer correctly to unlock distracting apps. Designed For Students preparing for exams.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -119,7 +119,7 @@ export default function StudyAppBlockerPage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             study app blocker
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             The App Blocker That{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               Makes You Study First
@@ -154,7 +154,7 @@ export default function StudyAppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the problem
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Most App Blockers Don't Actually Help You Study
               </h2>
             </div>
@@ -177,9 +177,9 @@ export default function StudyAppBlockerPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              how it works
+              How It Works
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
               Three Steps to Better Grades
             </h2>
           </div>
@@ -210,7 +210,7 @@ export default function StudyAppBlockerPage() {
                   {step.num}
                 </span>
                 <div>
-                  <h3 className="text-2xl font-bold lowercase tracking-tight text-white">
+                  <h3 className="text-2xl font-bold tracking-tight text-white">
                     {step.title}
                   </h3>
                   <p className="mt-3 leading-relaxed text-white/60">
@@ -230,7 +230,7 @@ export default function StudyAppBlockerPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               features
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               Built for Students, Not Just Blockers
             </h2>
           </div>
@@ -244,7 +244,7 @@ export default function StudyAppBlockerPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-[var(--muted)]">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight">
+                <h3 className="text-xl font-bold tracking-tight">
                   {feature.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -264,7 +264,7 @@ export default function StudyAppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 results
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Students Who Study More, Scroll Less
               </h2>
             </div>
@@ -287,7 +287,7 @@ export default function StudyAppBlockerPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               comparison
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               Why Untap vs Other Phone Block Apps
             </h2>
           </div>
@@ -337,7 +337,7 @@ export default function StudyAppBlockerPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
                 Common Questions
               </h2>
             </div>
@@ -347,7 +347,7 @@ export default function StudyAppBlockerPage() {
                   key={faq.q}
                   className="border-b border-white/10 pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase text-white">
+                  <h3 className="text-xl font-bold text-white">
                     {faq.q}
                   </h3>
                   <p className="mt-3 leading-relaxed text-white/60">{faq.a}</p>
@@ -361,7 +361,7 @@ export default function StudyAppBlockerPage() {
       {/* CTA */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
             Turn Distractions Into{" "}
             <span className="text-[var(--accent)]">Study Sessions</span>
           </h2>

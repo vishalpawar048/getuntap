@@ -7,9 +7,9 @@ import { SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Untap for Schools – Distraction-Free Classrooms",
   description:
-    "Help students focus in class. Block social media in school, schedule phone-free hours, and create distraction-free classrooms. Free trial for schools.",
+    "Help students focus in class. Block social media in school, schedule phone-free hours, and create distraction-free classrooms. Free trial For Schools.",
   keywords: [
-    "untap for schools",
+    "untap For Schools",
     "untap for colleges",
     "phone in classroom",
     "block social media in school",
@@ -215,7 +215,7 @@ export default function ForSchoolsPage() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
                 untap for education
               </span>
-              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
                 a calm{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
                   classroom
@@ -364,7 +364,7 @@ export default function ForSchoolsPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the classroom problem
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 phones are louder than the lesson
               </h2>
             </div>
@@ -397,9 +397,9 @@ export default function ForSchoolsPage() {
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                for students
+                For Students
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
                 focus that doesn&apos;t feel like punishment
               </h2>
             </div>
@@ -419,7 +419,7 @@ export default function ForSchoolsPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -439,7 +439,7 @@ export default function ForSchoolsPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 bell-to-bell
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 quiet during class. normal at the gate.
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -505,9 +505,9 @@ export default function ForSchoolsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              for schools &amp; colleges
+              For Schools &amp; colleges
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
               everything an administrator needs, nothing they don&apos;t
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
@@ -523,7 +523,7 @@ export default function ForSchoolsPage() {
                 key={benefit.title}
                 className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.08]"
               >
-                <h3 className="text-lg font-bold lowercase tracking-tight text-white">
+                <h3 className="text-lg font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
@@ -542,7 +542,7 @@ export default function ForSchoolsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               rollout
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               a typical school is live in a week
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -560,7 +560,7 @@ export default function ForSchoolsPage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase">
+                <h3 className="mt-4 text-xl font-bold tracking-tight">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -577,7 +577,7 @@ export default function ForSchoolsPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
                 questions from schools
               </h2>
             </div>
@@ -587,7 +587,7 @@ export default function ForSchoolsPage() {
                   key={faq.q}
                   className="border-b border-white/10 pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase text-white">
+                  <h3 className="text-xl font-bold text-white">
                     {faq.q}
                   </h3>
                   <p className="mt-3 leading-relaxed text-white/55">
@@ -603,7 +603,7 @@ export default function ForSchoolsPage() {
       {/* CTA */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
             give your classrooms back their{" "}
             <span className="text-[var(--accent)]">attention</span>
           </h2>

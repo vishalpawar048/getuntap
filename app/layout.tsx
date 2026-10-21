@@ -21,7 +21,7 @@ const SITE_NAME = "Untap";
 const TITLE =
   "Untap: App Blocker For Studying – Limit Screen Time";
 const DESCRIPTION =
-  "Study app blocker that helps you focus. Quiz from your notes to unlock apps. Limit screen time for students with intentional friction. Free for iPhone & Android.";
+  "Study app blocker that helps you focus. Quiz from your notes to unlock apps. Limit screen time For Students with intentional friction. Free for iPhone & Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -42,12 +42,12 @@ export const metadata: Metadata = {
     "untap",
     "study app blocker",
     "app blocker for studying",
-    "limit screen time for students",
+    "limit screen time For Students",
     "quiz to unlock apps",
     "app blocker",
     "screen time app",
     "screen time control",
-    "focus app for students",
+    "focus app For Students",
     "phone block app",
     "stop doomscrolling",
     "break phone addiction",

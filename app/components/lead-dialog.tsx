@@ -148,7 +148,7 @@ export function LeadDialogTrigger({
               <div>
                 <h2
                   id={titleId}
-                  className="text-2xl font-bold leading-tight tracking-tight lowercase"
+                  className="text-2xl font-bold leading-tight tracking-tight"
                 >
                   {title}
                 </h2>
@@ -190,7 +190,7 @@ export function LeadDialogTrigger({
                     <path d="M4 11l4 4 8-9" />
                   </svg>
                 </div>
-                <h3 className="mt-4 text-lg font-bold lowercase">
+                <h3 className="mt-4 text-lg font-bold">
                   we got it. talk soon.
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">

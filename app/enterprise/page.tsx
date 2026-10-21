@@ -217,7 +217,7 @@ export default function EnterprisePage() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
                 untap enterprise
               </span>
-              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
                 deep work,{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
                   at company scale
@@ -253,7 +253,7 @@ export default function EnterprisePage() {
                   href="/for-schools"
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
                 >
-                  looking for schools?
+                  looking For Schools?
                 </Link>
               </div>
 
@@ -348,7 +348,7 @@ export default function EnterprisePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the workplace problem
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 the office is open. the focus isn&apos;t.
               </h2>
             </div>
@@ -383,7 +383,7 @@ export default function EnterprisePage() {
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 what it does
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
                 a focus layer for the whole company
               </h2>
             </div>
@@ -399,7 +399,7 @@ export default function EnterprisePage() {
                 key={feature.title}
                 className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.08]"
               >
-                <h3 className="text-lg font-bold lowercase tracking-tight text-white">
+                <h3 className="text-lg font-bold tracking-tight text-white">
                   {feature.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
@@ -419,7 +419,7 @@ export default function EnterprisePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 use cases
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 the same engine, tuned for each team
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -435,7 +435,7 @@ export default function EnterprisePage() {
                   key={useCase.title}
                   className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6"
                 >
-                  <h3 className="text-lg font-bold lowercase tracking-tight">
+                  <h3 className="text-lg font-bold tracking-tight">
                     {useCase.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
@@ -456,7 +456,7 @@ export default function EnterprisePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 privacy by design
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
                 a focus tool, not a surveillance tool
               </h2>
             </div>
@@ -496,7 +496,7 @@ export default function EnterprisePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               early results
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               what teams report after a 2-week pilot
             </h2>
           </div>
@@ -531,7 +531,7 @@ export default function EnterprisePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               rollout
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
               from kickoff to a focused team in two weeks
             </h2>
           </div>
@@ -545,7 +545,7 @@ export default function EnterprisePage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase text-white">
+                <h3 className="mt-4 text-xl font-bold tracking-tight text-white">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/55">
@@ -562,7 +562,7 @@ export default function EnterprisePage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
                 questions from teams
               </h2>
             </div>
@@ -572,7 +572,7 @@ export default function EnterprisePage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -586,7 +586,7 @@ export default function EnterprisePage() {
       {/* CTA */}
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
             give your team back the{" "}
             <span className="text-[var(--accent)]">hours</span> their tools
             keep stealing

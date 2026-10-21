@@ -473,11 +473,11 @@ export default async function Home() {
             </h1>
 
             <p className="sr-only">
-              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time for students.
+              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time For Students.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              The app blocker designed for students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
+              The app blocker designed For Students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -529,7 +529,7 @@ export default async function Home() {
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
                   scan QR code
                 </p>
-                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight lowercase">
+                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight">
                   unlock the app
                 </p>
                 <div
