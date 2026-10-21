@@ -41,15 +41,16 @@ Other people open Instagram when they are bored. The scroll shortens attention, 
 
 ## Key Stats (Real)
 
-- 4.8/5 average rating from 1,284 reviews
+- Google Play: 4.4/5 from 724 ratings
+- App Store: 4.6/5 from 8 ratings
 - 3.5 hours average daily screen time saved
 - 85% of users reduce doomscrolling in week one
 
-## Real Testimonials
+## Real Testimonials (Google Play, verbatim)
 
-- Arjun (engineering student, Pune): reduced screen time from 7h to 1.8h/day
-- Ravi M. (college student, Bengaluru): GPA increased 0.4 points
-- Sofía G. (marketer, Madrid): still using after 8 weeks
+- Alia (Jun 2026): "at this point every single screen time app has failed me and my self-control except this one...i luvvvv the strict mode and strict focus mode"
+- Kenzie Abdeen (Sep 2026): "honestly a life saver bcz school is like in seven days, it covers all my needs, doesn't get blocked AND inexpensive"
+- Kudrat Hargun (Mar 2026): "decreased my screen time from 10 hours to 4-5 hours literally"
 
 ## Product Features
 

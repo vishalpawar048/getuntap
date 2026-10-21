@@ -72,24 +72,24 @@ const features = [
 const testimonials = [
   {
     quote:
-      "As a student, doomscrolling was destroying my productivity. Untap added just enough friction to break the habit. My grades have improved.",
-    name: "Ravi M.",
-    role: "college student, Bengaluru, IN",
-    result: "GPA up 0.4",
+      "I used to be extremely mindful about my screentime until I gave up bec A I'm a free user and actually good apps are expensive, B I'm a Xiaomi user and permissions keep getting blocked (UGHH). I found this by accident and honestly a life saver bcz school is like in seven days, it covers all my needs, doesn't get blocked AND inexpensive. Yaaay thank y'all<3",
+    name: "Kenzie Abdeen",
+    role: "Google Play, US",
+    result: "Sep 6, 2026",
   },
   {
     quote:
-      "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
-    name: "Arjun",
-    role: "engineering student, Pune, IN",
-    result: "7h → 1.8h / day",
+      "Best app the first one I ever tried and got best result with it decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it 🫶🏻👍🏻",
+    name: "Kudrat Hargun",
+    role: "Google Play, US",
+    result: "Mar 8, 2026",
   },
   {
     quote:
-      "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The math challenge is brutal — perfect.",
-    name: "Sofía G.",
-    role: "marketer, Madrid, ES",
-    result: "Week 8 and counting",
+      "Ive been using Untap for two months now. I love the messages on the block screen. Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision. This app is effective and easy to use. Great job developers!",
+    name: "Lia D",
+    role: "Google Play, US",
+    result: "Sep 26, 2026",
   },
 ];
 
