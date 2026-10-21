@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Best study app blocker for students. Answer quiz questions from your study notes to unlock distracting apps. Turn phone time into study time. Free for iPhone & Android.",
   alternates: {
-    canonical: "/study-app-blocker",
+    canonical: "https://www.getuntap.com/study-app-blocker",
   },
   keywords: [
     "study app blocker",

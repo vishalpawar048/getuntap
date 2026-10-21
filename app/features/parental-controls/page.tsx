@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Parental control app to manage kids' screen time on iPhone and Android. Set limits, block apps, and help kids build healthy phone habits. Free trial.",
   alternates: {
-    canonical: "/features/parental-controls",
+    canonical: "https://www.getuntap.com/features/parental-controls",
   },
 };
 

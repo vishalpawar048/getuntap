@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Reviews – Students Love Untap",
   description:
     "See what students say about Untap: improved focus, better grades, less phone addiction. Real reviews from students using the quiz-to-unlock app blocker.",
-  alternates: { canonical: "/reviews" },
+  alternates: { canonical: "https://www.getuntap.com/reviews" },
   openGraph: {
     title: "Untap reviews — students reclaim their focus",
     description:

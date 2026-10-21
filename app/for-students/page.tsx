@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Limit screen time for college and high school students. Quiz-to-unlock app blocker helps you focus during study sessions, exams, and homework. Free for students.",
   alternates: {
-    canonical: "/for-students",
+    canonical: "https://www.getuntap.com/for-students",
   },
   keywords: [
     "limit screen time for students",
@@ -76,21 +76,21 @@ const testimonials = [
     quote:
       "As a student, doomscrolling was destroying my productivity. Untap added just enough friction to break the habit. My grades have improved.",
     name: "Ravi M.",
-    role: "College student, Bengaluru",
+    role: "college student, Bengaluru, IN",
     result: "GPA up 0.4",
   },
   {
     quote:
-      "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read my textbooks now.",
+      "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
     name: "Arjun",
-    role: "Engineering student, Pune",
+    role: "engineering student, Pune, IN",
     result: "7h → 1.8h / day",
   },
   {
     quote:
-      "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The quiz feature is perfect for exam prep.",
+      "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The math challenge is brutal — perfect.",
     name: "Sofía G.",
-    role: "Pre-med student, Madrid",
+    role: "marketer, Madrid, ES",
     result: "Week 8 and counting",
   },
 ];

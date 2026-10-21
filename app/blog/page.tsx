@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Untap Blog — Screen Time, Doomscrolling & Phone Addiction Guides",
   description:
     "In-depth guides on breaking phone addiction, stopping doomscrolling, and reducing screen time — backed by behavioral science and real user data from the Untap app.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "https://www.getuntap.com/blog" },
   openGraph: {
     title:
       "Untap Blog — Screen Time, Doomscrolling & Phone Addiction Guides",

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "App to stop doomscrolling on Instagram, TikTok & social media. Add friction to break the scroll loop. Free for iPhone & Android.",
   alternates: {
-    canonical: "/features/stop-doomscrolling-app",
+    canonical: "https://www.getuntap.com/features/stop-doomscrolling-app",
   },
 };
 

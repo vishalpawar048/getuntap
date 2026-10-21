@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Social media blocker app that limits Instagram, TikTok & more on Android & iPhone. Add friction to social apps. Free to start.",
   alternates: {
-    canonical: "/features/social-media-control",
+    canonical: "https://www.getuntap.com/features/social-media-control",
   },
 };
 

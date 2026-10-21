@@ -29,7 +29,7 @@ export async function generateMetadata({
   return {
     title: study.title,
     description: study.description,
-    alternates: { canonical: `/case-studies/${study.slug}` },
+    alternates: { canonical: `https://www.getuntap.com/case-studies/${study.slug}` },
     openGraph: {
       type: "article",
       url,

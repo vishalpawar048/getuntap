@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Reduce screen time on iPhone and Android with real friction. Screen lock time app with intentional delays and limits. Free to start.",
   alternates: {
-    canonical: "/features/screen-time-control",
+    canonical: "https://www.getuntap.com/features/screen-time-control",
   },
 };
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "screen time mental health",
     "behavioral science phone use",
   ],
-  alternates: { canonical: "/research" },
+  alternates: { canonical: "https://www.getuntap.com/research" },
   openGraph: {
     title: "Research — Evidence Behind Untap",
     description:

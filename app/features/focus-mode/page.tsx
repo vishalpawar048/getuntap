@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Brain focus app that stops distractions and helps you get things done. Focus mode for deep work. Free for Android & iPhone.",
   alternates: {
-    canonical: "/features/focus-mode",
+    canonical: "https://www.getuntap.com/features/focus-mode",
   },
 };
 

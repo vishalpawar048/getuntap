@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "student productivity app",
   ],
   alternates: {
-    canonical: "/",
+    canonical: "https://www.getuntap.com/",
   },
   openGraph: {
     type: "website",

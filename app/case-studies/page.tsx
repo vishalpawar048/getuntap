@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Untap Case Studies — Real Screen Time Reductions, Real People",
   description:
     "Read real Untap case studies: a student who cut screen time from 7 hours to under 2, a family who reclaimed dinnertime, and a remote team that doubled deep-work hours.",
-  alternates: { canonical: "/case-studies" },
+  alternates: { canonical: "https://www.getuntap.com/case-studies" },
   openGraph: {
     title: "Untap Case Studies — Real Screen Time Reductions",
     description:

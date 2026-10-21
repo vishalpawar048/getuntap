@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Timer lock for apps to block Instagram & social media on Android & iPhone. App usage tracker & blocker. Take back your time. Free trial.",
   alternates: {
-    canonical: "/features/app-blocker",
+    canonical: "https://www.getuntap.com/features/app-blocker",
   },
 };
 

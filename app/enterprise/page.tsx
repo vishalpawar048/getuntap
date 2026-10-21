@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "team productivity app",
     "workplace digital wellbeing",
   ],
-  alternates: { canonical: "/enterprise" },
+  alternates: { canonical: "https://www.getuntap.com/enterprise" },
   openGraph: {
     title:
       "Untap Enterprise — Distraction-Free Workplaces & Deep Work at Scale",

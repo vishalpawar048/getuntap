@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Scan to Unblock Apps with Untap",
   description:
     "Scan this QR code to unblock apps inside Untap, or to install the Untap screen time control app on iPhone and Android.",
-  alternates: { canonical: "/qr" },
+  alternates: { canonical: "https://www.getuntap.com/qr" },
   robots: { index: false, follow: true },
 };
 

@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `https://www.getuntap.com/blog/${post.slug}` },
     authors: [{ name: post.author }],
     openGraph: {
       type: "article",

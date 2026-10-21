@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "geofence school apps",
     "education digital wellbeing",
   ],
-  alternates: { canonical: "/for-schools" },
+  alternates: { canonical: "https://www.getuntap.com/for-schools" },
   openGraph: {
     title: "Untap for Schools & Colleges — Distraction-Free Classrooms",
     description:

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "How It Works – Quiz to Unlock Apps",
   description:
     "See how Untap's quiz-to-unlock feature works: upload your study notes, answer questions to unblock distracting apps, and study more. Free for students.",
-  alternates: { canonical: "/how-it-works" },
+  alternates: { canonical: "https://www.getuntap.com/how-it-works" },
   keywords: [
     "how Untap works",
     "quiz to unlock apps",
