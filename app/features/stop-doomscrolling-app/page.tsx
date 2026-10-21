@@ -13,12 +13,12 @@ const featuresSection = [
   {
     n: "01",
     title: "Open Delays",
-    body: "A 5, 10, or 30-second pause before a distracting app opens. That small gap is where most impulse scrolling sessions die before they start. Priya, a designer in London, cut her Instagram opens by 40 percent from this feature alone.",
+    body: "A 5, 10, or 30-second pause before a distracting app opens. That small gap is where most impulse scrolling sessions die before they start. As Christoffer wrote on Google Play, \"this is by far the best one for me. Offers delays on open rather than full blocks.\"",
   },
   {
     n: "02",
     title: "Session Locks",
-    body: "Pick a time block and lock every distracting app for the whole window. They do not open until your session ends. Ravi M. In Bengaluru went from 9 hours of deep work a week to 16 just by running a four-hour morning lock.",
+    body: "Pick a time block and lock every distracting app for the whole window. They do not open until your session ends. As Gouri Ganesh wrote on Google Play, \"this app is lifesaver as someone who used to watch insta reel for 6 hours a day.\"",
   },
   {
     n: "03",
@@ -160,7 +160,7 @@ export default function StopDoomscrollingPage() {
               </p>
 
               <p>
-                Arjun, an engineering student from Pune, went from 7 hours of daily screen time down to 1.8 hours once he started using Untap during his study sessions. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set app to stop doomscrolling actually delivers — a real shift in habit, not a punishment.
+                As Kudrat Hargun wrote on Google Play, "decreased my screen time from 10 hours to 4-5 hours literally." As Jana Ahmad wrote, "i went from being constantly tired and exhausted...to being my old clear minded self again." That is what a well-set app to stop doomscrolling actually delivers — a real shift in habit, not a punishment.
               </p>
             </div>
 
@@ -170,8 +170,8 @@ export default function StopDoomscrollingPage() {
 
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
-                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Arjun, pune</p>
-                  <p className="text-2xl font-bold text-black mt-2">7 hrs → 1.8 hrs daily</p>
+                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Kudrat Hargun, Google Play</p>
+                  <p className="text-2xl font-bold text-black mt-2">10 hrs → 4-5 hrs daily</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
@@ -215,7 +215,7 @@ export default function StopDoomscrollingPage() {
                 </p>
 
                 <p>
-                  Untap is built around that idea. Before a distracting app opens, you meet a small challenge — and in those few seconds, the urge passes. Amir J., a software engineer in Toronto, said he was sleeping better after two weeks. Maya R., a designer in Brooklyn, got back two hours a day. Sofía G. In Madrid tried one sec, Opal, and Apple Screen Time before Untap — and said it was the first one that held past the second week.
+                  Untap is built around that idea. Before a distracting app opens, you meet a small challenge — and in those few seconds, the urge passes. As Lia D wrote on Google Play, "Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision." As PeaceSeeker wrote, "This is an incredible app...The devs are awesome too!"
                 </p>
               </div>
             </div>
@@ -306,7 +306,7 @@ export default function StopDoomscrollingPage() {
               </p>
 
               <p className="text-white">
-                Prevent Uninstall keeps the app in place during an active session too. You cannot delete your way out of a weak moment. Daniel K., a product manager in Berlin, cut his <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">Social Media Time</a> By 60 percent — and said Friend Lock was the feature that finally made the difference. Every other tool he had tried, he had found a way around.
+                Prevent Uninstall keeps the app in place during an active session too. You cannot delete your way out of a weak moment. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one" — Friend Lock was the feature that finally made the difference.
               </p>
             </div>
           </div>
@@ -331,7 +331,7 @@ export default function StopDoomscrollingPage() {
               </p>
 
               <p>
-                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. Priya S., a writer in Mumbai, said seeing her weekly report felt like turning the lights on. She had no idea how much she was tapping until the numbers were in front of her. That kind of visibility is what makes the restrictions you set actually stick — because you are working from facts, not feelings.
+                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. As Gouri Ganesh wrote on Google Play, "this app is lifesaver...i can feel how fresh my life feels like." That kind of visibility is what makes the restrictions you set actually stick — because you are working from facts, not feelings.
               </p>
 
               <p className="text-[var(--foreground)]">

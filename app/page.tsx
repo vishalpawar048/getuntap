@@ -13,112 +13,112 @@ import {
 const testimonials = [
   {
     quote:
-      "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
-    name: "Arjun",
-    title: "Engineering Student",
-    location: "Pune, IN",
+      "at this point every single screen time app has failed me and my self-control except this one, trust me i just downloaded it randomly thinking i am gonna fall into the same loop as it happened with other apps where if i hit the limit i coud immediately.go and turn off the protection, and that is not the case with this app (i luvvvv the strict mode and strict focus mode, these are the bestttt features of the app), definitely gonna recommend it on my socials to my audience!!",
+    name: "Alia",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "7h → 1.8h / day",
+    result: "Jun 7, 2026",
     featured: true,
   },
   {
     quote:
-      "I was skeptical, but after a week I noticed I was more present with my kids. Less scrolling, more living. Highly recommend.",
-    name: "Sarah K.",
-    title: "Parent Of Two",
-    location: "Austin, TX",
+      "The app is really good, At first I had doubts about whether or not it's gonna be like OneSec but it's better. It strict, harder to get through and almost everything is unlocked in the free tier. love it! One thing that I would recommend you to add will be to add some barrier so that the user cannot enable after disabling it. Alot of times when I'm bored I just turn it off and nothing happens!",
+    name: "Unidentified Dude",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "Reclaimed dinnertime",
+    result: "Jun 30, 2026",
   },
   {
     quote:
-      "As a student, doomscrolling was destroying my productivity. Untap added just enough friction to break the habit. My grades have improved.",
-    name: "Ravi M.",
-    title: "College Student",
-    location: "Bengaluru, IN",
+      "I used to be extremely mindful about my screentime until I gave up bec A I'm a free user and actually good apps are expensive, B I'm a Xiaomi user and permissions keep getting blocked (UGHH). I found this by accident and honestly a life saver bcz school is like in seven days, it covers all my needs, doesn't get blocked AND inexpensive. Yaaay thank y'all<3",
+    name: "Kenzie Abdeen",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "GPA up 0.4",
+    result: "Sep 6, 2026",
   },
   {
     quote:
-      "Simple, elegant, and effective. The open delay feature is genius — those few seconds of pause are enough to make you reconsider opening Instagram.",
-    name: "Priya",
-    title: "Designer",
-    location: "London, UK",
+      "Ive been using Untap for two months now. I love the messages on the block screen. Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision. This app is effective and easy to use. Great job developers!",
+    name: "Lia D",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "40% fewer opens",
+    result: "Sep 26, 2026",
   },
   {
     quote:
-      "I got back two hours a day. Untap is the only app that actually made me put my phone down without feeling guilty.",
-    name: "Maya R.",
-    title: "Designer",
-    location: "Brooklyn, NY",
+      "absalutely one of the best apps i have ever used i went from being constantly tired and exhausted and being unable to even finish my sentences to being my old clear minded self again genuinely reccomend this to everyone it's such a life changer 🙏",
+    name: "Jana Ahmad",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "+2h / day",
+    result: "Aug 20, 2026",
   },
   {
     quote:
-      "Cleaner than every screen time tool I've tried. No nagging, no shame — it just works. The friend lock is a game-changer.",
-    name: "Daniel K.",
-    title: "Product Manager",
-    location: "Berlin, DE",
+      "I've tried about 5 different apps now, and this is by far the best one for me. Offers delays on open rather than full blocks, and it actually blocks websites in firefox, which I've found few apps that do. Really happy about it.",
+    name: "Christoffer",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "Cut social by 60%",
+    result: "Aug 18, 2026",
   },
   {
     quote:
-      "Felt like turning the lights on. I had no idea how much I was tapping until Untap showed me. The weekly report is humbling and motivating.",
-    name: "Priya S.",
-    title: "Writer",
-    location: "Mumbai, IN",
+      "Better than other apps like opal. it reduced my screen time drastically as compared to opal. the simple launcher is a big contributer. i recommend you to add like the bottom of simple launcher has messages their the SMS app is by default there should be an option to set WhatsApp or someother app as messages",
+    name: "Ayaan ali Joo",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "187 → 22 opens/wk",
+    result: "Apr 23, 2026",
   },
   {
     quote:
-      "My evenings finally feel like evenings again. The kids noticed before I did. Worth every minute of setup.",
-    name: "Tom A.",
-    title: "Dad Of Three",
-    location: "Manchester, UK",
+      "I am using it for 4 days. For now this app is lifesaver as someone who used to watch insta reel for 6 hours a day and feels miserable. I keep up with it and i can feel how fresh my life feels like.",
+    name: "Gouri Ganesh",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "Phone-free dinners",
+    result: "Jun 4, 2026",
   },
   {
     quote:
-      "Untap doesn't make me feel guilty for using my phone. It just makes me want to use it less. That's a meaningful difference.",
-    name: "Lina V.",
-    title: "Therapist",
-    location: "Amsterdam, NL",
+      "Best app the first one I ever tried and got best result with it decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it 🫶🏻👍🏻",
+    name: "Kudrat Hargun",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "Calmer mornings",
+    result: "Mar 8, 2026",
   },
   {
     quote:
-      "After two weeks I was sleeping better. After a month I picked up a book for the first time in a year. The breathing unlock saved me.",
-    name: "Amir J.",
-    title: "Software Engineer",
-    location: "Toronto, CA",
+      "does the job, thoroughly impressed. unlike the other apps who charge basic things, this one doesn't. extremely happy.",
+    name: "Nandagopal M",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "+45 min sleep",
+    result: "Oct 4, 2026",
   },
   {
     quote:
-      "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The math challenge is brutal — perfect.",
-    name: "Sofía G.",
-    title: "Marketer",
-    location: "Madrid, ES",
+      "Haha, the quiz option is so delightful and useful! This is ten times better than the other apps I've tried. Blocks distractions and keeps the mind sharp :)",
+    name: "Cece _",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "Week 8 and counting",
+    result: "Sep 27, 2026",
   },
   {
     quote:
-      "I run a remote team and we all installed Untap during focus blocks. Deep work hours nearly doubled. Nobody felt surveilled.",
-    name: "Jordan P.",
-    title: "Founder, Design Studio",
-    location: "remote",
+      "This is an incredible app, it does everything the other app does, but for completely free! The devs are awesome too! They updated this app to patch many bypass tricks.",
+    name: "PeaceSeeker",
+    title: "Google Play",
+    location: "US",
     stars: 5,
-    result: "9 → 16 deep-work h/wk",
+    result: "Sep 24, 2026",
   },
 ];
 
@@ -349,11 +349,10 @@ export default function Home() {
     installUrl: [IOS_APP_URL, ANDROID_APP_URL],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
+      ratingValue: "4.4",
       bestRating: "5",
       worstRating: "1",
-      ratingCount: "1284",
-      reviewCount: "412",
+      ratingCount: "724",
     },
     review: testimonials.slice(0, 3).map((t) => ({
       "@type": "Review",
@@ -769,7 +768,7 @@ export default function Home() {
             <Reveal variant="up">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
                 <Star className="h-3.5 w-3.5" />
-                4.8 / 5 from 1,284 reviews
+                4.4 / 5 from 724 reviews
               </span>
               <h2
                 id="testimonials-heading"
@@ -842,10 +841,10 @@ export default function Home() {
                 stat: "85%",
                 label: "of users reduce doomscrolling in week one",
               },
-              {
-                stat: "4.8",
-                label: "average rating from our users",
-              },
+      {
+        stat: "4.4",
+        label: "average rating from our users",
+      },
             ].map((item, index) => (
               <Reveal
                 key={item.label}

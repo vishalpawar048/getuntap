@@ -13,12 +13,12 @@ const featuresSection = [
   {
     n: "01",
     title: "Session Locks",
-    body: "Pick a time block, say 9am to 1pm, and lock every distracting app for that entire window. They are not deleted. They are just not opening until your session ends. Ravi M., a college student from Bengaluru, went from 9 hours of deep work per week to 16 just by running a four-hour morning lock during his study sessions.",
+    body: "Pick a time block, say 9am to 1pm, and lock every distracting app for that entire window. They are not deleted. They are just not opening until your session ends. As one Google Play user wrote, \"this app is lifesaver as someone who used to watch insta reel for 6 hours a day...I keep up with it and i can feel how fresh my life feels like.\"",
   },
   {
     n: "02",
     title: "Open Delays",
-    body: "Not ready for a full lock? A 10-second delay before Instagram opens is enough. Those 10 seconds give your brain a moment to decide. Priya, a designer in London, cut her Instagram opens by 40 percent with nothing but the open delay feature.",
+    body: "Not ready for a full lock? A 10-second delay before Instagram opens is enough. Those 10 seconds give your brain a moment to decide. As Lia D wrote on Google Play, \"Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision.\"",
   },
   {
     n: "03",
@@ -64,8 +64,8 @@ const preventsCheating = [
 ];
 
 const features = [
-  "Session locks — Pick a time block, say 9am to 1pm, and lock every distracting app for that entire window. They are not deleted. They are just not opening until your session ends. Ravi M., a college student from Bengaluru, went from 9 hours of deep work per week to 16 just by running a four-hour morning lock during his study sessions.",
-  "Open delays — Not ready for a full lock? A 10-second delay before Instagram opens is enough. Those 10 seconds give your brain a moment to decide. Priya, a designer in London, cut her Instagram opens by 40 percent with nothing but the open delay feature.",
+  "Session locks — Pick a time block, say 9am to 1pm, and lock every distracting app for that entire window. They are not deleted. They are just not opening until your session ends. As one Google Play user wrote, \"this app is lifesaver as someone who used to watch insta reel for 6 hours a day...I keep up with it and i can feel how fresh my life feels like.\"",
+  "Open delays — Not ready for a full lock? A 10-second delay before Instagram opens is enough. Those 10 seconds give your brain a moment to decide. As Lia D wrote on Google Play, \"Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision.\"",
   "Alternate app suggestions — When you try to open a distraction, Untap can redirect you to something useful instead. Going for YouTube? It can suggest your notes app instead.",
   "Soft, moderate, and strict modes — You do not have to go cold turkey on day one. Soft mode adds a small pause. Strict mode means the app does not open, period.",
 ];

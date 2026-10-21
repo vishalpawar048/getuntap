@@ -13,7 +13,7 @@ const featuresSection = [
   {
     n: "01",
     title: "Open Delays",
-    body: "Set a 5, 10, or 30-second pause before any app opens. That pause is where most impulse opens die. Priya, a designer in London, cut her Instagram opens by 40 percent from this one feature alone.",
+    body: "Set a 5, 10, or 30-second pause before any app opens. That pause is where most impulse opens die. As Christoffer wrote on Google Play, \"this is by far the best one for me. Offers delays on open rather than full blocks...Really happy about it.\"",
   },
   {
     n: "02",
@@ -28,7 +28,7 @@ const featuresSection = [
   {
     n: "04",
     title: "Friend Lock",
-    body: "Someone you trust sets a password on your Untap settings. You cannot quietly change your limits at 11pm without them. Daniel K., a product manager in Berlin, cut his social media time by 60 percent using this feature.",
+    body: "Someone you trust sets a password on your Untap settings. You cannot quietly change your limits at 11pm without them. As Unidentified Dude wrote on Google Play, \"almost everything is unlocked in the free tier. love it!\"",
   },
   {
     n: "05",
@@ -38,7 +38,7 @@ const featuresSection = [
   {
     n: "06",
     title: "Soft, Moderate, And Strict Modes",
-    body: "Start light. Tighten it as the habit builds. Tom A., a dad of three in Manchester, started on soft mode with his kids and said his evenings finally felt like evenings again within two weeks.",
+    body: "Start light. Tighten it as the habit builds. As Kudrat Hargun wrote on Google Play, \"decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it.\"",
   },
 ];
 

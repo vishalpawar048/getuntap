@@ -15,39 +15,111 @@ export const metadata: Metadata = {
 const reviews = [
   {
     quote:
-      "I got back two hours a day. Untap is the only app that actually made me put my phone down.",
-    name: "Maya R.",
-    role: "Designer, Brooklyn",
+      "at this point every single screen time app has failed me and my self-control except this one...i luvvvv the strict mode and strict focus mode, these are the bestttt features of the app, definitely gonna recommend it on my socials to my audience!!",
+    name: "Alia",
+    role: "Google Play, Jun 7, 2026",
   },
   {
     quote:
-      "Cleaner than every other screen time tool I've tried. No nagging, no shame — it just works.",
-    name: "Daniel K.",
-    role: "Product Manager",
+      "The app is really good, At first I had doubts about whether or not it's gonna be like OneSec but it's better. It strict, harder to get through and almost everything is unlocked in the free tier. love it!",
+    name: "Unidentified Dude",
+    role: "Google Play, Jun 30, 2026",
   },
   {
     quote:
-      "Felt like turning the lights on. I had no idea how much I was tapping until Untap showed me.",
-    name: "Priya S.",
-    role: "Writer",
+      "I found this by accident and honestly a life saver bcz school is like in seven days, it covers all my needs, doesn't get blocked AND inexpensive. Yaaay thank y'all<3",
+    name: "Kenzie Abdeen",
+    role: "Google Play, Sep 6, 2026",
   },
   {
     quote:
-      "My evenings finally feel like evenings again. The kids noticed before I did.",
-    name: "Tom A.",
-    role: "Dad of three",
+      "Ive been using Untap for two months now. I love the messages on the block screen. Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision. This app is effective and easy to use.",
+    name: "Lia D",
+    role: "Google Play, Sep 26, 2026",
   },
   {
     quote:
-      "Untap doesn't make me feel guilty for using my phone. It just makes me want to use it less.",
-    name: "Lina V.",
-    role: "Therapist",
+      "absalutely one of the best apps i have ever used i went from being constantly tired and exhausted and being unable to even finish my sentences to being my old clear minded self again genuinely reccomend this to everyone it's such a life changer 🙏",
+    name: "Jana Ahmad",
+    role: "Google Play, Aug 20, 2026",
   },
   {
     quote:
-      "After two weeks I was sleeping better. After a month I picked up a book for the first time in a year.",
-    name: "Amir J.",
-    role: "Engineer",
+      "I've tried about 5 different apps now, and this is by far the best one for me. Offers delays on open rather than full blocks, and it actually blocks websites in firefox, which I've found few apps that do. Really happy about it.",
+    name: "Christoffer",
+    role: "Google Play, Aug 18, 2026",
+  },
+  {
+    quote:
+      "Better than other apps like opal. it reduced my screen time drastically as compared to opal. the simple launcher is a big contributer.",
+    name: "Ayaan ali Joo",
+    role: "Google Play, Apr 23, 2026",
+  },
+  {
+    quote:
+      "I am using it for 4 days. For now this app is lifesaver as someone who used to watch insta reel for 6 hours a day and feels miserable. I keep up with it and i can feel how fresh my life feels like.",
+    name: "Gouri Ganesh",
+    role: "Google Play, Jun 4, 2026",
+  },
+  {
+    quote:
+      "Best app the first one I ever tried and got best result with it decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it 🫶🏻👍🏻",
+    name: "Kudrat Hargun",
+    role: "Google Play, Mar 8, 2026",
+  },
+  {
+    quote:
+      "does the job, thoroughly impressed. unlike the other apps who charge basic things, this one doesn't. extremely happy.",
+    name: "Nandagopal M",
+    role: "Google Play, Oct 4, 2026",
+  },
+  {
+    quote:
+      "Haha, the quiz option is so delightful and useful! This is ten times better than the other apps I've tried. Blocks distractions and keeps the mind sharp :)",
+    name: "Cece _",
+    role: "Google Play, Sep 27, 2026",
+  },
+  {
+    quote:
+      "This is an incredible app, it does everything the other app does, but for completely free! The devs are awesome too! They updated this app to patch many bypass tricks.",
+    name: "PeaceSeeker",
+    role: "Google Play, Sep 24, 2026",
+  },
+  {
+    quote:
+      "This app is literally change my whole life I really appreciate the developers This app contains literally no ADDs",
+    name: "Mahad hassan",
+    role: "Google Play, Oct 18, 2026",
+  },
+  {
+    quote:
+      "Great app for focus. This helped me in my focus for competative exams.",
+    name: "OJAS CHAUDHARI",
+    role: "Google Play, Oct 7, 2026",
+  },
+  {
+    quote:
+      "This is the most amazing app designed by the kindest people who even let free users enjoy most of the app features! Unlike other apps which are mostly stingy with their features, this app allows me, as a free user, to enjoy to such a satisfying extent!",
+    name: "mario bajo",
+    role: "Google Play, Aug 25, 2026",
+  },
+  {
+    quote:
+      "a great app for minimizing your screen time really helps with your school work and it has improved my overall life great app totally free and very reliable",
+    name: "Tebogo Mtubha",
+    role: "Google Play, Aug 2, 2026",
+  },
+  {
+    quote:
+      "the app is very useful for students who easily get distracted by the mobile. I totally recommend this app",
+    name: "Abdullah Azaam",
+    role: "Google Play, Jul 22, 2026",
+  },
+  {
+    quote:
+      "wonderful app helped me reduce my screen time. provides enough resistance but not too much resistance for my phone",
+    name: "Nuel Iyke",
+    role: "Google Play, Jun 24, 2026",
   },
 ];
 
@@ -57,14 +129,23 @@ export default function ReviewsPage() {
       <div className="mx-auto flex w-full max-w-5xl flex-col">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
-            Student Reviews: Focus Restored
+            Real 5-Star Google Play Reviews
           </h1>
           <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
-            Real people. Real{" "}
-            <span className="text-[var(--accent)]">time back</span>.
+            Verbatim from{" "}
+            <span className="text-[var(--accent)]">actual users</span>.
           </p>
           <p className="mt-6 max-w-xl text-balance text-base leading-7 text-[var(--muted)] sm:text-lg">
-            A few words from the people who put their phones down.
+            These reviews are quoted exactly as written by users on the{" "}
+            <a
+              href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
+              className="text-[var(--accent)] underline hover:no-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play Store
+            </a>
+            .
           </p>
         </div>
 

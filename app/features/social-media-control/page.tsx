@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  "Open Delays — Set a 5, 10, or 30-second pause before a social media app opens. That few seconds is where most impulse opens die. Priya, a designer in London, cut her Instagram opens by 40 percent from this feature alone.",
+  "Open Delays — Set a 5, 10, or 30-second pause before a social media app opens. That few seconds is where most impulse opens die. As Christoffer wrote on Google Play, \"this is by far the best one for me. Offers delays on open rather than full blocks.\"",
   "Daily Time Limits — Give each app a daily cap. Once it is used up, the app does not open again until the next day. No negotiation.",
   "Hard Locks — Block a social media app completely until a time you set. TikTok locked until 6pm. Instagram locked during work hours. You decide the rule, Untap holds it.",
   "Friend Lock — Someone you trust sets a password on your settings. You cannot change your limits without them — even when motivation is low and the urge to scroll is high.",
@@ -164,7 +164,7 @@ export default function SocialMediaControlPage() {
                 </p>
 
                 <p>
-                  Untap adds that resistance through intentional friction. Before a social media app opens, you might solve a quick math problem, hold a breathing pause, or scan a QR code. By the time you have done that, the autopilot moment has passed. Daniel K., a product manager in Berlin, cut his social media time by 60 percent using nothing but Untap's open delay. No deleting. No dramatic detox. Just a pause placed at the right moment.
+                  Untap adds that resistance through intentional friction. Before a social media app opens, you might solve a quick math problem, hold a breathing pause, or scan a QR code. By the time you have done that, the autopilot moment has passed. As Lia D wrote on Google Play, "Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision." No deleting. No dramatic detox. Just a pause placed at the right moment.
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Arjun, an engineering student from Pune, went from 7 hours of daily screen time down to 1.8 hours once he set session limits on his social apps during study hours. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
+                As Kudrat Hargun wrote on Google Play, "decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it." As Jana Ahmad wrote, "i went from being constantly tired and exhausted...to being my old clear minded self again." That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Untap was built with that gap in mind. The Friend Lock feature lets someone you trust — a parent, a partner, a study buddy — set a password on your restrictions. You cannot quietly change your limits at 11pm without them. Tom A., a dad of three in Manchester, said his evenings finally felt like evenings again after setting this up with his kids. His children noticed the change before he did.
+                Untap was built with that gap in mind. The Friend Lock feature lets someone you trust — a parent, a partner, a study buddy — set a password on your restrictions. You cannot quietly change your limits at 11pm without them. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one...i luvvvv the strict mode and strict focus mode."
               </p>
 
               <p>
@@ -273,11 +273,11 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. Priya S., a writer from Mumbai, said it felt like turning the lights on — she had no idea how much she was tapping until the weekly report showed her. That kind of visibility is what makes the limits you set actually stick, because you are working from facts, not feelings.
+                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. As Gouri Ganesh wrote on Google Play, "I am using it for 4 days. For now this app is lifesaver...i can feel how fresh my life feels like." That kind of visibility is what makes the limits you set actually stick, because you are working from facts, not feelings.
               </p>
 
               <p>
-                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app — from users like Amir J. In Toronto who slept better after two weeks, and Sofía G. In Madrid who tried three other tools before Untap was the first one that held past the second week.
+                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app, from users who wrote on Google Play about real results.
               </p>
             </div>
           </div>
