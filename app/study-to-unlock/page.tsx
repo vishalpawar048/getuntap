@@ -4,7 +4,7 @@ import { JsonLd } from "@/app/components/json-ld";
 export const metadata: Metadata = {
   title: "Study to Unlock – Quiz Your Way Out",
   description:
-    "Quiz-to-unlock app blocker feature: answer questions from your study notes to unlock your phone. Turn every distraction into a study opportunity. Free for students.",
+    "Quiz-to-unlock app blocker feature: answer questions from your study notes to unlock your phone. Turn every distraction into a study opportunity. Free For Students.",
   alternates: {
     canonical: "https://www.getuntap.com/study-to-unlock",
   },
@@ -112,7 +112,7 @@ export default function StudyToUnlockPage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             quiz to unlock
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Study Your Way Out{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               Of Every Distraction
@@ -147,7 +147,7 @@ export default function StudyToUnlockPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the insight
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 You Already Reach for Your Phone Dozens of Times a Day
               </h2>
             </div>
@@ -170,9 +170,9 @@ export default function StudyToUnlockPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              how it works
+              How It Works
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
               Three Steps to Smarter Phone Use
             </h2>
           </div>
@@ -187,7 +187,7 @@ export default function StudyToUnlockPage() {
                   {step.num}
                 </span>
                 <div>
-                  <h3 className="text-2xl font-bold lowercase tracking-tight text-white">
+                  <h3 className="text-2xl font-bold tracking-tight text-white">
                     {step.title}
                   </h3>
                   <p className="mt-3 leading-relaxed text-white/60">
@@ -207,7 +207,7 @@ export default function StudyToUnlockPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               benefits
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               Why Quiz-to-Unlock Works
             </h2>
           </div>
@@ -221,7 +221,7 @@ export default function StudyToUnlockPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-[var(--muted)]">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight">
+                <h3 className="text-xl font-bold tracking-tight">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -241,7 +241,7 @@ export default function StudyToUnlockPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 student story
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 From 7 Hours of Scrolling to a 0.4 GPA Boost
               </h2>
             </div>
@@ -265,7 +265,7 @@ export default function StudyToUnlockPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
                 Questions About Quiz-to-Unlock
               </h2>
             </div>
@@ -275,7 +275,7 @@ export default function StudyToUnlockPage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -289,7 +289,7 @@ export default function StudyToUnlockPage() {
       {/* CTA */}
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
             Make Every Distraction{" "}
             <span className="text-[var(--accent)]">A Study Session</span>
           </h2>

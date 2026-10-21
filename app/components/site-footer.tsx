@@ -14,7 +14,7 @@ export function SiteFooter() {
             height={32}
             className="h-8 w-8 rounded-lg object-cover"
           />
-          <span className="text-lg font-semibold lowercase text-white">
+          <span className="text-lg font-semibold text-white">
             untap
           </span>
         </div>
@@ -46,7 +46,7 @@ export function SiteFooter() {
                 href="/how-it-works"
                 className="text-white/60 transition hover:text-white"
               >
-                how it works
+                How It Works
               </Link>
               <Link
                 href="/reviews"
@@ -84,13 +84,13 @@ export function SiteFooter() {
                 href="/for-students"
                 className="text-white/60 transition hover:text-white"
               >
-                for students
+                For Students
               </Link>
               <Link
                 href="/for-schools"
                 className="text-white/60 transition hover:text-white"
               >
-                for schools &amp; colleges
+                For Schools &amp; colleges
               </Link>
               <Link
                 href="/enterprise"

@@ -39,7 +39,7 @@ export function SiteHeader() {
             height={36}
             className="h-9 w-9 rounded-xl object-cover ring-1 ring-white/20"
           />
-          <span className="text-lg font-semibold tracking-tight lowercase">
+          <span className="text-lg font-semibold tracking-tight">
             untap
           </span>
         </Link>
@@ -59,7 +59,7 @@ export function SiteHeader() {
               href="/for-students"
               className="transition-colors hover:text-white"
             >
-              for students
+              For Students
             </Link>
              <Link
               href="/features/focus-mode"
@@ -71,7 +71,7 @@ export function SiteHeader() {
               href="/for-schools"
               className="transition-colors hover:text-white"
             >
-              for schools
+              For Schools
             </Link>
             <Link
               href="/enterprise"

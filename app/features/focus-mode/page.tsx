@@ -83,7 +83,7 @@ const faqs = [
     a: "It adds real friction before your phone lets you open distracting apps. A delay, a challenge, a breathing pause — enough that your brain gets a moment to decide instead of just reacting. Most people open their distracting apps far less just from that pause alone.",
   },
   {
-    q: "Is Untap the best focus app for students?",
+    q: "Is Untap the best focus app For Students?",
     a: "It is built for exactly that situation — study blocks, exam prep, long reading sessions where you need your phone nearby but not in your face. The session lock and Friend Lock features are the ones students find most useful.",
   },
   {
@@ -128,7 +128,7 @@ export default function FocusModePage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             focus mode
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Brain Focus App:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               The Focus Mode That Actually Keeps You on Track
@@ -209,7 +209,7 @@ export default function FocusModePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the problem
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Why Built-In Focus Modes Never Actually Work
               </h2>
               
@@ -263,7 +263,7 @@ export default function FocusModePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
              features
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               What Untap's Focus Mode Actually Does for You
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -280,7 +280,7 @@ export default function FocusModePage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase">
+                <h3 className="mt-4 text-xl font-bold tracking-tight">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -298,15 +298,15 @@ export default function FocusModePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                for students
+                For Students
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Best Focus App for Students: What Makes Untap Different
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
               <p>
-                Most students looking for the best focus apps for students try two or three options before giving up. The problem is usually the same — the app is either too easy to bypass or too annoying to stick with.
+                Most students looking for the best focus apps For Students try two or three options before giving up. The problem is usually the same — the app is either too easy to bypass or too annoying to stick with.
               </p>
 
               <p>
@@ -333,7 +333,7 @@ export default function FocusModePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 cross-platform
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Focus App for Android and iPhone — Same Rules, Both Sides
               </h2>
             </div>
@@ -364,7 +364,7 @@ export default function FocusModePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               accountability
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
               The Focus Lock App That Prevents You from Cheating Yourself
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
@@ -386,7 +386,7 @@ export default function FocusModePage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -406,7 +406,7 @@ export default function FocusModePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 visibility
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 See the Data First, Then Decide What to Block
               </h2>
             </div>
@@ -437,7 +437,7 @@ export default function FocusModePage() {
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               Common Mistakes
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
                 Common Mistakes People Make With Focus Apps
               </h2>
             </div>
@@ -455,7 +455,7 @@ export default function FocusModePage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -472,7 +472,7 @@ export default function FocusModePage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -482,7 +482,7 @@ export default function FocusModePage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -496,7 +496,7 @@ export default function FocusModePage() {
       {/* CTA Section */}
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
             Get Your Focus <span className="text-[var(--accent)]">Back</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">

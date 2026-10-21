@@ -112,7 +112,7 @@ export default function ParentalControlPage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             parental control
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Screen Time Parental Control App:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               Help Your Kids Use Their Phone — Not the Other Way Around
@@ -205,7 +205,7 @@ export default function ParentalControlPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the problem
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Why Parents Search for Apps to Control Children's Screen Time
               </h2>
 
@@ -259,7 +259,7 @@ export default function ParentalControlPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               features
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               Features That Make the Difference
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -276,7 +276,7 @@ export default function ParentalControlPage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase">
+                <h3 className="mt-4 text-xl font-bold tracking-tight">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -296,7 +296,7 @@ export default function ParentalControlPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 cross-platform
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 What If Your Kids Have Both iPhone and Android?
               </h2>
             </div>
@@ -325,7 +325,7 @@ export default function ParentalControlPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 visibility
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 A Screen Time Parental Control App and Usage Tracker — Not Just One or the Other
               </h2>
             </div>
@@ -355,7 +355,7 @@ export default function ParentalControlPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
               comparison
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
               Why Untap Is a Better Alternative to ScreenZen and Opal for Parents
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
@@ -371,7 +371,7 @@ export default function ParentalControlPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -403,7 +403,7 @@ export default function ParentalControlPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -413,7 +413,7 @@ export default function ParentalControlPage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -427,7 +427,7 @@ export default function ParentalControlPage() {
       {/* CTA Section */}
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
             Give Them Room to <span className="text-[var(--accent)]">Grow</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">

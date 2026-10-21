@@ -467,17 +467,17 @@ export default async function Home() {
           <div className="text-center">
             <h1
               id="hero-heading"
-              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white lowercase sm:text-6xl md:text-7xl lg:text-8xl"
+              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
               Study Your Notes to Unlock Your Phone.
             </h1>
 
             <p className="sr-only">
-              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time for students.
+              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time For Students.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              The app blocker designed for students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
+              The app blocker designed For Students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -509,7 +509,7 @@ export default async function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
             <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 your attention is{" "}
                 <span className="text-[var(--accent)]">precious</span>
               </h2>
@@ -529,7 +529,7 @@ export default async function Home() {
                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
                   scan QR code
                 </p>
-                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight lowercase">
+                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight">
                   unlock the app
                 </p>
                 <div
@@ -562,7 +562,7 @@ export default async function Home() {
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 mindful friction
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
                 designed to reduce your{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
                   dopamine addiction
@@ -584,7 +584,7 @@ export default async function Home() {
                       key={step}
                       className="border-r border-white/10 px-3 py-4 last:border-r-0"
                     >
-                      <p className="text-sm font-semibold lowercase text-white">
+                      <p className="text-sm font-semibold text-white">
                         {step}
                       </p>
                     </div>
@@ -621,7 +621,7 @@ export default async function Home() {
                     0{index + 1}
                   </span>
                 </div>
-                <h3 className="relative mt-8 text-2xl font-bold lowercase tracking-tight text-white">
+                <h3 className="relative mt-8 text-2xl font-bold tracking-tight text-white">
                   {feature.title}
                 </h3>
                 <p className="relative mt-4 max-w-xl leading-relaxed text-white/55">
@@ -631,7 +631,7 @@ export default async function Home() {
                   {feature.highlights.map((highlight) => (
                     <span
                       key={highlight}
-                      className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium lowercase text-white/55"
+                      className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium text-white/55"
                     >
                       {highlight}
                     </span>
@@ -695,7 +695,7 @@ export default async function Home() {
             </Reveal>
 
             <Reveal variant="right" delay={120} className="order-1 md:order-2">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 you control your phone{" "}
                 <span className="text-[var(--muted)]">
                   (not the other way around)
@@ -734,7 +734,7 @@ export default async function Home() {
               </span>
               <h2
                 id="testimonials-heading"
-                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-4xl"
+                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl"
               >
                 loved by people who{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
@@ -782,7 +782,7 @@ export default async function Home() {
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal variant="up">
-            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
               use your phone in a{" "}
               <span className="text-[var(--accent)]">mindful way</span>
             </h2>
@@ -833,7 +833,7 @@ export default async function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
                 all you need to know
               </h2>
             </Reveal>
@@ -846,7 +846,7 @@ export default async function Home() {
                   duration={600}
                 >
                   <div className="border-b border-white/10 pb-8 last:border-0">
-                    <h3 className="text-xl font-bold lowercase text-white">
+                    <h3 className="text-xl font-bold text-white">
                       {faq.q}
                     </h3>
                     <p className="mt-3 leading-relaxed text-white/50">
@@ -863,7 +863,7 @@ export default async function Home() {
       {/* CTA */}
       <section className="px-6 py-24 sm:py-32">
         <Reveal variant="scale" className="mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:text-6xl">
+          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
             download untap now and{" "}
             <span className="text-[var(--accent)]">
               reduce your screen time

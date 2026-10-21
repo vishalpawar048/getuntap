@@ -4,13 +4,13 @@ import { JsonLd } from "@/app/components/json-ld";
 export const metadata: Metadata = {
   title: "How It Works – Quiz to Unlock Apps",
   description:
-    "See how Untap's quiz-to-unlock feature works: upload your study notes, answer questions to unblock distracting apps, and study more. Free for students.",
+    "See how Untap's quiz-to-unlock feature works: upload your study notes, answer questions to unblock distracting apps, and study more. Free For Students.",
   alternates: { canonical: "https://www.getuntap.com/how-it-works" },
   keywords: [
     "how Untap works",
     "quiz to unlock apps",
     "study to unlock phone",
-    "screen time control app how it works",
+    "screen time control app How It Works",
     "intentional friction",
   ],
   openGraph: {

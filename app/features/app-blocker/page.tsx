@@ -146,7 +146,7 @@ export default function AppBlockerPage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             app blocker
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Timer Lock for Apps:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               Best App Blocker Features to Improve Productivity
@@ -227,7 +227,7 @@ export default function AppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 the problem
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Why People Search for an App Blocker Android Solution
               </h2>
               
@@ -278,7 +278,7 @@ export default function AppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 how to use
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 How to Block Instagram App Notifications Without Deleting It
               </h2>
             </div>
@@ -303,7 +303,7 @@ export default function AppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 cross-platform
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 What If You Need to Block Apps From iPhone Instead?
               </h2>
             </div>
@@ -324,7 +324,7 @@ export default function AppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 tracking
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 An App Usage Tracker and Blocker, Not Just One or the Other
               </h2>
             </div>
@@ -352,7 +352,7 @@ export default function AppBlockerPage() {
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 Features
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
                 Features That Make the Difference
 
               </h2>
@@ -371,7 +371,7 @@ export default function AppBlockerPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -391,7 +391,7 @@ export default function AppBlockerPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 privacy
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Your Data Stays Yours
               </h2>
             </div>
@@ -409,7 +409,7 @@ export default function AppBlockerPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -419,7 +419,7 @@ export default function AppBlockerPage() {
                   key={faq.q}
                   className="border-b border-white/10 pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase text-white">{faq.q}</h3>
+                  <h3 className="text-xl font-bold text-white">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-white/60">
                     {faq.a}
                   </p>
@@ -433,7 +433,7 @@ export default function AppBlockerPage() {
       {/* CTA Section */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-black sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-black sm:text-5xl md:text-6xl">
             Download Untap <span className="text-[var(--accent)]">Today</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--muted)]">
