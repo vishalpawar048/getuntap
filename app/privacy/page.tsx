@@ -22,6 +22,14 @@ const permissions = [
     body: "Required to monitor app usage and apply shields/blocks to restricted apps. This uses Apple's FamilyControls, ManagedSettings, and DeviceActivity frameworks. The data accessed through these APIs stays on your device and is governed by Apple's privacy protections.",
   },
   {
+    title: "Camera",
+    body: "Optional. Used only for specific unlock challenges and breathing exercises. Camera access enables QR code scanning and optional camera-based features. All camera processing happens on your device in real-time. We do not capture, record, store, or transmit any photos, videos, or camera data.",
+  },
+  {
+    title: "Face ID / Touch ID",
+    body: "Optional. Used for secure authentication when accessing protected settings. We do not collect or store biometric data — authentication is handled entirely by iOS using your device's Secure Enclave.",
+  },
+  {
     title: "Notifications",
     body: "Used to send local alerts when session time limits are reached and to provide break reminders. No push notification servers are involved.",
   },
@@ -36,7 +44,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-4 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-            Last updated: February 12, 2026
+            Last updated: October 21, 2026
           </p>
         </div>
 
@@ -101,6 +109,69 @@ export default function PrivacyPage() {
                   — {permission.body}
                 </p>
               ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
+              Face Data and TrueDepth Camera
+            </h2>
+            <p className="mt-3">
+              Untap may use the device camera and TrueDepth camera for optional
+              unlock challenges and breathing exercises. Here is exactly how we
+              handle face and camera data:
+            </p>
+            <div className="mt-4 space-y-4">
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  What We Access
+                </span>{" "}
+                — The front-facing camera (including TrueDepth camera on supported
+                devices) may be accessed when you use camera-based unlock features
+                or breathing exercises. This includes basic face detection and
+                movement analysis processed in real-time on your device.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  How It&apos;s Used
+                </span>{" "}
+                — Camera input is used solely to enable the specific feature you
+                are actively using (for example, verifying presence during a
+                breathing exercise or detecting movement for an unlock challenge).
+                All processing happens locally on your device in real-time. The
+                camera feed is analyzed only while the feature is active.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  What We Do NOT Do
+                </span>{" "}
+                — We do not capture, save, record, or store any photos, videos,
+                facial images, face maps, or depth data. We do not create facial
+                profiles or biometric templates. We do not use face data for
+                identification, advertising, profiling, or any purpose other than
+                the immediate feature you are using. We do not transmit any camera
+                data, facial information, or depth information to any server, third
+                party, or external service.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  Storage and Retention
+                </span>{" "}
+                — No face data or camera images are stored. All camera processing
+                is ephemeral and discarded immediately after use. Nothing is saved
+                to device storage, memory, logs, or caches.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  User Control
+                </span>{" "}
+                — Camera-based features are entirely optional. You can choose to
+                use alternative unlock methods (such as timers or math challenges)
+                that do not require camera access. You can revoke camera permission
+                at any time in your device Settings → Untap → Camera. When camera
+                permission is disabled, camera-based features will be unavailable,
+                but all other App functionality continues to work normally.
+              </p>
             </div>
           </section>
 

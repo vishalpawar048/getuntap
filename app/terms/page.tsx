@@ -14,6 +14,14 @@ const permissions = [
     body: "Required for the App to monitor app usage and apply restrictions to your selected apps.",
   },
   {
+    title: "Camera Access",
+    body: "Optional. Used only for QR code scanning and optional camera-based unlock challenges or breathing exercises. All camera processing occurs on your device. No photos, videos, or face data are captured, stored, or transmitted.",
+  },
+  {
+    title: "Face ID / Touch ID",
+    body: "Optional. Used for secure authentication of protected settings. Biometric authentication is handled by iOS; we do not collect or store any biometric data.",
+  },
+  {
     title: "Notification Access",
     body: "Required to deliver session limit alerts and break reminders.",
   },
@@ -43,7 +51,7 @@ export default function TermsPage() {
             Terms &amp; Conditions
           </h1>
           <p className="mt-4 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-            Last updated: February 12, 2026
+            Last updated: October 21, 2026
           </p>
         </div>
 
