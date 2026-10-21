@@ -467,9 +467,9 @@ export default async function Home() {
           <div className="text-center">
             <h1
               id="hero-heading"
-              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white lowercase sm:text-6xl md:text-7xl lg:text-8xl"
+              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Study Your Notes to Unlock Your Phone.
+              Study Your Notes To Unlock Your Phone
             </h1>
 
             <p className="sr-only">
@@ -509,9 +509,9 @@ export default async function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
             <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-                your attention is{" "}
-                <span className="text-[var(--accent)]">precious</span>
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                Your Attention Is{" "}
+                <span className="text-[var(--accent)]">Precious</span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
                 smartphone addiction affects your mental health, your
@@ -562,10 +562,10 @@ export default async function Home() {
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
                 mindful friction
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
-                designed to reduce your{" "}
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
+                Designed To Reduce Your{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  dopamine addiction
+                  Dopamine Addiction
                 </span>
               </h2>
             </Reveal>
@@ -695,10 +695,10 @@ export default async function Home() {
             </Reveal>
 
             <Reveal variant="right" delay={120} className="order-1 md:order-2">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-                you control your phone{" "}
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                You Control Your Phone{" "}
                 <span className="text-[var(--muted)]">
-                  (not the other way around)
+                  (Not The Other Way Around)
                 </span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
@@ -734,11 +734,11 @@ export default async function Home() {
               </span>
               <h2
                 id="testimonials-heading"
-                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-4xl"
+                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl"
               >
-                loved by people who{" "}
+                Loved By People Who{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  value their time
+                  Value Their Time
                 </span>
               </h2>
             </Reveal>
@@ -782,9 +782,9 @@ export default async function Home() {
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal variant="up">
-            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-              use your phone in a{" "}
-              <span className="text-[var(--accent)]">mindful way</span>
+            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+              Use Your Phone In A{" "}
+              <span className="text-[var(--accent)]">Mindful Way</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               when you use untap, you quickly start to realize the unhealthy
@@ -792,7 +792,6 @@ export default async function Home() {
               happiness this brings is something you won&apos;t want to go back
               from.
             </p>
-            <p>Testing branch deployment</p>
           </Reveal>
           <div className="mt-12 grid gap-6 text-left sm:grid-cols-3">
             {[
@@ -833,8 +832,8 @@ export default async function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:sticky md:top-28">
-                all you need to know
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
+                All You Need To Know
               </h2>
             </Reveal>
             <div className="space-y-8">
@@ -863,10 +862,10 @@ export default async function Home() {
       {/* CTA */}
       <section className="px-6 py-24 sm:py-32">
         <Reveal variant="scale" className="mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:text-6xl">
-            download untap now and{" "}
+          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
+            Download Untap Now And{" "}
             <span className="text-[var(--accent)]">
-              reduce your screen time
+              Reduce Your Screen Time
             </span>
           </h2>
 

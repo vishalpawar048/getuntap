@@ -34,31 +34,31 @@ export function SiteFooter() {
                 href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
                 className="text-white/60 transition hover:text-white"
               >
-                iOS app
+                iOS App
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
                 className="text-white/60 transition hover:text-white"
               >
-                Android app
+                Android App
               </a>
               <Link
                 href="/how-it-works"
                 className="text-white/60 transition hover:text-white"
               >
-                how it works
+                How It Works
               </Link>
               <Link
                 href="/reviews"
                 className="text-white/60 transition hover:text-white"
               >
-                reviews
+                Reviews
               </Link>
               <Link
                 href="/qr"
                 className="text-white/60 transition hover:text-white"
               >
-                QR code
+                QR Code
               </Link>
             </nav>
           </div>
@@ -72,31 +72,31 @@ export function SiteFooter() {
                 href="/study-app-blocker"
                 className="text-white/60 transition hover:text-white"
               >
-                study app blocker
+                Study App Blocker
               </Link>
               <Link
                 href="/study-to-unlock"
                 className="text-white/60 transition hover:text-white"
               >
-                study to unlock
+                Study To Unlock
               </Link>
               <Link
                 href="/for-students"
                 className="text-white/60 transition hover:text-white"
               >
-                for students
+                For Students
               </Link>
               <Link
                 href="/for-schools"
                 className="text-white/60 transition hover:text-white"
               >
-                for schools &amp; colleges
+                For Schools &amp; Colleges
               </Link>
               <Link
                 href="/enterprise"
                 className="text-white/60 transition hover:text-white"
               >
-                untap enterprise
+                Untap Enterprise
               </Link>
             </nav>
           </div>
@@ -110,19 +110,19 @@ export function SiteFooter() {
                 href="/blog"
                 className="text-white/60 transition hover:text-white"
               >
-                blog
+                Blog
               </Link>
               <Link
                 href="/case-studies"
                 className="text-white/60 transition hover:text-white"
               >
-                case studies
+                Case Studies
               </Link>
               <Link
                 href="/research"
                 className="text-white/60 transition hover:text-white"
               >
-                research
+                Research
               </Link>
             </nav>
           </div>
@@ -136,13 +136,13 @@ export function SiteFooter() {
                 href="/privacy"
                 className="text-white/60 transition hover:text-white"
               >
-                privacy policy
+                Privacy Policy
               </Link>
               <Link
                 href="/terms"
                 className="text-white/60 transition hover:text-white"
               >
-                terms & conditions
+                Terms & Conditions
               </Link>
             </nav>
           </div>
@@ -156,7 +156,7 @@ export function SiteFooter() {
                 href="mailto:info.mbpsoftwares@gmail.com"
                 className="text-white/60 transition hover:text-white"
               >
-                email
+                Email
               </a>
             </nav>
           </div>

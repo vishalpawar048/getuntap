@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 const SITE_URL = "https://www.getuntap.com";
 const SITE_NAME = "Untap";
 const TITLE =
-  "Untap: App Blocker for Studying – Limit Screen Time";
+  "Untap: App Blocker For Studying – Limit Screen Time";
 const DESCRIPTION =
   "Study app blocker that helps you focus. Quiz from your notes to unlock apps. Limit screen time for students with intentional friction. Free for iPhone & Android.";
 
