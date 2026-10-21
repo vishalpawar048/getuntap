@@ -106,9 +106,28 @@ export default function StudyAppBlockerPage() {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.getuntap.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Study App Blocker",
+        item: "https://www.getuntap.com/study-app-blocker",
+      },
+    ],
+  };
+
   return (
     <>
-      <JsonLd data={[faqJsonLd, softwareAppJsonLd]} />
+      <JsonLd data={[faqJsonLd, softwareAppJsonLd, breadcrumbJsonLd]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
