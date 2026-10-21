@@ -14,6 +14,14 @@ const permissions = [
     body: "Required for the App to monitor app usage and apply restrictions to your selected apps.",
   },
   {
+    title: "Camera Access",
+    body: "Optional. Used for QR code scanning (rear camera, processed on-device, nothing captured or stored) and Own Your Morning photo verification (single photo sent to Google Gemini API to verify coffee or sunlight; not stored by Untap). Untap does not use the TrueDepth camera, face tracking, or collect any face data.",
+  },
+  {
+    title: "NFC Access",
+    body: "Optional. Used to scan NFC tags as an alternative unlock method for restricted apps.",
+  },
+  {
     title: "Notification Access",
     body: "Required to deliver session limit alerts and break reminders.",
   },
@@ -43,7 +51,7 @@ export default function TermsPage() {
             Terms &amp; Conditions
           </h1>
           <p className="mt-4 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-            Last updated: February 12, 2026
+            Last updated: October 21, 2026
           </p>
         </div>
 

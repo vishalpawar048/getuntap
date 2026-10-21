@@ -22,6 +22,14 @@ const permissions = [
     body: "Required to monitor app usage and apply shields/blocks to restricted apps. This uses Apple's FamilyControls, ManagedSettings, and DeviceActivity frameworks. The data accessed through these APIs stays on your device and is governed by Apple's privacy protections.",
   },
   {
+    title: "Camera",
+    body: "Optional. Used for QR code scanning (to unlock apps) and for the Own Your Morning feature (to verify a photo shows coffee or outdoor sunlight). Uses only the rear camera. QR scanning is processed on-device; nothing is captured or stored. Morning photos are sent to Google Gemini API solely for verification and are not stored by Untap.",
+  },
+  {
+    title: "NFC",
+    body: "Optional. Used to scan NFC tags as an alternative unlock method for restricted apps.",
+  },
+  {
     title: "Notifications",
     body: "Used to send local alerts when session time limits are reached and to provide break reminders. No push notification servers are involved.",
   },
@@ -36,7 +44,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-4 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-            Last updated: February 12, 2026
+            Last updated: October 21, 2026
           </p>
         </div>
 
@@ -101,6 +109,70 @@ export default function PrivacyPage() {
                   — {permission.body}
                 </p>
               ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
+              Camera, Face Data and TrueDepth
+            </h2>
+            <p className="mt-3">
+              <span className="font-medium text-[var(--foreground)]">
+                Untap does not use the TrueDepth camera, ARKit face tracking,
+                or any face recognition technology.
+              </span>{" "}
+              We do not collect, access, store, or share any face data,
+              including face geometry, depth maps, facial features, facial
+              landmarks, blend shapes, or Face ID biometric data.
+            </p>
+            <p className="mt-4">
+              Untap uses the device camera only for the following purposes:
+            </p>
+            <div className="mt-4 space-y-4">
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  QR Code Scanning
+                </span>{" "}
+                — When you use the QR scan unlock intervention, the rear camera
+                is used to scan a QR code. The QR code is processed locally on
+                your device to verify the unlock. No photos or camera data are
+                captured, saved, or transmitted.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  Own Your Morning Photo Verification
+                </span>{" "}
+                — When you use the Own Your Morning feature, the rear camera
+                captures a single photo to verify it shows your morning coffee or
+                outdoor sunlight. This photo is sent to the Google Gemini API
+                (generativelanguage.googleapis.com) solely to verify whether it
+                depicts coffee or sunlight. The API returns a yes/no response.
+                Untap does not store this photo on your device or on our servers.
+                The photo is not used for advertising, identification, profiling,
+                or any other purpose. Google processes the photo according to its
+                Gemini API Terms of Service.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  NFC Tag Scanning
+                </span>{" "}
+                — When you use the NFC scan unlock intervention, the device&apos;s
+                NFC reader is used to scan an NFC tag. The tag data is processed
+                locally on your device to verify the unlock. No data is stored or
+                transmitted.
+              </p>
+              <p>
+                <span className="font-medium text-[var(--foreground)]">
+                  User Control
+                </span>{" "}
+                — Camera-based features are entirely optional. You can choose
+                alternative unlock methods (such as timers or math challenges)
+                that do not require camera access. You can revoke camera
+                permission at any time in your device Settings → Untap → Camera.
+                When camera permission is disabled, camera-based features will be
+                unavailable, but all other App functionality continues to work
+                normally.
+              </p>
             </div>
           </section>
 
