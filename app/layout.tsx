@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 const SITE_URL = "https://www.getuntap.com";
 const SITE_NAME = "Untap";
 const TITLE =
-  "Untap: App Blocker For Studying – Limit Screen Time";
+  "Untap: Focus Hours App Blocker – Limit Screen Time";
 const DESCRIPTION =
-  "Study app blocker that helps you focus. Quiz from your notes to unlock apps. Limit screen time For Students with intentional friction. Free for iPhone & Android.";
+  "Set focus hours to protect your focus, then limit the rest of the day. Cap sessions on brain-rotting apps. Free for iPhone and Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -42,12 +42,12 @@ export const metadata: Metadata = {
     "untap",
     "study app blocker",
     "app blocker for studying",
-    "limit screen time For Students",
+    "limit screen time for students",
     "quiz to unlock apps",
     "app blocker",
     "screen time app",
     "screen time control",
-    "focus app For Students",
+    "focus app for students",
     "phone block app",
     "stop doomscrolling",
     "break phone addiction",

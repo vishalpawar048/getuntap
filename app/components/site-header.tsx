@@ -40,7 +40,7 @@ export function SiteHeader() {
             className="h-9 w-9 rounded-xl object-cover ring-1 ring-white/20"
           />
           <span className="text-lg font-semibold tracking-tight">
-            untap
+            Untap
           </span>
         </Link>
 
@@ -53,7 +53,7 @@ export function SiteHeader() {
               href="/study-app-blocker"
               className="transition-colors hover:text-white"
             >
-              study blocker
+              Study Blocker
             </Link>
             <Link
               href="/for-students"
@@ -65,7 +65,7 @@ export function SiteHeader() {
               href="/features/focus-mode"
               className="transition-colors hover:text-white"
             >
-              focus mode
+              Focus Mode
             </Link>
              <Link
               href="/for-schools"
@@ -77,25 +77,25 @@ export function SiteHeader() {
               href="/enterprise"
               className="transition-colors hover:text-white"
             >
-              enterprise
+              Enterprise
             </Link>
             <Link
               href="/blog"
               className="hidden transition-colors hover:text-white lg:inline"
             >
-              blog
+              Blog
             </Link>
             <Link
               href="/case-studies"
               className="hidden transition-colors hover:text-white lg:inline"
             >
-              case studies
+              Case Studies
             </Link>
             <Link
               href="/research"
               className="hidden transition-colors hover:text-white lg:inline"
             >
-              research
+              Research
             </Link>
             <Link
               href="/qr"
@@ -109,7 +109,7 @@ export function SiteHeader() {
             href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
             className="rounded-full bg-white/15 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/25"
           >
-            download
+            Download
           </a>
         </div>
       </div>

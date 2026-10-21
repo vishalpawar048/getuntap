@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Reviews – Students Love Untap",
-  description:
-    "See what students say about Untap: improved focus, better grades, less phone addiction. Real reviews from students using the quiz-to-unlock app blocker.",
+  description: "See what students say about Untap: improved focus, better grades, less phone addiction. Real reviews from students using the quiz-to-unlock app blocker.",
   alternates: { canonical: "https://www.getuntap.com/reviews" },
   openGraph: {
-    title: "Untap reviews — students reclaim their focus",
-    description:
-      "Read real student reviews of Untap, the study app blocker that turns screen time into study time.",
+    title: "Untap Reviews — Students Reclaim Their Focus",
+    description: "Read real student reviews of Untap, the study app blocker that turns screen time into study time.",
     url: "/reviews",
     type: "website",
   },

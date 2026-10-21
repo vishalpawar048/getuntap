@@ -1,4 +1,3 @@
-import QRCode from "qrcode";
 import { JsonLd } from "./components/json-ld";
 import { Reveal } from "./components/reveal";
 import { Parallax } from "./components/parallax";
@@ -16,7 +15,7 @@ const testimonials = [
     quote:
       "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
     name: "Arjun",
-    title: "engineering student",
+    title: "Engineering Student",
     location: "Pune, IN",
     stars: 5,
     result: "7h → 1.8h / day",
@@ -26,7 +25,7 @@ const testimonials = [
     quote:
       "I was skeptical, but after a week I noticed I was more present with my kids. Less scrolling, more living. Highly recommend.",
     name: "Sarah K.",
-    title: "parent of two",
+    title: "Parent Of Two",
     location: "Austin, TX",
     stars: 5,
     result: "Reclaimed dinnertime",
@@ -35,7 +34,7 @@ const testimonials = [
     quote:
       "As a student, doomscrolling was destroying my productivity. Untap added just enough friction to break the habit. My grades have improved.",
     name: "Ravi M.",
-    title: "college student",
+    title: "College Student",
     location: "Bengaluru, IN",
     stars: 5,
     result: "GPA up 0.4",
@@ -44,7 +43,7 @@ const testimonials = [
     quote:
       "Simple, elegant, and effective. The open delay feature is genius — those few seconds of pause are enough to make you reconsider opening Instagram.",
     name: "Priya",
-    title: "designer",
+    title: "Designer",
     location: "London, UK",
     stars: 5,
     result: "40% fewer opens",
@@ -53,7 +52,7 @@ const testimonials = [
     quote:
       "I got back two hours a day. Untap is the only app that actually made me put my phone down without feeling guilty.",
     name: "Maya R.",
-    title: "designer",
+    title: "Designer",
     location: "Brooklyn, NY",
     stars: 5,
     result: "+2h / day",
@@ -62,7 +61,7 @@ const testimonials = [
     quote:
       "Cleaner than every screen time tool I've tried. No nagging, no shame — it just works. The friend lock is a game-changer.",
     name: "Daniel K.",
-    title: "product manager",
+    title: "Product Manager",
     location: "Berlin, DE",
     stars: 5,
     result: "Cut social by 60%",
@@ -71,7 +70,7 @@ const testimonials = [
     quote:
       "Felt like turning the lights on. I had no idea how much I was tapping until Untap showed me. The weekly report is humbling and motivating.",
     name: "Priya S.",
-    title: "writer",
+    title: "Writer",
     location: "Mumbai, IN",
     stars: 5,
     result: "187 → 22 opens/wk",
@@ -80,7 +79,7 @@ const testimonials = [
     quote:
       "My evenings finally feel like evenings again. The kids noticed before I did. Worth every minute of setup.",
     name: "Tom A.",
-    title: "dad of three",
+    title: "Dad Of Three",
     location: "Manchester, UK",
     stars: 5,
     result: "Phone-free dinners",
@@ -89,7 +88,7 @@ const testimonials = [
     quote:
       "Untap doesn't make me feel guilty for using my phone. It just makes me want to use it less. That's a meaningful difference.",
     name: "Lina V.",
-    title: "therapist",
+    title: "Therapist",
     location: "Amsterdam, NL",
     stars: 5,
     result: "Calmer mornings",
@@ -98,7 +97,7 @@ const testimonials = [
     quote:
       "After two weeks I was sleeping better. After a month I picked up a book for the first time in a year. The breathing unlock saved me.",
     name: "Amir J.",
-    title: "software engineer",
+    title: "Software Engineer",
     location: "Toronto, CA",
     stars: 5,
     result: "+45 min sleep",
@@ -107,7 +106,7 @@ const testimonials = [
     quote:
       "I tried one sec, Opal, and Apple Screen Time. Untap is the first one that actually stuck past the second week. The math challenge is brutal — perfect.",
     name: "Sofía G.",
-    title: "marketer",
+    title: "Marketer",
     location: "Madrid, ES",
     stars: 5,
     result: "Week 8 and counting",
@@ -116,7 +115,7 @@ const testimonials = [
     quote:
       "I run a remote team and we all installed Untap during focus blocks. Deep work hours nearly doubled. Nobody felt surveilled.",
     name: "Jordan P.",
-    title: "founder, design studio",
+    title: "Founder, Design Studio",
     location: "remote",
     stars: 5,
     result: "9 → 16 deep-work h/wk",
@@ -125,28 +124,28 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "how does it work?",
-    a: "untap adds intentional friction before you open distracting apps. set open delays, session limits, or hard locks to break the autopilot habit of reaching for your phone. it uses apple's screen time APIs to work seamlessly on iOS.",
+    q: "How Does It Work?",
+    a: "Set the hours you need to protect, such as study or a hobby, and limit distracting apps for the rest of the day. Before Instagram or TikTok opens, Untap can ask a few questions from your study notes, or ask you to read, do pushups, or smile. That pause is a check on your mood before cheap content takes over. It uses Apple's screen time APIs on iOS.",
   },
   {
-    q: "what plans does untap offer?",
-    a: "untap offers a free tier with core features. for power users, we have monthly and annual subscription plans with advanced features like focus mode, detailed analytics, and unlimited app restrictions.",
+    q: "What Plans Does Untap Offer?",
+    a: "Untap offers a free tier with core features. For power users, we have monthly and annual subscription plans with advanced features like focus mode, detailed analytics, and unlimited app restrictions.",
   },
   {
-    q: "is my privacy protected?",
-    a: "absolutely. untap stores all data locally on your device. we have no analytics, no tracking, and no advertising SDKs. we do not collect, store, or transmit any personal data to external servers. your data never leaves your phone.",
+    q: "Is My Privacy Protected?",
+    a: "Absolutely. Untap stores all data locally on your device. We have no analytics, no tracking, and no advertising SDKs. We do not collect, store, or transmit any personal data to external servers. Your data never leaves your phone.",
   },
   {
-    q: "will it work on my phone?",
-    a: "untap is currently available for iOS (iPhone and iPad). we also have an android version available on the google play store. both platforms are fully supported with all core features.",
+    q: "Will It Work On My Phone?",
+    a: "Untap is currently available for iOS (iPhone and iPad). We also have an Android version available on the google play store. Both platforms are fully supported with all core features.",
   },
   {
-    q: "can I still access my apps?",
-    a: "yes! untap doesn't permanently block any apps. it adds a mindful pause — a customizable delay — before opening apps you've flagged as distracting. you're always in control and can adjust or remove restrictions at any time.",
+    q: "Can I Still Access My Apps?",
+    a: "Yes. Untap does not delete your apps. Outside your focus hours you can still open them, with a limit on the rest of the day and a pause first: a quiz from your notes, a few pages of a book, pushups, or a smile so you notice your mental state before you scroll.",
   },
   {
-    q: "is it safe for my phone?",
-    a: "yes! untap uses only official apple APIs (FamilyControls, ManagedSettings, DeviceActivity) to function. it installs like any other app from the app store and can be removed at any time.",
+    q: "Is It Safe For My Phone?",
+    a: "Yes! Untap uses only official apple APIs (FamilyControls, ManagedSettings, DeviceActivity) to function. It installs like any other app from the app store and can be removed at any time.",
   },
 ];
 
@@ -165,15 +164,13 @@ const features = [
         <path d="M12 8v8" />
       </svg>
     ),
-    title: "intentional app opening",
-    description:
-      "choose what someone must do before opening a distracting app, from a tiny pause to a real challenge.",
+    title: "Set Focus Hours",
+    description: "Pick the hours you need to protect. Class, study, or deep work. During that block, distracting apps stay limited so your focus holds.",
     highlights: [
-      "scan QR code",
-      "scan NFC tag",
-      "solve math challenge",
-      "suggest alternate app",
-      "breathing exercise",
+      "Class Blocks",
+      "Study Blocks",
+      "Deep Work",
+      "Custom Hours",
     ],
   },
   {
@@ -190,10 +187,9 @@ const features = [
         <path d="M8 11V7a4 4 0 118 0v4" />
       </svg>
     ),
-    title: "locks you cannot bypass",
-    description:
-      "friend lock lets someone you trust protect your settings with a password, while prevent uninstall keeps the app in place.",
-    highlights: ["friend lock", "password-protected settings", "prevent uninstall"],
+    title: "Limit The Rest Of The Day",
+    description: "Focus hours come first. After they end, Untap still limits how much of the day those apps can take, so the scroll does not fill every gap.",
+    highlights: ["Daily Caps", "After Focus Hours", "Hard Stops"],
   },
   {
     icon: (
@@ -211,15 +207,9 @@ const features = [
         <path d="M16 15v-6" />
       </svg>
     ),
-    title: "usage reports and alerts",
-    description:
-      "see where your attention goes and get notified when consumption crosses the line you set.",
-    highlights: [
-      "daily reports",
-      "weekly reports",
-      "monthly reports",
-      "over-consumption notifications",
-    ],
+    title: "Session Limits On Brain-Rotting Apps",
+    description: "Cap each session on TikTok, Instagram, YouTube, and the rest. When the session ends, the app stops instead of pulling you into another hour.",
+    highlights: ["TikTok", "Instagram", "YouTube", "Short Sessions"],
   },
   {
     icon: (
@@ -236,14 +226,11 @@ const features = [
         <path d="M8 16h8" />
       </svg>
     ),
-    title: "soft to strict control",
-    description:
-      "start gently or make the boundaries firm. untap adapts to how much help you need in the moment.",
-    highlights: ["soft mode", "moderate mode", "strict mode"],
+    title: "A Pause Before The App Opens",
+    description: "Answer a few questions from your study notes, read a book, do pushups, or smile. You notice your mood and your progress before cheap content takes the wheel.",
+    highlights: ["Quiz From Notes", "Read A Book", "Pushups", "A Smile"],
   },
 ];
-
-const APP_URL = SITE_URL;
 
 type Testimonial = (typeof testimonials)[number];
 
@@ -325,18 +312,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   );
 }
 
-export default async function Home() {
-  const qrSvg = await QRCode.toString(APP_URL, {
-    type: "svg",
-    color: {
-      dark: "#1a1108",
-      light: "#fffaf3",
-    },
-    margin: 1,
-    width: 220,
-    errorCorrectionLevel: "M",
-  });
-
+export default function Home() {
   const softwareAppJsonLd = {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
@@ -349,8 +325,7 @@ export default async function Home() {
     applicationCategory: "LifestyleApplication",
     applicationSubCategory: "Screen Time Control",
     operatingSystem: "iOS, Android",
-    description:
-      "Untap is a screen time control app that helps you stop doomscrolling and break phone addiction with intentional friction — app open delays, breathing pauses, QR/NFC unlocks, and focus locks.",
+    description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
     url: SITE_URL,
     image: `${SITE_URL}/logo.png`,
     inLanguage: "en",
@@ -469,15 +444,15 @@ export default async function Home() {
               id="hero-heading"
               className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Study Your Notes to Unlock Your Phone.
+              Set Focus Hours. Limit The Rest Of The Day.
             </h1>
 
             <p className="sr-only">
-              Untap is the study app blocker that makes you quiz from your notes to unlock distracting apps. Limit screen time For Students.
+              Untap is an app blocker that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              The app blocker designed For Students. Untap generates quizzes from your study notes—answer correctly to unlock distracting apps. Turn screen time into study time and ace your exams.
+              Students lose the study session the moment Instagram opens. Everyone else opens it when they are bored and stays until their energy is gone. Set the hours you protect, limit the rest of the day, and check in before the app opens.
             </p>
 
             <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -488,7 +463,7 @@ export default async function Home() {
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
-                download for iOS
+                Download For iOS
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -497,49 +472,114 @@ export default async function Home() {
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
                 </svg>
-                download for android
+                Download For Android
               </a>
             </div>
           </div>
         </Parallax>
       </section>
 
-      {/* Introduction */}
+      {/* Problems Untap solves */}
       <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-            <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                your attention is{" "}
-                <span className="text-[var(--accent)]">precious</span>
-              </h2>
-              <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                smartphone addiction affects your mental health, your
-                relationships, and your productivity. endless scrolling and
-                dopamine-driven notifications steal hours of your day without
-                you even realizing it.
-              </p>
-              <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-                untap is a mindful screen time tool that helps you use your
-                phone intentionally — not impulsively.
-              </p>
+        <div className="mx-auto max-w-6xl">
+          <Reveal variant="up">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
+              The problem
+            </p>
+            <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+              Social Media Takes The Hour You Meant To Keep
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            <Reveal variant="up">
+              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                  Students
+                </p>
+                <h3 className="mt-4 text-2xl font-bold tracking-tight">
+                  Study Starts. One Notification Ends It.
+                </h3>
+                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                  <p>
+                    Students want to study, and they also want social media in
+                    control so other people&apos;s lives do not wreck the day.
+                    A status, a friend&apos;s post, or cheap content is enough
+                    to spark FOMO and the fear of being left behind.
+                  </p>
+                  <p>
+                    They sit down to study. A notification appears. Instagram
+                    opens, the mind switches, and the scroll keeps going. Mood
+                    drops. The study block is gone.
+                  </p>
+                </div>
+              </article>
             </Reveal>
-            <Reveal variant="right" delay={120} className="flex justify-center md:justify-end">
-              <div className="w-full max-w-xs rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 text-center shadow-sm">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-                  scan QR code
+            <Reveal variant="up" delay={120}>
+              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                  Everyone else
                 </p>
-                <p className="mt-2 text-2xl font-bold leading-tight tracking-tight">
-                  unlock the app
-                </p>
-                <div
-                  className="mx-auto mt-6 rounded-2xl bg-[#fffaf3] p-4"
-                  aria-label="QR code linking to the Untap app"
-                  dangerouslySetInnerHTML={{ __html: qrSvg }}
-                />
-              </div>
+                <h3 className="mt-4 text-2xl font-bold tracking-tight">
+                  Boredom Opens The App. The App Keeps You.
+                </h3>
+                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                  <p>
+                    People open Instagram because they are bored. Once it is
+                    open, the scroll continues. Attention gets shorter, the
+                    content stays in mind, and comparing your life with someone
+                    else&apos;s leaves you low or guilty.
+                  </p>
+                  <p>
+                    There is a passion, a job, a side project, a hobby, or a
+                    book waiting. The time goes to social media instead. By the
+                    time the app closes, energy and motivation are gone.
+                  </p>
+                </div>
+              </article>
             </Reveal>
           </div>
+
+          <Reveal variant="up" className="mt-6">
+            <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8 sm:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                How Untap solves it
+              </p>
+              <h3 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
+                Protect The Hours That Matter. Limit The Rest Of The Day.
+              </h3>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+                Set study hours, or the time for a hobby, work, or a book.
+                During that block there is no distraction. For the rest of the
+                day, social media stays limited, so you can still use it as
+                entertainment without letting it rot the day or your mood.
+              </p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+                When an app does open, Untap asks for a pause first. Students
+                answer a few questions from their notes and see where their
+                study actually stands. Anyone can read a book, do pushups, or
+                simply smile, a short self-check so cheap content does not
+                take the mood with it.
+              </p>
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {[
+                  "Focus Hours",
+                  "Limit The Rest Of The Day",
+                  "Quiz From Your Notes",
+                  "Read A Book",
+                  "Pushups",
+                  "A Smile",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-full border border-[var(--border)] px-3 py-1.5 text-sm font-medium"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -560,12 +600,12 @@ export default async function Home() {
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
             <Reveal variant="up">
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                mindful friction
+                Focus hours
               </p>
               <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-                designed to reduce your{" "}
+                Focus Hours First.{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  dopamine addiction
+                  Limits After That.
                 </span>
               </h2>
             </Reveal>
@@ -573,13 +613,12 @@ export default async function Home() {
             <Reveal variant="up" delay={150}>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
                 <p className="text-lg leading-relaxed text-white/65">
-                  if the first thing you reach for when you open your eyes is your
-                  phone, untap adds the right kind of friction: QR and NFC unlocks,
-                  math challenges, breathing pauses, alternate app suggestions,
-                  reports, alerts, and stronger locks when you need them.
+                  Set the block you need to protect. Untap limits distracting
+                  apps during those hours, then limits the rest of the day with
+                  session caps on the apps that rot your attention.
                 </p>
                 <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
-                  {["soft", "moderate", "strict"].map((step) => (
+                  {["Focus Hours", "Rest Of Day", "Sessions"].map((step) => (
                     <div
                       key={step}
                       className="border-r border-white/10 px-3 py-4 last:border-r-0"
@@ -653,24 +692,24 @@ export default async function Home() {
                 <div className="flex h-[420px] w-[220px] flex-col rounded-[2.5rem] border-2 border-[var(--foreground)]/10 bg-[var(--dark-bg)] p-6 shadow-2xl">
                   <div className="flex items-center justify-between">
                     <div className="h-3 w-3 rounded-full bg-[var(--accent)]" />
-                    <p className="text-xs font-medium text-white/40">untap</p>
+                    <p className="text-xs font-medium text-white/40">Untap</p>
                     <div className="h-3 w-3 rounded-full bg-white/20" />
                   </div>
                   <div className="mt-8 flex-1 space-y-4">
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        Instagram
+                        Focus Hours
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        5s delay · 30min limit
+                        9am–1pm · apps limited
                       </p>
                     </div>
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        Twitter/X
+                        Instagram
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        10s delay · 15min limit
+                        15 min session cap
                       </p>
                     </div>
                     <div className="rounded-xl bg-[var(--accent)]/20 p-3">
@@ -678,15 +717,15 @@ export default async function Home() {
                         TikTok
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        hard locked until 6pm
+                        blocked in focus hours
                       </p>
                     </div>
                     <div className="rounded-xl bg-white/10 p-3">
                       <p className="text-xs font-medium text-white/70">
-                        YouTube
+                        Rest Of Day
                       </p>
                       <p className="mt-1 text-[10px] text-white/40">
-                        8s delay · 45min limit
+                        daily cap after focus
                       </p>
                     </div>
                   </div>
@@ -696,20 +735,20 @@ export default async function Home() {
 
             <Reveal variant="right" delay={120} className="order-1 md:order-2">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                you control your phone{" "}
+                You Control Your Phone{" "}
                 <span className="text-[var(--muted)]">
-                  (not the other way around)
+                  (Not The Other Way Around)
                 </span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                a lot of thought went into the design of untap. it was created
-                to improve your productivity and reduce your screen time to
-                break your phone addiction.
+                Untap protects your focus by starting with the hours that
+                matter, then limiting the rest of the day. Brain-rotting apps
+                get a session cap instead of an open tab.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-                with untap, you consciously decide which app to open and when.
-                open the apps that you need and avoid the apps that are
-                distractions.
+                You still choose the schedule. Focus hours stay protected, and
+                the rest of the day stays limited so those apps cannot take
+                whatever time is left.
               </p>
             </Reveal>
           </div>
@@ -736,9 +775,9 @@ export default async function Home() {
                 id="testimonials-heading"
                 className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl"
               >
-                loved by people who{" "}
+                Loved By People Who{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  value their time
+                  Value Their Time
                 </span>
               </h2>
             </Reveal>
@@ -747,7 +786,7 @@ export default async function Home() {
                 href="/reviews"
                 className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/30 hover:bg-white/5 hover:text-white"
               >
-                read all reviews
+                Read All Reviews
                 <svg
                   viewBox="0 0 20 20"
                   fill="none"
@@ -783,16 +822,15 @@ export default async function Home() {
         <div className="mx-auto max-w-3xl text-center">
           <Reveal variant="up">
             <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              use your phone in a{" "}
-              <span className="text-[var(--accent)]">mindful way</span>
+              Use Your Phone In A{" "}
+              <span className="text-[var(--accent)]">Mindful Way</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-              when you use untap, you quickly start to realize the unhealthy
-              usage patterns your phone was causing. the peace of mind and
+              When you use Untap, you quickly start to realize the unhealthy
+              usage patterns your phone was causing. The peace of mind and
               happiness this brings is something you won&apos;t want to go back
               from.
             </p>
-            <p>Testing branch deployment</p>
           </Reveal>
           <div className="mt-12 grid gap-6 text-left sm:grid-cols-3">
             {[
@@ -834,7 +872,7 @@ export default async function Home() {
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <Reveal variant="left">
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
-                all you need to know
+                All You Need To Know
               </h2>
             </Reveal>
             <div className="space-y-8">
@@ -864,9 +902,9 @@ export default async function Home() {
       <section className="px-6 py-24 sm:py-32">
         <Reveal variant="scale" className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
-            download untap now and{" "}
+            Download Untap Now And{" "}
             <span className="text-[var(--accent)]">
-              reduce your screen time
+              Reduce Your Screen Time
             </span>
           </h2>
 
@@ -878,7 +916,7 @@ export default async function Home() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -887,7 +925,7 @@ export default async function Home() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </Reveal>

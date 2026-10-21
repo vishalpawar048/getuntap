@@ -3,8 +3,7 @@ import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Social Media Blocker – Limit Instagram & TikTok",
-  description:
-    "Social media blocker app that limits Instagram, TikTok & more on Android & iPhone. Add friction to social apps. Free to start.",
+  description: "Social media blocker app that limits Instagram, TikTok & more on Android & iPhone. Add friction to social apps. Free to start.",
   alternates: {
     canonical: "https://www.getuntap.com/features/social-media-control",
   },
@@ -21,27 +20,27 @@ const features = [
 
 const faqs = [
   {
-    q: "What does an app to limit use of social media actually do?",
+    q: "What Does An App To Limit Use Of Social Media Actually Do?",
     a: "It puts real friction between you and your social media apps — a delay, a breathing pause, a math challenge — so you get a genuine moment to decide before the scroll starts. Most people open their apps far less once that pause is in place.",
   },
   {
-    q: "Is Untap a proper social media blocker app or just a timer?",
+    q: "Is Untap A Proper Social Media Blocker App Or Just A Timer?",
     a: "Both. You can use it as a social media timing app with daily limits and open delays, or as a full blocker that locks specific apps until a time you choose. Most people use a mix of both depending on the app.",
   },
   {
-    q: "How does the social media timing app work on Android versus iPhone?",
+    q: "How Does The Social Media Timing App Work On Android Versus iPhone?",
     a: "The same way on both. Same delays, same locks, same Friend Lock, same usage reports. The iOS version uses Apple's official APIs so it is stable and update-proof. Android has full feature parity.",
   },
   {
-    q: "Can I limit social media use for my kids without blocking everything?",
+    q: "Can I Limit Social Media Use For My Kids Without Blocking Everything?",
     a: "Yes. You can set specific limits per app — Instagram gets 20 minutes, TikTok gets locked until after homework — without touching anything else on their phone. Friend Lock lets you password-protect those settings so they cannot be changed without you.",
   },
   {
-    q: "Will I lose access to my apps permanently?",
+    q: "Will I Lose Access To My Apps Permanently?",
     a: "No. Nothing is deleted or permanently removed. You are adding a pause or a time limit, and you can adjust or remove it any time you like.",
   },
   {
-    q: "Is my data private?",
+    q: "Is My Data Private?",
     a: "Yes. Everything stays on your device — no external servers, no ad tracking, nothing shared with anyone.",
   },
 ];
@@ -71,9 +70,9 @@ export default function SocialMediaControlPage() {
             social media control
           </span>
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
-            App to Limit Use of Social Media:{" "}
+            App To Limit Use Of Social Media:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-              Take Back the Hours You Did Not Mean to Lose
+              Take Back The Hours You Did Not Mean To Lose
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 sm:text-xl">
@@ -85,13 +84,13 @@ export default function SocialMediaControlPage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -103,7 +102,7 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6 text-lg leading-9 text-gray-700">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the solution
+                The solution
               </p>
               <p>
                 It is not carelessness. It is the way these apps were built — no natural stopping point, no moment where you pause and decide. An app to limit use of social media puts that moment back in. It gives you a real second to choose before the scroll begins.
@@ -116,22 +115,22 @@ export default function SocialMediaControlPage() {
 
             {/* Visual Card - Social Media Friction */}
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-6 text-center">real friction</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-6 text-center">Real friction</p>
               
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
-                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">pause placed</p>
-                  <p className="text-2xl font-bold text-black mt-2">at right moment</p>
+                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Pause placed</p>
+                  <p className="text-2xl font-bold text-black mt-2">At right moment</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">autopilot</p>
-                  <p className="text-2xl font-bold text-black mt-2">moment passes</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Autopilot</p>
+                  <p className="text-2xl font-bold text-black mt-2">Moment passes</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">you</p>
-                  <p className="text-2xl font-bold text-black mt-2">stay in control</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">You</p>
+                  <p className="text-2xl font-bold text-black mt-2">Stay in control</p>
                 </div>
               </div>
 
@@ -149,10 +148,10 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                Why People Search for a Social Media Blocker App
+                Why People Search For A Social Media Blocker App
               </h2>
               
               <div className="space-y-5 text-lg leading-relaxed text-white/60 mt-8">
@@ -172,25 +171,25 @@ export default function SocialMediaControlPage() {
 
             {/* Visual Card - Delete vs Resist */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">delete vs resist</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">Delete vs resist</p>
               
               <div className="space-y-6">
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">deleting apps</p>
+                  <p className="text-xs text-white/60 uppercase">Deleting apps</p>
                   <p className="text-3xl font-bold text-white mt-2">3 days</p>
-                  <p className="text-sm text-white/70 mt-1">before reinstalling</p>
+                  <p className="text-sm text-white/70 mt-1">Before reinstalling</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">friction approach</p>
+                  <p className="text-xs text-white/60 uppercase">Friction approach</p>
                   <p className="text-3xl font-bold text-[var(--accent)] mt-2">-60%</p>
-                  <p className="text-sm text-white/70 mt-1">social media time reduction</p>
+                  <p className="text-sm text-white/70 mt-1">Social media time reduction</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">users report</p>
-                  <p className="text-3xl font-bold text-white mt-2">sustained</p>
-                  <p className="text-sm text-white/70 mt-1">habit change over time</p>
+                  <p className="text-xs text-white/60 uppercase">Users report</p>
+                  <p className="text-3xl font-bold text-white mt-2">Sustained</p>
+                  <p className="text-sm text-white/70 mt-1">Habit change over time</p>
                 </div>
               </div>
             </div>
@@ -204,10 +203,10 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                how to use
+                How to use
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                How to Limit Social Media Use Without Deleting Everything
+                How To Limit Social Media Use Without Deleting Everything
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -233,10 +232,10 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                accountability
+                Accountability
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                What If You Need to Limit Social Media Use for Someone Else Too?
+                What If You Need To Limit Social Media Use For Someone Else Too?
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
@@ -262,10 +261,10 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                visibility
+                Visibility
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                A Social Media Timing App and Blocker — Not Just One or the Other
+                A Social Media Timing App And Blocker — Not Just One Or The Other
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -278,7 +277,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app — from users like Amir J. in Toronto who slept better after two weeks, and Sofía G. in Madrid who tried three other tools before Untap was the first one that held past the second week.
+                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app — from users like Amir J. In Toronto who slept better after two weeks, and Sofía G. In Madrid who tried three other tools before Untap was the first one that held past the second week.
               </p>
             </div>
           </div>
@@ -289,10 +288,10 @@ export default function SocialMediaControlPage() {
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-            features
+            Features
           </p>
           <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl mb-12">
-            Features That Make the Difference
+            Features That Make The Difference
           </h2>
 
           <div className="grid gap-6">
@@ -316,7 +315,7 @@ export default function SocialMediaControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                privacy
+                Privacy
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Your Data Stays Yours
@@ -375,7 +374,7 @@ export default function SocialMediaControlPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -384,7 +383,7 @@ export default function SocialMediaControlPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>
