@@ -15,11 +15,11 @@ const permissions = [
   },
   {
     title: "Camera Access",
-    body: "Optional. Used only for QR code scanning and optional camera-based unlock challenges or breathing exercises. All camera processing occurs on your device. No photos, videos, or face data are captured, stored, or transmitted.",
+    body: "Optional. Used for QR code scanning (rear camera, processed on-device, nothing captured or stored) and Own Your Morning photo verification (single photo sent to Google Gemini API to verify coffee or sunlight; not stored by Untap). Untap does not use the TrueDepth camera, face tracking, or collect any face data.",
   },
   {
-    title: "Face ID / Touch ID",
-    body: "Optional. Used for secure authentication of protected settings. Biometric authentication is handled by iOS; we do not collect or store any biometric data.",
+    title: "NFC Access",
+    body: "Optional. Used to scan NFC tags as an alternative unlock method for restricted apps.",
   },
   {
     title: "Notification Access",
