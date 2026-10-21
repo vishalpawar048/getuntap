@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Study App Blocker – Quiz Your Notes to Unlock",
-  description:
-    "Best study app blocker For Students. Answer quiz questions from your study notes to unlock distracting apps. Turn phone time into study time. Free for iPhone & Android.",
+  title: "Study App Blocker – Quiz Your Notes To Unlock",
+  description: "Best study app blocker for students. Answer quiz questions from your study notes to unlock distracting apps. Turn phone time into study time. Free for iPhone & Android.",
   alternates: {
     canonical: "https://www.getuntap.com/study-app-blocker",
   },
@@ -12,14 +11,13 @@ export const metadata: Metadata = {
     "study app blocker",
     "app blocker for studying",
     "phone block app",
-    "best app blocker For Students",
+    "best app blocker for students",
     "study to unlock apps",
-    "focus app For Students",
+    "focus app for students",
   ],
   openGraph: {
-    title: "Study App Blocker — Quiz Your Notes to Unlock Apps",
-    description:
-      "The only app blocker that makes you study to unlock your phone. Turn distractions into study sessions.",
+    title: "Study App Blocker — Quiz Your Notes To Unlock Apps",
+    description: "The only app blocker that makes you study to unlock your phone. Turn distractions into study sessions.",
     url: "/study-app-blocker",
     type: "website",
   },
@@ -27,50 +25,46 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    title: "Quiz from Your Notes",
-    description:
-      "Upload your study materials and Untap generates quiz questions. You can't unlock Instagram until you answer correctly.",
+    title: "Quiz From Your Notes",
+    description: "Upload your study materials and Untap generates quiz questions. You can't unlock Instagram until you answer correctly.",
   },
   {
     title: "Exam-Ready Mode",
-    description:
-      "Lock your phone completely during study blocks. Set it to unlock only after you've completed a timed study session or passed a quiz.",
+    description: "Lock your phone completely during study blocks. Set it to unlock only after you've completed a timed study session or passed a quiz.",
   },
   {
     title: "Focus Analytics",
-    description:
-      "See how many distraction attempts you blocked, how many quizzes you passed, and how much study time you protected each week.",
+    description: "See how many distraction attempts you blocked, how many quizzes you passed, and how much study time you protected each week.",
   },
   {
-    title: "Works on Campus WiFi",
-    description:
-      "No VPN required. Works seamlessly on iOS and Android, in dorms, libraries, or coffee shops.",
+    title: "Works On Campus WiFi",
+    description: "No VPN required. Works seamlessly on iOS and Android, in dorms, libraries, or coffee shops.",
   },
 ];
 
 const faqs = [
   {
-    q: "How does the study-to-unlock feature work?",
+    q: "How Does The Study-To-Unlock Feature Work?",
     a: "Upload your study notes, flashcards, or lecture slides into Untap. When you try to open a distracting app like TikTok or Instagram, Untap shows you a quiz question from your notes. Answer correctly and the app opens. Get it wrong and you're back to studying.",
   },
   {
-    q: "Can I use this as an app blocker for studying during finals?",
+    q: "Can I Use This As An App Blocker For Studying During Finals?",
     a: "Yes. Thousands of students use Untap during midterms and finals week. Set it to hard-lock distracting apps during study hours, or require a quiz pass before opening them. You can also schedule automatic locks for recurring study blocks.",
   },
   {
-    q: "Is this a phone block app or does it just delay things?",
+    q: "Is This A Phone Block App Or Does It Just Delay Things?",
     a: "Both. You can set a soft delay (10 seconds before opening), a quiz gate (answer to unlock), session limits (30 minutes per day), or a full hard lock (no access until 9pm). Start light and increase friction as exams get closer.",
   },
   {
-    q: "Will it work with my study methods?",
+    q: "Will It Work With My Study Methods?",
     a: "If you study from notes, flashcards, slides, or any text-based material, yes. Untap works with PDFs, photos of handwritten notes, typed documents, and more. Upload what you're already using.",
   },
   {
-    q: "Is it free For Students?",
+    q: "Is It Free for students?",
     a: "There's a free tier with core features. Paid plans add unlimited quiz banks, deeper analytics, and group study mode. Many students start free and upgrade during finals.",
   },
   {
-    q: "Does it work on iPhone and Android?",
+    q: "Does It Work On iPhone And Android?",
     a: "Yes. Full feature parity across both platforms. Set it up once and your restrictions sync across devices.",
   },
 ];
@@ -93,8 +87,7 @@ export default function StudyAppBlockerPage() {
     applicationCategory: "EducationalApplication",
     applicationSubCategory: "Study App Blocker",
     operatingSystem: "iOS, Android",
-    description:
-      "Study app blocker that generates quizzes from your notes. Answer correctly to unlock distracting apps. Designed For Students preparing for exams.",
+    description: "Study app blocker that generates quizzes from your notes. Answer correctly to unlock distracting apps. Designed for students preparing for exams.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -153,13 +146,13 @@ export default function StudyAppBlockerPage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -171,7 +164,7 @@ export default function StudyAppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Most App Blockers Don't Actually Help You Study
@@ -199,7 +192,7 @@ export default function StudyAppBlockerPage() {
               How It Works
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-              Three Steps to Better Grades
+              Three Steps To Better Grades
             </h2>
           </div>
 
@@ -212,12 +205,12 @@ export default function StudyAppBlockerPage() {
               },
               {
                 num: "02",
-                title: "Try to Open a Distracting App",
+                title: "Try To Open A Distracting App",
                 desc: "When you reach for Instagram, TikTok, or any app you've marked as distracting, Untap pauses and shows you a quiz question from your notes.",
               },
               {
                 num: "03",
-                title: "Answer Correctly or Keep Studying",
+                title: "Answer Correctly Or Keep Studying",
                 desc: "Get it right and the app opens. Get it wrong and you're back to your notes. Either way, you're studying more than scrolling.",
               },
             ].map((step) => (
@@ -247,10 +240,10 @@ export default function StudyAppBlockerPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              features
+              Features
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Built for Students, Not Just Blockers
+              Built For Students, Not Just Blockers
             </h2>
           </div>
 
@@ -281,7 +274,7 @@ export default function StudyAppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                results
+                Results
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Students Who Study More, Scroll Less
@@ -304,10 +297,10 @@ export default function StudyAppBlockerPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              comparison
+              Comparison
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Why Untap vs Other Phone Block Apps
+              Why Untap Vs Other Phone Block Apps
             </h2>
           </div>
 
@@ -396,7 +389,7 @@ export default function StudyAppBlockerPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -405,7 +398,7 @@ export default function StudyAppBlockerPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>

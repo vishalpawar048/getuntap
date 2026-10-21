@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description:
-    "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
+  description: "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
   alternates: { canonical: "https://www.getuntap.com/terms" },
   robots: { index: true, follow: true },
 };
@@ -58,7 +57,7 @@ export default function TermsPage() {
         <div className="mt-14 space-y-10 text-base leading-7 text-[var(--muted)] sm:text-lg">
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              1. Acceptance of Terms
+              1. Acceptance Of Terms
             </h2>
             <p className="mt-3">
               By downloading, installing, or using Untap (&quot;the App&quot;),
@@ -70,7 +69,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              2. Description of Service
+              2. Description Of Service
             </h2>
             <p className="mt-3">
               Untap is a digital wellness application for iOS that helps users
@@ -168,7 +167,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              8. Disclaimer of Warranties
+              8. Disclaimer Of Warranties
             </h2>
             <p className="mt-3">
               The App is provided on an &quot;AS IS&quot; and &quot;AS
@@ -183,7 +182,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              9. Limitation of Liability
+              9. Limitation Of Liability
             </h2>
             <p className="mt-3">
               To the fullest extent permitted by applicable law, MBP Softwares
@@ -199,7 +198,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              10. Modifications to the App &amp; Terms
+              10. Modifications To The App &amp; Terms
             </h2>
             <p className="mt-3">
               We reserve the right to modify, suspend, or discontinue the App
@@ -245,7 +244,7 @@ export default function TermsPage() {
                 href="mailto:info.mbpsoftwares@gmail.com"
                 className="font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-4"
               >
-                info.mbpsoftwares@gmail.com
+                Info.Mbpsoftwares@Gmail.Com
               </a>
             </p>
           </section>

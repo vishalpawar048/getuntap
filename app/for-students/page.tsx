@@ -2,24 +2,22 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Screen Time App for Students – Focus on Studying",
-  description:
-    "Limit screen time for college and high school students. Quiz-to-unlock app blocker helps you focus during study sessions, exams, and homework. Free For Students.",
+  title: "Screen Time App for students – Focus On Studying",
+  description: "Limit screen time for college and high school students. Quiz-to-unlock app blocker helps you focus during study sessions, exams, and homework. Free for students.",
   alternates: {
     canonical: "https://www.getuntap.com/for-students",
   },
   keywords: [
-    "limit screen time For Students",
-    "screen time app For Students",
+    "limit screen time for students",
+    "screen time app for students",
     "student focus app",
     "college app blocker",
     "study focus app",
     "exam prep app",
   ],
   openGraph: {
-    title: "Untap for Students — Limit Screen Time, Ace Your Exams",
-    description:
-      "The screen time app built For Students. Quiz from your notes to unlock distracting apps. Turn procrastination into study time.",
+    title: "Untap for students — Limit Screen Time, Ace Your Exams",
+    description: "The screen time app built for students. Quiz from your notes to unlock distracting apps. Turn procrastination into study time.",
     url: "/for-students",
     type: "website",
   },
@@ -31,7 +29,7 @@ const useCases = [
     desc: "Lock social media completely or require 3 correct quiz answers before unlocking. Thousands of students use Untap to stay focused during midterms and finals.",
   },
   {
-    title: "In Class or Lectures",
+    title: "In Class Or Lectures",
     desc: "Set your phone to hard-lock mode during class hours so you're not tempted to check Instagram mid-lecture. Focus on the professor, not your notifications.",
   },
   {
@@ -46,7 +44,7 @@ const useCases = [
 
 const features = [
   {
-    title: "Quiz-to-Unlock from Notes",
+    title: "Quiz-To-Unlock From Notes",
     desc: "Upload lecture notes, flashcards, or textbook photos. Answer quiz questions to unlock your phone. Every distraction becomes a study rep.",
   },
   {
@@ -97,27 +95,27 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "How does Untap help students specifically?",
+    q: "How Does Untap Help Students Specifically?",
     a: "Most app blockers just lock your phone. Untap makes you study to unlock it. Upload your class notes and Untap generates quiz questions. Try to open Instagram and you have to answer a question from your biology notes first. It's like having a tutor that intercepts every distraction.",
   },
   {
-    q: "Can I use it to limit screen time during finals?",
+    q: "Can I Use It To Limit Screen Time During Finals?",
     a: "Absolutely. Most students turn on strict mode during finals week: apps stay locked until you complete a timed study session or pass multiple quiz questions in a row. You can schedule it to auto-lock every day at 8am and unlock at 6pm, or customize it around your exam schedule.",
   },
   {
-    q: "Is there a student discount?",
+    q: "Is There A Student Discount?",
     a: "The core features are free. Unlimited quiz banks and advanced analytics require a subscription, but we offer student pricing (50% off) with a valid .edu email address.",
   },
   {
-    q: "Does it work with online classes and remote learning?",
+    q: "Does It Work With Online Classes And Remote Learning?",
     a: "Yes. Set it to allow Zoom, Canvas, Google Classroom, and other school apps while locking entertainment apps. You can study online without getting sidetracked by TikTok notifications.",
   },
   {
-    q: "Will it help me stop procrastinating?",
+    q: "Will It Help Me Stop Procrastinating?",
     a: "It's designed for it. One college student cut her procrastination scrolling from 187 app opens per week down to 22. The quiz-to-unlock feature means every procrastination attempt becomes a study opportunity instead.",
   },
   {
-    q: "Can I use it with my roommate or study group?",
+    q: "Can I Use It With My Roommate Or Study Group?",
     a: "Yes. Friend Lock lets someone else set a password on your restrictions. Give it to your roommate, study buddy, or accountability partner. You can't disable it without their permission, which keeps you honest when willpower is low.",
   },
 ];
@@ -140,8 +138,7 @@ export default function ForStudentsPage() {
     applicationCategory: "EducationalApplication",
     applicationSubCategory: "Screen Time Control",
     operatingSystem: "iOS, Android",
-    description:
-      "Screen time control app designed For Students. Quiz from your study notes to unlock distracting apps. Limit screen time and improve focus during study sessions and exams.",
+    description: "Screen time control app designed for students. Quiz from your study notes to unlock distracting apps. Limit screen time and improve focus during study sessions and exams.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -173,7 +170,7 @@ export default function ForStudentsPage() {
             </span>
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/65 sm:text-xl">
-            The screen time app built For Students who want better grades, not just better screen time stats. Quiz from your notes to unlock distracting apps.
+            The screen time app built for students who want better grades, not just better screen time stats. Quiz from your notes to unlock distracting apps.
           </p>
 
           <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
@@ -181,13 +178,13 @@ export default function ForStudentsPage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -199,7 +196,7 @@ export default function ForStudentsPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the student problem
+                The student problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Procrastination Isn't a Discipline Problem
@@ -227,7 +224,7 @@ export default function ForStudentsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              use cases
+              Use cases
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
               How Students Use Untap
@@ -260,10 +257,10 @@ export default function ForStudentsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              features
+              Features
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Everything You Need to Stay Focused
+              Everything You Need To Stay Focused
             </h2>
           </div>
 
@@ -293,7 +290,7 @@ export default function ForStudentsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              student reviews
+              Student reviews
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
               What Students Are Saying
@@ -341,10 +338,10 @@ export default function ForStudentsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              student results
+              Student results
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Real Numbers from Real Students
+              Real Numbers From Real Students
             </h2>
           </div>
 
@@ -400,7 +397,7 @@ export default function ForStudentsPage() {
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
-            Join Thousands of Students{" "}
+            Join Thousands Of Students{" "}
             <span className="text-[var(--accent)]">Acing Their Exams</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--muted)]">
@@ -415,7 +412,7 @@ export default function ForStudentsPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -424,7 +421,7 @@ export default function ForStudentsPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>

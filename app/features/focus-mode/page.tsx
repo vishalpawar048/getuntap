@@ -3,8 +3,7 @@ import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Focus Mode – Brain Focus App",
-  description:
-    "Brain focus app that stops distractions and helps you get things done. Focus mode for deep work. Free for Android & iPhone.",
+  description: "Brain focus app that stops distractions and helps you get things done. Focus mode for deep work. Free for Android & iPhone.",
   alternates: {
     canonical: "https://www.getuntap.com/features/focus-mode",
   },
@@ -13,59 +12,53 @@ export const metadata: Metadata = {
 const featuresSection = [
   {
     n: "01",
-    title: "Session locks",
+    title: "Session Locks",
     body: "Pick a time block, say 9am to 1pm, and lock every distracting app for that entire window. They are not deleted. They are just not opening until your session ends. Ravi M., a college student from Bengaluru, went from 9 hours of deep work per week to 16 just by running a four-hour morning lock during his study sessions.",
   },
   {
     n: "02",
-    title: "Open delays",
+    title: "Open Delays",
     body: "Not ready for a full lock? A 10-second delay before Instagram opens is enough. Those 10 seconds give your brain a moment to decide. Priya, a designer in London, cut her Instagram opens by 40 percent with nothing but the open delay feature.",
   },
   {
     n: "03",
-    title: "Alternate app suggestions",
+    title: "Alternate App Suggestions",
     body: "When you try to open a distraction, Untap can redirect you to something useful instead. Going for YouTube? It can suggest your notes app instead.",
   },
   {
     n: "04",
-    title: "Soft, moderate, and strict modes",
+    title: "Soft, Moderate, And Strict Modes",
     body: "You do not have to go cold turkey on day one. Soft mode adds a small pause. Strict mode means the app does not open, period.",
   },
 ];
 
 const commonMistakes = [
   {
-    title: "Starting on strict mode",
-    description:
-      "If you lock everything on day one and feel completely cut off, you will delete the app by day three. Start with soft mode. Add friction gradually.",
+    title: "Starting On Strict Mode",
+    description: "If you lock everything on day one and feel completely cut off, you will delete the app by day three. Start with soft mode. Add friction gradually.",
   },
   {
-    title: "Not using Friend Lock",
-    description:
-      "Most people skip Friend Lock because they think they will not need it. They need it. The whole point is that your future self in a weak moment is not the best judge of what you need. Set it up with someone you trust.",
+    title: "Not Using Friend Lock",
+    description: "Most people skip Friend Lock because they think they will not need it. They need it. The whole point is that your future self in a weak moment is not the best judge of what you need. Set it up with someone you trust.",
   },
   {
-    title: "Blocking the wrong apps",
-    description:
-      "Look at your actual usage report before you set restrictions. You might think YouTube is the problem when it is actually WhatsApp groups eating two hours a day.",
+    title: "Blocking The Wrong Apps",
+    description: "Look at your actual usage report before you set restrictions. You might think YouTube is the problem when it is actually WhatsApp groups eating two hours a day.",
   },
   {
-    title: "Forgetting to set session times",
-    description:
-      "A focus lock without a schedule is just an extra step. Set specific times for when the lock kicks in — your study hours, your work blocks, your morning routine. That is when the brain focus app actually earns its place.",
+    title: "Forgetting To Set Session Times",
+    description: "A focus lock without a schedule is just an extra step. Set specific times for when the lock kicks in — your study hours, your work blocks, your morning routine. That is when the brain focus app actually earns its place.",
   },
 ];
 
 const preventsCheating = [
   {
     title: "Friend Lock",
-    description:
-      "A trusted person (a study partner, a sibling, your partner) sets a password on your Untap settings. You cannot change your restrictions without them. It sounds extreme until the day it saves you from undoing two weeks of progress at midnight.",
+    description: "A trusted person (a study partner, a sibling, your partner) sets a password on your Untap settings. You cannot change your restrictions without them. It sounds extreme until the day it saves you from undoing two weeks of progress at midnight.",
   },
   {
     title: "Prevent Uninstall",
-    description:
-      "During an active session, you cannot delete Untap. The app stays in place until your session is done. No deleting your way out of a weak moment.",
+    description: "During an active session, you cannot delete Untap. The app stays in place until your session is done. No deleting your way out of a weak moment.",
   },
  
 ];
@@ -79,27 +72,27 @@ const features = [
 
 const faqs = [
   {
-    q: "What does a brain focus app like Untap actually do?",
+    q: "What Does A Brain Focus App Like Untap Actually Do?",
     a: "It adds real friction before your phone lets you open distracting apps. A delay, a challenge, a breathing pause — enough that your brain gets a moment to decide instead of just reacting. Most people open their distracting apps far less just from that pause alone.",
   },
   {
-    q: "Is Untap the best focus app For Students?",
+    q: "Is Untap The Best Focus App for students?",
     a: "It is built for exactly that situation — study blocks, exam prep, long reading sessions where you need your phone nearby but not in your face. The session lock and Friend Lock features are the ones students find most useful.",
   },
   {
-    q: "How does the focus app android version compare to the iPhone version?",
+    q: "How Does The Focus App Android Version Compare To The iPhone Version?",
     a: "They are built to match. Same delays, same locks, same reporting, same Friend Lock feature. There is no watered-down version on either side.",
   },
   {
-    q: "Can I use Untap as a focus lock app without blocking apps completely?",
+    q: "Can I Use Untap As A Focus Lock App Without Blocking Apps Completely?",
     a: "Yes. You can use just the delay feature — 5, 10, or 30 seconds before an app opens — without setting any hard locks. A lot of people start there and find it is enough on its own.",
   },
   {
-    q: "Will setting up the focus app iOS version affect my other phone settings?",
+    q: "Will Setting Up The Focus App iOS Version Affect My Other Phone Settings?",
     a: "No. Untap uses Apple's official APIs to manage restrictions. It does not touch your other settings, and it can be adjusted or removed at any time.",
   },
   {
-    q: "Is my usage data private?",
+    q: "Is My Usage Data Private?",
     a: "Everything stays on your device. No tracking SDKs, no advertising networks, nothing sent to a server. Your usage patterns belong to you.",
   },
 ];
@@ -131,7 +124,7 @@ export default function FocusModePage() {
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Brain Focus App:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-              The Focus Mode That Actually Keeps You on Track
+              The Focus Mode That Actually Keeps You On Track
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 sm:text-xl">
@@ -143,13 +136,13 @@ export default function FocusModePage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -161,7 +154,7 @@ export default function FocusModePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6 text-lg leading-9 text-gray-700">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the solution
+                The solution
               </p>
               <p>
                 This is not a focus problem. It is a friction problem. Your phone has zero resistance between you and every distraction you have ever wanted — and your brain takes the path of least resistance every single time.
@@ -174,26 +167,26 @@ export default function FocusModePage() {
 
             {/* Visual Card - Focus Concept */}
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">friction matters</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">Friction matters</p>
               
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
-                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">real barrier</p>
-                  <p className="text-2xl font-bold text-black mt-2">between work & scroll</p>
+                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Real barrier</p>
+                  <p className="text-2xl font-bold text-black mt-2">Between work & scroll</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">stay in</p>
-                  <p className="text-2xl font-bold text-black mt-2">the zone</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Stay in</p>
+                  <p className="text-2xl font-bold text-black mt-2">The zone</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">stop</p>
-                  <p className="text-2xl font-bold text-black mt-2">fighting yourself</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Stop</p>
+                  <p className="text-2xl font-bold text-black mt-2">Fighting yourself</p>
                 </div>
               </div>
 
-              <p className="text-xs text-[var(--muted)] mt-6 text-center">users average 3.5 fewer hours daily</p>
+              <p className="text-xs text-[var(--muted)] mt-6 text-center">Users average 3.5 fewer hours daily</p>
             </div>
           </div>
         </div>
@@ -207,7 +200,7 @@ export default function FocusModePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 Why Built-In Focus Modes Never Actually Work
@@ -223,32 +216,32 @@ export default function FocusModePage() {
                 </p>
 
                 <p>
-                  A proper focus app android setup works differently. It makes dismissing restrictions take actual effort — a math challenge, a breathing pause, a QR code scan. By the time you have done that, you have had the three seconds you needed to ask yourself: do I actually need to open this right now? Most of the time, the answer is no.
+                  A proper focus app Android setup works differently. It makes dismissing restrictions take actual effort — a math challenge, a breathing pause, a QR code scan. By the time you have done that, you have had the three seconds you needed to ask yourself: do I actually need to open this right now? Most of the time, the answer is no.
                 </p>
               </div>
             </div>
 
             {/* Visual Card - Built-in vs Real */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">built-in vs real</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">Built-in vs real</p>
               
               <div className="space-y-6">
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">built-in</p>
+                  <p className="text-xs text-white/60 uppercase">Built-in</p>
                   <p className="text-3xl font-bold text-white mt-2">1 tap</p>
-                  <p className="text-sm text-white/70 mt-1">to disable setting</p>
+                  <p className="text-sm text-white/70 mt-1">To disable setting</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">real friction</p>
+                  <p className="text-xs text-white/60 uppercase">Real friction</p>
                   <p className="text-3xl font-bold text-[var(--accent)] mt-2">3 seconds</p>
-                  <p className="text-sm text-white/70 mt-1">to ask yourself if you need it</p>
+                  <p className="text-sm text-white/70 mt-1">To ask yourself if you need it</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">result</p>
-                  <p className="text-3xl font-bold text-white mt-2">most say no</p>
-                  <p className="text-sm text-white/70 mt-1">to opening distracting apps</p>
+                  <p className="text-xs text-white/60 uppercase">Result</p>
+                  <p className="text-3xl font-bold text-white mt-2">Most say no</p>
+                  <p className="text-sm text-white/70 mt-1">To opening distracting apps</p>
                 </div>
               </div>
             </div>
@@ -261,10 +254,10 @@ export default function FocusModePage() {
         <div className="mx-auto max-w-5xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-             features
+             Features
             </p>
             <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              What Untap's Focus Mode Actually Does for You
+              What Untap's Focus Mode Actually Does For You
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               The brain focus app in Untap is not just a timer. It is a full control system for how you use your phone during the times that matter most. Here is what you can set up:
@@ -301,12 +294,12 @@ export default function FocusModePage() {
                 For Students
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                Best Focus App for Students: What Makes Untap Different
+                Best Focus App For Students: What Makes Untap Different
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
               <p>
-                Most students looking for the best focus apps For Students try two or three options before giving up. The problem is usually the same — the app is either too easy to bypass or too annoying to stick with.
+                Most students looking for the best focus apps for students try two or three options before giving up. The problem is usually the same — the app is either too easy to bypass or too annoying to stick with.
               </p>
 
               <p>
@@ -331,10 +324,10 @@ export default function FocusModePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                cross-platform
+                Cross-platform
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                Focus App for Android and iPhone — Same Rules, Both Sides
+                Focus App For Android And iPhone — Same Rules, Both Sides
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -343,7 +336,7 @@ export default function FocusModePage() {
               </p>
 
               <p>
-                The focus app android version is equally capable. Same delays, same session locks, same Friend Lock feature — where someone you trust sets a password on your restrictions so you cannot quietly undo them at 11pm when motivation is low.
+                The focus app Android version is equally capable. Same delays, same session locks, same Friend Lock feature — where someone you trust sets a password on your restrictions so you cannot quietly undo them at 11pm when motivation is low.
               </p>
 
               <p className="text-[var(--foreground)]">
@@ -362,10 +355,10 @@ export default function FocusModePage() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              accountability
+              Accountability
             </p>
             <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
-              The Focus Lock App That Prevents You from Cheating Yourself
+              The Focus Lock App That Prevents You From Cheating Yourself
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
              Here is the thing most people do not want to admit. When you really want to scroll, you will find a way around almost any restriction — unless the restriction makes that genuinely hard.
@@ -404,10 +397,10 @@ export default function FocusModePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                visibility
+                Visibility
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                See the Data First, Then Decide What to Block
+                See The Data First, Then Decide What To Block
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -508,13 +501,13 @@ export default function FocusModePage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>

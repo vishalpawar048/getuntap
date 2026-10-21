@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Parental Controls – Screen Time for Kids",
-  description:
-    "Parental control app to manage kids' screen time on iPhone and Android. Set limits, block apps, and help kids build healthy phone habits. Free trial.",
+  title: "Parental Controls – Screen Time For Kids",
+  description: "Parental control app to manage kids' screen time on iPhone and Android. Set limits, block apps, and help kids build healthy phone habits. Free trial.",
   alternates: {
     canonical: "https://www.getuntap.com/features/parental-controls",
   },
@@ -28,7 +27,7 @@ const featuresSection = [
   },
   {
     n: "04",
-    title: "Hard Locks by Time",
+    title: "Hard Locks By Time",
     body: "Lock distracting apps until after school or after dinner. They simply do not open until the time you set.",
   },
   {
@@ -38,7 +37,7 @@ const featuresSection = [
   },
   {
     n: "06",
-    title: "Soft, Moderate, and Strict Modes",
+    title: "Soft, Moderate, And Strict Modes",
     body: "You do not have to go straight to strict. Start with a delay and a daily limit. Add harder restrictions as the habit forms.",
   },
   {
@@ -51,39 +50,37 @@ const featuresSection = [
 const comparisons = [
   {
     title: "ScreenZen",
-    description:
-      "ScreenZen is primarily built as a mindful screen time tool for individual adult users. It uses intervention pop-ups — a screen that asks you to pause before opening an app — rather than hard locks. That works well for motivated adults. For a child who does not want restrictions, a pop-up they can tap through in one second is not a real barrier. ScreenZen also starts at around $9.99 per month for family use, which adds up quickly.",
+    description: "ScreenZen is primarily built as a mindful screen time tool for individual adult users. It uses intervention pop-ups — a screen that asks you to pause before opening an app — rather than hard locks. That works well for motivated adults. For a child who does not want restrictions, a pop-up they can tap through in one second is not a real barrier. ScreenZen also starts at around $9.99 per month for family use, which adds up quickly.",
   },
   {
     title: "Opal",
-    description:
-      "Opal is a solid screen time app, mainly built for iOS. It only launched on Android in August 2025, which means the Android version is still maturing. Opal's parental control setup requires iOS 26.4 or later to work without bypass — on earlier iOS versions, a child can use Face ID or their device passcode to get around the Screen Time passcode. It is also priced at the premium end of the market.",
+    description: "Opal is a solid screen time app, mainly built for iOS. It only launched on Android in August 2025, which means the Android version is still maturing. Opal's parental control setup requires iOS 26.4 or later to work without bypass — on earlier iOS versions, a child can use Face ID or their device passcode to get around the Screen Time passcode. It is also priced at the premium end of the market.",
   },
 ];
 
 const faqs = [
   {
-    q: "What does a screen time parental control app like Untap actually do?",
+    q: "What Does A Screen Time Parental Control App Like Untap Actually Do?",
     a: "It lets you set app-level limits, session locks, and open delays on your child's phone — and locks those settings behind a password only you hold. Your child cannot change the restrictions without you.",
   },
   {
-    q: "Are there good apps to control children's screen time on both iPhone and Android?",
+    q: "Are There Good Apps To Control Children's Screen Time On Both iPhone And Android?",
     a: "Yes. Untap works fully on both. The iOS version uses Apple's official Screen Time APIs and the Android version matches it feature for feature — same limits, same locks, same reports on both sides.",
   },
   {
-    q: "Can my child get around the restrictions?",
+    q: "Can My Child Get Around The Restrictions?",
     a: "Not without your password. Friend Lock means your child cannot change their app limits or session locks without the trusted adult who set the password. Prevent Uninstall also stops them from deleting the app during an active session.",
   },
   {
-    q: "Why is Untap a better alternative to ScreenZen and Opal for parents?",
+    q: "Why Is Untap A Better Alternative To ScreenZen And Opal For Parents?",
     a: "ScreenZen uses intervention pop-ups rather than hard locks, which a motivated child can tap through quickly. Opal only launched properly on Android in mid-2025 and requires the latest iOS version to prevent bypass. Untap uses Friend Lock with a separately held password, Prevent Uninstall, and works equally on both platforms right now — with all data stored locally on the device.",
   },
   {
-    q: "Can I set different limits for different apps?",
+    q: "Can I Set Different Limits For Different Apps?",
     a: "Yes. Each app gets its own rules. TikTok can have a 30-minute daily limit, YouTube can be locked until after school, Instagram can have a 10-second open delay. You set it per app, not as a single blanket restriction.",
   },
   {
-    q: "Is my child's data private?",
+    q: "Is My Child's Data Private?",
     a: "Yes. Everything stays on the device. No external servers, no ad tracking, nothing shared with anyone. Untap has no analytics SDKs and does not transmit personal data anywhere.",
   },
 ];
@@ -115,7 +112,7 @@ export default function ParentalControlPage() {
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Screen Time Parental Control App:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-              Help Your Kids Use Their Phone — Not the Other Way Around
+              Help Your Kids Use Their Phone — Not The Other Way Around
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 sm:text-xl">
@@ -127,13 +124,13 @@ export default function ParentalControlPage() {
             <a href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             
              <a href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -145,14 +142,14 @@ export default function ParentalControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6 text-lg leading-9 text-gray-700">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the solution
+                The solution
               </p>
               <p>
                 This is not a discipline problem. It is a design problem. Every social app your child uses was built by engineers whose job is to keep them scrolling as long as possible. A screen time parental control app does not fight your child — it fights the design. It puts the right friction between your kid and the next 40-minute scroll session, so you stop having the same argument every evening.
               </p>
 
               <p>
-                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds — even when your child really wants it not to.
+                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds — even when your child really wants it not to.
               </p>
 
               <p>
@@ -160,7 +157,7 @@ export default function ParentalControlPage() {
               </p>
 
               <p>
-                Give each distracting app a daily time limit. Lock <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social media</a> until after homework is done. Add a 10-second pause before YouTube opens, so your child gets a moment to actually decide. It is your call, and you can loosen or tighten it as your child grows.
+                Give each distracting app a daily time limit. Lock <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">Social Media</a> Until after homework is done. Add a 10-second pause before YouTube opens, so your child gets a moment to actually decide. It is your call, and you can loosen or tighten it as your child grows.
               </p>
 
               <p>
@@ -170,26 +167,26 @@ export default function ParentalControlPage() {
 
             {/* Visual Card */}
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">a calm, firm barrier</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">A calm, firm barrier</p>
 
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
-                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">sarah k., austin</p>
-                  <p className="text-2xl font-bold text-black mt-2">dinnertime, reclaimed</p>
+                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Sarah k., austin</p>
+                  <p className="text-2xl font-bold text-black mt-2">Dinnertime, reclaimed</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">tom a., manchester</p>
-                  <p className="text-2xl font-bold text-black mt-2">evenings feel like evenings again</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Tom a., manchester</p>
+                  <p className="text-2xl font-bold text-black mt-2">Evenings feel like evenings again</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">not a lockdown</p>
-                  <p className="text-2xl font-bold text-black mt-2">a boundary that holds</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Not a lockdown</p>
+                  <p className="text-2xl font-bold text-black mt-2">A boundary that holds</p>
                 </div>
               </div>
 
-              <p className="text-xs text-[var(--muted)] mt-6 text-center">calls, homework, and messaging stay accessible</p>
+              <p className="text-xs text-[var(--muted)] mt-6 text-center">Calls, homework, and messaging stay accessible</p>
             </div>
           </div>
         </div>
@@ -203,15 +200,15 @@ export default function ParentalControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                Why Parents Search for Apps to Control Children's Screen Time
+                Why Parents Search For Apps To Control Children's Screen Time
               </h2>
 
               <div className="space-y-5 text-lg leading-relaxed text-white/60 mt-8">
                 <p>
-                  Most parents who go looking for apps to control children's <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">screen time</a> have already tried the built-in Screen Time settings on iPhone or Digital Wellbeing on Android. They set limits. Their child found the passcode workaround within a week.
+                  Most parents who go looking for apps to control children's <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">Screen Time</a> Have already tried the built-in Screen Time settings on iPhone or Digital Wellbeing on Android. They set limits. Their child found the passcode workaround within a week.
                 </p>
 
                 <p>
@@ -226,25 +223,25 @@ export default function ParentalControlPage() {
 
             {/* Visual Card */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-8">easy to bypass vs holds</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-8">Easy to bypass vs holds</p>
 
               <div className="space-y-6">
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">built-in limits</p>
-                  <p className="text-3xl font-bold text-white mt-2">under 2 minutes</p>
-                  <p className="text-sm text-white/70 mt-1">for a motivated child to bypass</p>
+                  <p className="text-xs text-white/60 uppercase">Built-in limits</p>
+                  <p className="text-3xl font-bold text-white mt-2">Under 2 minutes</p>
+                  <p className="text-sm text-white/70 mt-1">For a motivated child to bypass</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">friend lock</p>
-                  <p className="text-3xl font-bold text-[var(--accent)] mt-2">password held by you</p>
-                  <p className="text-sm text-white/70 mt-1">not stored on your child's device</p>
+                  <p className="text-xs text-white/60 uppercase">Friend lock</p>
+                  <p className="text-3xl font-bold text-[var(--accent)] mt-2">Password held by you</p>
+                  <p className="text-sm text-white/70 mt-1">Not stored on your child's device</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">result</p>
-                  <p className="text-3xl font-bold text-white mt-2">dinnertime, reclaimed</p>
-                  <p className="text-sm text-white/70 mt-1">within one week</p>
+                  <p className="text-xs text-white/60 uppercase">Result</p>
+                  <p className="text-3xl font-bold text-white mt-2">Dinnertime, reclaimed</p>
+                  <p className="text-sm text-white/70 mt-1">Within one week</p>
                 </div>
               </div>
             </div>
@@ -257,10 +254,10 @@ export default function ParentalControlPage() {
         <div className="mx-auto max-w-5xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              features
+              Features
             </p>
             <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Features That Make the Difference
+              Features That Make The Difference
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               A few things worth knowing before you set it up:
@@ -294,10 +291,10 @@ export default function ParentalControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                cross-platform
+                Cross-platform
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                What If Your Kids Have Both iPhone and Android?
+                What If Your Kids Have Both iPhone And Android?
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
@@ -323,10 +320,10 @@ export default function ParentalControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                visibility
+                Visibility
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                A Screen Time Parental Control App and Usage Tracker — Not Just One or the Other
+                A Screen Time Parental Control App And Usage Tracker — Not Just One Or The Other
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -353,10 +350,10 @@ export default function ParentalControlPage() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              comparison
+              Comparison
             </p>
             <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
-              Why Untap Is a Better Alternative to ScreenZen and Opal for Parents
+              Why Untap Is A Better Alternative To ScreenZen And Opal For Parents
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
               This is a fair question, and it deserves a straight answer.
@@ -428,7 +425,7 @@ export default function ParentalControlPage() {
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
-            Give Them Room to <span className="text-[var(--accent)]">Grow</span>
+            Give Them Room To <span className="text-[var(--accent)]">Grow</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             Available for iPhone and Android.
@@ -439,13 +436,13 @@ export default function ParentalControlPage() {
              <a href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             
             <a href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>

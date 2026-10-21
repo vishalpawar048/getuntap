@@ -6,8 +6,7 @@ import { SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title:
     "Research — The Evidence Behind Untap's Screen Time Approach",
-  description:
-    "Peer-reviewed studies on phone addiction, doomscrolling, screen time, and intentional friction. The research that informs Untap's screen time control app design.",
+  description: "Peer-reviewed studies on phone addiction, doomscrolling, screen time, and intentional friction. The research that informs Untap's screen time control app design.",
   keywords: [
     "screen time research",
     "phone addiction studies",
@@ -19,8 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.getuntap.com/research" },
   openGraph: {
     title: "Research — Evidence Behind Untap",
-    description:
-      "Peer-reviewed studies on phone addiction, doomscrolling, and screen time interventions.",
+    description: "Peer-reviewed studies on phone addiction, doomscrolling, and screen time interventions.",
     url: `${SITE_URL}/research`,
     type: "website",
   },
@@ -70,7 +68,7 @@ export default function ResearchPage() {
               Research
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              The evidence behind Untap&apos;s screen time approach
+              The Evidence Behind Untap&apos;S Screen Time Approach
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               A curated index of peer-reviewed studies and foundational
@@ -120,7 +118,7 @@ export default function ResearchPage() {
               href="mailto:info.mbpsoftwares@gmail.com"
               className="text-[var(--accent)]"
             >
-              info.mbpsoftwares@gmail.com
+              Info.Mbpsoftwares@Gmail.Com
             </a>
             .
           </aside>

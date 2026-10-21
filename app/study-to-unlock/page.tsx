@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Study to Unlock – Quiz Your Way Out",
-  description:
-    "Quiz-to-unlock app blocker feature: answer questions from your study notes to unlock your phone. Turn every distraction into a study opportunity. Free For Students.",
+  title: "Study To Unlock – Quiz Your Way Out",
+  description: "Quiz-to-unlock app blocker feature: answer questions from your study notes to unlock your phone. Turn every distraction into a study opportunity. Free for students.",
   alternates: {
     canonical: "https://www.getuntap.com/study-to-unlock",
   },
@@ -16,9 +15,8 @@ export const metadata: Metadata = {
     "study before phone access",
   ],
   openGraph: {
-    title: "Study to Unlock — Quiz from Your Notes to Unlock Apps",
-    description:
-      "The only app blocker that makes you answer quiz questions from your study materials before unlocking distracting apps.",
+    title: "Study To Unlock — Quiz From Your Notes To Unlock Apps",
+    description: "The only app blocker that makes you answer quiz questions from your study materials before unlocking distracting apps.",
     url: "/study-to-unlock",
     type: "website",
   },
@@ -37,7 +35,7 @@ const howItWorksSteps = [
   },
   {
     num: "03",
-    title: "Answer to Unlock",
+    title: "Answer To Unlock",
     desc: "Try to open a blocked app and Untap shows you a quiz question. Get it right and the app opens. Wrong answer sends you back to studying.",
   },
 ];
@@ -63,27 +61,27 @@ const benefits = [
 
 const faqs = [
   {
-    q: "How does Untap generate quiz questions from my notes?",
+    q: "How Does Untap Generate Quiz Questions From My Notes?",
     a: "Upload a photo or PDF of your notes, and Untap's AI reads them to create multiple-choice, true/false, and short-answer questions. You don't have to manually type flashcards—just upload and go.",
   },
   {
-    q: "What if I get the quiz question wrong?",
+    q: "What If I Get The Quiz Question Wrong?",
     a: "The app stays locked and you're shown the correct answer with an explanation pulled from your notes. Then you go back to studying. You can try again in 5 minutes or set a longer lockout.",
   },
   {
-    q: "Can I use this for multiple classes at once?",
+    q: "Can I Use This For Multiple Classes At Once?",
     a: "Yes. Upload notes from every class and Untap organizes them into separate quiz banks. You can set different apps to pull from different subjects if you want.",
   },
   {
-    q: "Is this better than just using flashcard apps?",
+    q: "Is This Better Than Just Using Flashcard Apps?",
     a: "Flashcard apps require you to remember to open them. Untap puts the quiz in front of every distraction attempt. You end up studying 10-20 more times per day without thinking about it.",
   },
   {
-    q: "Does it work for exam prep?",
+    q: "Does It Work For Exam Prep?",
     a: "Absolutely. Many students turn on hard mode during finals week: every app requires 3 correct answers in a row to unlock. It's brutal but effective.",
   },
   {
-    q: "Is it free?",
+    q: "Is It Free?",
     a: "There's a free tier that covers one subject and basic quiz features. Unlimited subjects and advanced quiz types (fill-in-blank, essay prompts) require the paid plan.",
   },
 ];
@@ -127,13 +125,13 @@ export default function StudyToUnlockPage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -145,10 +143,10 @@ export default function StudyToUnlockPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the insight
+                The insight
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                You Already Reach for Your Phone Dozens of Times a Day
+                You Already Reach For Your Phone Dozens Of Times A Day
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -173,7 +171,7 @@ export default function StudyToUnlockPage() {
               How It Works
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-              Three Steps to Smarter Phone Use
+              Three Steps To Smarter Phone Use
             </h2>
           </div>
 
@@ -205,10 +203,10 @@ export default function StudyToUnlockPage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              benefits
+              Benefits
             </p>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Why Quiz-to-Unlock Works
+              Why Quiz-To-Unlock Works
             </h2>
           </div>
 
@@ -239,10 +237,10 @@ export default function StudyToUnlockPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                student story
+                Student story
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                From 7 Hours of Scrolling to a 0.4 GPA Boost
+                From 7 Hours Of Scrolling To A 0.4 GPA Boost
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
@@ -266,7 +264,7 @@ export default function StudyToUnlockPage() {
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
               <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
-                Questions About Quiz-to-Unlock
+                Questions About Quiz-To-Unlock
               </h2>
             </div>
             <div className="space-y-8">
@@ -294,7 +292,7 @@ export default function StudyToUnlockPage() {
             <span className="text-[var(--accent)]">A Study Session</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/65">
-            Free to start. iPhone and Android. Upload your notes and start studying smarter today.
+            Free to start. IPhone and Android. Upload your notes and start studying smarter today.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -305,7 +303,7 @@ export default function StudyToUnlockPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -314,7 +312,7 @@ export default function StudyToUnlockPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>

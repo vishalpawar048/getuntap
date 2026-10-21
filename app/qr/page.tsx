@@ -3,9 +3,8 @@ import QRCode from "qrcode";
 import { PrintButton } from "./print-button";
 
 export const metadata: Metadata = {
-  title: "Scan to Unblock Apps with Untap",
-  description:
-    "Scan this QR code to unblock apps inside Untap, or to install the Untap screen time control app on iPhone and Android.",
+  title: "Scan To Unblock Apps With Untap",
+  description: "Scan this QR code to unblock apps inside Untap, or to install the Untap screen time control app on iPhone and Android.",
   alternates: { canonical: "https://www.getuntap.com/qr" },
   robots: { index: false, follow: true },
 };
@@ -43,7 +42,7 @@ export default async function QRPage() {
         />
 
         <p className="mt-6 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-          getuntap.com
+          Getuntap.com
         </p>
 
         <PrintButton qrSvg={qrSvg} />

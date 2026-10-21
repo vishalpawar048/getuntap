@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "App Blocker – Timer Lock for Apps",
-  description:
-    "Timer lock for apps to block Instagram & social media on Android & iPhone. App usage tracker & blocker. Take back your time. Free trial.",
+  title: "App Blocker – Timer Lock For Apps",
+  description: "Timer lock for apps to block Instagram & social media on Android & iPhone. App usage tracker & blocker. Take back your time. Free trial.",
   alternates: {
     canonical: "https://www.getuntap.com/features/app-blocker",
   },
@@ -13,23 +12,19 @@ export const metadata: Metadata = {
 const featuresSection = [
   {
     title: "Friend Lock",
-    description:
-      "someone you trust can set a password on your restrictions, so you can't quietly turn them off at 11pm.",
+    description: "Someone you trust can set a password on your restrictions, so you can't quietly turn them off at 11pm.",
   },
   {
     title: "Prevent Uninstall",
-    description:
-      "keeps the app in place during a session instead of letting you delete your way out of a rough moment.",
+    description: "Keeps the app in place during a session instead of letting you delete your way out of a rough moment.",
   },
   {
-    title: "Soft, moderate, and strict modes",
-    description:
-      "you don't need the harshest setting on day one. start light and tighten it as the habit builds.",
+    title: "Soft, Moderate, And Strict Modes",
+    description: "You don't need the harshest setting on day one. Start light and tighten it as the habit builds.",
   },
   {
-    title: "Cross-platform support",
-    description:
-      "set your delays and locks up once, and the same rules and reports carry over whether you're on Android or iOS.",
+    title: "Cross-Platform Support",
+    description: "Set your delays and locks up once, and the same rules and reports carry over whether you're on Android or iOS.",
   },
 ];
 
@@ -97,27 +92,27 @@ const features = [
 
 const faqs = [
   {
-    q: "What does a timer lock for apps actually do?",
+    q: "What Does A Timer Lock For Apps Actually Do?",
     a: "It puts a short delay in front of an app before it opens — a challenge, a breathing pause, a QR scan — so you get a real second to decide instead of opening it on autopilot.",
   },
   {
-    q: "Can I fully block Instagram app access, or only slow it down?",
+    q: "Can I Fully Block Instagram App Access, Or Only Slow It Down?",
     a: "Both work. You can set a short delay, a daily time limit, or a full lock that only opens back up at a time you pick.",
   },
   {
-    q: "Is the app blocker android version as capable as the iPhone one?",
+    q: "Is The App Blocker Android Version As Capable As The iPhone One?",
     a: "Yes, they're built to match. Delays, locks, Friend Lock, and reports work the same way on both.",
   },
   {
-    q: "Will I lose access if I use it to block apps from my iPhone?",
+    q: "Will I Lose Access If I Use It To Block Apps From My iPhone?",
     a: "No. Nothing is deleted or permanently removed. You're adding a pause, and you can adjust or remove it whenever you like.",
   },
   {
-    q: "Is the app usage tracker and blocker free to try?",
+    q: "Is The App Usage Tracker And Blocker Free To Try?",
     a: "There's a free tier with the core features. Paid plans add deeper analytics and unlimited restrictions if you need more.",
   },
   {
-    q: "Is my data private?",
+    q: "Is My Data Private?",
     a: "Yes. Everything stays on your device — no external servers, no ad tracking, nothing shared.",
   },
 ];
@@ -147,9 +142,9 @@ export default function AppBlockerPage() {
             app blocker
           </span>
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
-            Timer Lock for Apps:{" "}
+            Timer Lock For Apps:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-              Best App Blocker Features to Improve Productivity
+              Best App Blocker Features To Improve Productivity
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 sm:text-xl">
@@ -161,13 +156,13 @@ export default function AppBlockerPage() {
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -179,7 +174,7 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6 text-lg leading-9 text-gray-700">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the solution
+                The solution
               </p>
               <p>
                 A timer lock for apps puts that moment back. It gives you a few seconds to actually decide whether opening Instagram right now is what you want, or just what your thumb wants.
@@ -192,26 +187,26 @@ export default function AppBlockerPage() {
 
             {/* Visual Card - Pause Concept */}
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-6 text-center">pause concept</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-6 text-center">Pause concept</p>
               
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
                   <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">10 seconds</p>
-                  <p className="text-2xl font-bold text-black mt-2">breathing pause</p>
+                  <p className="text-2xl font-bold text-black mt-2">Breathing pause</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">challenge</p>
-                  <p className="text-2xl font-bold text-black mt-2">math problem</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Challenge</p>
+                  <p className="text-2xl font-bold text-black mt-2">Math problem</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">alternative</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Alternative</p>
                   <p className="text-2xl font-bold text-black mt-2">QR scan</p>
                 </div>
               </div>
 
-              <p className="text-xs text-[var(--muted)] mt-6 text-center">enough friction to let you choose</p>
+              <p className="text-xs text-[var(--muted)] mt-6 text-center">Enough friction to let you choose</p>
             </div>
           </div>
         </div>
@@ -225,10 +220,10 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                Why People Search for an App Blocker Android Solution
+                Why People Search For An App Blocker Android Solution
               </h2>
               
               <div className="space-y-5 text-lg leading-relaxed text-white/60 mt-8">
@@ -237,32 +232,32 @@ export default function AppBlockerPage() {
                 </p>
 
                 <p>
-                  One user went from 187 app opens a week down to 22. Another cut her Instagram checks by 40 percent, just from the pause screen alone. That's the kind of shift a decent app blocker android should be able to deliver — not through guilt, but through a genuine pause point.
+                  One user went from 187 app opens a week down to 22. Another cut her Instagram checks by 40 percent, just from the pause screen alone. That's the kind of shift a decent app blocker Android should be able to deliver — not through guilt, but through a genuine pause point.
                 </p>
               </div>
             </div>
 
             {/* Visual Card - Results Stats */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">real results</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">Real results</p>
               
               <div className="space-y-6">
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">user #1</p>
+                  <p className="text-xs text-white/60 uppercase">User #1</p>
                   <p className="text-3xl font-bold text-white mt-2">187 → 22</p>
-                  <p className="text-sm text-white/70 mt-1">app opens per week</p>
+                  <p className="text-sm text-white/70 mt-1">App opens per week</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">user #2</p>
+                  <p className="text-xs text-white/60 uppercase">User #2</p>
                   <p className="text-3xl font-bold text-[var(--accent)] mt-2">-40%</p>
                   <p className="text-sm text-white/70 mt-1">Instagram checks reduced</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">student in pune</p>
+                  <p className="text-xs text-white/60 uppercase">Student in pune</p>
                   <p className="text-3xl font-bold text-white mt-2">7h → 2h</p>
-                  <p className="text-sm text-white/70 mt-1">daily screen time</p>
+                  <p className="text-sm text-white/70 mt-1">Daily screen time</p>
                 </div>
               </div>
             </div>
@@ -276,10 +271,10 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                how to use
+                How to use
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                How to Block Instagram App Notifications Without Deleting It
+                How To Block Instagram App Notifications Without Deleting It
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -301,10 +296,10 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                cross-platform
+                Cross-platform
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                What If You Need to Block Apps From iPhone Instead?
+                What If You Need To Block Apps From iPhone Instead?
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
@@ -322,10 +317,10 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                tracking
+                Tracking
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                An App Usage Tracker and Blocker, Not Just One or the Other
+                An App Usage Tracker And Blocker, Not Just One Or The Other
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -353,7 +348,7 @@ export default function AppBlockerPage() {
                 Features
               </p>
               <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
-                Features That Make the Difference
+                Features That Make The Difference
 
               </h2>
             </div>
@@ -389,7 +384,7 @@ export default function AppBlockerPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                privacy
+                Privacy
               </p>
               <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Your Data Stays Yours
@@ -448,7 +443,7 @@ export default function AppBlockerPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -457,7 +452,7 @@ export default function AppBlockerPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>

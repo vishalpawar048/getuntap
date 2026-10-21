@@ -7,14 +7,12 @@ import { SITE_NAME, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title:
     "Untap Blog — Screen Time, Doomscrolling & Phone Addiction Guides",
-  description:
-    "In-depth guides on breaking phone addiction, stopping doomscrolling, and reducing screen time — backed by behavioral science and real user data from the Untap app.",
+  description: "In-depth guides on breaking phone addiction, stopping doomscrolling, and reducing screen time — backed by behavioral science and real user data from the Untap app.",
   alternates: { canonical: "https://www.getuntap.com/blog" },
   openGraph: {
     title:
       "Untap Blog — Screen Time, Doomscrolling & Phone Addiction Guides",
-    description:
-      "In-depth guides on breaking phone addiction, stopping doomscrolling, and reducing screen time.",
+    description: "In-depth guides on breaking phone addiction, stopping doomscrolling, and reducing screen time.",
     url: `${SITE_URL}/blog`,
     type: "website",
   },
@@ -71,7 +69,7 @@ export default function BlogIndexPage() {
               Untap Blog
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Guides to reduce screen time and break phone addiction
+              Guides To Reduce Screen Time And Break Phone Addiction
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               In-depth, evidence-based guides on doomscrolling, digital
