@@ -23,6 +23,257 @@ export type PostBlock =
 
 export const blogPosts: Post[] = [
   {
+    slug: "app-blocker-for-studying",
+    title: "App Blocker For Studying: How To Pick And Set Up The Right One",
+    description: "Need an app blocker for studying? Here's how to choose the right friction, set up study sessions, avoid bypassing it, and turn the urge to scroll into quiz-based retrieval practice.",
+    publishedAt: "2026-10-22",
+    author: "Untap Team",
+    readMinutes: 9,
+    tags: [
+      "app blocker",
+      "studying",
+      "focus",
+      "students",
+    ],
+    body: [
+      {
+        kind: "p",
+        text: "You sit down to study. Ten minutes in, Instagram is open. You don't remember unlocking your phone. If you're a student trying to protect focus time, you don't need more willpower — you need an app blocker for studying that actually works. This guide covers what to look for, how to set one up without sabotaging yourself, which apps to block, and how to avoid the bypasses that defeat most students within a week.",
+      },
+      {
+        kind: "h2", text: "Why Students Need An App Blocker For Studying, Not Just Willpower", id: "why-students-need-an-app-blocker",
+      },
+      {
+        kind: "p",
+        text: "The average college student picks up their phone 96 times a day. Most of those pickups are unconscious — your hand moves before your brain registers the decision. An app blocker for studying interrupts that reflex at the moment it fires, before the autopilot takes over.",
+      },
+      {
+        kind: "p",
+        text: "Study sessions fail because the first distraction breaks flow, and once flow is broken, it takes an average of 23 minutes to rebuild deep focus. One Instagram check costs you half an hour. An app blocker for studying keeps the door closed during the hours that matter most.",
+      },
+      {
+        kind: "quote",
+        text: "Great app for focus. This helped me in my focus for competative exams.",
+        cite: "OJAS CHAUDHARI, Google Play",
+      },
+      {
+        kind: "h2", text: "What To Look For In An App Blocker For Studying", id: "what-to-look-for",
+      },
+      {
+        kind: "p",
+        text: "Not all app blockers are equal. Here's what separates a tool that works from one you'll disable by Thursday.",
+      },
+      {
+        kind: "h3", text: "Scheduled Hard Locks, Not Just Soft Nudges", id: "scheduled-hard-locks",
+      },
+      {
+        kind: "p",
+        text: "A 5-second delay before Instagram opens is helpful for casual browsing. During a study block, you need a hard lock — the app will not open at all, no matter what. Look for an app blocker for studying that lets you schedule these locks by time and day (e.g., 9am–12pm Monday through Friday).",
+      },
+      {
+        kind: "h3", text: "Website Blocking, Not Just Apps", id: "website-blocking",
+      },
+      {
+        kind: "p",
+        text: "If Instagram is locked but instagram.com in Chrome is wide open, you haven't blocked anything. Make sure your app blocker for studying also handles in-browser bypasses by blocking distracting domains and keywords.",
+      },
+      {
+        kind: "h3", text: "Bypass Protection", id: "bypass-protection",
+      },
+      {
+        kind: "p",
+        text: "Most students disable their own restrictions within three days. The best app blockers for studying include friend lock (a trusted person sets a password), prevent-uninstall, and settings protection, so a frustrated 11pm version of you can't undo what 9am you set up.",
+      },
+      {
+        kind: "quote",
+        text: "the app is very useful for students who easily get distracted by the mobile. I totally recommend this app",
+        cite: "Abdullah Azaam, Google Play",
+      },
+      {
+        kind: "h3", text: "Quiz-To-Unlock From Your Own Notes (Optional But Powerful)", id: "quiz-to-unlock",
+      },
+      {
+        kind: "p",
+        text: "Standard app blockers say \"no.\" Untap's study-to-unlock feature says \"yes, after you answer three questions from your biology notes.\" This turns the urge to open TikTok into spaced-repetition retrieval practice. You either reinforce what you're learning or you decide the app wasn't worth it — either way, you win. Learn more about how this works on our study-to-unlock page.",
+      },
+      {
+        kind: "p",
+        text: "No other app blocker for studying offers this. If you're preparing for exams, this feature alone justifies the choice.",
+      },
+      {
+        kind: "h2", text: "Which Apps To Block During Study Hours", id: "which-apps-to-block",
+      },
+      {
+        kind: "p",
+        text: "Block too many apps and you'll feel restricted. Block too few and the distractions slip through. Here's the practical list most students land on.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Social media: Instagram, TikTok, Snapchat, X (Twitter), Facebook, Reddit.",
+          "Short-form video: YouTube Shorts, Instagram Reels, TikTok (yes, list it twice — it's the worst offender).",
+          "Messaging apps you don't need for group study: WhatsApp, Discord, Telegram. If your study group is on WhatsApp, leave it unblocked but turn off notifications.",
+          "Games: Any mobile game. If you're reaching for Candy Crush during a study break, the break is not a break — it's task-switching that costs focus.",
+          "Shopping and news: Amazon, news apps, anything that triggers a scroll reflex.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "Leave unblocked: Your school's LMS, email (if you need it for assignments), calendar, maps, music, and any productivity or note-taking apps (Notion, Evernote, Anki, etc.).",
+      },
+      {
+        kind: "h2", text: "How To Set Up An App Blocker For Studying Without Sabotaging Yourself", id: "how-to-set-up",
+      },
+      {
+        kind: "p",
+        text: "Students who try to go from zero restrictions to an all-day lockdown fail within a week. Here's the ramp-up that actually sticks.",
+      },
+      {
+        kind: "h3", text: "Week 1: Set A 2-Hour Morning Block", id: "week-1-morning-block",
+      },
+      {
+        kind: "p",
+        text: "Pick your best two study hours — usually 9am to 11am or 10am to 12pm. Hard-lock your top three distraction apps during that window. Leave the rest of the day unrestricted. This teaches your brain that focused mornings are the default, without triggering rebellion.",
+      },
+      {
+        kind: "h3", text: "Week 2: Add A Second Block", id: "week-2-second-block",
+      },
+      {
+        kind: "p",
+        text: "Add a second 2-hour study block in the afternoon or evening. Now you have 4 hours of protected time. Most students find this is enough — you don't need an all-day lock if you've secured the hours that matter.",
+      },
+      {
+        kind: "h3", text: "Week 3: Enable Friend Lock", id: "week-3-friend-lock",
+      },
+      {
+        kind: "p",
+        text: "Give a roommate, parent, or study partner the password to your app blocker settings. This is the single most effective feature for exam season, because it removes the option to quit when motivation dips at midnight.",
+      },
+      {
+        kind: "quote",
+        text: "Helped me a lot during exam season",
+        cite: "Mukelabai Chimba, Google Play",
+      },
+      {
+        kind: "h3", text: "Week 4: Turn On Quiz-To-Unlock (If Available)", id: "week-4-quiz-to-unlock",
+      },
+      {
+        kind: "p",
+        text: "If your app supports it, upload a set of flashcards or study notes and require yourself to answer 2-3 questions before unlocking Instagram or YouTube outside study hours. This turns procrastination into low-stakes retrieval practice.",
+      },
+      {
+        kind: "h2", text: "How To Avoid The Bypasses That Defeat Most App Blockers", id: "avoid-bypasses",
+      },
+      {
+        kind: "p",
+        text: "Students are resourceful. Here are the five most common workarounds and how to close them.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Opening the app in a browser instead of the app: Enable website blocking for instagram.com, tiktok.com, reddit.com, etc. A good app blocker for studying blocks both.",
+          "Switching to an unblocked device: If you own a tablet or a second phone, install the same app blocker there, or leave the device in another room during study blocks.",
+          "Disabling the app blocker mid-session: Turn on prevent-uninstall and friend lock so you can't disable it yourself.",
+          "Changing the system time to fool scheduled locks: The best app blockers detect time changes and keep restrictions in place.",
+          "Using a VPN or switching accounts: Some Android blockers can be fooled by a VPN. Check reviews to confirm the app you choose is bypass-resistant.",
+        ],
+      },
+      {
+        kind: "h2", text: "Alternatives To Consider", id: "alternatives",
+      },
+      {
+        kind: "p",
+        text: "Untap is purpose-built for students, but it's not the only option. Here are fair alternatives:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "AppBlock (Android): Strong scheduled blocking, decent bypass protection. No quiz-to-unlock feature.",
+          "Opal (iOS/Android): Excellent design, good for adults. More expensive than Untap and doesn't offer study-specific unlocks.",
+          "Focus mode (built into iOS/Android): Free, but trivial to disable. Better than nothing if you're just starting out.",
+          "Cold Turkey (desktop): Best option if most of your studying is on a laptop. Not helpful for phone distractions.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "Untap is the only app blocker for studying with quiz-to-unlock from your own notes. If you're preparing for exams and you want the distraction urge to reinforce learning instead of breaking it, that feature is worth the download alone. See our full comparison on the study app blocker page.",
+      },
+      {
+        kind: "h2", text: "What Happens After You Lock Your Apps", id: "what-happens-after",
+      },
+      {
+        kind: "p",
+        text: "The first three days are the hardest. You'll reach for your phone during a hard problem, find Instagram locked, and feel a flash of frustration. By day five, you stop reaching. By week two, the locked hours feel like the normal state and unlocked hours feel like the exception.",
+      },
+      {
+        kind: "stat",
+        value: "3.5 hrs",
+        label: "average daily screen time saved by Untap users",
+      },
+      {
+        kind: "p",
+        text: "Your focus sessions get longer. The urge to check your phone during a lecture or a reading block fades. The biggest change isn't the hours saved — it's the return of continuous thought. Deep focus is a skill that atrophies when interrupted every eight minutes. An app blocker for studying lets you rebuild it.",
+      },
+      {
+        kind: "quote",
+        text: "very very good app for focusing on study. I tried some other apps as well but this one works very well. It really keeps me out of distraction. ❤️",
+        cite: "Nilam Pawar, Google Play",
+      },
+      {
+        kind: "h2", text: "FAQ", id: "faq",
+      },
+      {
+        kind: "h3", text: "Will An App Blocker For Studying Actually Help Me Focus?", id: "faq-help-focus",
+      },
+      {
+        kind: "p",
+        text: "Yes, if it uses scheduled hard locks and bypass protection. A soft nudge won't hold during exam week. You need the app to be actually inaccessible during study hours, with no quick way to disable it.",
+      },
+      {
+        kind: "h3", text: "Can I Still Use My Phone For Music Or Timers During Study Blocks?", id: "faq-music-timers",
+      },
+      {
+        kind: "p",
+        text: "Absolutely. A good app blocker for studying only restricts the specific apps you choose. Music, podcasts, timers, and productivity apps stay fully accessible.",
+      },
+      {
+        kind: "h3", text: "What If I Need To Check A Message During A Study Block?", id: "faq-check-message",
+      },
+      {
+        kind: "p",
+        text: "Leave your messaging apps unblocked, but turn off notifications. You can check messages when you choose to, not when a notification decides for you. If messages are a major distraction, block them too and check only during scheduled breaks.",
+      },
+      {
+        kind: "h3", text: "How Is Quiz-To-Unlock Different From A Normal App Block?", id: "faq-quiz-unlock",
+      },
+      {
+        kind: "p",
+        text: "A normal block says \"no.\" Quiz-to-unlock says \"yes, after you prove you remember three things from your chemistry notes.\" It turns the distraction urge into spaced-repetition practice. Most students find they abandon the app unlock halfway through the quiz, because the urge wasn't strong enough to justify the effort — and that's the point.",
+      },
+      {
+        kind: "h3", text: "Will This Work For High School Students Or Just College?", id: "faq-high-school",
+      },
+      {
+        kind: "p",
+        text: "Both. High school students typically benefit from stricter locks and parent-controlled friend lock. College students usually prefer more autonomy with self-set schedules. The same app blocker for studying works for both — you just adjust the settings.",
+      },
+      {
+        kind: "h3", text: "Can I Block Apps On My Laptop Too?", id: "faq-laptop",
+      },
+      {
+        kind: "p",
+        text: "Untap currently supports iPhone and Android. For laptop blocking, look at Cold Turkey (Windows/Mac) or browser extensions like LeechBlock. The ideal setup is both: Untap on your phone, Cold Turkey on your laptop.",
+      },
+      {
+        kind: "h2", text: "Ready To Lock In Your Study Hours?", id: "ready",
+      },
+      {
+        kind: "p",
+        text: "An app blocker for studying works because it removes the decision. You don't have to fight the urge — the urge hits a wall. If you're a student trying to protect focus during exam season, or if you're just tired of Instagram stealing your study time, this is the tool that makes it stop. Read more about how Untap helps students on our for-students page, or check out our guide on breaking phone addiction for a broader 30-day plan. Untap is free to download on iOS and Android. Set a 2-hour morning block today and see what uninterrupted focus feels like again.",
+      },
+    ],
+  },
+  {
     slug: "how-to-break-phone-addiction",
     title: "How To Break Phone Addiction In 30 Days: A Science-Backed Plan With Untap",
     description: "A practical, research-based 30-day program to break phone addiction, reduce doomscrolling, and reclaim 2-4 hours per day using the Untap screen time control app.",

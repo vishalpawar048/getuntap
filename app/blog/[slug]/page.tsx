@@ -64,6 +64,20 @@ export default async function BlogPostPage({
 
   const url = `${SITE_URL}/blog/${post.slug}`;
 
+  // Find FAQ sections for FAQPage schema
+  const faqItems: Array<{ question: string; answer: string }> = [];
+  let currentQuestion: string | null = null;
+  
+  for (let i = 0; i < post.body.length; i++) {
+    const block = post.body[i];
+    if (block.kind === "h3") {
+      currentQuestion = block.text;
+    } else if (block.kind === "p" && currentQuestion) {
+      faqItems.push({ question: currentQuestion, answer: block.text });
+      currentQuestion = null;
+    }
+  }
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -122,9 +136,26 @@ export default async function BlogPostPage({
     ],
   };
 
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  } : null;
+
+  const jsonLdData = faqJsonLd 
+    ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
+    : [articleJsonLd, breadcrumbJsonLd];
+
   return (
     <>
-      <JsonLd data={[articleJsonLd, breadcrumbJsonLd]} />
+      <JsonLd data={jsonLdData} />
       <article className="px-6 py-24 pt-32 sm:py-32">
         <div className="mx-auto max-w-3xl">
           <nav
