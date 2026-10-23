@@ -181,7 +181,7 @@ export default function AppBlockerPage() {
               </p>
 
               <p>
-                That's the whole idea behind <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap</a>. It's not another app that shames you with a red screen or a scary chart. It just slows things down enough that you get to choose.
+                That is the whole idea behind <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap</a>. It's not another app that shames you with a red screen or a scary chart. It just slows things down enough that you get to choose.
               </p>
             </div>
 

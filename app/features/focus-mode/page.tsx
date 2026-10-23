@@ -408,7 +408,7 @@ export default function FocusModePage() {
                 One thing that separates Untap from a basic focus lock app is the usage reporting built into the same tool. 
                 </p>
                 <p>
-                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns — not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first seven days, and the reports are a big part of that because they make the problem visible.
+                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns, not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first seven days, and the reports are a big part of that because they make the problem visible.
               </p>
 
               <p className="text-[var(--foreground)]">

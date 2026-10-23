@@ -219,11 +219,10 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-<<<<<<< HEAD
+
                 Arjun, an engineering student from Pune, went from 7 hours of daily <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">screen time</a> down to 1.8 hours once he set session limits on his social apps during study hours. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
-=======
+
                 As Kudrat Hargun wrote on Google Play, "decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it." As Jana Ahmad wrote, "i went from being constantly tired and exhausted...to being my old clear minded self again." That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
->>>>>>> 85f7b4b4d7c80a49e1303907e0e7a51fb28494f0
               </p>
             </div>
           </div>
@@ -281,11 +280,9 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-<<<<<<< HEAD
                 On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first week. Those numbers come from real usage data across the app — from users like Amir J. in Toronto who slept better after two weeks, and Sofía G. in Madrid who tried three other tools before Untap was the first one that held past the second week.
-=======
                 On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app, from users who wrote on Google Play about real results.
->>>>>>> 85f7b4b4d7c80a49e1303907e0e7a51fb28494f0
+
               </p>
             </div>
           </div>

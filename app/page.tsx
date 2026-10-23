@@ -447,7 +447,7 @@ export default function Home() {
             </h1>
 
             <p className="sr-only">
-              Untap is an app blocker that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
+              Untap is an <a href="https://www.getuntap.com/features/app-blocker" className="text-[var(--accent)] hover:underline">app blocker</a> that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
@@ -501,8 +501,7 @@ export default function Home() {
                 </h3>
                 <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
                   <p>
-                    Students want to study, and they also want social media in
-                    control so other people&apos;s lives do not wreck the day.
+                    Students want to study, and they also want <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social media in</a> control so other people&apos;s lives do not wreck the day.
                     A status, a friend&apos;s post, or cheap content is enough
                     to spark FOMO and the fear of being left behind.
                   </p>

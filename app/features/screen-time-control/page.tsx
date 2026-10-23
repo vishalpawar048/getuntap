@@ -143,11 +143,11 @@ export default function ScreenTimeControlPage() {
                 The solution
               </p>
               <p>
-                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem — it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Is built to do.
+                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem, it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Is built to do.
               </p>
 
               <p>
-                You do not need to delete anything. If your goal is to manage time spent on the phone during work hours, mornings, or evenings with family — you can set a delay, a daily cap, or a hard screen lock time app that only lifts when you say so.
+                You do not need to delete anything. If your goal is to manage time spent on the phone during work hours, mornings, or evenings with family. You can set a delay, a daily cap, or a hard screen lock time app that only lifts when you say so.
               </p>
 
               <p>

@@ -149,7 +149,7 @@ export default function ParentalControlPage() {
               </p>
 
               <p>
-                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds — even when your child really wants it not to.
+                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds even when your child really wants it not to.
               </p>
 
               <p>
