@@ -186,7 +186,7 @@ export default function AppBlockerPage() {
               </p>
 
               <p>
-                That's the whole idea behind Untap. It's not another app that shames you with a red screen or a scary chart. It just slows things down enough that you get to choose.
+                That's the whole idea behind <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap</a>. It's not another app that shames you with a red screen or a scary chart. It just slows things down enough that you get to choose.
               </p>
             </div>
 
@@ -284,7 +284,7 @@ export default function AppBlockerPage() {
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
               <p>
-                You don't need to delete Instagram to get your time back. If your goal is to block Instagram app pickups during the parts of the day that matter — work hours, mornings, dinner — you can set a delay, a session limit, or a hard lock that only lifts at a time you choose. Set it to kick in after 9pm, or make it wait 10 seconds before opening during work hours. It's your call, and you can loosen or tighten it whenever your habits change.
+                You don't need to delete Instagram to get your time back. If your goal is to <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline"> block Instagram app pickups </a> during the parts of the day that matter — work hours, mornings, dinner — you can set a delay, a session limit, or a hard lock that only lifts at a time you choose. Set it to kick in after 9pm, or make it wait 10 seconds before opening during work hours. It's your call, and you can loosen or tighten it whenever your habits change.
               </p>
 
               <p>
@@ -334,7 +334,7 @@ export default function AppBlockerPage() {
               </p>
 
               <p>
-                On average, people using Untap as their app usage tracker and blocker save about 3.5 hours a day, and roughly 85 percent notice less doomscrolling within the first week. Those aren't marketing numbers pulled from nowhere — they come from actual usage across the app.
+                On average, people using Untap as their app usage tracker and blocker save about 3.5 hours a day, and roughly 85 percent notice less <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first week. Those aren't marketing numbers pulled from nowhere — they come from actual usage across the app.
               </p>
             </div>
           </div>

@@ -168,7 +168,7 @@ export default function FocusModePage() {
               </p>
 
               <p>
-                A brain focus app changes that path. Untap's focus mode puts a real barrier between your work time and your scroll time, so you stay in the zone without having to fight yourself every five minutes.
+                A brain focus app changes that path. <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap's</a> focus mode puts a real barrier between your work time and your scroll time, so you stay in the zone without having to fight yourself every five minutes.
               </p>
             </div>
 
@@ -314,7 +314,7 @@ export default function FocusModePage() {
               </p>
 
               <p>
-                A student in Pune who used to spend 7 hours a day on her phone brought that down to under 2 hours once she started locking social apps during her study blocks. She did not use the strictest setting. She just used a 15-second delay and a one-hour session limit — and that was enough to break the habit loop.
+                A student in Pune who used to spend 7 hours a day on her phone brought that down to under 2 hours once she started locking <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social apps</a> during her study blocks. She did not use the strictest setting. She just used a 15-second delay and a one-hour session limit — and that was enough to break the habit loop.
               </p>
 
               <p>
@@ -415,7 +415,7 @@ export default function FocusModePage() {
                 One thing that separates Untap from a basic focus lock app is the usage reporting built into the same tool. 
                 </p>
                 <p>
-                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns — not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their doomscrolling within the first seven days, and the reports are a big part of that because they make the problem visible.
+                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns — not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first seven days, and the reports are a big part of that because they make the problem visible.
               </p>
 
               <p className="text-[var(--foreground)]">

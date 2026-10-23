@@ -110,7 +110,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                That is exactly what Untap does. No guilt trips. No shame charts. Just the right amount of friction at the right moment — so you stay in control of your own time.
+                That is exactly what <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap</a> does. No guilt trips. No shame charts. Just the right amount of friction at the right moment — so you stay in control of your own time.
               </p>
             </div>
 
@@ -220,7 +220,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Arjun, an engineering student from Pune, went from 7 hours of daily screen time down to 1.8 hours once he set session limits on his social apps during study hours. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
+                Arjun, an engineering student from Pune, went from 7 hours of daily <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">screen time</a> down to 1.8 hours once he set session limits on his social apps during study hours. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
               </p>
             </div>
           </div>
@@ -278,7 +278,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app — from users like Amir J. in Toronto who slept better after two weeks, and Sofía G. in Madrid who tried three other tools before Untap was the first one that held past the second week.
+                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first week. Those numbers come from real usage data across the app — from users like Amir J. in Toronto who slept better after two weeks, and Sofía G. in Madrid who tried three other tools before Untap was the first one that held past the second week.
               </p>
             </div>
           </div>
