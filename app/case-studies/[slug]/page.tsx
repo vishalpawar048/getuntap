@@ -29,7 +29,7 @@ export async function generateMetadata({
   return {
     title: study.title,
     description: study.description,
-    alternates: { canonical: `/case-studies/${study.slug}` },
+    alternates: { canonical: `https://www.getuntap.com/case-studies/${study.slug}` },
     openGraph: {
       type: "article",
       url,
@@ -182,7 +182,7 @@ export default async function CaseStudyPage({
 
           <aside className="mt-20 rounded-3xl border border-[var(--border)] bg-[var(--card)] p-8 text-center">
             <h2 className="text-2xl font-bold tracking-tight">
-              Run the same playbook on your phone
+              Run The Same Playbook On Your Phone
             </h2>
             <p className="mt-3 text-[var(--muted)]">
               Untap is free to download. The exact configuration described
@@ -193,13 +193,13 @@ export default async function CaseStudyPage({
                 href={IOS_APP_URL}
                 className="rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium text-[var(--background)] transition hover:opacity-90"
               >
-                Download for iOS
+                Download For iOS
               </a>
               <a
                 href={ANDROID_APP_URL}
                 className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-medium text-[var(--foreground)] transition hover:bg-[var(--foreground)]/5"
               >
-                Download for Android
+                Download For Android
               </a>
             </div>
           </aside>

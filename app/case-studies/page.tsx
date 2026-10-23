@@ -7,13 +7,11 @@ import { SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title:
     "Untap Case Studies — Real Screen Time Reductions, Real People",
-  description:
-    "Read real Untap case studies: a student who cut screen time from 7 hours to under 2, a family who reclaimed dinnertime, and a remote team that doubled deep-work hours.",
-  alternates: { canonical: "/case-studies" },
+  description: "Read real Untap case studies: a student who cut screen time from 7 hours to under 2, a family who reclaimed dinnertime, and a remote team that doubled deep-work hours.",
+  alternates: { canonical: "https://www.getuntap.com/case-studies" },
   openGraph: {
     title: "Untap Case Studies — Real Screen Time Reductions",
-    description:
-      "Documented before/after results from individuals, families, and teams using the Untap screen time control app.",
+    description: "Documented before/after results from individuals, families, and teams using the Untap screen time control app.",
     url: `${SITE_URL}/case-studies`,
     type: "website",
   },
@@ -58,7 +56,7 @@ export default function CaseStudiesIndexPage() {
               Case Studies
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Real screen time reductions, documented end-to-end
+              Real Screen Time Reductions, Documented End-To-End
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               Detailed before/after case studies from individuals, families,

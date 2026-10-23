@@ -21,22 +21,20 @@ const COPY: Record<
   }
 > = {
   school: {
-    title: "request a school demo",
-    subtitle:
-      "tell us about your campus and we'll get back within 2 business days.",
+    title: "Request A School Demo",
+    subtitle: "Tell us about your campus and we'll get back within 2 business days.",
     rolePlaceholder: "e.g. principal, head of IT, dean",
     requirementPlaceholder:
       "e.g. ~600 students, mixed iPhone + Android, want quiet hours mon–fri 8:30–3:30, exam mode in march.",
-    cta: "send request",
+    cta: "Send Request",
   },
   enterprise: {
-    title: "talk to sales",
-    subtitle:
-      "tell us about your team and we'll get back within 2 business days.",
+    title: "Talk To Sales",
+    subtitle: "Tell us about your team and we'll get back within 2 business days.",
     rolePlaceholder: "e.g. COO, head of people, IT lead",
     requirementPlaceholder:
       "e.g. 80-person engineering team in bengaluru + remote, looking to pilot deep-work blocks tue/thu mornings.",
-    cta: "send request",
+    cta: "Send Request",
   },
 };
 
@@ -148,7 +146,7 @@ export function LeadDialogTrigger({
               <div>
                 <h2
                   id={titleId}
-                  className="text-2xl font-bold leading-tight tracking-tight lowercase"
+                  className="text-2xl font-bold leading-tight tracking-tight"
                 >
                   {title}
                 </h2>
@@ -190,18 +188,18 @@ export function LeadDialogTrigger({
                     <path d="M4 11l4 4 8-9" />
                   </svg>
                 </div>
-                <h3 className="mt-4 text-lg font-bold lowercase">
-                  we got it. talk soon.
+                <h3 className="mt-4 text-lg font-bold">
+                  We Got It. Talk Soon.
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-                  we&apos;ll be in touch within 2 business days.
+                  We&apos;ll be in touch within 2 business days.
                 </p>
                 <button
                   type="button"
                   onClick={close}
                   className="mt-6 inline-flex items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium text-[var(--background)] transition hover:opacity-90"
                 >
-                  close
+                  Close
                 </button>
               </div>
             ) : (
@@ -304,7 +302,7 @@ export function LeadDialogTrigger({
                 </button>
 
                 <p className="text-center text-[11px] leading-relaxed text-[var(--muted)]">
-                  we&apos;ll only use this to reply to you. no marketing spam.
+                  We&apos;ll only use this to reply to you. No marketing spam.
                 </p>
               </form>
             )}

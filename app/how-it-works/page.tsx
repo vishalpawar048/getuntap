@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "How Untap Works — 3 Steps to a Quieter Phone",
-  description:
-    "How the Untap screen time control app works: pick your noisy apps, get a gentle intentional-friction pause, and watch your hours return. Free for iPhone and Android.",
-  alternates: { canonical: "/how-it-works" },
+  title: "Focus Hours, Then Limit The Day",
+  description: "Set focus hours to protect your focus, then limit the rest of the day. Cap sessions on brain-rotting apps. Free for iPhone and Android.",
+  alternates: { canonical: "https://www.getuntap.com/how-it-works" },
   keywords: [
     "how Untap works",
+    "quiz to unlock apps",
+    "study to unlock phone",
     "screen time control app how it works",
     "intentional friction",
-    "app delay",
-    "phone addiction tool",
   ],
   openGraph: {
-    title: "How Untap works — 3 steps to a quieter phone",
-    description:
-      "Pick noisy apps, get a gentle pause, watch your hours return.",
+    title: "How Untap Works — Focus Hours, Then Limit The Day",
+    description: "Protect your focus hours, limit the rest of the day, and cap sessions on brain-rotting apps.",
     url: "/how-it-works",
     type: "website",
   },
@@ -24,33 +23,48 @@ export const metadata: Metadata = {
 const steps = [
   {
     number: "01",
-    title: "Pick your noisy apps.",
-    body: "Choose the apps that have been quietly stealing your hours. Social, news, video — whatever pulls you in.",
+    title: "Set Your Focus Hours.",
+    body: "Pick the block you need to protect. Class, study, or deep work. During those hours, distracting apps stay limited.",
   },
   {
     number: "02",
-    title: "Get a gentle pause.",
-    body: "When you reach for them, Untap takes a breath before opening. No shame, no lockout — just a moment of choice.",
+    title: "Limit The Rest Of The Day.",
+    body: "After focus hours, Untap still limits how much of the day those apps can take, so the scroll does not fill every gap.",
   },
   {
     number: "03",
-    title: "Watch your time return.",
-    body: "Each week, see the hours you've quietly reclaimed and the apps you've outgrown. The wins compound.",
+    title: "Cap Brain-Rotting Sessions.",
+    body: "Set a session length on TikTok, Instagram, YouTube, and the rest. When the session ends, the app stops.",
   },
 ];
 
 export default function HowItWorksPage() {
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How To Protect Your Focus With Untap",
+    description: "Set focus hours, limit the rest of the day, and cap sessions on brain-rotting apps.",
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.title,
+      text: step.body,
+    })),
+  };
+
   return (
-    <section className="px-6 py-20 sm:py-28">
+    <>
+      <JsonLd data={howToJsonLd} />
+      <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto flex w-full max-w-4xl flex-col">
         <div className="flex flex-col items-center text-center">
-          <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
-            Three small steps to a{" "}
-            <span className="text-[var(--accent)]">quieter phone</span>.
-          </p>
+          <h1 className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
+            Set Focus Hours, Then Limit The Day
+          </h1>
           <p className="mt-6 max-w-xl text-balance text-base leading-7 text-[var(--muted)] sm:text-lg">
-            Untap doesn&apos;t shout, lock you out, or shame you. It just makes
-            the loop a little harder to fall into.
+            Untap protects your focus during the hours you choose, then limits
+            the rest of the day. Session caps keep brain-rotting apps from
+            running on.
           </p>
         </div>
 
@@ -82,5 +96,6 @@ export default function HowItWorksPage() {
         </p>
       </div>
     </section>
+    </>
   );
 }

@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Screen Time Control App | Reduce Screen Time App for iOS & Android | Untap",
-  description:
-    "Untap is the screen time control app that helps you reduce screen time on iPhone and Android. Screen lock time app with real friction. Try it free today!",
+  title: "Screen Time Control – Reduce Screen Time",
+  description: "Reduce screen time on iPhone and Android with real friction. Screen lock time app with intentional delays and limits. Free to start.",
   alternates: {
-    canonical: "https://www.getuntap.com/features/screen-time-control/",
+    canonical: "https://www.getuntap.com/features/screen-time-control",
   },
 };
 
@@ -14,7 +13,7 @@ const featuresSection = [
   {
     n: "01",
     title: "Open Delays",
-    body: "Set a 5, 10, or 30-second pause before any app opens. That pause is where most impulse opens die. Priya, a designer in London, cut her Instagram opens by 40 percent from this one feature alone.",
+    body: "Set a 5, 10, or 30-second pause before any app opens. That pause is where most impulse opens die. As Christoffer wrote on Google Play, \"this is by far the best one for me. Offers delays on open rather than full blocks...Really happy about it.\"",
   },
   {
     n: "02",
@@ -29,7 +28,7 @@ const featuresSection = [
   {
     n: "04",
     title: "Friend Lock",
-    body: "Someone you trust sets a password on your Untap settings. You cannot quietly change your limits at 11pm without them. Daniel K., a product manager in Berlin, cut his social media time by 60 percent using this feature.",
+    body: "Someone you trust sets a password on your Untap settings. You cannot quietly change your limits at 11pm without them. As Unidentified Dude wrote on Google Play, \"almost everything is unlocked in the free tier. love it!\"",
   },
   {
     n: "05",
@@ -38,51 +37,49 @@ const featuresSection = [
   },
   {
     n: "06",
-    title: "Soft, Moderate, and Strict Modes",
-    body: "Start light. Tighten it as the habit builds. Tom A., a dad of three in Manchester, started on soft mode with his kids and said his evenings finally felt like evenings again within two weeks.",
+    title: "Soft, Moderate, And Strict Modes",
+    body: "Start light. Tighten it as the habit builds. As Kudrat Hargun wrote on Google Play, \"decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it.\"",
   },
 ];
 
 const comparisons = [
   {
     title: "ScreenZen",
-    description:
-      "ScreenZen is completely free and adds a countdown delay before apps open. That is its whole model — a nudge, then you can proceed anyway. There is no hard blocking. No Friend Lock. No session locks. No way to stop yourself from just waiting out the timer and opening the app. It works well for people whose phone use is mostly autopilot rather than compulsion. But the moment you really want to scroll, ScreenZen does not hold.",
+    description: "ScreenZen is completely free and adds a countdown delay before apps open. That is its whole model — a nudge, then you can proceed anyway. There is no hard blocking. No Friend Lock. No session locks. No way to stop yourself from just waiting out the timer and opening the app. It works well for people whose phone use is mostly autopilot rather than compulsion. But the moment you really want to scroll, ScreenZen does not hold.",
   },
   {
     title: "Opal",
-    description:
-      "Opal is the premium end of this category. Deep Focus mode is genuinely hard to bypass — but it is locked behind Opal Pro, which costs $99.99 a year or $19.99 a month. The free version gives you one recurring session and basic blocking you can still override. On top of that, Opal's strongest features are iOS-only. Android users get a version that lags behind. And at $100 a year, you are paying premium prices for gamification features — gems, streaks, leaderboards — that many people find more annoying than useful.",
+    description: "Opal is the premium end of this category. Deep Focus mode is genuinely hard to bypass — but it is locked behind Opal Pro, which costs $99.99 a year or $19.99 a month. The free version gives you one recurring session and basic blocking you can still override. On top of that, Opal's strongest features are iOS-only. Android users get a version that lags behind. And at $100 a year, you are paying premium prices for gamification features — gems, streaks, leaderboards — that many people find more annoying than useful.",
   },
 ];
 
 const faqs = [
   {
-    q: "What does a screen time control app actually do?",
+    q: "What Does A Screen Time Control App Actually Do?",
     a: "It adds real friction before your phone lets you open distracting apps — a delay, a breathing pause, a math challenge, a QR scan. That pause gives your brain a moment to decide instead of reacting on autopilot. Most people open their distracting apps far less just from that one change.",
   },
   {
-    q: "Is Untap a good reduce screen time app for both Android and iPhone?",
+    q: "Is Untap A Good Reduce Screen Time App For Both Android And iPhone?",
     a: "Yes. The iOS version uses Apple's official APIs. The Android version matches it feature for feature — same delays, same locks, same Friend Lock, same reports. There is no watered-down version on either side.",
   },
   {
-    q: "How does the screen lock time app feature work?",
+    q: "How Does The Screen Lock Time App Feature Work?",
     a: "You set a time window and every app you flag as distracting locks for that entire window. They are not deleted. They simply will not open until your session ends. You can also set hard locks that hold until a time you choose, regardless of session length.",
   },
   {
-    q: "Why is Untap better than ScreenZen?",
+    q: "Why Is Untap Better Than ScreenZen?",
     a: "ScreenZen adds a delay you can wait out and then open the app anyway. There is no hard blocking, no Friend Lock, and no way to prevent yourself from bypassing it when motivation is low. Untap has all three — real locks, Friend Lock, and Prevent Uninstall — which is what actually holds when you genuinely want to scroll.",
   },
   {
-    q: "Why is Untap better than Opal?",
+    q: "Why Is Untap Better Than Opal?",
     a: "Opal's best features sit behind a $99.99 per year paywall and the free version is easy to bypass. Opal's Android version also lags behind iPhone. Untap gives you hard locking and full cross-platform support without the $100 annual subscription or gamification features most people never use.",
   },
   {
-    q: "Is my data private?",
+    q: "Is My Data Private?",
     a: "Yes. Everything stays on your device — no external servers, no ad tracking, nothing shared with anyone. Untap has no analytics SDK and no advertising network running in the background.",
   },
   {
-    q: "Is the screen time control app free to try?",
+    q: "Is The Screen Time Control App Free To Try?",
     a: "Yes. There is a free tier with all core features. Paid plans add deeper analytics and unlimited restrictions for users who need more.",
   },
 ];
@@ -111,7 +108,7 @@ export default function ScreenTimeControlPage() {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
             screen time control
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Screen Time Control App:{" "}
             <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
               The Only Tool That Makes You Actually Put Your Phone Down
@@ -126,12 +123,12 @@ export default function ScreenTimeControlPage() {
             <a href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              Download for iOS
+              Download For iOS
             </a>
             
               <a href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10">
-              Download for Android
+              Download For Android
             </a>
           </div>
         </div>
@@ -143,10 +140,10 @@ export default function ScreenTimeControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-6 text-lg leading-9 text-gray-700">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the solution
+                The solution
               </p>
               <p>
-                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem — it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> is built to do.
+                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem — it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Is built to do.
               </p>
 
               <p>
@@ -164,26 +161,26 @@ export default function ScreenTimeControlPage() {
 
             {/* Visual Card - Reduction Stats */}
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">the shift</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-8 text-center">The shift</p>
 
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-6">
-                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">arjun, pune</p>
+                  <p className="text-xs text-[var(--accent)] uppercase font-bold tracking-wide">Arjun, pune</p>
                   <p className="text-2xl font-bold text-black mt-2">7 hrs → 1.8 hrs daily</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">maya r., brooklyn</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">Maya r., brooklyn</p>
                   <p className="text-2xl font-bold text-black mt-2">2 hours back a day</p>
                 </div>
 
                 <div className="rounded-lg border-2 border-[var(--accent)]/30 bg-[var(--accent)]/10 p-4">
-                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">on average</p>
+                  <p className="text-xs text-[var(--muted)] uppercase font-semibold">On average</p>
                   <p className="text-2xl font-bold text-black mt-2">3.5 hours saved daily</p>
                 </div>
               </div>
 
-              <p className="text-xs text-[var(--muted)] mt-6 text-center">without deleting the apps you need</p>
+              <p className="text-xs text-[var(--muted)] mt-6 text-center">Without deleting the apps you need</p>
             </div>
           </div>
         </div>
@@ -197,10 +194,10 @@ export default function ScreenTimeControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the problem
+                The problem
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
-                Why People Search for a Screen Time Control App
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
+                Why People Search For A Screen Time Control App
               </h2>
 
               <div className="space-y-5 text-lg leading-relaxed text-white/60 mt-8">
@@ -220,25 +217,25 @@ export default function ScreenTimeControlPage() {
 
             {/* Visual Card - Track vs Change */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-8">
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">built-in vs real</p>
+              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold text-center mb-6">Built-in vs real</p>
 
               <div className="space-y-6">
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">built-in tools</p>
-                  <p className="text-3xl font-bold text-white mt-2">track everything</p>
-                  <p className="text-sm text-white/70 mt-1">change nothing</p>
+                  <p className="text-xs text-white/60 uppercase">Built-in tools</p>
+                  <p className="text-3xl font-bold text-white mt-2">Track everything</p>
+                  <p className="text-sm text-white/70 mt-1">Change nothing</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">real friction</p>
-                  <p className="text-3xl font-bold text-[var(--accent)] mt-2">delays, math, breath</p>
-                  <p className="text-sm text-white/70 mt-1">placed before the app opens</p>
+                  <p className="text-xs text-white/60 uppercase">Real friction</p>
+                  <p className="text-3xl font-bold text-[var(--accent)] mt-2">Delays, math, breath</p>
+                  <p className="text-sm text-white/70 mt-1">Placed before the app opens</p>
                 </div>
 
                 <div className="border-l-2 border-[var(--accent)] pl-6">
-                  <p className="text-xs text-white/60 uppercase">result</p>
-                  <p className="text-3xl font-bold text-white mt-2">sofía held past week two</p>
-                  <p className="text-sm text-white/70 mt-1">where three other tools failed</p>
+                  <p className="text-xs text-white/60 uppercase">Result</p>
+                  <p className="text-3xl font-bold text-white mt-2">Sofía held past week two</p>
+                  <p className="text-sm text-white/70 mt-1">Where three other tools failed</p>
                 </div>
               </div>
             </div>
@@ -251,10 +248,10 @@ export default function ScreenTimeControlPage() {
         <div className="mx-auto max-w-5xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              features
+              Features
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-              Features That Make the Difference
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+              Features That Make The Difference
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               A few things worth knowing before you download:
@@ -270,7 +267,7 @@ export default function ScreenTimeControlPage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase">
+                <h3 className="mt-4 text-xl font-bold tracking-tight">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-[var(--muted)]">
@@ -288,9 +285,9 @@ export default function ScreenTimeControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                cross-platform
+                Cross-platform
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
                 What If You Need a Screen Time Control App Android Users Can Also Use?
               </h2>
             </div>
@@ -300,11 +297,11 @@ export default function ScreenTimeControlPage() {
               </p>
 
               <p>
-                The screen time app for iOS uses Apple's official FamilyControls and ManagedSettings APIs — the exact same frameworks Apple's own Screen Time feature runs on. That means it is stable, approved, and will not break when Apple pushes an update. The screen time control app android version carries the same delays, same session locks, same Friend Lock, and same usage reports. No compromises on either side.
+                The screen time app for iOS uses Apple's official FamilyControls and ManagedSettings APIs — the exact same frameworks Apple's own Screen Time feature runs on. That means it is stable, approved, and will not break when Apple pushes an update. The screen time control app Android version carries the same delays, same session locks, same Friend Lock, and same usage reports. No compromises on either side.
               </p>
 
               <p className="text-white">
-                Jordan P., a remote founder, ran Untap with his whole team during <a href="https://www.getuntap.com/features/focus-mode" className="text-[var(--accent)] hover:underline">focus blocks</a>. Deep work hours nearly doubled. Half his team was on iPhone, the other half on Android — and every single person got the same experience. That kind of cross-platform reliability is rare in this category.
+                Jordan P., a remote founder, ran Untap with his whole team during <a href="https://www.getuntap.com/features/focus-mode" className="text-[var(--accent)] hover:underline">Focus Blocks</a>. Deep work hours nearly doubled. Half his team was on iPhone, the other half on Android — and every single person got the same experience. That kind of cross-platform reliability is rare in this category.
               </p>
             </div>
           </div>
@@ -317,10 +314,10 @@ export default function ScreenTimeControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                visibility
+                Visibility
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-                A Screen Time App Lock and Usage Tracker — Not Just One or the Other
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                A Screen Time App Lock And Usage Tracker — Not Just One Or The Other
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
@@ -347,10 +344,10 @@ export default function ScreenTimeControlPage() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              comparison
+              Comparison
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
-              Why Untap Is a Better Alternative to ScreenZen and Opal
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
+              Why Untap Is A Better Alternative To ScreenZen And Opal
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/65">
               This is a fair question. Both are well-known tools. Here is the honest answer.
@@ -365,7 +362,7 @@ export default function ScreenTimeControlPage() {
                 <span className="absolute right-6 top-6 text-xs font-semibold text-white/30">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold lowercase tracking-tight text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white">
                   {benefit.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/60">
@@ -386,9 +383,9 @@ export default function ScreenTimeControlPage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                privacy
+                Privacy
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
                 Your Data Stays Yours
               </h2>
             </div>
@@ -406,7 +403,7 @@ export default function ScreenTimeControlPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -416,7 +413,7 @@ export default function ScreenTimeControlPage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -430,7 +427,7 @@ export default function ScreenTimeControlPage() {
       {/* CTA Section */}
       <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-black sm:text-5xl md:text-6xl">
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-black sm:text-5xl md:text-6xl">
             Take Back <span className="text-[var(--accent)]">Control</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--muted)]">
@@ -445,7 +442,7 @@ export default function ScreenTimeControlPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              download for iOS
+              Download For iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -454,7 +451,7 @@ export default function ScreenTimeControlPage() {
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              download for android
+              Download For Android
             </a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://getuntap.com";
+export const SITE_URL = "https://www.getuntap.com";
 export const SITE_NAME = "Untap";
 export const SITE_TAGLINE = "Screen Time Control App";
 export const ORG_NAME = "MBP Softwares";

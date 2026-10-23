@@ -4,8 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Untap — Screen Time Control App",
     short_name: "Untap",
-    description:
-      "Untap is a screen time control app for iPhone and Android that helps you stop doomscrolling, break phone addiction, and reclaim hours of your day with intentional friction.",
+    description: "Untap is a screen time control app for iPhone and Android that helps you stop doomscrolling, break phone addiction, and reclaim hours of your day with intentional friction.",
     start_url: "/",
     display: "standalone",
     background_color: "#f5f0eb",

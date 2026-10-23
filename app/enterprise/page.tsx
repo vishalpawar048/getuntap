@@ -5,10 +5,8 @@ import { LeadDialogTrigger } from "../components/lead-dialog";
 import { SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Untap Enterprise — Distraction-Free Workplaces & Deep Work at Scale",
-  description:
-    "Untap Enterprise helps companies create distraction-free workplaces. Deploy focus policies for teams, schedule deep-work hours, block social and entertainment apps during work, and protect employee privacy.",
+  title: "Untap Enterprise – Focus For Teams",
+  description: "Deploy focus policies across teams. Schedule deep-work hours, block distractions during work, and boost productivity without surveillance. Free trial.",
   keywords: [
     "untap enterprise",
     "workplace screen time",
@@ -21,12 +19,10 @@ export const metadata: Metadata = {
     "team productivity app",
     "workplace digital wellbeing",
   ],
-  alternates: { canonical: "/enterprise" },
+  alternates: { canonical: "https://www.getuntap.com/enterprise" },
   openGraph: {
-    title:
-      "Untap Enterprise — Distraction-Free Workplaces & Deep Work at Scale",
-    description:
-      "Deploy focus policies across teams, schedule deep-work hours, and reclaim distraction-free workplaces — without surveilling employees.",
+    title: "Untap Enterprise — Distraction-Free Workplaces & Deep Work At Scale",
+    description: "Deploy focus policies across teams, schedule deep-work hours, and reclaim distraction-free workplaces — without surveilling employees.",
     url: `${SITE_URL}/enterprise`,
     type: "website",
   },
@@ -34,53 +30,47 @@ export const metadata: Metadata = {
 
 const enterpriseFeatures = [
   {
-    title: "deep-work hours, deployed to teams",
-    description:
-      "schedule company-wide focus blocks — for example tue/thu mornings 9 to noon — and have distracting apps quietly lock for everyone in the policy.",
+    title: "Deep-Work Hours, Deployed To Teams",
+    description: "Schedule company-wide focus blocks — for example tue/thu mornings 9 to noon — and have distracting apps quietly lock for everyone in the policy.",
   },
   {
-    title: "policies by team, not by person",
-    description:
-      "engineering, sales, support and design all have different rhythms. configure separate policies per team, per role, or per project, and update them in one click.",
+    title: "Policies By Team, Not By Person",
+    description: "Engineering, sales, support and design all have different rhythms. Configure separate policies per team, per role, or per project, and update them in one click.",
   },
   {
-    title: "block by category, not just by app name",
-    description:
-      "block social, video, news, gaming, dating and shopping in one toggle. add or remove specific apps without re-deploying anything.",
+    title: "Block By Category, Not Just By App Name",
+    description: "Block social, video, news, gaming, dating and shopping in one toggle. Add or remove specific apps without re-deploying anything.",
   },
   {
-    title: "office-only, remote-only or always-on",
-    description:
-      "geofence the office for hybrid teams, schedule by working hours for remote teams, or ship a soft global policy for the whole company. mix and match per group.",
+    title: "Office-Only, Remote-Only Or Always-On",
+    description: "Geofence the office for hybrid teams, schedule by working hours for remote teams, or ship a soft global policy for the whole company. Mix and match per group.",
   },
   {
-    title: "meeting mode & focus mode",
-    description:
-      "trigger a deeper lock during meetings or while a focus session is active. the team room stops being a phone room.",
+    title: "Meeting Mode & Focus Mode",
+    description: "Trigger a deeper lock during meetings or while a focus session is active. The team room stops being a phone room.",
   },
   {
-    title: "no surveillance, ever",
-    description:
-      "untap enforces locally on each device. it does not capture screenshots, log keystrokes, read messages, browse photos, or report which app a person tried to open. the only thing the dashboard shows is policy compliance.",
+    title: "No Surveillance, Ever",
+    description: "Untap enforces locally on each device. It does not capture screenshots, log keystrokes, read messages, browse photos, or report which app a person tried to open. The only thing the dashboard shows is policy compliance.",
   },
 ];
 
 const useCases = [
   {
-    title: "engineering & design",
-    body: "protect maker time. lock chat, social and video apps during deep-work blocks so engineers and designers stay in flow.",
+    title: "Engineering & Design",
+    body: "Protect maker time. Lock chat, social and video apps during deep-work blocks so engineers and designers stay in flow.",
   },
   {
-    title: "sales & success",
-    body: "force a quiet phone during pitch hours and customer calls. allow crm, email and calendar to keep working untouched.",
+    title: "Sales & Success",
+    body: "Force a quiet phone during pitch hours and customer calls. Allow crm, email and calendar to keep working untouched.",
   },
   {
-    title: "support & ops",
-    body: "shift-based policies. when an agent is on-shift, distractions go quiet. when the shift ends, the phone goes back to normal.",
+    title: "Support & Ops",
+    body: "Shift-based policies. When an agent is on-shift, distractions go quiet. When the shift ends, the phone goes back to normal.",
   },
   {
-    title: "executive & off-sites",
-    body: "ship a temporary 'all hands' profile for off-sites, board meetings and workshops — then disable it when the room clears.",
+    title: "Executive & Off-Sites",
+    body: "Ship a temporary 'all hands' profile for off-sites, board meetings and workshops — then disable it when the room clears.",
   },
 ];
 
@@ -106,50 +96,50 @@ const stats = [
 const rolloutSteps = [
   {
     n: "01",
-    title: "scope the pilot",
-    body: "pick one team or one office. share team size, ios/android split, and the focus hours you want covered. we send back a draft policy in 48 hours.",
+    title: "Scope The Pilot",
+    body: "Pick one team or one office. Share team size, iOS/Android split, and the focus hours you want covered. We send back a draft policy in 48 hours.",
   },
   {
     n: "02",
-    title: "tune the policy",
-    body: "co-design the lock rules with the team lead — what stays open, what gets a pause, what hard-locks, and during which hours.",
+    title: "Tune The Policy",
+    body: "Co-design the lock rules with the team lead — what stays open, what gets a pause, what hard-locks, and during which hours.",
   },
   {
     n: "03",
-    title: "ship to devices",
-    body: "employees install the untap app and scan a one-time enrollment code. mdm integration is available for fleets that need it.",
+    title: "Ship To Devices",
+    body: "Employees install the Untap app and scan a one-time enrollment code. Mdm integration is available for fleets that need it.",
   },
   {
     n: "04",
-    title: "measure the change",
-    body: "after two weeks the team lead reviews compliance and self-reported focus. tighten, loosen or roll the policy out company-wide.",
+    title: "Measure The Change",
+    body: "After two weeks the team lead reviews compliance and self-reported focus. Tighten, loosen or roll the policy out company-wide.",
   },
 ];
 
 const faqs = [
   {
-    q: "is untap enterprise surveillance software?",
-    a: "no, and that is the entire point. untap does not capture screen content, keystrokes, messages or browsing history. all enforcement runs on the device. the admin dashboard shows policy compliance only — not what someone tried to open or scroll.",
+    q: "Is Untap Enterprise Surveillance Software?",
+    a: "No, and that is the entire point. Untap does not capture screen content, keystrokes, messages or browsing history. All enforcement runs on the device. The admin dashboard shows policy compliance only — not what someone tried to open or scroll.",
   },
   {
-    q: "do employees have to give up their personal phone?",
-    a: "no. untap installs as a normal app and only enforces the policy you configure during the hours you configure. outside those hours and outside any geofence, the phone behaves exactly as it always did.",
+    q: "Do Employees Have To Give Up Their Personal Phone?",
+    a: "No. Untap installs as a normal app and only enforces the policy you configure during the hours you configure. Outside those hours and outside any geofence, the phone behaves exactly as it always did.",
   },
   {
-    q: "does this work with our mdm?",
-    a: "yes. untap can be deployed via apple business manager / android enterprise as a managed app, or installed individually with a one-time enrollment code. it coexists with your existing mdm without conflicting policies.",
+    q: "Does This Work With Our MDM?",
+    a: "Yes. Untap can be deployed via apple business manager / Android enterprise as a managed app, or installed individually with a one-time enrollment code. It coexists with your existing mdm without conflicting policies.",
   },
   {
-    q: "can teams override the policy?",
-    a: "policies are protected by an admin password. you can optionally allow individual override (with a clear audit log of overrides) or run a strict mode where only an admin can lift the lock.",
+    q: "Can Teams Override The Policy?",
+    a: "Policies are protected by an admin password. You can optionally allow individual override (with a clear audit log of overrides) or run a strict mode where only an admin can lift the lock.",
   },
   {
-    q: "what about meetings and customer-facing roles?",
-    a: "policies are time-and-context aware. you can lock distractions only during focus blocks, only during meetings, only during customer calls, or any combination — while leaving business apps fully available.",
+    q: "What About Meetings And Customer-Facing Roles?",
+    a: "Policies are time-and-context aware. You can lock distractions only during focus blocks, only during meetings, only during customer calls, or any combination — while leaving business apps fully available.",
   },
   {
-    q: "what does it cost?",
-    a: "untap enterprise is priced per active seat per month with volume discounts for fleets above 100 devices. nonprofits and education get preferential pricing. email us for a custom quote.",
+    q: "What Does It Cost?",
+    a: "Untap Enterprise is priced per active seat per month with volume discounts for fleets above 100 devices. Nonprofits and education get preferential pricing. Email us for a custom quote.",
   },
 ];
 
@@ -181,8 +171,7 @@ export default function EnterprisePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     name: "Untap Enterprise",
-    description:
-      "Distraction-free workplaces. Deploy focus policies for teams, schedule deep-work hours, and protect employee privacy.",
+    description: "Distraction-free workplaces. Deploy focus policies for teams, schedule deep-work hours, and protect employee privacy.",
     brand: { "@type": "Brand", name: "Untap" },
     category: "Workplace Productivity / Digital Wellbeing",
     audience: {
@@ -218,15 +207,15 @@ export default function EnterprisePage() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
                 untap enterprise
               </span>
-              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-6xl md:text-7xl">
-                deep work,{" "}
+              <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
+                Deep Work,{" "}
                 <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  at company scale
+                  At Company Scale
                 </span>
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 sm:text-xl">
-                untap enterprise gives teams the focus their tools keep
-                stealing. deploy distraction-free hours across the company,
+                Untap Enterprise gives teams the focus their tools keep
+                stealing. Deploy distraction-free hours across the company,
                 lock social and entertainment apps during work, and give
                 people back the kind of workday where things actually get
                 shipped &mdash; without surveilling a single keystroke.
@@ -237,7 +226,7 @@ export default function EnterprisePage() {
                   type="enterprise"
                   className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
                 >
-                  talk to sales
+                  Talk To Sales
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -254,7 +243,7 @@ export default function EnterprisePage() {
                   href="/for-schools"
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
                 >
-                  looking for schools?
+                  Looking For Schools?
                 </Link>
               </div>
 
@@ -291,17 +280,17 @@ export default function EnterprisePage() {
               <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-white/[0.05] p-6 shadow-2xl shadow-black/40 backdrop-blur">
                 <div className="flex items-center justify-between">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/50">
-                    focus policy
+                    Focus policy
                   </p>
                   <span className="rounded-full bg-[var(--accent)]/15 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[var(--accent)]">
                     live
                   </span>
                 </div>
                 <p className="mt-3 text-lg font-bold text-white">
-                  engineering · deep-work
+                  Engineering · deep-work
                 </p>
                 <p className="text-xs text-white/50">
-                  mon–fri · 9–12 &amp; 14–17 · 86 devices
+                  Mon–fri · 9–12 &amp; 14–17 · 86 devices
                 </p>
 
                 <ul className="mt-5 space-y-1.5">
@@ -347,26 +336,26 @@ export default function EnterprisePage() {
           <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                the workplace problem
+                The workplace problem
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-                the office is open. the focus isn&apos;t.
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                The Office Is Open. The Focus Isn&apos;T.
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
               <p>
-                the average knowledge worker switches context every few
+                The average knowledge worker switches context every few
                 minutes &mdash; and most of those switches are pulled out of
                 the work itself, into a feed.
               </p>
               <p>
-                companies have tried open offices, focus rooms, do-not-disturb
+                Companies have tried open offices, focus rooms, do-not-disturb
                 policies and quarterly &ldquo;deep work weeks.&rdquo; the
                 phone keeps winning because the phone never stops asking.
               </p>
               <p className="text-[var(--foreground)]">
-                untap enterprise installs the boundary at the device. the
-                things the team needs stay open. the things stealing their
+                Untap Enterprise installs the boundary at the device. The
+                things the team needs stay open. The things stealing their
                 attention go quiet for the hours that matter.
               </p>
             </div>
@@ -382,15 +371,15 @@ export default function EnterprisePage() {
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                what it does
+                What it does
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
-                a focus layer for the whole company
+              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
+                A Focus Layer For The Whole Company
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-white/60">
-              one policy engine, one dashboard, native ios and android.
-              policies live in the cloud; enforcement lives on the device.
+              One policy engine, one dashboard, native iOS and Android.
+              Policies live in the cloud; enforcement lives on the device.
             </p>
           </div>
 
@@ -400,7 +389,7 @@ export default function EnterprisePage() {
                 key={feature.title}
                 className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.08]"
               >
-                <h3 className="text-lg font-bold lowercase tracking-tight text-white">
+                <h3 className="text-lg font-bold tracking-tight text-white">
                   {feature.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
@@ -418,13 +407,13 @@ export default function EnterprisePage() {
           <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                use cases
+                Use cases
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-                the same engine, tuned for each team
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+                The Same Engine, Tuned For Each Team
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-                every team has a different definition of focus. configure
+                Every team has a different definition of focus. Configure
                 separate policies for each one and let leads update them
                 without filing a ticket.
               </p>
@@ -436,7 +425,7 @@ export default function EnterprisePage() {
                   key={useCase.title}
                   className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6"
                 >
-                  <h3 className="text-lg font-bold lowercase tracking-tight">
+                  <h3 className="text-lg font-bold tracking-tight">
                     {useCase.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
@@ -455,10 +444,10 @@ export default function EnterprisePage() {
           <div className="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-center md:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                privacy by design
+                Privacy by design
               </p>
-              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight lowercase text-white sm:text-5xl">
-                a focus tool, not a surveillance tool
+              <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
+                A Focus Tool, Not A Surveillance Tool
               </h2>
             </div>
 
@@ -484,8 +473,8 @@ export default function EnterprisePage() {
           </div>
 
           <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-relaxed text-white/55">
-            the only thing the dashboard ever shows is policy compliance.
-            employees keep their privacy. companies get the focus.
+            The only thing the dashboard ever shows is policy compliance.
+            Employees keep their privacy. Companies get the focus.
           </p>
         </div>
       </section>
@@ -495,10 +484,10 @@ export default function EnterprisePage() {
         <div className="mx-auto max-w-5xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              early results
+              Early results
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl">
-              what teams report after a 2-week pilot
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+              What Teams Report After A 2-Week Pilot
             </h2>
           </div>
 
@@ -518,8 +507,8 @@ export default function EnterprisePage() {
             ))}
           </div>
           <p className="mt-6 text-xs text-[var(--muted)]">
-            self-reported metrics from pilot teams of 15&ndash;200 people across
-            engineering, design and operations functions. individual results
+            Self-reported metrics from pilot teams of 15&ndash;200 people across
+            engineering, design and operations functions. Individual results
             vary.
           </p>
         </div>
@@ -530,10 +519,10 @@ export default function EnterprisePage() {
         <div className="mx-auto max-w-5xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              rollout
+              Rollout
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl">
-              from kickoff to a focused team in two weeks
+            <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
+              From Kickoff To A Focused Team In Two Weeks
             </h2>
           </div>
 
@@ -546,7 +535,7 @@ export default function EnterprisePage() {
                 <span className="font-mono text-sm tracking-widest text-[var(--accent)]">
                   {step.n}
                 </span>
-                <h3 className="mt-4 text-xl font-bold tracking-tight lowercase text-white">
+                <h3 className="mt-4 text-xl font-bold tracking-tight text-white">
                   {step.title}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/55">
@@ -563,8 +552,8 @@ export default function EnterprisePage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
             <div>
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight lowercase sm:text-5xl md:sticky md:top-28">
-                questions from teams
+              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:sticky md:top-28">
+                Questions From Teams
               </h2>
             </div>
             <div className="space-y-8">
@@ -573,7 +562,7 @@ export default function EnterprisePage() {
                   key={faq.q}
                   className="border-b border-[var(--border)] pb-8 last:border-0"
                 >
-                  <h3 className="text-xl font-bold lowercase">{faq.q}</h3>
+                  <h3 className="text-xl font-bold">{faq.q}</h3>
                   <p className="mt-3 leading-relaxed text-[var(--muted)]">
                     {faq.a}
                   </p>
@@ -587,13 +576,13 @@ export default function EnterprisePage() {
       {/* CTA */}
       <section className="section-dark px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight lowercase text-white sm:text-5xl md:text-6xl">
-            give your team back the{" "}
-            <span className="text-[var(--accent)]">hours</span> their tools
-            keep stealing
+          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
+            Give Your Team Back The{" "}
+            <span className="text-[var(--accent)]">Hours</span> Their Tools
+            Keep Stealing
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
-            tell us about your team. we&apos;ll send back a sample policy, a
+            Tell us about your team. We&apos;ll send back a sample policy, a
             pilot plan and pricing within two business days.
           </p>
 
@@ -602,7 +591,7 @@ export default function EnterprisePage() {
               type="enterprise"
               className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
             >
-              talk to sales
+              Talk To Sales
             </LeadDialogTrigger>
             <LeadDialogTrigger
               type="enterprise"
@@ -611,7 +600,7 @@ export default function EnterprisePage() {
               defaultRequirement="Pricing inquiry — please share enterprise pricing for our team. Other details: "
               className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
             >
-              ask about pricing
+              Ask About Pricing
             </LeadDialogTrigger>
           </div>
         </div>

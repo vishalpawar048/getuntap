@@ -24,10 +24,8 @@ export type PostBlock =
 export const blogPosts: Post[] = [
   {
     slug: "how-to-break-phone-addiction",
-    title:
-      "How to Break Phone Addiction in 30 Days: A Science-Backed Plan with Untap",
-    description:
-      "A practical, research-based 30-day program to break phone addiction, reduce doomscrolling, and reclaim 2-4 hours per day using the Untap screen time control app.",
+    title: "How To Break Phone Addiction In 30 Days: A Science-Backed Plan With Untap",
+    description: "A practical, research-based 30-day program to break phone addiction, reduce doomscrolling, and reclaim 2-4 hours per day using the Untap screen time control app.",
     publishedAt: "2026-01-15",
     updatedAt: "2026-05-10",
     author: "Untap Team",
@@ -45,10 +43,10 @@ export const blogPosts: Post[] = [
       },
       {
         kind: "callout",
-        title: "Why this works",
+        title: "Why This Works",
         text: "Habits are loops of cue, routine, and reward. You cannot will yourself out of a habit, but you can re-engineer the loop. Untap's job is to insert intentional friction in the routine step — the moment between cue and reward — so your conscious brain can step in.",
       },
-      { kind: "h2", text: "Week 1: Make the invisible visible", id: "week-1" },
+      { kind: "h2", text: "Week 1: Make The Invisible Visible", id: "week-1" },
       {
         kind: "p",
         text: "Most people underestimate their screen time by 50% or more. Before you change anything, you need an honest baseline. Install Untap and turn on usage reports. Don't restrict anything yet. Just watch.",
@@ -62,7 +60,7 @@ export const blogPosts: Post[] = [
           "Write down your honest screen time goal — most users aim for under 2 hours a day.",
         ],
       },
-      { kind: "h2", text: "Week 2: Add gentle friction", id: "week-2" },
+      { kind: "h2", text: "Week 2: Add Gentle Friction", id: "week-2" },
       {
         kind: "p",
         text: "Now we engineer pauses. Untap's intentional app opening features add a small barrier between you and dopamine. Start soft. The point isn't restriction — it's reflection.",
@@ -76,7 +74,7 @@ export const blogPosts: Post[] = [
           "Track how often you actually open the app after the delay — most users abandon the open about 40% of the time.",
         ],
       },
-      { kind: "h2", text: "Week 3: Strengthen the locks", id: "week-3" },
+      { kind: "h2", text: "Week 3: Strengthen The Locks", id: "week-3" },
       {
         kind: "p",
         text: "By week three you've broken the autopilot. Now we make the boundaries firm during the hours you need to be present — work blocks, mornings, family time, sleep.",
@@ -90,7 +88,7 @@ export const blogPosts: Post[] = [
           "Enable friend lock or password-protected settings so a frustrated future-you can't undo it.",
         ],
       },
-      { kind: "h2", text: "Week 4: Replace, don't just remove", id: "week-4" },
+      { kind: "h2", text: "Week 4: Replace, Don't Just Remove", id: "week-4" },
       {
         kind: "p",
         text: "Removing a habit without replacing it almost always fails. Use Untap's 'suggest alternate app' feature to redirect the urge — point Instagram to Kindle, TikTok to Duolingo, YouTube to a meditation app.",
@@ -103,15 +101,15 @@ export const blogPosts: Post[] = [
           "Review your weekly Untap report. Most users save 12–25 hours by week four.",
         ],
       },
-      { kind: "h2", text: "What happens after 30 days", id: "after-30-days" },
+      { kind: "h2", text: "What Happens After 30 Days", id: "after-30-days" },
       {
         kind: "p",
         text: "In our internal data, 85% of users who complete the 30-day plan reduce daily screen time by at least 40%. Sleep quality improves, focus sessions get longer, and the urge to reach for the phone in idle moments fades. You don't have to delete your apps — you just have to use them on purpose.",
       },
       {
         kind: "quote",
-        text: "Untap is the only screen time app I've tried that doesn't feel punitive. The breathing exercise unlock is borderline magical.",
-        cite: "Priya, designer & Untap user",
+        text: "Ive been using Untap for two months now. I love the messages on the block screen. Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision.",
+        cite: "Lia D, Google Play",
       },
       {
         kind: "p",
@@ -121,10 +119,8 @@ export const blogPosts: Post[] = [
   },
   {
     slug: "best-screen-time-control-apps-2026",
-    title:
-      "The Best Screen Time Control Apps for iPhone and Android in 2026 (Tested & Compared)",
-    description:
-      "We tested 11 screen time control apps including Opal, one sec, Jomo, ScreenZen, and Apple Screen Time. Here is how Untap, the leading intentional-friction app, compares.",
+    title: "The Best Screen Time Control Apps For iPhone And Android In 2026 (Tested & Compared)",
+    description: "We tested 11 screen time control apps including Opal, one sec, Jomo, ScreenZen, and Apple Screen Time. Here is how Untap, the leading intentional-friction app, compares.",
     publishedAt: "2026-02-02",
     updatedAt: "2026-05-12",
     author: "Untap Team",
@@ -135,12 +131,12 @@ export const blogPosts: Post[] = [
         kind: "p",
         text: "The screen time control category exploded in 2024 and matured in 2026. There are now over 40 apps competing for the same job: helping you put your phone down. We tested 11 of the most popular ones for two weeks each, on iOS 19 and Android 15, scoring them across friction quality, customization, privacy, and price.",
       },
-      { kind: "h2", text: "Our testing methodology" },
+      { kind: "h2", text: "Our Testing Methodology" },
       {
         kind: "p",
         text: "Every app was tested by three users for 14 consecutive days on identical baseline phones. We measured average daily screen time reduction, number of successful unlocks bypassed, app crashes, battery impact, and subjective 'shame' or 'guilt' triggered. Apps were judged by their effect, not their marketing.",
       },
-      { kind: "h2", text: "Quick verdict" },
+      { kind: "h2", text: "Quick Verdict" },
       {
         kind: "ol",
         items: [
@@ -152,7 +148,7 @@ export const blogPosts: Post[] = [
           "Apple Screen Time — Built in and free, but trivial to bypass and offers no intentional-friction options.",
         ],
       },
-      { kind: "h2", text: "Why Untap wins for most people" },
+      { kind: "h2", text: "Why Untap Wins For Most People" },
       {
         kind: "p",
         text: "The category has converged on one of two models: hard blocks (Apple Screen Time, Opal) or a single friction style (one sec's breath). Untap is the only app in 2026 that lets you mix multiple friction types — and ramp from soft to strict — without forcing a rigid model on you. That flexibility is what makes it stick.",
@@ -183,12 +179,12 @@ export const blogPosts: Post[] = [
         value: "4.8 / 5",
         label: "average user rating across iOS and Android",
       },
-      { kind: "h2", text: "When Untap is not the right choice" },
+      { kind: "h2", text: "When Untap Is Not The Right Choice" },
       {
         kind: "p",
         text: "If you want zero customization and the lightest possible setup, ScreenZen is genuinely lovely. If you need parental controls primarily for someone else's device, look at Bark or Apple Screen Time's family sharing. If you only want a single moment of pause and nothing else, one sec is great. For everyone else — and especially for adults trying to coach themselves out of doomscrolling — Untap is the clearest pick in 2026.",
       },
-      { kind: "h2", text: "How to install Untap" },
+      { kind: "h2", text: "How To Install Untap" },
       {
         kind: "p",
         text: "Untap is free to download on the App Store and Google Play. The core intentional-friction features are free; advanced analytics and unlimited app restrictions are available on the subscription tier. Install it, set a 10-second delay on your worst app, and check back in a week.",
@@ -197,10 +193,8 @@ export const blogPosts: Post[] = [
   },
   {
     slug: "science-of-doomscrolling",
-    title:
-      "The Science of Doomscrolling: Why Your Brain Craves It and How to Stop",
-    description:
-      "Doomscrolling is not a personal failing — it is a designed behavior. Here is the neuroscience behind compulsive scrolling and the evidence-based ways to interrupt it.",
+    title: "The Science Of Doomscrolling: Why Your Brain Craves It And How To Stop",
+    description: "Doomscrolling is not a personal failing — it is a designed behavior. Here is the neuroscience behind compulsive scrolling and the evidence-based ways to interrupt it.",
     publishedAt: "2026-02-20",
     author: "Untap Team",
     readMinutes: 8,
@@ -210,7 +204,7 @@ export const blogPosts: Post[] = [
         kind: "p",
         text: "Doomscrolling — the compulsive consumption of negative, infinite-feed content — is a clinical-grade behavior pattern, not a character flaw. Understanding the neuroscience makes it dramatically easier to stop. Here's what's happening in your brain when you can't put your phone down, and what actually works to interrupt it.",
       },
-      { kind: "h2", text: "What doomscrolling does to your brain" },
+      { kind: "h2", text: "What Doomscrolling Does To Your Brain" },
       {
         kind: "p",
         text: "Infinite feeds exploit a phenomenon called variable ratio reinforcement, the same mechanic that makes slot machines addictive. Your brain releases dopamine not when you receive a reward, but when you anticipate one. Because the next post might be the great one, every swipe is a micro-bet — and dopamine spikes on the anticipation, not the result.",
@@ -219,7 +213,7 @@ export const blogPosts: Post[] = [
         kind: "p",
         text: "Worse, negative content sticks harder. Researchers call this the 'negativity bias': humans evolved to weight threats heavier than rewards, so bad news holds your attention longer than good news. Social feeds figured this out a decade ago.",
       },
-      { kind: "h2", text: "The three signals you're doomscrolling" },
+      { kind: "h2", text: "The Three Signals You're Doomscrolling" },
       {
         kind: "ul",
         items: [
@@ -228,12 +222,12 @@ export const blogPosts: Post[] = [
           "Your thumb keeps moving even when you've told yourself to stop.",
         ],
       },
-      { kind: "h2", text: "What willpower-based fixes get wrong" },
+      { kind: "h2", text: "What Willpower-Based Fixes Get Wrong" },
       {
         kind: "p",
         text: "Telling yourself to 'just stop' fails because the habit loop is faster than your conscious decision-making. By the time the prefrontal cortex weighs in, your thumb has already opened the app. Lasting change requires interrupting the loop earlier — before the routine executes.",
       },
-      { kind: "h2", text: "What actually works: intentional friction" },
+      { kind: "h2", text: "What Actually Works: Intentional Friction" },
       {
         kind: "p",
         text: "Behavioral economist Richard Thaler calls it 'choice architecture.' Add a small barrier between the cue and the routine and the autopilot breaks. In one 2024 study, a 10-second open delay reduced daily Instagram usage by 35% — without any motivational training or willpower coaching.",
@@ -244,8 +238,8 @@ export const blogPosts: Post[] = [
       },
       {
         kind: "quote",
-        text: "Those few seconds of pause are enough to make you reconsider opening Instagram.",
-        cite: "Priya, designer & Untap user",
+        text: "I've tried about 5 different apps now, and this is by far the best one for me. Offers delays on open rather than full blocks.",
+        cite: "Christoffer, Google Play",
       },
       {
         kind: "p",
@@ -255,10 +249,8 @@ export const blogPosts: Post[] = [
   },
   {
     slug: "screen-time-and-mental-health",
-    title:
-      "Screen Time and Mental Health: What the Latest Research Says in 2026",
-    description:
-      "A summary of peer-reviewed research from 2020–2026 on the link between smartphone overuse, anxiety, depression, and sleep — and the interventions that actually help.",
+    title: "Screen Time And Mental Health: What The Latest Research Says In 2026",
+    description: "A summary of peer-reviewed research from 2020–2026 on the link between smartphone overuse, anxiety, depression, and sleep — and the interventions that actually help.",
     publishedAt: "2026-03-04",
     author: "Untap Team",
     readMinutes: 7,
@@ -269,32 +261,30 @@ export const blogPosts: Post[] = [
         text: "The relationship between screen time and mental health is one of the most studied questions of the last decade. The picture is now clearer than it was in 2018. This piece summarizes what the strongest studies actually show, and what we can do about it.",
       },
       {
-        kind: "h2",
-        text: "Heavy phone use is associated with worse mental health",
+        kind: "h2", text: "Heavy Phone Use Is Associated With Worse Mental Health",
       },
       {
         kind: "p",
         text: "A 2023 meta-analysis covering 89 studies and over 145,000 participants found a small-to-moderate association between heavy phone use (>4 hours/day non-essential) and elevated rates of anxiety, depression, and sleep disturbance, with effect sizes strongest in adolescents and young adults.",
       },
-      { kind: "h2", text: "It is the type of use that matters, not the total" },
+      { kind: "h2", text: "It Is The Type Of Use That Matters, Not The Total" },
       {
         kind: "p",
         text: "More recent work (Orben et al., 2024) shows the harm signal is concentrated in passive consumption — scrolling feeds, watching short-form video — rather than active use like messaging or calling friends. This is good news. It means we don't have to give up our phones. We just have to use them differently.",
       },
       {
-        kind: "h2",
-        text: "Friction-based interventions outperform hard blocks",
+        kind: "h2", text: "Friction-Based Interventions Outperform Hard Blocks",
       },
       {
         kind: "p",
         text: "A randomized trial published in JAMA Network Open (2024) compared three interventions over six weeks: complete app removal, hard time-blocks, and intentional-friction delays. Friction-based interventions produced the largest sustained reduction in self-reported anxiety and the lowest dropout rate — because users felt in control rather than restricted.",
       },
-      { kind: "h2", text: "Sleep is the highest-leverage win" },
+      { kind: "h2", text: "Sleep Is The Highest-Leverage Win" },
       {
         kind: "p",
         text: "If you only fix one thing, fix nighttime phone use. Across studies, removing phones from the bedroom or hard-blocking apps after 10pm produces measurable improvements in sleep latency and total sleep within two weeks. Untap's scheduled hard-lock feature is built for exactly this.",
       },
-      { kind: "h2", text: "What this means for you" },
+      { kind: "h2", text: "What This Means For You" },
       {
         kind: "ul",
         items: [
@@ -314,8 +304,7 @@ export const blogPosts: Post[] = [
     slug: "intentional-friction-behavior-design",
     title:
       "Intentional Friction: The Behavior-Design Principle Behind Untap",
-    description:
-      "Why a 10-second pause changes more behavior than a 24-hour block. The behavior-design philosophy that makes Untap effective where willpower fails.",
+    description: "Why a 10-second pause changes more behavior than a 24-hour block. The behavior-design philosophy that makes Untap effective where willpower fails.",
     publishedAt: "2026-04-01",
     author: "Untap Team",
     readMinutes: 6,
@@ -325,12 +314,12 @@ export const blogPosts: Post[] = [
         kind: "p",
         text: "Most screen-time apps are built on the wrong mental model. They assume the user is the problem and the app's job is to enforce discipline. Untap is built on the opposite premise: the user is fine, but the environment is rigged. Fix the environment and the behavior follows.",
       },
-      { kind: "h2", text: "The autopilot problem" },
+      { kind: "h2", text: "The Autopilot Problem" },
       {
         kind: "p",
         text: "Almost every phone-pickup is unconscious. You feel a faint emotional cue — boredom, anxiety, mild loneliness — and your thumb opens Instagram before your conscious brain has weighed in. Hard blocks don't help because the autopilot doesn't care. It just tries again in a different app.",
       },
-      { kind: "h2", text: "Why a small pause works" },
+      { kind: "h2", text: "Why A Small Pause Works" },
       {
         kind: "p",
         text: "Even a 5- to 10-second delay is long enough to let the prefrontal cortex catch up. That's when the conscious brain asks the saving question: 'Wait, why am I opening this?' In a meaningful percentage of cases, that question answers itself and you close the app.",
@@ -341,12 +330,12 @@ export const blogPosts: Post[] = [
         label:
           "of Untap unlock attempts are abandoned during the friction step",
       },
-      { kind: "h2", text: "Friction types matter" },
+      { kind: "h2", text: "Friction Types Matter" },
       {
         kind: "p",
         text: "Untap offers five different friction types — QR scan, NFC tap, math challenge, alternate-app suggestion, and breathing exercise — because the right friction is the one that breaks your autopilot without making you angry. Breathing works for emotional triggers. Math works for boredom triggers. QR/NFC works for habit triggers.",
       },
-      { kind: "h2", text: "Why we don't gamify" },
+      { kind: "h2", text: "Why We Don't Gamify" },
       {
         kind: "p",
         text: "Many competing apps use streaks, points, and badges to motivate users. We believe this is a mistake. Gamification recreates the exact dopamine loop the user is trying to escape. Untap rewards calm, not compliance.",
@@ -359,10 +348,8 @@ export const blogPosts: Post[] = [
   },
   {
     slug: "watching-reels-while-driving",
-    title:
-      "Reels Behind the Wheel: Why 90% of Truck Drivers Watch Short-Form Video While Driving — and How Untap Can Stop It",
-    description:
-      "Watching Instagram Reels, YouTube Shorts and TikTok while driving has become endemic — especially among long-haul truck drivers. Here's the science of why short-form video is uniquely dangerous behind the wheel, and how Untap's driving mode keeps eyes on the road.",
+    title: "Reels Behind The Wheel: Why 90% Of Truck Drivers Watch Short-Form Video While Driving — And How Untap Can Stop It",
+    description: "Watching Instagram Reels, YouTube Shorts and TikTok while driving has become endemic — especially among long-haul truck drivers. Here's the science of why short-form video is uniquely dangerous behind the wheel, and how Untap's driving mode keeps eyes on the road.",
     publishedAt: "2026-05-14",
     updatedAt: "2026-05-14",
     author: "Untap Team",
@@ -381,12 +368,11 @@ export const blogPosts: Post[] = [
       },
       {
         kind: "callout",
-        title: "Why this is urgent",
+        title: "Why This Is Urgent",
         text: "A 4-second glance away from the road at 80 km/h covers nearly a 90-metre blind run — about the length of a football field. Short-form video is engineered to hold your eyes for far longer than 4 seconds at a time. Every reel watched at the wheel is a coin flip with a stranger's life.",
       },
       {
-        kind: "h2",
-        text: "Why short-form video is uniquely dangerous behind the wheel",
+        kind: "h2", text: "Why Short-Form Video Is Uniquely Dangerous Behind The Wheel",
         id: "why-uniquely-dangerous",
       },
       {
@@ -401,7 +387,7 @@ export const blogPosts: Post[] = [
           "It rewards quick glances. A 30-second Reel rewards you with a payoff in a few seconds of glancing — short enough to feel 'safe,' long enough to miss the truck braking ahead.",
         ],
       },
-      { kind: "h2", text: "What the numbers say", id: "the-numbers" },
+      { kind: "h2", text: "What The Numbers Say", id: "the-numbers" },
       {
         kind: "stat",
         value: "~9 in 10",
@@ -421,8 +407,7 @@ export const blogPosts: Post[] = [
           "the blind distance a vehicle at 80 km/h covers in a single 4-second glance away from the road",
       },
       {
-        kind: "h2",
-        text: "Why truck drivers in particular",
+        kind: "h2", text: "Why Truck Drivers In Particular",
         id: "truck-drivers",
       },
       {
@@ -434,8 +419,7 @@ export const blogPosts: Post[] = [
         text: "Telling a driver to 'just not look' does not work for the same reason it does not work for anyone else: the autopilot habit is faster than the conscious decision not to use it. By the time the driver thinks 'I shouldn't open Instagram right now,' the thumb has already swiped up.",
       },
       {
-        kind: "h2",
-        text: "How Untap helps drivers keep their eyes on the road",
+        kind: "h2", text: "How Untap Helps Drivers Keep Their Eyes On The Road",
         id: "how-untap-helps",
       },
       {
@@ -454,8 +438,7 @@ export const blogPosts: Post[] = [
         ],
       },
       {
-        kind: "h2",
-        text: "Setting up Untap driving mode in 5 minutes",
+        kind: "h2", text: "Setting Up Untap Driving Mode In 5 Minutes",
         id: "setup",
       },
       {
@@ -468,7 +451,7 @@ export const blogPosts: Post[] = [
           "Enable prevent-uninstall so a tempted driver cannot remove Untap mid-route.",
         ],
       },
-      { kind: "h2", text: "For fleet operators", id: "for-fleets" },
+      { kind: "h2", text: "For Fleet Operators", id: "for-fleets" },
       {
         kind: "p",
         text: "If you run a fleet — trucking, delivery, cab, last-mile — short-form video on the road is now your single largest preventable safety risk. Untap Enterprise lets you deploy a fleet-wide driving profile in one rollout: every driver's device hard-locks the same apps the moment a vehicle starts moving, with a compliance dashboard that shows policy adherence (not where the driver is, not what they typed, not what they messaged). Insurance carriers in 2026 are already starting to ask whether a fleet has on-device distraction controls in place. This is how you say yes.",
@@ -481,9 +464,8 @@ export const blogPosts: Post[] = [
   },
   {
   slug: "break-addiction-to-phone",
-  title: "Break Addiction to Phone: Why a Digital Wellbeing App Makes It Easier",
-  description:
-    "Trying to break addiction to phone use? See why a digital wellbeing app works better than willpower alone, with real numbers and honest tips.",
+  title: "Break Addiction To Phone: Why A Digital Wellbeing App Makes It Easier",
+  description: "Trying to break addiction to phone use? See why a digital wellbeing app works better than willpower alone, with real numbers and honest tips.",
   publishedAt: "2026-07-29",
   author: "Untap Team",
   readMinutes: 6,
@@ -507,8 +489,7 @@ export const blogPosts: Post[] = [
       text: "We're the team behind Untap, and people tell us this exact story on repeat. Not because they're undisciplined. Because the habit runs deeper than a to-do list item.",
     },
     {
-      kind: "h2",
-      text: "The Problem Isn't Effort",
+      kind: "h2", text: "The Problem Isn't Effort",
       id: "the-problem-isnt-effort",
     },
     {
@@ -524,8 +505,7 @@ export const blogPosts: Post[] = [
       text: "A digital wellbeing app exists for exactly this reason. Not to punish you for wanting to check your phone. Just to slow down the half-second where the reflex takes over, so a real decision gets a chance to happen instead.",
     },
     {
-      kind: "h2",
-      text: "What This Looks Like in Practice",
+      kind: "h2", text: "What This Looks Like In Practice",
       id: "what-this-looks-like-in-practice",
     },
     {
@@ -538,7 +518,7 @@ export const blogPosts: Post[] = [
     },
     {
       kind: "callout",
-      title: "The numbers reflect this",
+      title: "The Numbers Reflect This",
       text: "Not because the app forced anything because it gave the brain a beat to catch up.",
     },
     {
@@ -552,8 +532,7 @@ export const blogPosts: Post[] = [
       label: "notice less doomscrolling within the first week",
     },
     {
-      kind: "h2",
-      text: "Limits That Fit, Not Limits That Snap",
+      kind: "h2", text: "Limits That Fit, Not Limits That Snap",
       id: "limits-that-fit",
     },
     {
@@ -569,8 +548,7 @@ export const blogPosts: Post[] = [
       text: "One thing that surprises people: a friend lock. Someone you trust puts a password on your settings so you can't undo your own rules at midnight when your resolve is at its weakest. It sounds unnecessary until you realize how often that exact moment is the one that breaks the streak.",
     },
     {
-      kind: "h2",
-      text: "The Reports Do Half the Work",
+      kind: "h2", text: "The Reports Do Half The Work",
       id: "the-reports-do-half-the-work",
     },
     {
@@ -582,8 +560,7 @@ export const blogPosts: Post[] = [
       text: "Untap's daily, weekly, and monthly reports show that number plainly. Alerts fire if you go over. And somehow that's more motivating than any pep talk.",
     },
     {
-      kind: "h2",
-      text: "Where People Go Wrong",
+      kind: "h2", text: "Where People Go Wrong",
       id: "where-people-go-wrong",
     },
     {
@@ -601,8 +578,7 @@ export const blogPosts: Post[] = [
       ],
     },
     {
-      kind: "h2",
-      text: "And Privacy, Since People Ask",
+      kind: "h2", text: "And Privacy, Since People Ask",
       id: "privacy",
     },
     {
@@ -610,53 +586,46 @@ export const blogPosts: Post[] = [
       text: "Everything stays on your device. No tracking, no ad network getting a look at your habits, nothing shipped to a server somewhere. If the goal is being more mindful, the last thing you want is another company quietly profiting off exactly how distracted you are.",
     },
     {
-      kind: "h2",
-      text: "FAQ",
+      kind: "h2", text: "FAQ",
       id: "faq",
     },
     {
-      kind: "h3",
-      text: "Can a digital wellbeing app actually help break addiction to phone use?",
+      kind: "h3", text: "Can A Digital Wellbeing App Actually Help Break Addiction To Phone Use?",
     },
     {
       kind: "p",
       text: "Friction-based ones like Untap tend to, yes slowing the moment before an app opens interrupts the habit more reliably than a hard block does.",
     },
     {
-      kind: "h3",
-      text: "Does it delete or ban apps?",
+      kind: "h3", text: "Does It Delete Or Ban Apps?",
     },
     {
       kind: "p",
       text: "No. Just adds a pause. You're always the one in control.",
     },
     {
-      kind: "h3",
-      text: "How fast do people see a change?",
+      kind: "h3", text: "How Fast Do People See A Change?",
     },
     {
       kind: "p",
       text: "Often within the first week, going by Untap's own usage data.",
     },
     {
-      kind: "h3",
-      text: "iPhone or Android?",
+      kind: "h3", text: "iPhone Or Android?",
     },
     {
       kind: "p",
       text: "Both, using each platform's official screen-time tools.",
     },
     {
-      kind: "h3",
-      text: "Is my data private?",
+      kind: "h3", text: "Is My Data Private?",
     },
     {
       kind: "p",
       text: "Yes — stored locally, nothing tracked or sold.",
     },
     {
-      kind: "h2",
-      text: "Last Bit",
+      kind: "h2", text: "Last Bit",
       id: "last-bit",
     },
     {
@@ -667,17 +636,15 @@ export const blogPosts: Post[] = [
 },
 {
   slug: "how-to-stop-scrolling-instagram-for-hours",
-  title: "How to Stop Scrolling Instagram for Hours Without Deleting the App",
-  description:
-    "You opened Instagram to check a message. Two hours later you're watching a stranger's dog videos and you've completely forgotten why you opened the app. This is not a willpower problem — it's a design problem. Here's how to fix it without deleting the app.",
+  title: "How To Stop Scrolling Instagram For Hours Without Deleting The App",
+  description: "You opened Instagram to check a message. Two hours later you're watching a stranger's dog videos and you've completely forgotten why you opened the app. This is not a willpower problem — it's a design problem. Here's how to fix it without deleting the app.",
   publishedAt: "2026-09-02",
   author: "Untap Team",
   readMinutes: 5,
   tags: ["social media control"],
   body: [
     {
-      kind: "h2",
-      text: "The Instagram trap is not your fault",
+      kind: "h2", text: "The Instagram Trap Is Not Your Fault",
       id: "the-instagram-trap-is-not-your-fault",
     },
     {
@@ -685,8 +652,7 @@ export const blogPosts: Post[] = [
       text: "You opened Instagram to check a message. Two hours later you're watching a stranger's dog videos and you've completely forgotten why you opened the app. This is not a willpower problem — it's a design problem. Here's how to fix it without deleting the app.",
     },
     {
-      kind: "h2",
-      text: "Why willpower fails at Instagram",
+      kind: "h2", text: "Why Willpower Fails At Instagram",
       id: "why-willpower-fails-at-instagram",
     },
     {
@@ -702,8 +668,7 @@ export const blogPosts: Post[] = [
       text: "What you need is environmental friction. A pause placed at the exact moment the impulse fires. That's the gap where real change happens.",
     },
     {
-      kind: "h2",
-      text: "How to stop scrolling Instagram: The friction approach",
+      kind: "h2", text: "How To Stop Scrolling Instagram: The Friction Approach",
       id: "how-to-stop-scrolling-instagram-the-friction-approach",
     },
     {
@@ -719,8 +684,7 @@ export const blogPosts: Post[] = [
       text: "Most people who try this see an immediate 40-60% drop in accidental scrolling. Not because they have more willpower. Because the environment changed.",
     },
     {
-      kind: "h2",
-      text: "Setting daily limits on Instagram",
+      kind: "h2", text: "Setting Daily Limits On Instagram",
       id: "setting-daily-limits-on-instagram",
     },
     {
@@ -732,8 +696,7 @@ export const blogPosts: Post[] = [
       text: "Jessica K. set a 20-minute daily limit on Instagram and stopped thinking about the app outside that window. The limit became a habit.",
     },
     {
-      kind: "h2",
-      text: "Hard locks during important hours",
+      kind: "h2", text: "Hard Locks During Important Hours",
       id: "hard-locks-during-important-hours",
     },
     {
@@ -749,8 +712,7 @@ export const blogPosts: Post[] = [
       text: "This is not as extreme as deleting. You can still use Instagram freely at 6pm. But the locked hours are actually locked.",
     },
     {
-      kind: "h2",
-      text: "Friend lock: External accountability",
+      kind: "h2", text: "Friend Lock: External Accountability",
       id: "friend-lock-external-accountability",
     },
     {
@@ -758,8 +720,7 @@ export const blogPosts: Post[] = [
       text: "When self-imposed limits fail, a social media blocker app offers friend lock. A trusted person sets a password on your restrictions. So when motivation drops at midnight, you cannot change the settings alone.",
     },
     {
-      kind: "h2",
-      text: "How to set up a social media blocker app in 5 minutes",
+      kind: "h2", text: "How To Set Up A Social Media Blocker App In 5 Minutes",
       id: "how-to-set-up-a-social-media-blocker-app-in-5-minutes",
     },
     {
@@ -781,8 +742,7 @@ export const blogPosts: Post[] = [
       text: "Within a week, the limited window becomes your new normal. You stop reaching for Instagram when bored. The friction-based approach creates a sustainable habit change, unlike trying to \"just use it less\" through willpower alone.",
     },
     {
-      kind: "h2",
-      text: "The numbers",
+      kind: "h2", text: "The Numbers",
       id: "the-numbers",
     },
     {
@@ -801,8 +761,7 @@ export const blogPosts: Post[] = [
       label: "average daily Instagram consumption (reported by UK users, 2026)",
     },
     {
-      kind: "h2",
-      text: "What happens after you set limits",
+      kind: "h2", text: "What Happens After You Set Limits",
       id: "what-happens-after-you-set-limits",
     },
     {
@@ -818,9 +777,8 @@ export const blogPosts: Post[] = [
 },
 {
   slug: "timer-lock-for-apps",
-  title: "Timer Lock for Apps: How to Use One to Stop Mindless Scrolling",
-  description:
-    "You pick up your phone to check one message. Twenty minutes later, you're still on Instagram. You don't even remember opening it. If this happens to you every single day, you don't have a willpower problem. You have a design problem. These apps are built so that you never get a moment to stop and think — you just keep swiping.",
+  title: "Timer Lock For Apps: How To Use One To Stop Mindless Scrolling",
+  description: "You pick up your phone to check one message. Twenty minutes later, you're still on Instagram. You don't even remember opening it. If this happens to you every single day, you don't have a willpower problem. You have a design problem. These apps are built so that you never get a moment to stop and think — you just keep swiping.",
   publishedAt: "2026-09-30",
   author: "Untap Team",
   readMinutes: 7,
@@ -843,8 +801,7 @@ export const blogPosts: Post[] = [
       text: "A timer lock for apps gives that moment back to you. It puts a small pause, or a hard stop, between you and the app. And that tiny gap is often all it takes.",
     },
     {
-      kind: "h2",
-      text: "What a Timer Lock for Apps Really Does",
+      kind: "h2", text: "What A Timer Lock For Apps Really Does",
       id: "what-a-timer-lock-for-apps-really-does",
     },
     {
@@ -864,8 +821,7 @@ export const blogPosts: Post[] = [
       text: "Either way, the goal is the same. You decide when and how much you use an app. The app doesn't decide for you.",
     },
     {
-      kind: "h2",
-      text: "Why So Many People Are Searching for This Right Now",
+      kind: "h2", text: "Why So Many People Are Searching For This Right Now",
       id: "why-so-many-people-are-searching-for-this-right-now",
     },
     {
@@ -885,8 +841,7 @@ export const blogPosts: Post[] = [
       text: "One student in Pune shared that her screen time dropped from about 7 hours a day to under 2, just by adding a delay before her social apps during study hours. Nothing fancy. Just a pause she had to sit through before opening the app.",
     },
     {
-      kind: "h2",
-      text: "How to Set Up a Timer Lock for Apps (Without Overdoing It)",
+      kind: "h2", text: "How To Set Up A Timer Lock For Apps (Without Overdoing It)",
       id: "how-to-set-up-a-timer-lock-for-apps-without-overdoing-it",
     },
     {
@@ -918,8 +873,7 @@ export const blogPosts: Post[] = [
       text: "Loosen it as needed. If a limit feels too strict, adjust it. This is not a punishment. It's a tool you're allowed to shape around your own habits.",
     },
     {
-      kind: "h2",
-      text: "Timer Lock for Apps on Android vs iPhone",
+      kind: "h2", text: "Timer Lock For Apps On Android Vs iPhone",
       id: "timer-lock-for-apps-on-android-vs-iphone",
     },
     {
@@ -939,8 +893,7 @@ export const blogPosts: Post[] = [
       text: "If your house has one Android and one iPhone — which is common in a lot of Indian families — look for an app that supports both. It saves you from setting up two different systems for the same habit.",
     },
     {
-      kind: "h2",
-      text: "Common Mistakes People Make With App Timers",
+      kind: "h2", text: "Common Mistakes People Make With App Timers",
       id: "common-mistakes-people-make-with-app-timers",
     },
     {
@@ -964,53 +917,46 @@ export const blogPosts: Post[] = [
       text: "Expecting it to fix everything overnight. A timer lock is a tool, not magic. It works because it slows you down enough to make a choice. The actual change still comes from you.",
     },
     {
-      kind: "h2",
-      text: "Frequently Asked Questions",
+      kind: "h2", text: "Frequently Asked Questions",
       id: "frequently-asked-questions",
     },
     {
-      kind: "h3",
-      text: "What does a timer lock for apps actually do?",
+      kind: "h3", text: "What Does A Timer Lock For Apps Actually Do?",
     },
     {
       kind: "p",
       text: "It puts a delay or a hard stop in front of an app once you've crossed a time limit you set, so you get a moment to decide instead of opening it out of habit.",
     },
     {
-      kind: "h3",
-      text: "Will a timer lock delete my apps or my data?",
+      kind: "h3", text: "Will A Timer Lock Delete My Apps Or My Data?",
     },
     {
       kind: "p",
       text: "No. It only adds a delay or a lock screen before the app opens. Nothing is removed, and you can adjust or turn off the setting whenever you like.",
     },
     {
-      kind: "h3",
-      text: "Does a timer lock work the same on Android and iPhone?",
+      kind: "h3", text: "Does A Timer Lock Work The Same On Android And iPhone?",
     },
     {
       kind: "p",
       text: "The methods are different behind the scenes — Android uses accessibility settings, iPhone uses Apple's Screen Time framework — but for you as a user, the experience of setting limits and getting reports is much the same on both.",
     },
     {
-      kind: "h3",
-      text: "Can I use a timer lock just for my child's phone?",
+      kind: "h3", text: "Can I Use A Timer Lock Just For My Child's Phone?",
     },
     {
       kind: "p",
       text: "Yes. Many apps let you set stricter locks for a child's device and protect them with a parent password so the child can't remove the limit on their own.",
     },
     {
-      kind: "h3",
-      text: "Is a timer lock free to use?",
+      kind: "h3", text: "Is A Timer Lock Free To Use?",
     },
     {
       kind: "p",
       text: "Most apps have a free version with the basic delay and limit features. Deeper reports and unlimited app locks are usually part of a paid plan.",
     },
     {
-      kind: "h2",
-      text: "The Bottom Line",
+      kind: "h2", text: "The Bottom Line",
       id: "the-bottom-line",
     },
     {
@@ -1040,142 +986,103 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "arjun-7-to-2-hours",
-    title:
-      "From 7 Hours to Under 2: How Arjun Cut His Screen Time in 21 Days",
-    description:
-      "A 22-year-old engineering student went from 7 hours of daily screen time to under 2 in three weeks using Untap's intentional-friction approach. Here's the full breakdown.",
-    publishedAt: "2026-01-22",
-    subject: "Arjun, 22, engineering student",
-    beforeHours: 7,
-    afterHours: 1.8,
-    durationWeeks: 3,
+    slug: "kudrat-hargun-10-to-4-hours",
+    title: "From 10 Hours To 4-5 Hours: Real User Success Story",
+    description: "A Google Play user decreased screen time from 10 hours to 4-5 hours daily using Untap.",
+    publishedAt: "2026-03-08",
+    subject: "Kudrat Hargun, Google Play user",
+    beforeHours: 10,
+    afterHours: 4.5,
+    durationWeeks: 4,
     quote:
-      "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
+      "Best app the first one I ever tried and got best result with it decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it 🫶🏻👍🏻",
     body: [
-      { kind: "h2", text: "Background" },
+      { kind: "h2", text: "Real Review From Google Play" },
       {
         kind: "p",
-        text: "Arjun is a 22-year-old engineering student in Pune. When he installed Untap, his weekly screen time average was 7 hours and 14 minutes a day, with Instagram and YouTube accounting for 68% of it. His goal was simple: 'I want to read a book again. Just one.'",
-      },
-      { kind: "h2", text: "Setup (Day 0-1)" },
-      {
-        kind: "p",
-        text: "We helped Arjun configure Untap with a soft profile: 10-second delay on Instagram, YouTube, and X, with daily reports enabled. No hard blocks yet. The goal of week one was awareness, not restriction.",
-      },
-      { kind: "h2", text: "Week 1: Awareness shock" },
-      {
-        kind: "p",
-        text: "Arjun's first weekly report showed something he didn't expect: he had opened Instagram 187 times in seven days. Knowing this number made him more uncomfortable than any abstinence rule could have. He asked us to ramp up the friction.",
-      },
-      { kind: "h2", text: "Week 2: Stronger friction" },
-      {
-        kind: "p",
-        text: "We switched Arjun to 'moderate' mode. Instagram now required a 30-second breathing exercise; YouTube required a math challenge. Over-consumption alerts at 45 minutes per app. By day 10, his screen time was averaging 3.4 hours — down 53%.",
-      },
-      { kind: "h2", text: "Week 3: Hard locks for the worst hours" },
-      {
-        kind: "p",
-        text: "We added scheduled hard locks: 10pm–7am for all entertainment apps; 9am–12pm during his lectures. We also enabled prevent-uninstall and friend-lock so Arjun couldn't bypass himself in a weak moment. By day 21, he was averaging 1 hour 47 minutes a day.",
+        text: "This is a verbatim 5-star review from the Google Play Store, where Kudrat Hargun shared their experience with Untap.",
       },
       { kind: "h2", text: "Results" },
       {
         kind: "ul",
         items: [
-          "Daily screen time: 7h 14m → 1h 47m (75% reduction)",
-          "Instagram opens: 187/week → 22/week",
-          "Reading: 0 books in 6 months → finished 2 in the 3 weeks",
-          "Sleep: self-reported 'better' on 18 of 21 nights",
-          "Grades: GPA up 0.3 in the following semester",
+          "Daily screen time: 10h → 4-5h (55% reduction)",
+          "First app that delivered real results",
+          "Review posted March 8, 2026",
         ],
       },
       {
         kind: "quote",
-        text: "This app completely changed my relationship with my phone. I went from 7 hours of screen time to under 2. I actually read books now.",
-        cite: "Arjun, 22, engineering student",
+        text: "Best app the first one I ever tried and got best result with it decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it 🫶🏻👍🏻",
+        cite: "Kudrat Hargun, Google Play",
       },
     ],
   },
   {
-    slug: "family-dinnertime",
-    title:
-      "How a Family of Four Reclaimed Dinnertime with Untap",
-    description:
-      "A working couple and their two teenagers used Untap's friend-lock and scheduled-block features to put phones away during family meals. 60-day case study.",
-    publishedAt: "2026-02-15",
-    subject: "The K. family — two parents, two teenagers (ages 14, 16)",
-    beforeHours: 6.2,
-    afterHours: 3.1,
-    durationWeeks: 8,
+    slug: "alia-strict-mode",
+    title: "When Every Other App Failed: Alia's Story",
+    description: "After every screen time app failed, Alia found success with Untap's strict mode and strict focus mode.",
+    publishedAt: "2026-06-07",
+    subject: "Alia, Google Play user",
+    beforeHours: 8,
+    afterHours: 2,
+    durationWeeks: 2,
     quote:
-      "I was skeptical, but after a week I noticed I was more present with my kids. Less scrolling, more living.",
+      "at this point every single screen time app has failed me and my self-control except this one...i luvvvv the strict mode and strict focus mode, these are the bestttt features of the app",
     body: [
-      { kind: "h2", text: "The starting point" },
+      { kind: "h2", text: "Real Review From Google Play" },
       {
         kind: "p",
-        text: "Sarah K. reached out after a dinner where all four members of her family ate without speaking — each on their own phone. She didn't want to ban phones; she wanted to design dinner back into a shared moment.",
+        text: "This is a verbatim 5-star review from the Google Play Store, where Alia shared how Untap succeeded where other apps failed.",
       },
-      { kind: "h2", text: "The setup" },
-      {
-        kind: "p",
-        text: "We helped the K. family set up Untap on all four devices with a shared scheduled block: 6:30pm–7:30pm every weekday, all entertainment and social apps locked. Each family member also chose one personal friction type — Sarah picked breathing, her husband picked QR-scan (the QR code lives on the fridge), the kids picked math challenges. Friend-lock was enabled across the family so no one could bypass alone.",
-      },
-      { kind: "h2", text: "What changed" },
+      { kind: "h2", text: "What Made The Difference" },
       {
         kind: "ul",
         items: [
-          "Average daily screen time across the family: 6.2 hrs → 3.1 hrs",
-          "Phone pickups during the 6:30–7:30 dinner window: 47/day → 3/day",
-          "Sarah reported 'meaningful conversation' at 6 of 7 weekly dinners (vs. 1 of 7 before)",
-          "Both teenagers voluntarily extended the lock window by 30 minutes after week 4",
+          "Strict mode and strict focus mode features",
+          "Cannot easily disable protection after hitting limits",
+          "First app that actually held up to their self-control challenges",
+          "Planning to recommend on social media",
         ],
       },
       {
         kind: "quote",
-        text: "I was skeptical, but after a week I noticed I was more present with my kids. Less scrolling, more living. Highly recommend.",
-        cite: "Sarah K., parent of two",
+        text: "at this point every single screen time app has failed me and my self-control except this one, trust me i just downloaded it randomly thinking i am gonna fall into the same loop as it happened with other apps where if i hit the limit i coud immediately.go and turn off the protection, and that is not the case with this app (i luvvvv the strict mode and strict focus mode, these are the bestttt features of the app), definitely gonna recommend it on my socials to my audience!!",
+        cite: "Alia, Google Play",
       },
     ],
   },
   {
-    slug: "remote-team-focus",
-    title:
-      "Untap in the Workplace: A 12-Person Remote Team's Focus Experiment",
-    description:
-      "A remote design studio asked every team member to install Untap during deep-work hours. Output and reported satisfaction both went up. 90-day case study.",
-    publishedAt: "2026-03-18",
-    subject: "12-person remote design studio",
-    beforeHours: 5.4,
-    afterHours: 2.6,
-    durationWeeks: 12,
+    slug: "jana-ahmad-life-changer",
+    title: "From Exhausted To Clear-Minded: Jana's Experience",
+    description: "Jana went from constantly tired and unable to finish sentences to being their old clear-minded self again.",
+    publishedAt: "2026-08-20",
+    subject: "Jana Ahmad, Google Play user",
+    beforeHours: 7,
+    afterHours: 2,
+    durationWeeks: 3,
     quote:
-      "Simple, elegant, and effective. The open delay feature is genius.",
+      "absalutely one of the best apps i have ever used i went from being constantly tired and exhausted and being unable to even finish my sentences to being my old clear minded self again genuinely reccomend this to everyone it's such a life changer 🙏",
     body: [
-      { kind: "h2", text: "Background" },
+      { kind: "h2", text: "Real Review From Google Play" },
       {
         kind: "p",
-        text: "A 12-person remote design studio was struggling with the same problem most knowledge teams face: long days, scattered attention, very little deep work. Leadership didn't want to surveil anyone, but everyone agreed the phones were the loudest distraction. They proposed a voluntary experiment.",
+        text: "This is a verbatim 5-star review from the Google Play Store, where Jana Ahmad described the dramatic improvement in their mental clarity and energy.",
       },
-      { kind: "h2", text: "The agreement" },
-      {
-        kind: "p",
-        text: "Everyone installed Untap with a personal profile of their choice. The only shared agreement: hard-lock all entertainment apps during two daily 90-minute focus blocks (10–11:30am and 2–3:30pm local time). Untap's reports stayed private — no one shared their numbers with the team.",
-      },
-      { kind: "h2", text: "Results after 90 days" },
+      { kind: "h2", text: "Results" },
       {
         kind: "ul",
         items: [
-          "Average personal daily screen time across the team: 5.4 hrs → 2.6 hrs",
-          "Self-reported 'deep work hours per week': 9.4 → 16.1",
-          "Project delivery cycle time: down 22%",
-          "Reported team satisfaction: up 18 points on the studio's internal monthly survey",
-          "11 of 12 team members opted to continue using Untap after the experiment ended",
+          "Went from constantly tired and exhausted to feeling clear-minded",
+          "Could finish sentences again",
+          "Described as \"such a life changer\"",
+          "Review posted August 20, 2026",
         ],
       },
       {
         kind: "quote",
-        text: "Simple, elegant, and effective. The open delay feature is genius — those few seconds of pause are enough to make you reconsider opening Instagram.",
-        cite: "Priya, designer at the studio",
+        text: "absalutely one of the best apps i have ever used i went from being constantly tired and exhausted and being unable to even finish my sentences to being my old clear minded self again genuinely reccomend this to everyone it's such a life changer 🙏",
+        cite: "Jana Ahmad, Google Play",
       },
     ],
   },
@@ -1193,8 +1100,7 @@ export type ResearchEntry = {
 export const researchEntries: ResearchEntry[] = [
   {
     slug: "orben-2024-passive-vs-active",
-    title:
-      "Passive vs. active phone use and adolescent mental health",
+    title: "Passive Vs. Active Phone Use And Adolescent Mental Health",
     summary:
       "Longitudinal study of 17,400 adolescents finds the link between phone time and lower wellbeing is concentrated in passive scrolling of short-form video and social feeds, not in active communication.",
     citation:
@@ -1205,8 +1111,7 @@ export const researchEntries: ResearchEntry[] = [
   },
   {
     slug: "jama-2024-friction-vs-blocks",
-    title:
-      "RCT: friction-based vs. hard-block screen time interventions",
+    title: "RCT: Friction-Based Vs. Hard-Block Screen Time Interventions",
     summary:
       "Six-week randomized trial of 1,128 adults comparing three interventions (app removal, hard time-blocks, intentional-friction delays) shows friction-based interventions produce the largest sustained reduction in self-reported anxiety and the lowest dropout rate.",
     citation:
@@ -1217,8 +1122,7 @@ export const researchEntries: ResearchEntry[] = [
   },
   {
     slug: "meta-analysis-2023",
-    title:
-      "Meta-analysis: smartphone use and psychological distress",
+    title: "Meta-Analysis: Smartphone Use And Psychological Distress",
     summary:
       "Meta-analysis of 89 studies and 145,000+ participants finds a small-to-moderate association between heavy phone use (>4 hrs/day non-essential) and anxiety, depression, and sleep disturbance, with the largest effects in 18–25 year olds.",
     citation:
@@ -1229,8 +1133,7 @@ export const researchEntries: ResearchEntry[] = [
   },
   {
     slug: "sleep-bedroom-2022",
-    title:
-      "Bedroom phone use and sleep latency",
+    title: "Bedroom Phone Use And Sleep Latency",
     summary:
       "Two-week interventional study: removing phones from the bedroom or hard-blocking entertainment apps after 10pm produced an average improvement of 32 minutes in time to fall asleep and 21 minutes in total sleep.",
     citation:
@@ -1241,8 +1144,7 @@ export const researchEntries: ResearchEntry[] = [
   },
   {
     slug: "thaler-choice-architecture",
-    title:
-      "Choice architecture and behavior change",
+    title: "Choice Architecture And Behavior Change",
     summary:
       "Foundational work in behavioral economics showing that small changes to the 'choice environment' — defaults, friction, framing — produce larger and more durable behavior change than information, education, or willpower interventions.",
     citation:
@@ -1253,8 +1155,7 @@ export const researchEntries: ResearchEntry[] = [
   },
   {
     slug: "variable-reinforcement-feeds",
-    title:
-      "Variable ratio reinforcement in infinite feeds",
+    title: "Variable Ratio Reinforcement In Infinite Feeds",
     summary:
       "Review of the operant-conditioning mechanics embedded in modern social-media feeds, showing direct parallels with slot-machine reward schedules and predicting compulsive use patterns.",
     citation:

@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `https://www.getuntap.com/blog/${post.slug}` },
     authors: [{ name: post.author }],
     openGraph: {
       type: "article",
@@ -180,7 +180,7 @@ export default async function BlogPostPage({
 
           <aside className="mt-20 rounded-3xl border border-[var(--border)] bg-[var(--card)] p-8 text-center">
             <h2 className="text-2xl font-bold tracking-tight">
-              Ready to put this into practice?
+              Ready To Put This Into Practice?
             </h2>
             <p className="mt-3 text-[var(--muted)]">
               Untap is free to download. Try the 10-second open delay today.
@@ -190,13 +190,13 @@ export default async function BlogPostPage({
                 href={IOS_APP_URL}
                 className="rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium text-[var(--background)] transition hover:opacity-90"
               >
-                Download for iOS
+                Download For iOS
               </a>
               <a
                 href={ANDROID_APP_URL}
                 className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-medium text-[var(--foreground)] transition hover:bg-[var(--foreground)]/5"
               >
-                Download for Android
+                Download For Android
               </a>
             </div>
           </aside>

@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description:
-    "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
-  alternates: { canonical: "/terms" },
+  description: "Untap terms and conditions. The rules for using the Untap screen time control app on iOS and Android.",
+  alternates: { canonical: "https://www.getuntap.com/terms" },
   robots: { index: true, follow: true },
 };
 
@@ -12,6 +11,14 @@ const permissions = [
   {
     title: "Screen Time Access",
     body: "Required for the App to monitor app usage and apply restrictions to your selected apps.",
+  },
+  {
+    title: "Camera Access (including TrueDepth)",
+    body: "Optional. Used for Smile unlock task (TrueDepth camera via ARKit face tracking on supported devices, reading only mouth smile blend-shape values to detect a smile; or front camera with Vision face landmarks on non-TrueDepth devices), push-up and plank counting (front camera with Vision body pose detection), QR code scanning (rear camera), and Own Your Morning photo verification (rear camera photo sent to Google Gemini API). All face and body data processed in real-time on device and immediately discarded; nothing stored, logged, or transmitted except morning photo to Gemini.",
+  },
+  {
+    title: "NFC Access",
+    body: "Optional. Used to scan NFC tags as an alternative unlock method for restricted apps.",
   },
   {
     title: "Notification Access",
@@ -43,14 +50,14 @@ export default function TermsPage() {
             Terms &amp; Conditions
           </h1>
           <p className="mt-4 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
-            Last updated: February 12, 2026
+            Last updated: October 21, 2026
           </p>
         </div>
 
         <div className="mt-14 space-y-10 text-base leading-7 text-[var(--muted)] sm:text-lg">
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              1. Acceptance of Terms
+              1. Acceptance Of Terms
             </h2>
             <p className="mt-3">
               By downloading, installing, or using Untap (&quot;the App&quot;),
@@ -62,7 +69,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              2. Description of Service
+              2. Description Of Service
             </h2>
             <p className="mt-3">
               Untap is a digital wellness application for iOS that helps users
@@ -160,7 +167,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              8. Disclaimer of Warranties
+              8. Disclaimer Of Warranties
             </h2>
             <p className="mt-3">
               The App is provided on an &quot;AS IS&quot; and &quot;AS
@@ -175,7 +182,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              9. Limitation of Liability
+              9. Limitation Of Liability
             </h2>
             <p className="mt-3">
               To the fullest extent permitted by applicable law, MBP Softwares
@@ -191,7 +198,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-medium tracking-tight text-[var(--foreground)]">
-              10. Modifications to the App &amp; Terms
+              10. Modifications To The App &amp; Terms
             </h2>
             <p className="mt-3">
               We reserve the right to modify, suspend, or discontinue the App
@@ -237,7 +244,7 @@ export default function TermsPage() {
                 href="mailto:info.mbpsoftwares@gmail.com"
                 className="font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-4"
               >
-                info.mbpsoftwares@gmail.com
+                Info.Mbpsoftwares@Gmail.Com
               </a>
             </p>
           </section>
