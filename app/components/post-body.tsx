@@ -14,11 +14,13 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
       {blocks.map((block, i) => {
         switch (block.kind) {
           case "p":
-            return (
-              <p key={i} className="text-[var(--foreground)]/80">
-                {block.text}
-              </p>
-            );
+  return (
+    <p
+      key={i}
+      className="text-[var(--foreground)]/80"
+      dangerouslySetInnerHTML={{ __html: block.text }}
+    />
+  );
           case "h2": {
             const id = block.id ?? slugify(block.text);
             return (
@@ -50,7 +52,10 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
                 className="list-disc space-y-2 pl-6 text-[var(--foreground)]/80 marker:text-[var(--accent)]"
               >
                 {block.items.map((item, j) => (
-                  <li key={j}>{item}</li>
+                 <li
+  key={j}
+  dangerouslySetInnerHTML={{ __html: item }}
+/>
                 ))}
               </ul>
             );
