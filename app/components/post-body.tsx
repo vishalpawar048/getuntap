@@ -1,4 +1,6 @@
 import type { PostBlock } from "../lib/content";
+import Link from "next/link";
+import type { ReactNode } from "react";
 
 function slugify(s: string) {
   return s
@@ -6,6 +8,37 @@ function slugify(s: string) {
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-");
+}
+
+function renderTextWithLinks(text: string): ReactNode {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: (string | ReactNode)[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const linkText = match[1];
+    const href = match[2];
+    parts.push(
+      <Link
+        key={match.index}
+        href={href}
+        className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/30 underline-offset-2 hover:decoration-[var(--accent)]"
+      >
+        {linkText}
+      </Link>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 1 ? <>{parts}</> : text;
 }
 
 export function PostBody({ blocks }: { blocks: PostBlock[] }) {
@@ -16,7 +49,7 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
           case "p":
             return (
               <p key={i} className="text-[var(--foreground)]/80">
-                {block.text}
+                {renderTextWithLinks(block.text)}
               </p>
             );
           case "h2": {

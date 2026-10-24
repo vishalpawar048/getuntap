@@ -122,9 +122,35 @@ export default async function BlogPostPage({
     ],
   };
 
+  const faqBlocks = post.body.filter((block) => block.kind === "h3");
+  const faqJsonLd =
+    faqBlocks.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqBlocks.map((questionBlock, idx) => {
+            const answerBlock = post.body[post.body.indexOf(questionBlock) + 1];
+            return {
+              "@type": "Question",
+              name:
+                "text" in questionBlock ? questionBlock.text : "",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  answerBlock && "text" in answerBlock ? answerBlock.text : "",
+              },
+            };
+          }),
+        }
+      : null;
+
+  const jsonLdData = faqJsonLd
+    ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
+    : [articleJsonLd, breadcrumbJsonLd];
+
   return (
     <>
-      <JsonLd data={[articleJsonLd, breadcrumbJsonLd]} />
+      <JsonLd data={jsonLdData} />
       <article className="px-6 py-24 pt-32 sm:py-32">
         <div className="mx-auto max-w-3xl">
           <nav
