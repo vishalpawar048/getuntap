@@ -1013,9 +1013,9 @@ export const blogPosts: Post[] = [
     {
       kind: "ul",
       items: [
-        "<strong>Quiz gate:</strong> You upload your lecture notes, flashcards, PDFs or photos of handwritten notes. When you open a marked app, Untap shows a question generated from your material. A correct answer opens the app. A wrong answer sends you back to your notes.",
-        "<strong>Exam-Ready Mode:</strong> The phone locks during study blocks and unlocks after a timed study session or a passed quiz.",
-        "<strong>Session limits:</strong> You can cap how long distracting apps are available each day, and schedule automatic locks for recurring study blocks.",
+        " Quiz gate:  You upload your lecture notes, flashcards, PDFs or photos of handwritten notes. When you open a marked app, Untap shows a question generated from your material. A correct answer opens the app. A wrong answer sends you back to your notes.",
+        " Exam-Ready Mode:  The phone locks during study blocks and unlocks after a timed study session or a passed quiz.",
+        " Session limits:  You can cap how long distracting apps are available each day, and schedule automatic locks for recurring study blocks.",
       ],
     },
     {
@@ -1047,13 +1047,13 @@ export const blogPosts: Post[] = [
     {
       kind: "ol",
       items: [
-        "<strong>Measure your baseline.</strong> For one week, check your phone’s built-in screen time report. IPhone’s Screen Time and Android’s Digital Wellbeing both show daily totals and the apps you use most.",
-        "<strong>Set one clear target.</strong> Choose a realistic daily goal, such as halving your most-used app time, rather than cutting everything at once.",
-        "<strong>Put the phone in another room during study blocks.</strong> Use a 25 to 45 minute block, and keep the phone out of reach until it ends.",
-        "<strong>Use the study gate for social apps.</strong> If you use an app blocker, mark your most distracting apps and require a quiz or timed session before they open.",
-        "<strong>Keep messages reachable.</strong> Allow calls from family and your school or university contacts through your phone’s focus settings.",
-        "<strong>Protect your sleep.</strong> Set a cut-off time for social apps in the evening, since poor sleep makes revision harder.",
-        "<strong>Review every week.</strong> Compare your screen time report with your study hours, and adjust the plan if a limit is too strict or too loose.",
+        " Measure your baseline.  For one week, check your phone’s built-in screen time report. IPhone’s Screen Time and Android’s Digital Wellbeing both show daily totals and the apps you use most.",
+        " Set one clear target.  Choose a realistic daily goal, such as halving your most-used app time, rather than cutting everything at once.",
+        " Put the phone in another room during study blocks.  Use a 25 to 45 minute block, and keep the phone out of reach until it ends.",
+        " Use the study gate for social apps.  If you use an app blocker, mark your most distracting apps and require a quiz or timed session before they open.",
+        " Keep messages reachable.  Allow calls from family and your school or university contacts through your phone’s focus settings.",
+        " Protect your sleep.  Set a cut-off time for social apps in the evening, since poor sleep makes revision harder.",
+        " Review every week.  Compare your screen time report with your study hours, and adjust the plan if a limit is too strict or too loose.",
       ],
     },
     {
