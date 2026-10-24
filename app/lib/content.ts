@@ -969,6 +969,247 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "reduce-screen-time-during-exam-preparation",
+  title: "How to Reduce Screen Time During Exam Preparation: A Student Case Study",
+  description:
+    "How can you reduce screen time during exam preparation? See how one Untap user cut daily phone use, what the study mode does, and a plan you can adapt for your own revision.",
+  publishedAt: "2026-10-25",
+  author: "Untap Team",
+  readMinutes: 5,
+  tags: ["exam preparation", "screen time", "student focus"],
+  body: [
+  
+    {
+      kind: "p",
+      text: "Exam season has a way of turning a phone into a study partner you never invited. You open it to look up one word from your notes, and forty minutes later you’re watching videos you don’t remember choosing. Phone distractions while studying are one of the most common reasons revision goes slower than planned.",
+    },
+    {
+      kind: "p",
+      text: "This guide looks at a documented case of someone cutting daily phone use, explains what changed, and gives you a plan you can adapt to your own revision. It’s also worth being clear about what the evidence does and doesn’t show.",
+    },
+    {
+      kind: "h2",
+      text: "The case",
+      id: "the-case",
+    },
+    {
+      kind: "p",
+      text: "Untap’s case study page includes the story of Jana Ahmad. Her card shows her screen time falling from 7 hours to about 2 hours over a 3-week follow-up. The card and the page’s description don’t give the full methodology, such as exactly how the hours were measured, so treat the figures as her reported results rather than a controlled study.",
+    },
+    {
+      kind: "p",
+      text: "The card also doesn’t state that she was a student or preparing for exams, so we won’t describe her that way here. A 3-week change in daily use is still a useful example of how a structured approach can work.",
+    },
+    {
+      kind: "h2",
+      text: "What changed",
+      id: "what-changed",
+    },
+    {
+      kind: "p",
+      text: "Untap’s study features work by adding a step before distracting apps open:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Quiz gate:</strong> You upload your lecture notes, flashcards, PDFs or photos of handwritten notes. When you open a marked app, Untap shows a question generated from your material. A correct answer opens the app. A wrong answer sends you back to your notes.",
+        "<strong>Exam-Ready Mode:</strong> The phone locks during study blocks and unlocks after a timed study session or a passed quiz.",
+        "<strong>Session limits:</strong> You can cap how long distracting apps are available each day, and schedule automatic locks for recurring study blocks.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "These features make distraction harder without making your phone unusable. They’re one approach, and they don’t replace good study habits.",
+    },
+    {
+      kind: "h2",
+      text: "Why keeping the phone away matters",
+      id: "why-keeping-the-phone-away-matters",
+    },
+    {
+      kind: "p",
+      text: "Physical distance seems to matter as well as software limits. A 2017 study by Ward and colleagues, published in the <em>Journal of the Association for Consumer Research</em>, found that people performed worse on cognitive tests when their smartphone was on the desk, even when it was switched off and face down, compared with when it was in another room. The study measured mental performance in the lab, not exam results, so it shows a plausible mechanism rather than a guaranteed outcome.",
+    },
+    {
+      kind: "p",
+      text: "Larger studies point in a similar direction. Research by Beland and Murphy at the London School of Economics, <a href=\"https://eprints.lse.ac.uk/62574\">Ill Communication: technology, distraction and student performance</a>, found that test scores improved after schools in England introduced mobile phone bans, with the biggest gains for lower-attaining students.",
+    },
+    {
+      kind: "h2",
+      text: "A practical plan for exam preparation",
+      id: "a-practical-plan-for-exam-preparation",
+    },
+    {
+      kind: "p",
+      text: "You can adapt this plan for your own revision:",
+    },
+    {
+      kind: "ol",
+      items: [
+        "<strong>Measure your baseline.</strong> For one week, check your phone’s built-in screen time report. IPhone’s Screen Time and Android’s Digital Wellbeing both show daily totals and the apps you use most.",
+        "<strong>Set one clear target.</strong> Choose a realistic daily goal, such as halving your most-used app time, rather than cutting everything at once.",
+        "<strong>Put the phone in another room during study blocks.</strong> Use a 25 to 45 minute block, and keep the phone out of reach until it ends.",
+        "<strong>Use the study gate for social apps.</strong> If you use an app blocker, mark your most distracting apps and require a quiz or timed session before they open.",
+        "<strong>Keep messages reachable.</strong> Allow calls from family and your school or university contacts through your phone’s focus settings.",
+        "<strong>Protect your sleep.</strong> Set a cut-off time for social apps in the evening, since poor sleep makes revision harder.",
+        "<strong>Review every week.</strong> Compare your screen time report with your study hours, and adjust the plan if a limit is too strict or too loose.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Your results will depend on your habits, your course and how consistently you follow the plan. Start small, and increase the limits as your focus improves.",
+    },
+    {
+      kind: "h2",
+      text: "Keep the goal in view",
+      id: "keep-the-goal-in-view",
+    },
+    {
+      kind: "p",
+      text: "Reducing screen time during exam preparation isn’t about never using your phone. It’s about making your study time yours. A clear plan, a few boundaries and a phone that’s out of reach during revision can make a real difference.",
+    },
+  ],
+},
+{
+  slug: "block-distracting-apps-without-missing-important-calls",
+  title: "How to Block Distracting Apps Without Missing Important Calls or Messages",
+  description:
+    "You pick up your phone to check one thing and surface twenty minutes later, with no idea how you got there. Most of us have been there. The goal is to block distracting apps, but nobody wants to miss a call from their child’s school, a message from a client or a delivery update.",
+  publishedAt: "2026-10-23",
+  author: "Untap Team",
+  readMinutes: 4,
+  tags: ["app blocker", "screen time", "focus"],
+  body: [
+    {
+      kind: "p",
+      text: "You don’t have to choose between focus and being reachable. You just need the right setup.",
+    },
+    {
+      kind: "h2",
+      text: "Why blocking helps",
+      id: "why-blocking-helps",
+    },
+    {
+      kind: "p",
+      text: "Distracting apps are built to be opened quickly and often. The simplest fix is to add a little friction, so you pause before you open them.",
+    },
+    {
+      kind: "p",
+      text: "That’s the idea behind an app blocker. Instead of relying on willpower alone, it adds a delay, a time limit or a lock. Used well, it stops reflex scrolling without cutting you off from the people who need you.",
+    },
+    {
+      kind: "h2",
+      text: "How an app blocker works",
+      id: "how-an-app-blocker-works",
+    },
+    {
+      kind: "p",
+      text: "At Untap, we’ve seen most blockers work in one of three ways:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Delay: the app waits a few seconds before opening, which gives you a moment to decide.",
+        "Session limit: the app is available for a set amount of time each day.",
+        "Hard lock: the app stays closed until a time you choose.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Some people also find a pause step helpful, such as a breathing exercise or a short maths problem. The extra step turns an automatic habit into a deliberate choice.",
+    },
+    {
+      kind: "h2",
+      text: "What to check before you choose a blocker",
+      id: "what-to-check-before-you-choose-a-blocker",
+    },
+    {
+      kind: "p",
+      text: "Before you Block Distracting Apps on your phone, check these points:",
+    },
+    {
+      kind: "ol",
+      items: [
+        "Calls and messages. Make sure the blocker won’t stop phone calls, texts or the messaging apps you rely on for work and family.",
+        "Emergency access. Know how you’d get back in if you really need an app and your settings are locked.",
+        "Scheduling. A blocker that runs after a set time at night, or during work hours, is often easier to keep using.",
+        "Platform. Check that it works on your phone’s operating system.",
+        "Privacy. Find out whether it works on your device or sends data elsewhere.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "Why we built Untap",
+      id: "why-we-built-untap",
+    },
+    {
+      kind: "p",
+      text: "Untap is a screen time app for iPhone and Android. It adds a short pause before you open an app, and you can set a delay, a session limit or a lock that lifts at a time you choose. Our strictness levels, from soft to strict, let you tighten things gradually as the habit builds.",
+    },
+    {
+      kind: "p",
+      text: "On iPhone, Untap uses Apple’s own FamilyControls and ManagedSettings frameworks, and everything runs locally on your device. We built the iPhone version first, and the Android version is designed to match it.",
+    },
+    {
+      kind: "p",
+      text: "Untap has a free tier with the core features, and paid plans add deeper analytics and unlimited restrictions. Check the current plans on our site before you sign up.",
+    },
+    {
+      kind: "h2",
+      text: "What our users have seen",
+      id: "what-our-users-have-seen",
+    },
+    {
+      kind: "p",
+      text: "Here are a few results from people who have used Untap:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "A student in Pune went from about seven hours a day on their phone to under two.",
+        "One user cut their app opens from 187 to 22 a week.",
+        "Another user reduced their Instagram checks by 40%, which they linked to the pause screen.",
+        "Across our users, people report saving about 3.5 hours a day, and roughly 85% notice less doomscrolling within the first week.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Your results will depend on your habits and how you set things up. Treat these as examples, not promises.",
+    },
+    {
+      kind: "h2",
+      text: "Keep calls and messages reachable",
+      id: "keep-calls-and-messages-reachable",
+    },
+    {
+      kind: "p",
+      text: "Whichever app you use, you can protect your important contacts with a few simple steps:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Use your phone’s focus or do-not-disturb mode, and allow calls from your favourite contacts.",
+        "Keep the messaging apps you use for family and work out of your blocker, or give them a longer delay.",
+        "Turn on repeated-call alerts, if your phone supports them, so urgent calls still come through.",
+        "Let family and colleagues know when you’re in a focus session, so they know how to reach you if something is urgent.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "Start with a gentle setup",
+      id: "start-with-a-gentle-setup",
+    },
+    {
+      kind: "p",
+      text: "Begin with a soft setting for a week or two. Block the apps that pull you in most, and leave the useful ones alone. Once the pause starts to feel natural, tighten the limits.",
+    },
+    {
+      kind: "p",
+      text: "Focus works best when it’s easy to stick with. The aim is to make the apps you care less about harder to reach, while keeping the people who matter one tap away.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {

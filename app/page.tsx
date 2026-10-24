@@ -501,7 +501,7 @@ export default function Home() {
                 </h3>
                 <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
                   <p>
-                    Students want to study, and they also want <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social media in</a> control so other people&apos;s lives do not wreck the day.
+                    Students want to study, and they also want <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social media </a> in control so other people&apos;s lives do not wreck the day.
                     A status, a friend&apos;s post, or cheap content is enough
                     to spark FOMO and the fear of being left behind.
                   </p>
