@@ -1050,7 +1050,7 @@ export const blogPosts: Post[] = [
         " Measure your baseline.  For one week, check your phone’s built-in screen time report. IPhone’s Screen Time and Android’s Digital Wellbeing both show daily totals and the apps you use most.",
         " Set one clear target.  Choose a realistic daily goal, such as halving your most-used app time, rather than cutting everything at once.",
         " Put the phone in another room during study blocks.  Use a 25 to 45 minute block, and keep the phone out of reach until it ends.",
-        " Use the study gate for social apps.  If you use an <a href=\"https://www.getuntap.com/features/app-blocker\" style=\"text-decoration: underline;\" >app blocker</a>, mark your most distracting apps and require a quiz or timed session before they open.",
+        " Use the study gate for social apps.  If you use an <a href=\"https://www.getuntap.com/study-app-blocker\" style=\"text-decoration: underline;\" text-color:\"#007bff\">study app blocker</a>, mark your most distracting apps and require a quiz or timed session before they open.",
         " Keep messages reachable.  Allow calls from family and your school or university contacts through your phone’s focus settings.",
         " Protect your sleep.  Set a cut-off time for social apps in the evening, since poor sleep makes revision harder.",
         " Review every week.  Compare your screen time report with your study hours, and adjust the plan if a limit is too strict or too loose.",

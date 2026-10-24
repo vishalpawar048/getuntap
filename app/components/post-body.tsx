@@ -66,7 +66,10 @@ export function PostBody({ blocks }: { blocks: PostBlock[] }) {
                 className="list-decimal space-y-2 pl-6 text-[var(--foreground)]/80 marker:text-[var(--accent)] marker:font-semibold"
               >
                 {block.items.map((item, j) => (
-                  <li key={j}>{item}</li>
+                  <li
+          key={j}
+          dangerouslySetInnerHTML={{ __html: item }}
+        />
                 ))}
               </ol>
             );
