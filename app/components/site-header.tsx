@@ -94,7 +94,7 @@ export function SiteHeader() {
   {featuresOpen && (
     <div
       id="features-dropdown"
-      className="absolute left-0 top-full z-50 mt-4 w-64 rounded-2xl border border-white/10 bg-[var(--dark-bg)] p-2 shadow-xl backdrop-blur-md"
+      className="absolute left-0 top-full z-50 mt-0 w-64 rounded-2xl border border-white/10 bg-[var(--dark-bg)] p-2 shadow-xl backdrop-blur-md"
     >
       <Link
         href="/features/app-blocker"
