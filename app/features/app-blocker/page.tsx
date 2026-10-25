@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "App Blocker – Timer Lock For Apps",
@@ -118,6 +125,96 @@ const faqs = [
 ];
 
 export default function AppBlockerPage() {
+
+   const softwareAppJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      name: "Untap",
+      alternateName: [
+        "Untap App",
+        "Untap Screen Time",
+        "Untap Screen Time Control",
+      ],
+      applicationCategory: "LifestyleApplication",
+      applicationSubCategory: "Screen Time Control",
+      operatingSystem: "iOS, Android",
+      description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.png`,
+      inLanguage: "en",
+      isFamilyFriendly: true,
+      keywords:
+        "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+      publisher: {
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+      },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          category: "Free",
+        },
+      ],
+      downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      featureList: [
+        "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+        "Soft, moderate, and strict modes",
+        "Friend lock and password-protected settings",
+        "Prevent uninstall",
+        "Daily, weekly, monthly usage reports",
+        "Over-consumption notifications",
+        "Privacy-first: all data stays on device",
+      ],
+    };
+  
+    const organizationJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: SUPPORT_EMAIL,
+      sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+    };
+  
+   const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/features/app-blocker#webpage`,
+  url: `${SITE_URL}/features/app-blocker`,
+  name: "App Blocker - Timer Lock For Apps",
+  description: String(metadata.description ?? ""),
+  inLanguage: "en",
+  publisher: {
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "App Blocker",
+      item: `${SITE_URL}/features/app-blocker`,
+    },
+  ],
+};
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -130,7 +227,13 @@ export default function AppBlockerPage() {
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      <JsonLd data={[
+          softwareAppJsonLd,
+          organizationJsonLd,
+          webPageJsonLd,
+          faqJsonLd,
+          breadcrumbJsonLd,
+        ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -228,7 +331,7 @@ export default function AppBlockerPage() {
               
               <div className="space-y-5 text-lg leading-relaxed text-white/60 mt-8">
                 <p>
-                  Most people who go looking for something to block distracting apps on Android have already tried the built-in digital wellbeing settings and given up on them within a week. They're clunky, easy to snooze, and honestly forgettable. What actually works is something you can't casually dismiss without a bit of friction — a math problem, a breathing pause, a QR scan. Untap works this way, and it's a big reason people stick with it longer than the tools they tried before.
+                  Most people who go looking for something to block distracting apps on Android have already tried the built-in digital wellbeing settings and given up on them within a week. They're clunky, easy to snooze, and honestly forgettable. What actually works is something you can't casually dismiss without a bit of friction — a math problem, a breathing pause, a QR scan. Untap works this way, and it's a big reason people stick with it longer than the tools they tried before. A timer lock for apps works because it steps in at the exact second the habit starts.
                 </p>
 
                 <p>
@@ -304,7 +407,7 @@ export default function AppBlockerPage() {
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
               <p>
-                A lot of families and couples end up with one iPhone and one Android in the house, and most blockers only work well on one side. Untap was actually built first for iOS, so if you want to block apps from the iPhone, it uses Apple's own FamilyControls and ManagedSettings frameworks under the hood — nothing hacky, nothing that Apple could break with an update. You get the same delays and locks whether you're trying to block apps from iPhone or an Android device, which matters if your household isn't all one brand.
+                A lot of families and couples end up with one iPhone and one Android in the house, and most blockers only work well on one side. Untap was actually built first for iOS, so if you want to block apps from the iPhone, it uses Apple's own FamilyControls and ManagedSettings frameworks under the hood — nothing hacky, nothing that Apple could break with an update. You get the same delays and locks whether you're trying to block apps from iPhone or an Android device, which matters if your household isn't all one brand. That makes it a practical app blocker for iPhone users in mixed-device homes.
               </p>
             </div>
           </div>
@@ -353,7 +456,7 @@ export default function AppBlockerPage() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-white/60">
-              The app blocker features that actually work are the ones that give you a moment to pause, not a red screen to shame you. Untap's delays, locks, and Friend Lock are designed to be just enough friction to let you choose, without making you feel like you're in a prison.
+              The app blocker features that actually work are the ones that give you a moment to pause, not a red screen to shame you. Untap's delays, locks, and Friend Lock are designed to be just enough friction to let you choose, without making you feel like you're in a prison. That is how a well-built timer lock for apps should feel.
             </p>
           </div>
 

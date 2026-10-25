@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [featuresOpen, setFeaturesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -61,12 +62,90 @@ export function SiteHeader() {
             >
               For Students
             </Link>
-             <Link
-              href="/features/focus-mode"
-              className="transition-colors hover:text-white"
-            >
-              Focus Mode
-            </Link>
+            <div className="relative"  onMouseEnter={() => setFeaturesOpen(true)}
+  onMouseLeave={() => setFeaturesOpen(false)}>
+  <button
+    type="button"
+    onClick={() => setFeaturesOpen(true)}
+    aria-expanded={featuresOpen}
+    aria-controls="features-dropdown"
+    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-white"
+  >
+    Features
+
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.8}
+      aria-hidden="true"
+      className={`h-4 w-4 transition-transform duration-200 ${
+        featuresOpen ? "rotate-180" : ""
+      }`}
+    >
+      <path
+        d="m5 7.5 5 5 5-5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </button>
+
+  {featuresOpen && (
+    <div
+      id="features-dropdown"
+      className="absolute left-0 top-full z-50 mt-4 w-64 rounded-2xl border border-white/10 bg-[var(--dark-bg)] p-2 shadow-xl backdrop-blur-md"
+    >
+      <Link
+        href="/features/app-blocker"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        App Blocker
+      </Link>
+
+      <Link
+        href="/features/focus-mode"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        Focus Mode
+      </Link>
+
+      <Link
+        href="/features/parental-controls"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        Parental Controls
+      </Link>
+
+      <Link
+        href="/features/screen-time-control"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        Screen Time Control
+      </Link>
+
+      <Link
+        href="/features/social-media-control"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        Social Media Control
+      </Link>
+
+      <Link
+        href="/features/stop-doomscrolling-app"
+        onClick={() => setFeaturesOpen(false)}
+        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+      >
+        Stop Doomscrolling
+      </Link>
+    </div>
+  )}
+</div>
              <Link
               href="/for-schools"
               className="transition-colors hover:text-white"

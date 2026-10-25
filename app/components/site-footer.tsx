@@ -62,7 +62,55 @@ export function SiteFooter() {
               </Link>
             </nav>
           </div>
+<div>
+  <p className="text-xs font-semibold uppercase tracking-widest text-white/30">
+    Features
+  </p>
 
+  <nav className="mt-4 flex flex-col gap-3">
+    <Link
+      href="/features/app-blocker"
+      className="text-white/60 transition hover:text-white"
+    >
+      App Blocker
+    </Link>
+
+    <Link
+      href="/features/focus-mode"
+      className="text-white/60 transition hover:text-white"
+    >
+      Focus Mode
+    </Link>
+
+    <Link
+      href="/features/parental-controls"
+      className="text-white/60 transition hover:text-white"
+    >
+      Parental Controls
+    </Link>
+
+    <Link
+      href="/features/screen-time-control"
+      className="text-white/60 transition hover:text-white"
+    >
+      Screen Time Control
+    </Link>
+
+    <Link
+      href="/features/social-media-control"
+      className="text-white/60 transition hover:text-white"
+    >
+      Social Media Control
+    </Link>
+
+    <Link
+      href="/features/stop-doomscrolling-app"
+      className="text-white/60 transition hover:text-white"
+    >
+      Stop Doomscrolling
+    </Link>
+  </nav>
+</div>
           <div>
             <p className="font-semibold uppercase tracking-widest text-white/30 text-xs">
               Solutions

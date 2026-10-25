@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Focus Mode – Brain Focus App",
@@ -98,19 +105,115 @@ const faqs = [
 ];
 
 export default function FocusModePage() {
-  const faqJsonLd = {
+ 
+  const softwareAppJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        name: "Untap",
+        alternateName: [
+          "Untap App",
+          "Untap Screen Time",
+          "Untap Screen Time Control",
+        ],
+        applicationCategory: "LifestyleApplication",
+        applicationSubCategory: "Screen Time Control",
+        operatingSystem: "iOS, Android",
+        description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+        url: SITE_URL,
+        image: `${SITE_URL}/logo.png`,
+        inLanguage: "en",
+        isFamilyFriendly: true,
+        keywords:
+          "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+        publisher: {
+          "@type": "Organization",
+          name: ORG_NAME,
+          url: SITE_URL,
+        },
+        offers: [
+          {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            category: "Free",
+          },
+        ],
+        downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+        installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+        featureList: [
+          "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+          "Soft, moderate, and strict modes",
+          "Friend lock and password-protected settings",
+          "Prevent uninstall",
+          "Daily, weekly, monthly usage reports",
+          "Over-consumption notifications",
+          "Privacy-first: all data stays on device",
+        ],
+      };
+    
+      const organizationJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+        logo: `${SITE_URL}/logo.png`,
+        email: SUPPORT_EMAIL,
+        sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+      };
+    
+     const webPageJsonLd = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/features/focus-mode#webpage`,
+    url: `${SITE_URL}/features/focus-mode`,
+    name: "Focus Mode – Brain Focus App",
+    description: String(metadata.description ?? ""),
+    inLanguage: "en",
+    publisher: {
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+    },
   };
+  
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Focus Mode",
+        item: `${SITE_URL}/features/focus-mode`,
+      },
+    ],
+  };
+  
+    const faqJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    };
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+       <JsonLd data={[
+          softwareAppJsonLd,
+          organizationJsonLd,
+          webPageJsonLd,
+          faqJsonLd,
+          breadcrumbJsonLd,
+        ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">

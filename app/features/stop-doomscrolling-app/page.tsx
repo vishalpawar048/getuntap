@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Stop Doomscrolling – Break The Loop",
@@ -43,7 +50,7 @@ const featuresSection = [
   {
     n: "07",
     title: "Alternate App Suggestions",
-    body: "When you try to open a distraction, Untap can redirect you to something useful instead. Going for YouTube? It suggests your notes app.",
+    body: "When you try to open a distraction, Untap can redirect you to something useful instead. Going for YouTube? It suggests your notes app. A good app to stop doomscrolling should point you somewhere better, not just shut the door.",
   },
 ];
 
@@ -69,7 +76,7 @@ const faqs = [
   },
   {
     q: "What Happens If I Try To Bypass My Own Restrictions?",
-    a: "If you have set up Friend Lock, you cannot change your settings without the person who holds your password. Prevent Uninstall means you also cannot delete the app during an active session. These two features together are why people stick with Untap past the first week when other tools failed.",
+    a: "If you have set up Friend Lock, you cannot change your settings without the person who holds your password. Prevent Uninstall means you also cannot delete the app during an active session. These two features together are why people stick with Untap past the first week when other tools failed. That staying power is what you want from a stop doomscrolling app.",
   },
   {
     q: "Why Is Untap A Better Alternative To ScreenZen And Opal For Stopping Doomscrolling?",
@@ -86,6 +93,95 @@ const faqs = [
 ];
 
 export default function StopDoomscrollingPage() {
+  const softwareAppJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      name: "Untap",
+      alternateName: [
+        "Untap App",
+        "Untap Screen Time",
+        "Untap Screen Time Control",
+      ],
+      applicationCategory: "LifestyleApplication",
+      applicationSubCategory: "Screen Time Control",
+      operatingSystem: "iOS, Android",
+      description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.png`,
+      inLanguage: "en",
+      isFamilyFriendly: true,
+      keywords:
+        "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+      publisher: {
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+      },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          category: "Free",
+        },
+      ],
+      downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      featureList: [
+        "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+        "Soft, moderate, and strict modes",
+        "Friend lock and password-protected settings",
+        "Prevent uninstall",
+        "Daily, weekly, monthly usage reports",
+        "Over-consumption notifications",
+        "Privacy-first: all data stays on device",
+      ],
+    };
+  
+    const organizationJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: SUPPORT_EMAIL,
+      sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+    };
+  
+   const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/features/stop-doomscrolling-app#webpage`,
+  url: `${SITE_URL}/features/stop-doomscrolling-app`,
+  name: "Stop Doomscrolling - Break The Scroll Addiction",
+  description: String(metadata.description ?? ""),
+  inLanguage: "en",
+  publisher: {
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Stop Doomscrolling",
+      item: `${SITE_URL}/features/stop-doomscrolling-app`,
+    },
+  ],
+};
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -98,7 +194,13 @@ export default function StopDoomscrollingPage() {
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      <JsonLd data={[
+        softwareAppJsonLd,
+        organizationJsonLd,
+        webPageJsonLd,
+        faqJsonLd,
+        breadcrumbJsonLd,
+      ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -215,7 +317,7 @@ export default function StopDoomscrollingPage() {
                 </p>
 
                 <p>
-                  Untap is built around that idea. Before a distracting app opens, you meet a small challenge — and in those few seconds, the urge passes. As Lia D wrote on Google Play, "Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision." As PeaceSeeker wrote, "This is an incredible app...The devs are awesome too!"
+                  Untap is built around that idea. Before a distracting app opens, you meet a small challenge — and in those few seconds, the urge passes. As Lia D wrote on Google Play, "Thr math creates just the right amoint of friction for me to second guess my doom scrolling impulse decision." As PeaceSeeker wrote, "This is an incredible app...The devs are awesome too! That is the difference between a stop doomscrolling app that gets deleted within a week and one that actually sticks."
                 </p>
               </div>
             </div>
@@ -260,7 +362,10 @@ export default function StopDoomscrollingPage() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
               A few things worth knowing before you download:
+              <br/>
+              Here is what any good stop doomscrolling app should include, and what Untap offers.
             </p>
+
           </div>
 
           <ol className="mt-14 grid gap-6 sm:grid-cols-2">
@@ -302,11 +407,11 @@ export default function StopDoomscrollingPage() {
               </p>
 
               <p>
-                Untap was built with that moment in mind. Friend Lock lets someone you trust — a partner, a study buddy, a sibling — set a password on your Untap settings. You cannot change your restrictions without them. It sounds like overkill until the night it saves you from undoing two weeks of progress at midnight.
+                Untap was built with that moment in mind. Friend Lock lets someone you trust — a partner, a study buddy, a sibling — set a password on your Untap settings. You cannot change your restrictions without them. It sounds like overkill until the night it saves you from undoing two weeks of progress at midnight That is what makes it a dependable app to stop doomscrolling rather than a passive one..
               </p>
 
               <p className="text-white">
-                Prevent Uninstall keeps the app in place during an active session too. You cannot delete your way out of a weak moment. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one" — Friend Lock was the feature that finally made the difference.
+                Prevent Uninstall keeps the app in place during an active session too. You cannot delete your way out of a weak moment. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one" — Friend Lock was the feature that finally made the difference. That accountability layer is what separates a serious stop doomscrolling app from a simple timer.
               </p>
             </div>
           </div>
@@ -335,7 +440,7 @@ export default function StopDoomscrollingPage() {
               </p>
 
               <p className="text-[var(--foreground)]">
-                On average, Untap users save 3.5 hours of screen time a day. And 85 percent of users reduce their doomscrolling within the first week. Those numbers come from real usage data across the app — not a marketing slide.
+                On average, Untap users save 3.5 hours of screen time a day. And 85 percent of users reduce their doomscrolling within the first week. Those numbers come from real usage data across the app — not a marketing slide. That is the kind of result to expect from a stop doomscrolling app built around friction instead of guilt.
               </p>
             </div>
           </div>
@@ -385,7 +490,7 @@ export default function StopDoomscrollingPage() {
               Second, Friend Lock means someone else holds your commitment in place. No other app in this category does this as cleanly. Your restrictions cannot be undone without another person — which is the exact thing that makes it hold during a weak moment.
             </p>
             <p className="text-white">
-              Third, everything stays on your device. No VPN profile, no external server, no ad network. Untap uses Apple's official FamilyControls and ManagedSettings APIs on iOS and the equivalent approach on Android. Your usage data never leaves your phone.
+              Third, everything stays on your device. No VPN profile, no external server, no ad network. Untap uses Apple's official FamilyControls and ManagedSettings APIs on iOS and the equivalent approach on Android. Your usage data never leaves your phone. For a stop doomscrolling app that needs this much visibility, that matters.
             </p>
           </div>
         </div>
