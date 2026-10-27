@@ -122,9 +122,52 @@ export default async function BlogPostPage({
     ],
   };
 
+  // Generate FAQ JSON-LD if the post has an FAQ section
+  let faqJsonLd = null;
+  const faqSectionIndex = post.body.findIndex(
+    (block) =>
+      block.kind === "h2" &&
+      (block.text.toLowerCase().includes("faq") ||
+        block.text.toLowerCase().includes("frequently asked"))
+  );
+
+  if (faqSectionIndex !== -1) {
+    const faqItems = [];
+    for (let i = faqSectionIndex + 1; i < post.body.length; i++) {
+      const block = post.body[i];
+      if (block.kind === "h2") break; // Stop at next H2
+      if (block.kind === "h3") {
+        const question = block.text;
+        const nextBlock = post.body[i + 1];
+        if (nextBlock && nextBlock.kind === "p") {
+          faqItems.push({
+            "@type": "Question",
+            name: question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: nextBlock.text,
+            },
+          });
+        }
+      }
+    }
+
+    if (faqItems.length > 0) {
+      faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqItems,
+      };
+    }
+  }
+
+  const jsonLdData = faqJsonLd
+    ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
+    : [articleJsonLd, breadcrumbJsonLd];
+
   return (
     <>
-      <JsonLd data={[articleJsonLd, breadcrumbJsonLd]} />
+      <JsonLd data={jsonLdData} />
       <article className="px-6 py-24 pt-32 sm:py-32">
         <div className="mx-auto max-w-3xl">
           <nav
