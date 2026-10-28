@@ -2563,6 +2563,355 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "why-short-form-video-feels-like-brain-rot",
+  title: "Why Short-Form Video Feels Like Brain Rot",
+  description: "Brain rot isn't just internet slang — short-form video feeds are measurably affecting attention and self-control. Here's what the research shows and what actually helps.",
+  publishedAt: "2026-10-28",
+  author: "Untap Team",
+  readMinutes: 11,
+  tags: [
+    "brain rot",
+    "doomscrolling",
+    "short-form video",
+    "attention",
+    "TikTok",
+  ],
+  body: [
+    {
+      kind: "p",
+      text: "\"Brain rot\" became Oxford's Word of the Year for a reason. Millions of people feel it — that foggy, scattered, can't-focus-on-anything sensation after an hour of TikTok, Reels, or YouTube Shorts. You weren't imagining it. A 2025 meta-analysis of 98,299 participants across 71 studies found that heavy short-form video use is associated with poorer attention, weaker inhibitory control, and higher stress. This isn't about moral panic or generational hand-wringing. The research is real, the mechanisms are measurable, and the practical steps that help are surprisingly straightforward.",
+    },
+    { kind: "h2", text: "What People Mean When They Say 'Brain Rot'", id: "what-is-brain-rot" },
+    {
+      kind: "p",
+      text: "Brain rot is the subjective feeling that your attention span is deteriorating. You sit down to read, watch a full movie, or write something — and you can't. Your mind wanders. You check your phone. You restart the same paragraph three times. It feels like your brain has been rewired for 15-second clips, and anything longer is unbearable.",
+    },
+    {
+      kind: "p",
+      text: "This isn't a metaphor. Short-form video platforms deliver variable rewards on an unpredictable schedule — the same reinforcement pattern that makes slot machines addictive. Every swipe might surface something funny, shocking, or relatable, so your brain stays locked in anticipation. The content changes faster than you can evaluate it, your thumb keeps moving, and an hour disappears.",
+    },
+    { kind: "h2", text: "Why Short-Form Feeds Feel Different From Other Media", id: "why-different" },
+    {
+      kind: "p",
+      text: "Three design features make short-form video platforms uniquely sticky:",
+    },
+    {
+      kind: "h3", text: "Variable Reward On Every Swipe", id: "variable-reward",
+    },
+    {
+      kind: "p",
+      text: "You never know if the next video will be mediocre or perfect, so every swipe is a micro-bet. Behavioral research shows that unpredictable rewards drive compulsive behavior more powerfully than guaranteed rewards. TikTok and Instagram Reels are built on this principle.",
+    },
+    {
+      kind: "h3", text: "Infinite Scroll With No Stopping Cue", id: "infinite-scroll",
+    },
+    {
+      kind: "p",
+      text: "There's no end to the feed. TV episodes end. Books have chapters. Albums have track counts. Short-form video platforms have no natural stopping point, so the only cue to quit is your own willpower — which is already depleted from decision fatigue.",
+    },
+    {
+      kind: "h3", text: "Personalized Recommendations That Learn Your Triggers", id: "personalized-recs",
+    },
+    {
+      kind: "p",
+      text: "The algorithm watches what you watch, what you skip, and what you rewatch. It learns your vulnerabilities. A 2021 fMRI study found that personalized short-video recommendations activate both the brain's default mode network and the ventral tegmental area — regions tied to mind-wandering and reward anticipation. The platform gets better at holding your attention every time you use it.",
+    },
+    { kind: "h2", text: "What The Research Actually Shows About Short-Form Video And Cognition", id: "research" },
+    {
+      kind: "p",
+      text: "The largest study to date is a 2025 meta-analysis by Nguyen and colleagues, published in <em>Psychological Bulletin</em>. It pooled data from 71 studies covering 98,299 participants and found:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Heavy short-form video use was associated with poorer attention (correlation ≈ –.38).",
+        "It was also associated with weaker inhibitory control — the ability to stop yourself from doing something impulsive (correlation ≈ –.41).",
+        "Users reported higher stress and anxiety.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Important caveat: these are associations, not proof of causation. It's possible that people with existing attention difficulties gravitate toward short-form video, or that a third factor (like sleep deprivation) causes both. But the consistency across dozens of studies, different populations, and multiple research teams suggests the relationship is real.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/41231585/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Nguyen et al., Psychological Bulletin, 2025</a>.",
+    },
+    {
+      kind: "h3", text: "EEG And Brain-Activity Studies", id: "eeg-studies",
+    },
+    {
+      kind: "p",
+      text: "Lab-based neuroscience studies show measurable differences in brain activity. A 2024 EEG study by Walla and Zheng, published in <em>Life</em>, found that heavy short-video social media users showed reduced P300 amplitude — an event-related brain potential linked to attention and information processing. Another EEG study by Zhou and colleagues found that people with short-video addiction tendencies had weaker executive-control-related theta activity and lower self-reported self-control.",
+    },
+    {
+      kind: "p",
+      text: "References: <a href=\"https://pubmed.ncbi.nlm.nih.gov/38541616/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Walla & Zheng, Life, 2024</a> and <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11236742/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Zhou et al., Frontiers</a>.",
+    },
+    {
+      kind: "h3", text: "Attention Lapses In Real-World Use", id: "attention-lapses",
+    },
+    {
+      kind: "p",
+      text: "A 2024 study presented at CHI by Su and colleagues found that short-form video consumption was associated with more sustained-attention lapses — moments when your focus drifts and you miss what's happening in front of you. This matches what users report: after heavy TikTok use, it's harder to stay present in a conversation, finish a task, or read more than a few paragraphs.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://dl.acm.org/doi/full/10.1145/3613905.3651018\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Su et al., CHI EA, 2024</a>.",
+    },
+    { kind: "h2", text: "What Actually Helps: Practical Steps That Work In Real Life", id: "what-helps" },
+    {
+      kind: "p",
+      text: "You don't need to delete TikTok forever or quit your phone cold turkey. The goal is to break the autopilot loop — the moment when you open the app without deciding to. Here's what actually works:",
+    },
+    {
+      kind: "h3", text: "Turn Off Autoplay", id: "turn-off-autoplay",
+    },
+    {
+      kind: "p",
+      text: "Autoplay removes the decision point between videos. Turning it off forces a micro-pause, and that pause is often enough to remind you that you've been scrolling for 20 minutes. Most short-video apps let you disable autoplay in settings.",
+    },
+    {
+      kind: "h3", text: "Remove The App From Your Home Screen", id: "remove-home-screen",
+    },
+    {
+      kind: "p",
+      text: "This is the lowest-effort, highest-impact intervention. If TikTok isn't visible on your home screen, you won't tap it reflexively. Move it to a folder on page three, or remove it entirely and reinstall when you want to use it intentionally. The two-second delay is surprisingly effective.",
+    },
+    {
+      kind: "h3", text: "Set A Nightly Cutoff", id: "nightly-cutoff",
+    },
+    {
+      kind: "p",
+      text: "Bedtime scrolling wrecks sleep quality and leaves you groggy the next morning. Set a hard cutoff — no short-form video after 9pm, for example. Use your phone's Screen Time (iOS) or Digital Wellbeing (Android) features to enforce it, or try a friction-based tool that adds a delay before the app opens.",
+    },
+    {
+      kind: "h3", text: "Replace The First 10 Minutes Of Bed Scroll With One Offline Habit", id: "replace-habit",
+    },
+    {
+      kind: "p",
+      text: "You don't have to quit scrolling entirely. Just interrupt the pattern once. Instead of opening TikTok the moment you lie down, read one page of a book, do 10 pushups, or write three sentences in a journal. After that, you can scroll if you still want to. Most people find they don't.",
+    },
+    {
+      kind: "h3", text: "Batch Entertainment Into A Scheduled Window", id: "batch-entertainment",
+    },
+    {
+      kind: "p",
+      text: "Instead of checking short-video apps throughout the day, schedule one 30-minute window. Knowing you have time set aside later reduces the urge to check now. This works especially well for students during study blocks or professionals during work hours.",
+    },
+    {
+      kind: "h3", text: "Use OS Limits Or A Friction Tool", id: "use-limits",
+    },
+    {
+      kind: "p",
+      text: "iOS Screen Time and Android Digital Wellbeing let you set daily time limits on apps. They're not perfect — you can bypass them with one tap — but they create a moment of awareness. For stronger friction, some people use apps that add friction before short-video apps open, like a breathing exercise, a short delay, or even a quick self-check. The point isn't to block entertainment entirely; it's to make sure you're choosing it consciously instead of opening it on autopilot.",
+    },
+    { kind: "h2", text: "This Isn't About Willpower", id: "not-willpower" },
+    {
+      kind: "p",
+      text: "If you feel like your attention span is shrinking, you're not weak and you're not broken. You're up against platforms engineered by some of the best behavioral scientists and machine learning engineers in the world. The answer isn't to try harder. It's to change the environment — add friction, remove triggers, replace one habit at a time.",
+    },
+    {
+      kind: "p",
+      text: "Brain rot isn't permanent. Attention is a skill, and like any skill, it recovers with practice. Start with one change. Turn off autoplay tonight. Remove TikTok from your home screen tomorrow. Check back in a week and see if you notice a difference.",
+    },
+    { kind: "h2", text: "Frequently Asked Questions", id: "faq" },
+    { kind: "h3", text: "Is Brain Rot A Real Medical Condition?", id: "faq-medical" },
+    {
+      kind: "p",
+      text: "No, brain rot is not a clinical diagnosis. It's internet slang for the subjective feeling that your attention span is deteriorating from excessive short-form video consumption. However, the research backing that feeling — studies on attention, inhibitory control, and compulsive use — is real and peer-reviewed.",
+    },
+    { kind: "h3", text: "Can You Reverse Brain Rot?", id: "faq-reverse" },
+    {
+      kind: "p",
+      text: "Yes. Attention is trainable. If you reduce short-form video use and replace some of that time with activities that require sustained focus — reading, deep work, hobbies, conversations — most people notice improvement within one to two weeks. The changes aren't instant, but they're real.",
+    },
+    { kind: "h3", text: "How Much Short-Form Video Is Too Much?", id: "faq-how-much" },
+    {
+      kind: "p",
+      text: "There's no universal threshold, but research associations become more consistent above 2–3 hours per day. More important than total time is whether the use is intentional or automatic. If you're opening TikTok without deciding to, or if you feel worse after scrolling, that's a signal to add friction.",
+    },
+    { kind: "h3", text: "Do All Social Media Apps Cause Brain Rot?", id: "faq-all-apps" },
+    {
+      kind: "p",
+      text: "No. The research specifically highlights short-form video platforms with infinite scroll and personalized feeds — TikTok, Instagram Reels, YouTube Shorts. Apps built around messaging, long-form content, or creator tools don't show the same compulsive-use patterns. The issue isn't social media broadly; it's the variable-reward infinite-feed design.",
+    },
+    { kind: "h3", text: "Is Deleting The App The Only Solution?", id: "faq-delete" },
+    {
+      kind: "p",
+      text: "No. Many people find that adding friction — turning off autoplay, removing the app from the home screen, setting time limits, or using a short delay before the app opens — is enough to break the autopilot loop. Deletion works for some people, but it's not the only path. The goal is conscious use, not abstinence.",
+    },
+  ],
+},
+{
+  slug: "how-to-do-a-dopamine-detox",
+  title: "Dopamine Detox: How To Do A Dopamine Detox That Actually Works",
+  description: "A dopamine detox won't 'reset' your brain chemistry, but a realistic plan to reduce high-stimulation digital cues and rebuild slower rewards can genuinely help. Here's how to do it right.",
+  publishedAt: "2026-10-28",
+  author: "Untap Team",
+  readMinutes: 10,
+  tags: [
+    "dopamine detox",
+    "digital wellbeing",
+    "screen time",
+    "habit change",
+  ],
+  body: [
+    {
+      kind: "p",
+      text: "\"Dopamine detox\" is everywhere — YouTube videos promise a total brain reset after one week offline, productivity influencers swear by 30-day phone fasts, and the advice usually sounds extreme, vague, or both. Here's the truth: you cannot reset dopamine by quitting screens for a weekend. Dopamine is a neurotransmitter that regulates motivation, reward, and movement; it doesn't \"deplete\" from watching TikTok or \"refill\" from going offline. But the instinct behind a dopamine detox is sound. Reducing highly stimulating, low-effort digital rewards and rebuilding tolerance for slower, harder activities does help — and there's real research backing smarter versions of this practice. This guide explains what a realistic dopamine detox looks like, how to design a 3–14 day plan that actually works, and how to measure success.",
+    },
+    { kind: "h2", text: "What A Dopamine Detox Actually Means (And What It Doesn't)", id: "what-it-means" },
+    {
+      kind: "p",
+      text: "The phrase \"dopamine detox\" is catchy but scientifically inaccurate. You're not detoxing dopamine, and your brain doesn't need a factory reset. What you're doing is reducing exposure to hyper-stimulating digital cues — infinite social feeds, autoplay videos, push notifications, algorithmically optimized recommendations — and giving your attention system a chance to recalibrate.",
+    },
+    {
+      kind: "p",
+      text: "Think of it as a tolerance break. If you've been consuming high-intensity, low-effort entertainment for hours every day, slower activities — reading a book, going for a walk, having a conversation — feel boring by comparison. A dopamine detox is about rebuilding your tolerance for boredom and re-learning how to find reward in effort.",
+    },
+    { kind: "h2", text: "What The Research Shows About Reducing Screen Time", id: "research" },
+    {
+      kind: "p",
+      text: "Several well-designed studies have tested what happens when people intentionally reduce smartphone and social media use:",
+    },
+    {
+      kind: "h3", text: "Two-Week Social Media Limit Study", id: "two-week-limit",
+    },
+    {
+      kind: "p",
+      text: "A 2024 study by Radtke and colleagues tested a two-week intervention where participants limited social media to 30 minutes per day. Results included measurable improvements in smartphone and social media addiction scores, sleep quality, stress levels, and overall life satisfaction. This wasn't a full digital detox — participants still used their phones for everything else — but limiting social media alone produced meaningful gains.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10740995/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Radtke et al., 2024</a>.",
+    },
+    {
+      kind: "h3", text: "Reduction Often Beats Abstinence", id: "reduction-vs-abstinence",
+    },
+    {
+      kind: "p",
+      text: "A 2022 experimental study by Brailovskaia and colleagues found that smartphone reduction — cutting use in half — often produced better lasting wellbeing outcomes than full abstinence. The \"sweet spot\" was reducing screen time without triggering anxiety or social isolation. Total phone bans backfired for many participants because they felt cut off from friends, logistics, and helpful tools.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35389685/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Brailovskaia et al., 2022</a>.",
+    },
+    {
+      kind: "h3", text: "Two-Week Mobile Internet Block", id: "internet-block",
+    },
+    {
+      kind: "p",
+      text: "A randomized controlled trial published in <em>PNAS Nexus</em> tested blocking mobile internet access for two weeks. Results showed improvements in mental health, wellbeing, and sustained attention. Notably, 91% of participants improved on at least one outcome measure. The intervention was strict but showed that even short-term digital restriction can produce measurable cognitive and emotional benefits.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://academic.oup.com/pnasnexus/article/4/2/pgaf017/8016017\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">PNAS Nexus RCT</a>.",
+    },
+    {
+      kind: "h3", text: "72-Hour Smartphone Restriction And Reward Processing", id: "reward-processing",
+    },
+    {
+      kind: "p",
+      text: "A 2025 study by Schmitgen and colleagues found that just 72 hours of smartphone restriction modulated reward and cue-related neural activity. This suggests that even short breaks can begin to shift how your brain responds to digital stimuli.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://doi.org/10.1016/j.chb.2025.108610\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Schmitgen et al., 2025</a>.",
+    },
+    { kind: "h2", text: "How To Do A Dopamine Detox: A Realistic 3–14 Day Plan", id: "how-to" },
+    {
+      kind: "p",
+      text: "Here's a practical, research-informed plan that doesn't require you to quit your phone entirely or go live in the woods.",
+    },
+    { kind: "h3", text: "Step 1: Pick A Scope (Start With Social + Short Video)", id: "pick-scope" },
+    {
+      kind: "p",
+      text: "Don't try to quit everything at once. Start by restricting the highest-stimulation, lowest-value activities: social media feeds and short-form video (TikTok, Instagram Reels, YouTube Shorts). Keep messaging apps, email, maps, music, and anything you genuinely need for school or work. This is a detox from hyper-stimulation, not from your entire digital life.",
+    },
+    { kind: "h3", text: "Step 2: Remove Notifications And Log Out", id: "remove-notifications" },
+    {
+      kind: "p",
+      text: "Turn off all non-essential notifications. Better yet, log out of social media and short-video apps entirely. Logging out doesn't delete your account, but it adds a 10-second barrier that's often enough to stop autopilot opens. If logging out feels too extreme, move the apps off your home screen and into a folder on page three.",
+    },
+    { kind: "h3", text: "Step 3: Schedule Boredom", id: "schedule-boredom" },
+    {
+      kind: "p",
+      text: "The hardest part of a dopamine detox is tolerating boredom. Your brain has been trained to reach for your phone the moment you feel understimulated. Expect that discomfort and plan for it. Set aside 15 minutes a day to sit with nothing — no phone, no book, no podcast. Just sit. It will feel awful at first. That's the point. You're retraining your tolerance for low-stimulation states.",
+    },
+    { kind: "h3", text: "Step 4: Walk Without Headphones Once A Day", id: "walk-no-headphones" },
+    {
+      kind: "p",
+      text: "Take one 10-minute walk per day without your phone or headphones. Pay attention to what you see, hear, and think. This is one of the most effective low-tech interventions for rebuilding presence and reducing compulsive phone checking.",
+    },
+    { kind: "h3", text: "Step 5: Eat One Meal Without Your Phone", id: "meal-no-phone" },
+    {
+      kind: "p",
+      text: "Pick one meal per day and eat it without looking at a screen. No YouTube, no Netflix, no scrolling. Just eat. If you're with other people, talk to them. If you're alone, notice the food. This simple habit rewires the association between eating and entertainment.",
+    },
+    { kind: "h3", text: "Step 6: Evening Wind-Down Without Screens", id: "evening-wind-down" },
+    {
+      kind: "p",
+      text: "The hour before bed is critical. Screens — especially short-form video and social media — wreck sleep quality and leave you groggy the next morning. Replace bedtime scrolling with literally anything else: read a physical book, stretch, journal, listen to music (not through an algorithm), or just lie there. Most people notice better sleep within three nights.",
+    },
+    { kind: "h3", text: "Step 7: Replace High-Stimulation Entertainment With Slower Rewards", id: "slower-rewards" },
+    {
+      kind: "p",
+      text: "You're not trying to eliminate fun. You're trying to relearn how to enjoy slower, harder activities. Replace some TikTok time with a hobby, a side project, a workout, or a book. The first few days will feel like pulling teeth — nothing will seem as interesting as your phone. Stick with it. By day five or six, slower rewards start feeling rewarding again.",
+    },
+    { kind: "h2", text: "What Success Looks Like (It's Not Zero Dopamine)", id: "what-success-looks-like" },
+    {
+      kind: "p",
+      text: "You're not aiming for zero phone use or a permanently ascetic life. You're aiming for these markers:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "You can sit through a full meal without checking your phone.",
+        "You can read for 20 minutes without your mind wandering to what's happening on Instagram.",
+        "You feel bored sometimes, and you don't immediately reach for a screen.",
+        "You open apps intentionally instead of reflexively.",
+        "You sleep better and wake up less groggy.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "If you hit two or three of those markers by the end of your detox, it worked. You don't need to quit social media forever. You just need to break the autopilot loop.",
+    },
+    { kind: "h2", text: "What To Do After The Detox Ends", id: "after-detox" },
+    {
+      kind: "p",
+      text: "The end of a dopamine detox is not a return to unlimited scrolling. It's a transition to intentional use. Reintroduce apps slowly. Add friction — turn off autoplay, use time limits, log out after every session, or try a tool that adds a short delay before apps open so you're less likely to tap them on autopilot. Keep the habits that worked. If eating one meal without your phone improved your day, keep doing it.",
+    },
+    { kind: "h2", text: "Frequently Asked Questions", id: "faq" },
+    { kind: "h3", text: "How Long Should A Dopamine Detox Last?", id: "faq-duration" },
+    {
+      kind: "p",
+      text: "Three days is the minimum to feel a difference. Most people see real benefits by day five to seven. If you want deeper recalibration, aim for 10–14 days. Anything longer than two weeks starts to feel punishing for most people and has diminishing returns. The goal is a reset, not permanent abstinence.",
+    },
+    { kind: "h3", text: "Can I Still Use My Phone For Work Or School?", id: "faq-work-school" },
+    {
+      kind: "p",
+      text: "Yes. A dopamine detox is about restricting high-stimulation, low-value digital activities — social media, short-form video, infinite feeds. You can still use email, messaging apps, work tools, school portals, maps, and anything else that serves a genuine purpose. The detox targets compulsive entertainment, not functional phone use.",
+    },
+    { kind: "h3", text: "What If I Fail On Day Two?", id: "faq-fail" },
+    {
+      kind: "p",
+      text: "Start again. You're not trying to be perfect; you're trying to interrupt a pattern. If you slip and spend an hour on TikTok, don't abandon the whole plan. Log out again, remove the app from your home screen, and keep going. Progress is not linear.",
+    },
+    { kind: "h3", text: "Will I Lose Touch With Friends?", id: "faq-lose-friends" },
+    {
+      kind: "p",
+      text: "No. You're restricting social media feeds and short-video apps, not messaging. You can still text, call, use WhatsApp, Snapchat DMs, or any direct communication tool. The detox is about breaking the scroll, not cutting off your social life.",
+    },
+    { kind: "h3", text: "Do I Need To Tell People I'm Doing This?", id: "faq-tell-people" },
+    {
+      kind: "p",
+      text: "It helps. If your friends know you're taking a break from Instagram or TikTok, they're less likely to think you're ignoring them. A quick message — \"Doing a one-week screen time reset, still reachable by text\" — is usually enough.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
