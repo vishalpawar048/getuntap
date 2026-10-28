@@ -123,54 +123,54 @@ export default function StudyAppBlockerPage() {
       <JsonLd data={[faqJsonLd, softwareAppJsonLd, breadcrumbJsonLd]} />
 
       {/* Hero Section */}
-      <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
-        <div className="absolute -right-32 top-0 -z-10 h-80 w-80 rounded-full bg-[var(--accent)]/20 blur-3xl" />
-        <div className="absolute left-0 top-40 -z-10 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+      <section className="section-dark relative isolate overflow-hidden px-6 pb-24 pt-40 sm:pt-48">
+        <div className="absolute -right-32 top-0 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-[var(--accent)]/15 via-[var(--accent-purple)]/15 to-[var(--accent-teal)]/15 blur-3xl" />
+        <div className="absolute left-0 top-40 -z-10 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
 
-        <div className="mx-auto max-w-5xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
-            study app blocker
+        <div className="mx-auto max-w-6xl">
+          <span className="eyebrow-label inline-flex items-center gap-2 rounded-sm border border-white/15 bg-white/[0.04] px-3 py-1.5 text-[var(--accent)]">
+            STUDY APP BLOCKER
           </span>
-          <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
-            The App Blocker That{" "}
-            <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-              Makes You Study First
+          <h1 className="mt-6 text-balance text-5xl font-normal leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
+            The app blocker that{" "}
+            <span className="text-white/50">
+              makes you study first
             </span>
           </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/65 sm:text-xl">
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-white/70 sm:text-lg md:text-xl">
             Set focus hours so study time stays protected, then limit the rest of the day. Session caps stop brain-rotting apps from running on. Students can also quiz from their notes before Instagram or TikTok opens.
           </p>
 
-          <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
+          <div className="mt-12 flex flex-col items-start gap-4 sm:flex-row">
             <a
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
-              className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
+              className="inline-flex items-center gap-3 rounded bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
             >
-              Download For iOS
+              Download for iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
-              className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              className="inline-flex items-center gap-3 rounded border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/10"
             >
-              Download For Android
+              Download for Android
             </a>
           </div>
         </div>
       </section>
 
       {/* The Problem */}
-      <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+      <section className="px-6 py-32 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-16 md:grid-cols-2 md:gap-20">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                The problem
+              <p className="eyebrow-label text-[var(--muted)]">
+                THE PROBLEM
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                Most App Blockers Don't Actually Help You Study
+              <h2 className="mt-5 text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl">
+                Most app blockers don't actually help you study
               </h2>
             </div>
-            <div className="space-y-5 text-lg leading-relaxed text-[var(--muted)]">
+            <div className="space-y-5 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
               <p>
                 You've tried locking Instagram during study hours. You've deleted TikTok before finals. You've set Screen Time limits that you immediately bypassed. The problem isn't willpower—it's that blocking alone doesn't create a better alternative.
               </p>
@@ -183,16 +183,16 @@ export default function StudyAppBlockerPage() {
       </section>
 
       {/* How It Works */}
-      <section className="section-dark relative isolate overflow-hidden px-6 py-24 sm:py-32">
-        <div className="absolute -bottom-40 left-0 -z-10 h-96 w-96 rounded-full bg-[var(--accent)]/15 blur-3xl" />
+      <section className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40">
+        <div className="absolute -bottom-40 left-0 -z-10 h-96 w-96 rounded-full bg-gradient-to-br from-[var(--accent)]/10 to-[var(--accent-purple)]/10 blur-3xl" />
 
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              How It Works
+            <p className="eyebrow-label text-[var(--accent)]">
+              HOW IT WORKS
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-              Three Steps To Better Grades
+            <h2 className="mt-5 text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl">
+              Three steps to better grades
             </h2>
           </div>
 
@@ -236,30 +236,30 @@ export default function StudyAppBlockerPage() {
       </section>
 
       {/* Features */}
-      <section className="px-6 py-24 sm:py-32">
+      <section className="px-6 py-32 sm:py-40">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              Features
+            <p className="eyebrow-label text-[var(--muted)]">
+              FEATURES
             </p>
-            <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Built For Students, Not Just Blockers
+            <h2 className="mt-5 text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl">
+              Built for students, not just blockers
             </h2>
           </div>
 
-          <div className="mt-14 grid gap-5 md:grid-cols-2">
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="group relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-7 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)] hover:bg-[var(--card)]/80"
+                className="group relative overflow-hidden rounded border border-[var(--border)] bg-[var(--card)] p-10 transition duration-300 hover:border-[var(--accent)]"
               >
-                <span className="absolute right-6 top-6 text-xs font-semibold text-[var(--muted)]">
+                <span className="eyebrow-label absolute right-8 top-8 text-[var(--muted)]">
                   0{index + 1}
                 </span>
-                <h3 className="text-xl font-bold tracking-tight">
+                <h3 className="text-xl font-normal tracking-tight sm:text-2xl">
                   {feature.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-[var(--muted)]">
+                <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
                   {feature.description}
                 </p>
               </div>
@@ -269,18 +269,18 @@ export default function StudyAppBlockerPage() {
       </section>
 
       {/* Student Results */}
-      <section className="section-dark px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+      <section className="section-dark px-6 py-32 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-16 md:grid-cols-2 md:gap-20">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                Results
+              <p className="eyebrow-label text-[var(--accent)]">
+                RESULTS
               </p>
-              <h2 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-                Students Who Study More, Scroll Less
+              <h2 className="mt-5 text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl">
+                Students who study more, scroll less
               </h2>
             </div>
-            <div className="space-y-5 text-lg leading-relaxed text-white/60">
+            <div className="space-y-5 text-base leading-relaxed text-white/70 sm:text-lg">
               <p>
                 One college student in Bengaluru raised her GPA by 0.4 points after using Untap during finals prep. A high school senior cut his phone time from 7 hours to under 2 during exam week. They didn't have superhuman discipline—they just made every distraction a study opportunity.
               </p>
