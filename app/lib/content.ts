@@ -1733,6 +1733,307 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+  {
+    slug: "how-to-stop-scrolling-while-studying",
+    title: "How To Stop Scrolling While Studying: 9 Fixes That Work",
+    description: "Step-by-step fixes to stop scrolling during study: iPhone and Android setup, friction-based blocks, and exam-season tactics that work.",
+    publishedAt: "2026-10-23",
+    author: "Untap Team",
+    readMinutes: 7,
+    tags: ["study tips", "focus", "students", "productivity"],
+    body: [
+      {
+        kind: "p",
+        text: "You sit down to study. Ten minutes later your phone is in your hand, your thumb is scrolling Instagram, and you cannot remember picking it up. This is not a lack of discipline — it is a habit loop faster than your conscious decision-making. The fix is not willpower. The fix is environmental friction placed at the exact moment the autopilot fires. Here are nine fixes that actually work, for iPhone and Android, drawn from behavioral science and real students who passed their exams.",
+      },
+      {
+        kind: "h2",
+        text: "Why Willpower Fails Mid-Study Session",
+        id: "why-willpower-fails",
+      },
+      {
+        kind: "p",
+        text: "Your prefrontal cortex — the part of your brain that weighs long-term goals against short-term impulses — is strongest in the morning and weakest after sustained mental effort. By the second or third hour of a study session, that system is tired. Meanwhile, the basal ganglia, which executes habits, never tires. So the longer you study, the more likely the autopilot habit (reach for phone, open app, scroll) wins over the conscious goal (finish this chapter).",
+      },
+      {
+        kind: "p",
+        text: "Telling yourself to 'just focus' during hour three of studying is like telling a marathon runner at mile 20 to 'just run faster.' The resource is depleted. You need a system that works when willpower does not.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 1: Hard-Lock Social Apps During Study Hours",
+        id: "fix-1-hard-lock",
+      },
+      {
+        kind: "p",
+        text: "Set a recurring schedule that makes Instagram, TikTok, YouTube, Snapchat, and X physically unopenable during your study blocks. On iPhone, use Screen Time's downtime or an app like Untap. On Android, use Digital Wellbeing's focus mode or Untap. The key difference: make it recurring (every weekday 3pm–6pm) so you do not have to re-decide every day.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Pick your consistent study hours (e.g. 9am–12pm, 3pm–6pm).",
+          "Lock every social and entertainment app during those windows.",
+          "Leave messaging, email, maps, and study tools available.",
+          "Use friend lock or a password you give to a study partner so you cannot disable it mid-session.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "This is the single highest-leverage fix for most students. It removes the option entirely during the hours that matter most.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 2: Add A 10-Second Delay Before Apps Open",
+        id: "fix-2-delay",
+      },
+      {
+        kind: "p",
+        text: "If hard locks feel too restrictive, start with intentional friction. A 10-second open delay adds just enough pause for your conscious brain to ask, 'Wait, why am I opening this?' In most cases, that question is enough to close the app. Untap's research shows about 40–60% of impulsive app opens are abandoned during a delay.",
+      },
+      {
+        kind: "p",
+        text: "Set the delay for Instagram, TikTok, YouTube, Reddit, and any other app you open without deciding to. Leave the delay off for messaging, calendar, and maps.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 3: Quiz Yourself From Your Own Notes Before Social Apps Unlock",
+        id: "fix-3-quiz",
+      },
+      {
+        kind: "p",
+        text: "The moment you feel the urge to scroll is also the moment your brain is looking for a dopamine hit. Redirect that urge into retrieval practice. Untap's study-to-unlock feature asks you quiz questions generated from your own notes before Instagram or TikTok opens. Most of the time, answering two or three questions satisfies the itch and you close the app without scrolling.",
+      },
+      {
+        kind: "p",
+        text: "This works because it turns the distraction impulse into study reinforcement. Even when you do end up scrolling, you have strengthened a memory first. Learn more about this feature on our <a href=\"/study-to-unlock\" style=\"text-decoration: underline;\">study-to-unlock</a> page.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 4: Turn Your Phone Face-Down And Across The Room",
+        id: "fix-4-physical-distance",
+      },
+      {
+        kind: "p",
+        text: "Environmental design beats motivation. If your phone is within arm's reach, you will pick it up unconsciously dozens of times per session. Place it across the room, face down, on silent. The 10-second walk to retrieve it is often enough friction to break the autopilot.",
+      },
+      {
+        kind: "p",
+        text: "One medical student in Pune reported that moving her phone to a desk 3 meters away cut mid-study pickups from 18 per session to 2. The phone was still there if she needed it. It was just far enough that the unconscious grab could not happen.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 5: Use A Separate Device For Study Content",
+        id: "fix-5-separate-device",
+      },
+      {
+        kind: "p",
+        text: "If you are studying from PDFs, videos, or online notes, do it on a laptop or tablet that does not have Instagram, TikTok, or YouTube installed. Reserve your phone exclusively for breaks. This creates a clean separation: work device versus entertainment device. Many students find this is the only thing that actually holds during exam season.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 6: Schedule Fixed 10-Minute Phone Breaks Every Hour",
+        id: "fix-6-scheduled-breaks",
+      },
+      {
+        kind: "p",
+        text: "Trying to avoid your phone for 4 straight hours almost always backfires. Instead, build the break into the plan. Study for 50 minutes, then take a 10-minute phone break where you are allowed to scroll freely. Set a timer for the break. When it rings, the phone goes back across the room and the lock re-engages.",
+      },
+      {
+        kind: "p",
+        text: "This works because the urge to check your phone is not eliminated — it is delayed. Knowing the break is 30 minutes away makes it easier to resist the impulse now.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 7: Enable Grayscale Mode During Study Hours",
+        id: "fix-7-grayscale",
+      },
+      {
+        kind: "p",
+        text: "Color is one of the variables that makes social apps so visually rewarding. Grayscale makes everything on your phone look flat and uninteresting, which reduces the dopamine spike when you open an app. On iPhone: Settings → Accessibility → Display & Text Size → Color Filters → Grayscale. On Android: Settings → Accessibility → Color and contrast → Color correction → Grayscale.",
+      },
+      {
+        kind: "p",
+        text: "Many students set grayscale to auto-enable during study hours using Shortcuts (iOS) or Tasker (Android). The phone still works. It is just less appealing.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 8: Block Distracting Websites In Your Study Browser",
+        id: "fix-8-website-blocking",
+      },
+      {
+        kind: "p",
+        text: "If you study on a laptop, social media websites (instagram.com, youtube.com, reddit.com, tiktok.com, x.com) are just as dangerous as the apps. Use a browser extension like LeechBlock (Firefox, Chrome), Cold Turkey (Windows, Mac), or Untap's website blocking feature on mobile browsers. Set them to block during study hours, with no easy bypass.",
+      },
+      {
+        kind: "h2",
+        text: "Fix 9: Study With A Friend Who Holds Your Phone",
+        id: "fix-9-accountability-partner",
+      },
+      {
+        kind: "p",
+        text: "Peer pressure works. Meet a study partner at the library or a coffee shop, and give them your phone at the start of the session. Agree on a time to get it back. This is especially effective during exam season when both of you need enforced discipline.",
+      },
+      {
+        kind: "p",
+        text: "One law student in Bangalore reported that this single tactic — handing her phone to a friend during 3-hour library sessions — added 15 hours of actual study time per week in the final month before exams.",
+      },
+      {
+        kind: "h2",
+        text: "What To Do During Exam Season",
+        id: "exam-season",
+      },
+      {
+        kind: "p",
+        text: "Exam season is when scrolling costs the most. Two weeks before exams, most students need stricter measures than usual. Here is the setup that works:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Hard-lock all social and entertainment apps from 8am to 10pm, seven days a week.",
+          "Schedule three 15-minute phone breaks: one at 12pm, one at 4pm, one at 8pm.",
+          "Enable prevent-uninstall and friend lock so you cannot disable the restrictions even if you want to.",
+          "Turn off all notifications except calls and texts from family.",
+          "Study from a laptop or tablet, keep your phone in another room.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "This sounds extreme, but exam season is temporary. Two weeks of strict discipline often determines months of outcomes. For more student-specific tips and success stories, see our <a href=\"/for-students\" style=\"text-decoration: underline;\">student resource page</a>.",
+      },
+      {
+        kind: "callout",
+        title: "What Students Say",
+        text: "Students using friction-based tools like Untap report they are less tempted, not more frustrated, because the system removes the constant mental negotiation.",
+      },
+      {
+        kind: "quote",
+        text: "Great app for focus. This helped me in my focus for competative exams.",
+        cite: "OJAS CHAUDHARI, Google Play",
+      },
+      {
+        kind: "quote",
+        text: "Helped me a lot during exam season",
+        cite: "Mukelabai Chimba, Google Play",
+      },
+      {
+        kind: "h2",
+        text: "How To Set This Up On iPhone",
+        id: "iphone-setup",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Download Untap from the App Store (free).",
+          "Go to Settings → Screen Time → enable Screen Time if not already on.",
+          "Open Untap and grant the necessary permissions (it uses Apple's FamilyControls API).",
+          "Add Instagram, TikTok, YouTube, Snapchat, Reddit, X, and any other distracting apps to your controlled list.",
+          "Set your recurring study hours (e.g. weekdays 3pm–6pm).",
+          "Choose your unlock type: hard lock (apps completely blocked), 10-second delay, breathing exercise, or quiz-to-unlock.",
+          "Enable friend lock and share the password with a study partner or parent.",
+          "Optional: set up a Shortcut to enable grayscale during study hours automatically.",
+        ],
+      },
+      {
+        kind: "h2",
+        text: "How To Set This Up On Android",
+        id: "android-setup",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Download Untap from Google Play (free).",
+          "Open Untap and grant accessibility permissions (this is how Android app blockers work).",
+          "Add Instagram, TikTok, YouTube, Snapchat, Reddit, X, and other distracting apps to your block list.",
+          "Set your recurring study schedule (e.g. 9am–12pm, 3pm–6pm daily).",
+          "Choose your friction type: hard lock, 10-second delay, math challenge, or study-to-unlock quiz.",
+          "Enable prevent-uninstall and friend lock.",
+          "Optional: enable grayscale through Settings → Accessibility during study hours using Tasker or Bixby Routines.",
+        ],
+      },
+      {
+        kind: "h2",
+        text: "Why Friction Works Better Than Blocking",
+        id: "why-friction-works",
+      },
+      {
+        kind: "p",
+        text: "Complete blocks often fail because they provoke rebellion. When you tell yourself 'I cannot use Instagram for the next 6 hours,' the restriction itself becomes the thing you think about. Friction-based approaches — delays, pauses, quiz-to-unlock — work better because they do not forbid anything. They just make you decide consciously. And most of the time, once you decide consciously, you choose to study. For the full explanation of this principle, read about <a href=\"/blog/science-of-doomscrolling\" style=\"text-decoration: underline;\">the science of doomscrolling</a>.",
+      },
+      {
+        kind: "p",
+        text: "A 2024 randomized trial published in JAMA Network Open found that friction-based interventions produced larger sustained reductions in phone use than hard blocks, with the lowest dropout rate. Students felt in control, not restricted.",
+      },
+      {
+        kind: "h2",
+        text: "Frequently Asked Questions",
+        id: "faq",
+      },
+      {
+        kind: "h3",
+        text: "How Do I Stop Scrolling While Studying Without Deleting My Apps?",
+      },
+      {
+        kind: "p",
+        text: "Use scheduled hard locks or friction delays during study hours. Apps like Untap let you block Instagram, TikTok, and YouTube from 3pm to 6pm every weekday, but they are fully available outside those hours. You do not have to delete anything.",
+      },
+      {
+        kind: "h3",
+        text: "What If I Need My Phone For Study Materials Or Emergency Calls?",
+      },
+      {
+        kind: "p",
+        text: "Only block entertainment and social apps. Leave messaging, phone calls, email, calendar, maps, and study apps (Notion, Quizlet, Khan Academy) fully available. Most blocking apps let you choose exactly which apps to restrict.",
+      },
+      {
+        kind: "h3",
+        text: "Does This Work For Students Preparing For Competitive Exams?",
+      },
+      {
+        kind: "p",
+        text: "Yes. Many students preparing for NEET, JEE, UPSC, GRE, or other competitive exams use friction-based blocking during long study hours. The quiz-to-unlock feature is especially popular because it doubles as retrieval practice.",
+      },
+      {
+        kind: "h3",
+        text: "How Long Does It Take To Stop The Scrolling Habit?",
+      },
+      {
+        kind: "p",
+        text: "Most students notice a difference within the first week. The autopilot habit weakens fast once friction is in place, because the loop (cue → routine → reward) is interrupted before the routine executes. After two to three weeks, most students report they no longer reach for their phone unconsciously during study.",
+      },
+      {
+        kind: "h3",
+        text: "Can I Use This Setup On Both My Phone And Laptop?",
+      },
+      {
+        kind: "p",
+        text: "Yes. Use Untap or Screen Time on your phone, and a browser extension like LeechBlock or Cold Turkey on your laptop. Block the same apps and websites during the same hours so there is no easy bypass.",
+      },
+      {
+        kind: "h3",
+        text: "What If I Disable The App When My Willpower Is Low?",
+      },
+      {
+        kind: "p",
+        text: "Enable friend lock. Give the unlock password to a study partner, roommate, or parent. That way, you cannot disable the restrictions alone even when motivation is at its weakest (which is usually late at night or mid-afternoon).",
+      },
+      {
+        kind: "h3",
+        text: "Is This Only For Students, Or Does It Work For Remote Workers Too?",
+      },
+      {
+        kind: "p",
+        text: "The same system works for anyone doing focus work: students, remote workers, freelancers, writers, developers. The principle is identical — add friction during deep work hours, allow free use outside those hours.",
+      },
+      {
+        kind: "p",
+        text: "Scrolling mid-study is not a personal failing. It is a designed behavior, and you fix it by redesigning the environment. Install the friction, set the schedule, and give the password to someone you trust. Within a week, study sessions will feel different. For a broader 30-day plan, see our guide on <a href=\"/blog/how-to-break-phone-addiction\" style=\"text-decoration: underline;\">how to break phone addiction</a>, or read about <a href=\"/blog/how-to-stop-scrolling-instagram-for-hours\" style=\"text-decoration: underline;\">Instagram-specific tactics</a>.",
+      },
+      {
+        kind: "p",
+        text: "Ready to install this system? Download Untap free on iOS or Android from the <a href=\"https://apps.apple.com/us/app/untap-screen-time-control/id6759078648\" style=\"text-decoration: underline;\">App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol\" style=\"text-decoration: underline;\">Google Play</a>. Set your study hours at <a href=\"/study-app-blocker\" style=\"text-decoration: underline;\">study-app-blocker</a>, add the apps you want to limit, and give the unlock password to someone you trust. The first study session with friction in place feels different — and by week two, the autopilot habit is gone.",
+      },
+    ],
+  },
 ];
 
 export type CaseStudy = {
