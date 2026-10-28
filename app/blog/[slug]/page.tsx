@@ -64,20 +64,6 @@ export default async function BlogPostPage({
 
   const url = `${SITE_URL}/blog/${post.slug}`;
 
-  // Find FAQ sections for FAQPage schema
-  const faqItems: Array<{ question: string; answer: string }> = [];
-  let currentQuestion: string | null = null;
-  
-  for (let i = 0; i < post.body.length; i++) {
-    const block = post.body[i];
-    if (block.kind === "h3") {
-      currentQuestion = block.text;
-    } else if (block.kind === "p" && currentQuestion) {
-      faqItems.push({ question: currentQuestion, answer: block.text });
-      currentQuestion = null;
-    }
-  }
-
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -136,26 +122,48 @@ export default async function BlogPostPage({
     ],
   };
 
-  const faqJsonLd = faqItems.length > 0 ? {
+  const faqBlocks: Array<{ question: string; answer: string }> = [];
+  let inFaqSection = false;
+  let currentQuestion = "";
+
+  for (let i = 0; i < post.body.length; i++) {
+    const block = post.body[i];
+    if (block.kind === "h2" && (block.text.toLowerCase().includes("faq") || block.text.toLowerCase().includes("frequently asked"))) {
+      inFaqSection = true;
+      continue;
+    }
+    if (inFaqSection && block.kind === "h2") {
+      inFaqSection = false;
+    }
+    if (inFaqSection && block.kind === "h3") {
+      currentQuestion = block.text;
+    }
+    if (inFaqSection && block.kind === "p" && currentQuestion) {
+      faqBlocks.push({ question: currentQuestion, answer: block.text.replace(/<[^>]*>/g, '') });
+      currentQuestion = "";
+    }
+  }
+
+  const faqJsonLd = faqBlocks.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqItems.map(({ question, answer }) => ({
+    mainEntity: faqBlocks.map(faq => ({
       "@type": "Question",
-      name: question,
+      name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: answer,
+        text: faq.answer,
       },
     })),
   } : null;
 
-  const jsonLdData = faqJsonLd
+  const allJsonLd = faqJsonLd 
     ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
     : [articleJsonLd, breadcrumbJsonLd];
 
   return (
     <>
-      <JsonLd data={jsonLdData} />
+      <JsonLd data={allJsonLd} />
       <article className="px-6 py-24 pt-32 sm:py-32">
         <div className="mx-auto max-w-3xl">
           <nav
