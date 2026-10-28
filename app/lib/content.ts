@@ -2033,9 +2033,8 @@ export const blogPosts: Post[] = [
         text: "Ready to install this system? Download Untap free on iOS or Android from the <a href=\"https://apps.apple.com/us/app/untap-screen-time-control/id6759078648\" style=\"text-decoration: underline;\">App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol\" style=\"text-decoration: underline;\">Google Play</a>. Set your study hours at <a href=\"/study-app-blocker\" style=\"text-decoration: underline;\">study-app-blocker</a>, add the apps you want to limit, and give the unlock password to someone you trust. The first study session with friction in place feels different — and by week two, the autopilot habit is gone.",
       },
     ],
-  },,
-},
-{
+  },
+  {
   slug: "screen-time-app-guide",
   title: "Screen Time App: How To Choose One That Actually Works",
   description:
@@ -2307,7 +2306,7 @@ export const blogPosts: Post[] = [
       text: "Download Untap free on <a href=\"https://apps.apple.com/us/app/untap-screen-time-control/id6759078648\" style=\"text-decoration: underline;\">iOS</a> or <a href=\"https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol\" style=\"text-decoration: underline;\">Android</a>, set one recurring study block, and see the difference in your first week. For a detailed comparison of the top screen time control apps tested in 2026, read our <a href=\"https://www.getuntap.com/blog/best-screen-time-control-apps-2026\" style=\"text-decoration: underline;\">ranked comparison guide</a>.",
     },
   ],
-},>>>>>>> f480791 (Add SEO blog post: Screen Time App guide targeting keyword 'screen time app')
+},
 ];
 
 export type CaseStudy = {
