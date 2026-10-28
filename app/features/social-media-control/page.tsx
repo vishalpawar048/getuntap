@@ -173,7 +173,7 @@ const breadcrumbJsonLd = {
           </span>
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             App To Limit Use Of Social Media:{" "}
-            <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
+            <span className="text-white/50">
               Take Back The Hours You Did Not Mean To Lose
             </span>
           </h1>

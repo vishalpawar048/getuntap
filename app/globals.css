@@ -5,11 +5,11 @@
   --foreground: #0a0a0a;
   --muted: #64748b;
   --border: #e2e8f0;
-  --accent: #f8711b;
+  --accent: #06b6d4;
   --accent-purple: #7c5cff;
-  --accent-teal: #06b6d4;
+  --accent-pink: #ec4899;
   --accent-foreground: #ffffff;
-  --accent-soft: #ffe2cb;
+  --accent-soft: #e0f2fe;
   --card: #ffffff;
   --dark-bg: #000000;
   --dark-fg: #ffffff;
@@ -24,7 +24,7 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-purple: var(--accent-purple);
-  --color-accent-teal: var(--accent-teal);
+  --color-accent-pink: var(--accent-pink);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-soft: var(--accent-soft);
   --color-card: var(--card);

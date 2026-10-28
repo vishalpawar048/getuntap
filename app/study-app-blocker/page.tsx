@@ -124,7 +124,7 @@ export default function StudyAppBlockerPage() {
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-24 pt-40 sm:pt-48">
-        <div className="absolute -right-32 top-0 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-[var(--accent)]/15 via-[var(--accent-purple)]/15 to-[var(--accent-teal)]/15 blur-3xl" />
+        <div className="absolute -right-32 top-0 -z-10 h-80 w-80 rounded-full bg-gradient-to-br from-[var(--accent)]/15 via-[var(--accent-purple)]/15 to-[var(--accent-pink)]/15 blur-3xl" />
         <div className="absolute left-0 top-40 -z-10 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
 
         <div className="mx-auto max-w-6xl">
@@ -184,7 +184,7 @@ export default function StudyAppBlockerPage() {
 
       {/* How It Works */}
       <section className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40">
-        <div className="absolute -bottom-40 left-0 -z-10 h-96 w-96 rounded-full bg-gradient-to-br from-[var(--accent)]/10 to-[var(--accent-purple)]/10 blur-3xl" />
+        <div className="absolute -bottom-40 left-0 -z-10 h-96 w-96 rounded-full bg-gradient-to-br from-[var(--accent-purple)]/10 to-[var(--accent-pink)]/10 blur-3xl" />
 
         <div className="mx-auto max-w-6xl">
           <div className="text-center">

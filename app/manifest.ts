@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Untap is a screen time control app for iPhone and Android that helps you stop doomscrolling, break phone addiction, and reclaim hours of your day with intentional friction.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f5f0eb",
-    theme_color: "#f8711b",
+    background_color: "#f8f9fb",
+    theme_color: "#06b6d4",
     orientation: "portrait",
     categories: ["productivity", "lifestyle", "health", "utilities"],
     icons: [

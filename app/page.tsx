@@ -248,12 +248,12 @@ function Star({ className = "h-4 w-4" }: { className?: string }) {
 }
 
 const avatarGradients = [
-  "from-[#f8711b] to-[#ffb067]",
-  "from-[#7c5cff] to-[#b793ff]",
-  "from-[#22c55e] to-[#86efac]",
   "from-[#06b6d4] to-[#67e8f9]",
-  "from-[#ef4444] to-[#fca5a5]",
-  "from-[#eab308] to-[#fde68a]",
+  "from-[#7c5cff] to-[#b793ff]",
+  "from-[#ec4899] to-[#f9a8d4]",
+  "from-[#8b5cf6] to-[#c4b5fd]",
+  "from-[#14b8a6] to-[#5eead4]",
+  "from-[#a855f7] to-[#d8b4fe]",
 ];
 
 function gradientForName(name: string) {
@@ -424,7 +424,7 @@ export default function Home() {
           speed={0.25}
           className="pointer-events-none absolute left-1/2 top-1/3 -z-10 -translate-x-1/2"
         >
-          <div className="h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-[var(--accent-teal)]/20 via-[var(--accent-purple)]/20 to-[var(--accent)]/20 blur-3xl" />
+          <div className="h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-[var(--accent)]/20 via-[var(--accent-purple)]/20 to-[var(--accent-pink)]/20 blur-3xl" />
         </Parallax>
         <Parallax
           speed={-0.15}
@@ -587,7 +587,7 @@ export default function Home() {
           speed={0.18}
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2"
         >
-          <div className="h-[32rem] w-[32rem] rounded-full bg-gradient-to-br from-[var(--accent)]/15 via-[var(--accent-purple)]/15 to-[var(--accent-teal)]/15 blur-3xl" />
+          <div className="h-[32rem] w-[32rem] rounded-full bg-gradient-to-br from-[var(--accent)]/15 via-[var(--accent-purple)]/15 to-[var(--accent-pink)]/15 blur-3xl" />
         </Parallax>
         <Parallax speed={-0.12} className="absolute -bottom-40 right-0 -z-10">
           <div className="h-96 w-96 rounded-full bg-white/5 blur-3xl" />
@@ -683,50 +683,24 @@ export default function Home() {
       <section className="px-6 py-32 sm:py-40">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-16 md:grid-cols-2 md:items-center md:gap-20">
-            <Reveal variant="left" className="order-2 flex items-center justify-center md:order-1">
-              <Parallax speed={0.08} ariaHidden={false} className="relative">
-                <div className="flex h-[420px] w-[220px] flex-col rounded border border-[var(--border)] bg-[var(--dark-bg)] p-6 shadow-xl">
-                  <div className="flex items-center justify-between">
-                    <div className="h-3 w-3 rounded-full bg-[var(--accent)]" />
-                    <p className="eyebrow-label text-[9px] text-white/50">UNTAP</p>
-                    <div className="h-3 w-3 rounded-full bg-white/20" />
-                  </div>
-                  <div className="mt-8 flex-1 space-y-3">
-                    <div className="rounded border border-white/10 bg-white/5 p-3">
-                      <p className="text-xs font-medium text-white/80">
-                        Focus hours
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/50">
-                        9am–1pm · apps limited
-                      </p>
-                    </div>
-                    <div className="rounded border border-white/10 bg-white/5 p-3">
-                      <p className="text-xs font-medium text-white/80">
-                        Instagram
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/50">
-                        15 min session cap
-                      </p>
-                    </div>
-                    <div className="rounded border border-[var(--accent)]/30 bg-[var(--accent)]/10 p-3">
-                      <p className="text-xs font-medium text-[var(--accent)]">
-                        TikTok
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/50">
-                        blocked in focus hours
-                      </p>
-                    </div>
-                    <div className="rounded border border-white/10 bg-white/5 p-3">
-                      <p className="text-xs font-medium text-white/80">
-                        Rest of day
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/50">
-                        daily cap after focus
-                      </p>
-                    </div>
+            <Reveal variant="left" className="order-2 flex items-center justify-center gap-6 md:order-1">
+              {/* Real Untap app screenshots */}
+              <div className="relative -rotate-6">
+                <div className="h-[500px] w-[250px] overflow-hidden rounded-[2.5rem] border-2 border-white/10 bg-gradient-to-b from-[#2d1b69] to-[#1a0f3d] shadow-2xl">
+                  {/* Placeholder for 01-focus-hours.png - shows Focus Hours + Limits */}
+                  <div className="flex h-full items-center justify-center p-8 text-center text-xs text-white/40">
+                    Screenshot:<br/>Focus Hours<br/>& Limits
                   </div>
                 </div>
-              </Parallax>
+              </div>
+              <div className="relative rotate-6">
+                <div className="h-[500px] w-[250px] overflow-hidden rounded-[2.5rem] border-2 border-white/10 bg-gradient-to-b from-[#2d1b69] to-[#1a0f3d] shadow-2xl">
+                  {/* Placeholder for 02-limit-lock.png or 04-scheduler.png */}
+                  <div className="flex h-full items-center justify-center p-8 text-center text-xs text-white/40">
+                    Screenshot:<br/>Session Limit<br/>or Scheduler
+                  </div>
+                </div>
+              </div>
             </Reveal>
 
             <Reveal variant="right" delay={120} className="order-1 md:order-2">
@@ -757,7 +731,7 @@ export default function Home() {
         className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40"
       >
         <Parallax speed={0.15} className="absolute -right-32 top-0 -z-10">
-          <div className="h-72 w-72 rounded-full bg-gradient-to-br from-[var(--accent)]/10 to-[var(--accent-purple)]/10 blur-3xl" />
+          <div className="h-72 w-72 rounded-full bg-gradient-to-br from-[var(--accent-purple)]/10 to-[var(--accent-pink)]/10 blur-3xl" />
         </Parallax>
 
         <div className="mx-auto max-w-6xl">
@@ -897,7 +871,7 @@ export default function Home() {
       {/* CTA */}
       <section className="relative isolate overflow-hidden px-6 py-32 sm:py-40">
         <Parallax speed={0.2} className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2">
-          <div className="h-[36rem] w-[36rem] rounded-full bg-gradient-to-br from-[var(--accent)]/10 via-[var(--accent-purple)]/10 to-[var(--accent-teal)]/10 blur-3xl" />
+          <div className="h-[36rem] w-[36rem] rounded-full bg-gradient-to-br from-[var(--accent)]/10 via-[var(--accent-purple)]/10 to-[var(--accent-pink)]/10 blur-3xl" />
         </Parallax>
         <Reveal variant="scale" className="relative z-10 mx-auto max-w-5xl text-center">
           <h2 className="text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
