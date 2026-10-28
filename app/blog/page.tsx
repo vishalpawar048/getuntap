@@ -62,57 +62,57 @@ export default function BlogIndexPage() {
   return (
     <>
       <JsonLd data={[blogJsonLd, breadcrumbJsonLd]} />
-      <section className="px-6 py-24 pt-32 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <header className="mb-16 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              Untap Blog
+      <section className="px-6 py-32 pt-40 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <header className="mb-20 max-w-4xl">
+            <p className="eyebrow-label text-[var(--muted)]">
+              UNTAP BLOG
             </p>
-            <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Guides To Reduce Screen Time And Break Phone Addiction
+            <h1 className="mt-5 text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+              Guides to reduce screen time and break phone addiction
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
+            <p className="mt-8 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
               In-depth, evidence-based guides on doomscrolling, digital
               wellbeing, and intentional phone use — written by the team behind
               the Untap screen time control app.
             </p>
           </header>
 
-          <ul className="grid gap-6 sm:grid-cols-2">
+          <ul className="grid gap-8 sm:grid-cols-2">
             {sorted.map((post) => (
               <li
                 key={post.slug}
-                className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 transition hover:-translate-y-0.5 hover:border-[var(--accent)]/40"
+                className="group rounded border border-[var(--border)] bg-[var(--card)] p-10 transition hover:border-[var(--accent)]/40"
               >
                 <Link
                   href={`/blog/${post.slug}`}
                   className="flex h-full flex-col"
                 >
-                  <p className="text-xs font-medium uppercase tracking-widest text-[var(--muted)]">
+                  <p className="eyebrow-label text-[var(--muted)]">
                     {new Date(post.publishedAt).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "short",
                       day: "numeric",
-                    })}{" "}
-                    · {post.readMinutes} min read
+                    }).toUpperCase()}{" "}
+                    · {post.readMinutes} MIN READ
                   </p>
-                  <h2 className="mt-4 text-2xl font-bold leading-snug tracking-tight group-hover:text-[var(--accent)]">
+                  <h2 className="mt-5 text-2xl font-normal leading-snug tracking-tight group-hover:text-[var(--accent)] sm:text-3xl">
                     {post.title}
                   </h2>
-                  <p className="mt-3 line-clamp-3 leading-relaxed text-[var(--muted)]">
+                  <p className="mt-4 line-clamp-3 text-base leading-relaxed text-[var(--muted)]">
                     {post.description}
                   </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="mt-6 flex flex-wrap gap-2">
                     {post.tags.slice(0, 3).map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-[var(--border)] bg-[var(--background)] px-2.5 py-1 text-xs text-[var(--muted)]"
+                        className="rounded-sm border border-[var(--border)] bg-[var(--background)] px-3 py-1.5 text-xs text-[var(--muted)]"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <span className="mt-6 text-sm font-medium text-[var(--accent)]">
+                  <span className="mt-8 text-sm font-medium text-[var(--accent)]">
                     Read article →
                   </span>
                 </Link>
