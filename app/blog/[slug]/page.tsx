@@ -149,7 +149,7 @@ export default async function BlogPostPage({
     })),
   } : null;
 
-  const jsonLdData = faqJsonLd 
+  const jsonLdData = faqJsonLd
     ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
     : [articleJsonLd, breadcrumbJsonLd];
 
