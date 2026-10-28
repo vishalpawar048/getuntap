@@ -20,47 +20,44 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-[var(--dark-bg)]/90 backdrop-blur-md"
-          : isHome
-            ? "bg-transparent"
-            : "bg-[var(--dark-bg)]"
+      className={`fixed top-0 z-50 w-full border-b transition-all duration-300 ${
+        scrolled || !isHome
+          ? "border-white/10 bg-[var(--nav-bg)]/95 backdrop-blur-md"
+          : "border-transparent bg-[var(--nav-bg)]/80 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 sm:h-20">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6">
         <Link
           href="/"
-          className="flex items-center gap-2.5 text-white"
+          className="flex items-center gap-2.5 text-white transition-opacity hover:opacity-80"
         >
           <Image
             src="/logo.png"
             alt="Untap logo"
-            width={36}
-            height={36}
-            className="h-9 w-9 rounded-xl object-cover ring-1 ring-white/20"
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded object-cover"
           />
-          <span className="text-lg font-semibold tracking-tight">
+          <span className="text-base font-medium tracking-tight">
             Untap
           </span>
         </Link>
 
-        <div className="flex items-center gap-6">
-          <nav
-            aria-label="Primary"
-            className="hidden items-center gap-5 text-sm text-white/60 md:flex"
-          >
+        <nav
+          aria-label="Primary"
+          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-6 text-sm font-normal text-white/70 md:flex"
+        >
             <Link
               href="/study-app-blocker"
               className="transition-colors hover:text-white"
             >
-              Study Blocker
+              Study blocker
             </Link>
             <Link
               href="/for-students"
               className="transition-colors hover:text-white"
             >
-              For Students
+              For students
             </Link>
             <div className="relative"  onMouseEnter={() => setFeaturesOpen(true)}
   onMouseLeave={() => setFeaturesOpen(false)}>
@@ -69,7 +66,7 @@ export function SiteHeader() {
     onClick={() => setFeaturesOpen(true)}
     aria-expanded={featuresOpen}
     aria-controls="features-dropdown"
-    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-white"
+    className="inline-flex items-center gap-1 text-sm transition-colors hover:text-white"
   >
     Features
 
@@ -79,7 +76,7 @@ export function SiteHeader() {
       stroke="currentColor"
       strokeWidth={1.8}
       aria-hidden="true"
-      className={`h-4 w-4 transition-transform duration-200 ${
+      className={`h-3.5 w-3.5 transition-transform duration-200 ${
         featuresOpen ? "rotate-180" : ""
       }`}
     >
@@ -94,54 +91,54 @@ export function SiteHeader() {
   {featuresOpen && (
     <div
       id="features-dropdown"
-      className="absolute left-0 top-full z-50 mt-0 w-64 rounded-2xl border border-white/10 bg-[var(--dark-bg)] p-2 shadow-xl backdrop-blur-md"
+      className="absolute left-0 top-full z-50 mt-2 w-56 rounded border border-white/10 bg-black p-1 shadow-xl"
     >
       <Link
         href="/features/app-blocker"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        App Blocker
+        App blocker
       </Link>
 
       <Link
         href="/features/focus-mode"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        Focus Mode
+        Focus mode
       </Link>
 
       <Link
         href="/features/parental-controls"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        Parental Controls
+        Parental controls
       </Link>
 
       <Link
         href="/features/screen-time-control"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        Screen Time Control
+        Screen time control
       </Link>
 
       <Link
         href="/features/social-media-control"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        Social Media Control
+        Social media control
       </Link>
 
       <Link
         href="/features/stop-doomscrolling-app"
         onClick={() => setFeaturesOpen(false)}
-        className="block rounded-xl px-4 py-3 text-sm text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+        className="block rounded-sm px-3 py-2 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
-        Stop Doomscrolling
+        Stop doomscrolling
       </Link>
     </div>
   )}
@@ -150,7 +147,7 @@ export function SiteHeader() {
               href="/for-schools"
               className="transition-colors hover:text-white"
             >
-              For Schools
+              For schools
             </Link>
             <Link
               href="/enterprise"
@@ -168,7 +165,7 @@ export function SiteHeader() {
               href="/case-studies"
               className="hidden transition-colors hover:text-white lg:inline"
             >
-              Case Studies
+              Case studies
             </Link>
             <Link
               href="/research"
@@ -176,21 +173,14 @@ export function SiteHeader() {
             >
               Research
             </Link>
-            <Link
-              href="/qr"
-              className="hidden transition-colors hover:text-white lg:inline"
-            >
-              QR
-            </Link>
           </nav>
 
-          <a
-            href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
-            className="rounded-full bg-white/15 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/25"
-          >
-            Download
-          </a>
-        </div>
+        <a
+          href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
+          className="rounded bg-white px-5 py-2 text-sm font-medium text-black transition hover:bg-white/90"
+        >
+          Download
+        </a>
       </div>
     </header>
   );
