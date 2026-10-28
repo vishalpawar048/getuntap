@@ -33,6 +33,7 @@ Other people open Instagram when they are bored. The scroll shortens attention, 
 - /blog - Educational content about screen time, productivity, phone addiction
 - /blog/app-blocker-for-studying - Guide to choosing and setting up an app blocker for studying
 - /blog/best-app-blockers-for-students - Guide to choosing the best app blocker for students
+- /blog/screen-time-app-guide - How to choose a screen time app that works (tracking vs limits vs friction, when built-in tools fail, student needs)
 - /blog/how-to-break-phone-addiction - 30-day plan to break phone addiction
 - /blog/best-screen-time-control-apps-2026 - Comparison of screen time control apps
 - /blog/science-of-doomscrolling - Neuroscience behind compulsive scrolling

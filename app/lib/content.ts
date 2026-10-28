@@ -2034,6 +2034,279 @@ export const blogPosts: Post[] = [
       },
     ],
   },
+  {
+  slug: "screen-time-app-guide",
+  title: "Screen Time App: How To Choose One That Actually Works",
+  description:
+    "A screen time app can track, limit, or block your phone use. Learn what each type does, when built-in tools aren't enough, and how to pick one that fits your study or focus needs.",
+  publishedAt: "2026-10-28",
+  author: "Untap Team",
+  readMinutes: 7,
+  tags: ["screen time app", "app blocker", "digital wellbeing", "student focus"],
+  body: [
+    {
+      kind: "p",
+      text: "A screen time app is software that helps you manage how much time you spend on your phone or specific apps. Most people search for one when their built-in phone settings don't work anymore, usually because those built-in limits are too easy to bypass. This guide explains what different screen time apps actually do, when you need one instead of the default tools, and how to choose the right type for studying or staying focused.",
+    },
+    {
+      kind: "h2",
+      text: "What A Screen Time App Actually Does",
+      id: "what-a-screen-time-app-does",
+    },
+    {
+      kind: "p",
+      text: "Not all screen time apps work the same way. Some track your usage and show you reports. Others set hard limits that lock apps after a set amount of time. A few add intentional friction, like a pause or a task, before an app opens. Understanding the difference helps you pick the right tool.",
+    },
+    {
+      kind: "h3",
+      text: "Tracking Apps",
+    },
+    {
+      kind: "p",
+      text: "These apps monitor which apps you use and for how long. They generate daily or weekly reports showing where your time goes. Apple Screen Time and Android Digital Wellbeing are built-in tracking tools. They're useful for awareness, but they don't stop you from using your phone.",
+    },
+    {
+      kind: "h3",
+      text: "Limit-Based Apps",
+    },
+    {
+      kind: "p",
+      text: "These set a daily time budget for each app. Once you hit your limit, the app locks until tomorrow. Apps like Opal and Freedom work this way. They're effective if you can resist the urge to override the limit, but many let you bypass the block with a single tap.",
+    },
+    {
+      kind: "h3",
+      text: "Friction-Based Apps",
+    },
+    {
+      kind: "p",
+      text: "Instead of blocking outright, these apps add a pause or a small task before the app opens. You might need to solve a math problem, scan a QR code, or answer a quiz question from your study notes. The delay breaks the autopilot habit of opening apps without thinking. Untap and one sec are examples of friction-based tools.",
+    },
+    {
+      kind: "h3",
+      text: "Complete Blocking Apps",
+    },
+    {
+      kind: "p",
+      text: "These lock apps or your entire phone during set hours. They're strict and work well for scheduled focus blocks like exams or work hours. The downside is they can feel too rigid if your schedule changes or you need your phone for something urgent.",
+    },
+    {
+      kind: "h2",
+      text: "When Built-In Tools Aren't Enough",
+      id: "when-built-in-tools-arent-enough",
+    },
+    {
+      kind: "p",
+      text: "Apple Screen Time and Android Digital Wellbeing are free and already on your phone. They're a good first step for tracking usage. But they have limits.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "They're easy to override. On most phones, you can bypass a limit with one tap and a passcode you already know.",
+        "They offer minimal friction. There's no pause, no task, no real barrier between you and the app.",
+        "They don't redirect you. When a limit blocks an app, you just see a wall. There's no suggestion to do something else, which often leads to opening another distracting app instead.",
+        "They lack student-specific features. There's no way to quiz yourself from your notes or lock apps during study hours while keeping calls and messages available.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "If you find yourself ignoring the built-in limits or turning them off within days, a dedicated screen time app is the next step.",
+    },
+    {
+      kind: "h2",
+      text: "What Students Actually Need From A Screen Time App",
+      id: "what-students-need",
+    },
+    {
+      kind: "p",
+      text: "Students have specific needs that generic screen time apps often miss. You're not just trying to use your phone less. You're trying to protect study time while staying reachable for family, group chats, or emergency messages.",
+    },
+    {
+      kind: "h3",
+      text: "Scheduled Study Hours",
+    },
+    {
+      kind: "p",
+      text: "You need to block distracting apps during recurring study blocks, like weekday mornings or evenings before exams. A good <a href=\"https://www.getuntap.com/study-app-blocker\" style=\"text-decoration: underline;\">study app blocker</a> lets you set these schedules once and forget about them.",
+    },
+    {
+      kind: "h3",
+      text: "Something That Redirects, Not Just Blocks",
+    },
+    {
+      kind: "p",
+      text: "When you reach for Instagram out of habit, a blank \"You've hit your limit\" screen doesn't help much. You just get frustrated or open another app. A better approach is friction that redirects you back to something useful. Untap's <a href=\"https://www.getuntap.com/study-to-unlock\" style=\"text-decoration: underline;\">quiz-to-unlock feature</a> makes you answer questions from your own study notes before an app opens. You either review your material or decide the distraction isn't worth it.",
+    },
+    {
+      kind: "h3",
+      text: "Keeps Calls And Important Messages Available",
+    },
+    {
+      kind: "p",
+      text: "A screen time app that blocks everything, including your phone and messaging apps, causes more problems than it solves. Students need to stay reachable for parents, group project chats, and delivery updates. The right tool blocks social media and games but leaves phone calls, texts, and chosen messaging apps fully available.",
+    },
+    {
+      kind: "h3",
+      text: "Hard To Bypass",
+    },
+    {
+      kind: "p",
+      text: "If you can turn off the limits with two taps, the app won't help on the days your willpower is low. Look for features like friend lock, which lets a trusted person set a password on your settings so you can't disable protection when you're tempted.",
+    },
+    {
+      kind: "h2",
+      text: "How To Choose A Screen Time App: A Checklist",
+      id: "how-to-choose",
+    },
+    {
+      kind: "p",
+      text: "Here's what to check before you download one.",
+    },
+    {
+      kind: "ol",
+      items: [
+        "<strong>Does it offer the right type of control?</strong> If you need awareness, tracking is enough. If you need structure, you want limits or schedules. If you need to break autopilot habits, choose a friction-based app.",
+        "<strong>Can you schedule focus blocks?</strong> Look for recurring schedules, not just one-time timers. This matters for students with regular study routines.",
+        "<strong>Is it easy to bypass?</strong> Check whether you can disable limits without a password or external accountability. If yes, it probably won't hold up when you're tired or stressed.",
+        "<strong>Does it keep essentials available?</strong> Make sure calls, texts, and work or school apps stay accessible during focus hours.",
+        "<strong>Does it work on your phone?</strong> Some screen time apps are iOS-only or Android-only. If your household has both, check compatibility.",
+        "<strong>Is it privacy-respecting?</strong> Avoid apps that send your usage data to third-party servers or show ads. Your screen time habits are personal.",
+        "<strong>Is the pricing realistic?</strong> Many apps have a free tier with core features and a paid plan for extras. Test the free version first.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "How Untap Fits For Students And Focus",
+      id: "how-untap-fits",
+    },
+    {
+      kind: "p",
+      text: "Untap is a screen time app built for students and anyone who needs to protect focus time without cutting themselves off completely. It combines scheduled blocking, friction-based unlocks, and student-specific features like quiz-to-unlock.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Set recurring study hours that lock distracting apps automatically.",
+        "Answer quiz questions from your own notes before social media opens during study time.",
+        "Keep phone calls, texts, and chosen apps fully available even during locked hours.",
+        "Use friend lock so a trusted person holds the password to your settings, which stops you from disabling protection on a weak day.",
+        "View daily and weekly reports showing where your phone time actually goes.",
+        "Works on both iPhone and Android with the same core features.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Untap is free to download with core features available in the free tier. Paid plans add unlimited quiz banks and deeper analytics. Learn more at <a href=\"https://www.getuntap.com/for-students\" style=\"text-decoration: underline;\">Untap for Students</a>.",
+    },
+    {
+      kind: "h2",
+      text: "Real Results From Students Using Screen Time Apps",
+      id: "real-results",
+    },
+    {
+      kind: "p",
+      text: "Students using Untap report measurable improvements in focus and screen time reduction. These are real reviews from the Google Play Store, included verbatim.",
+    },
+    {
+      kind: "quote",
+      text: "Great app for focus. This helped me in my focus for competative exams.",
+      cite: "OJAS CHAUDHARI, Google Play",
+    },
+    {
+      kind: "quote",
+      text: "the app is very useful for students who easily get distracted by the mobile. I totally recommend this app",
+      cite: "Abdullah Azaam, Google Play",
+    },
+    {
+      kind: "quote",
+      text: "a great app for minimizing your screen time really helps with your school work and it has improved my overall life great app totally free and very reliable",
+      cite: "Tebogo Mtubha, Google Play",
+    },
+    {
+      kind: "stat",
+      value: "3.5 hrs",
+      label: "average daily screen time saved by Untap users",
+    },
+    {
+      kind: "stat",
+      value: "85%",
+      label: "of users reduce doomscrolling within the first week",
+    },
+    {
+      kind: "h2",
+      text: "Frequently Asked Questions",
+      id: "faq",
+    },
+    {
+      kind: "h3",
+      text: "What Is A Screen Time App?",
+    },
+    {
+      kind: "p",
+      text: "A screen time app helps you manage how long you spend on your phone or specific apps. Some track your usage and show reports, others set daily limits or scheduled blocks, and some add intentional friction like a pause or task before an app opens.",
+    },
+    {
+      kind: "h3",
+      text: "Do I Need A Screen Time App If My Phone Already Has Built-In Limits?",
+    },
+    {
+      kind: "p",
+      text: "Built-in tools like Apple Screen Time and Android Digital Wellbeing work well for awareness and basic tracking. But if you find yourself bypassing those limits regularly, a dedicated screen time app with stronger controls and accountability features will be more effective.",
+    },
+    {
+      kind: "h3",
+      text: "What's The Difference Between A Screen Time App And An App Blocker?",
+    },
+    {
+      kind: "p",
+      text: "They overlap but aren't identical. Screen time apps focus on tracking and managing total phone use. App blockers specifically prevent certain apps from opening during set times or after daily limits. Many modern screen time apps include blocking features, so the terms are often used interchangeably.",
+    },
+    {
+      kind: "h3",
+      text: "Will A Screen Time App Block My Calls Or Messages?",
+    },
+    {
+      kind: "p",
+      text: "Not if you choose the right one. Good screen time apps let you choose which apps to block and which to keep available. Phone calls and messaging apps can stay fully accessible even during focus hours.",
+    },
+    {
+      kind: "h3",
+      text: "Can I Use A Screen Time App For Studying?",
+    },
+    {
+      kind: "p",
+      text: "Yes. Many students use screen time apps to block distracting apps during study hours. Look for features like scheduled blocking, quiz-to-unlock, and friend lock to ensure the limits hold up during exam preparation. Untap is specifically designed for this use case.",
+    },
+    {
+      kind: "h3",
+      text: "How Much Does A Screen Time App Cost?",
+    },
+    {
+      kind: "p",
+      text: "Most have a free version with basic features and a paid plan for extras like unlimited app restrictions or advanced analytics. Untap's free tier includes core blocking, scheduling, and friction features. Paid plans typically range from $3 to $10 per month depending on the app.",
+    },
+    {
+      kind: "h3",
+      text: "Is My Data Private With A Screen Time App?",
+    },
+    {
+      kind: "p",
+      text: "That depends on the app. Privacy-focused screen time apps like Untap keep all data on your device and don't send usage information to external servers. Before downloading, check the app's privacy policy to see if they track, sell, or share your data.",
+    },
+    {
+      kind: "h2",
+      text: "Next Steps",
+      id: "next-steps",
+    },
+    {
+      kind: "p",
+      text: "If your built-in screen time limits aren't working, it's time to try a dedicated app. Start by identifying what you need: tracking, hard limits, scheduled blocks, or intentional friction. For students looking to protect study time while staying reachable, Untap offers all four in one privacy-respecting app.",
+    },
+    {
+      kind: "p",
+      text: "Download Untap free on <a href=\"https://apps.apple.com/us/app/untap-screen-time-control/id6759078648\" style=\"text-decoration: underline;\">iOS</a> or <a href=\"https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol\" style=\"text-decoration: underline;\">Android</a>, set one recurring study block, and see the difference in your first week. For a detailed comparison of the top screen time control apps tested in 2026, read our <a href=\"https://www.getuntap.com/blog/best-screen-time-control-apps-2026\" style=\"text-decoration: underline;\">ranked comparison guide</a>.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
