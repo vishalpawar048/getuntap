@@ -2307,6 +2307,262 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "limit-screen-time-for-students",
+  title: "Limit Screen Time For Students: A Practical Setup Guide",
+  description:
+    "How students can limit screen time with focus hours, friction-based delays, and study-to-unlock. iPhone and Android setup steps that work.",
+  publishedAt: "2026-10-26",
+  author: "Untap Team",
+  readMinutes: 8,
+  tags: ["student screen time", "focus", "study habits"],
+  body: [
+    {
+      kind: "p",
+      text: "If you're a student looking to limit screen time — not because your parents said so, but because you've watched TikTok eat two hours you'd planned for your essay — this guide is for you. The top Google results for 'limit screen time for students' are institutional pages written for schools and parents. None are written for students who want to take control of their own phone use. Here's the practical, student-first setup that works for high school and college.",
+    },
+    {
+      kind: "callout",
+      title: "Why This Matters",
+      text: "The OECD's 2024 Managing Screen Time report on PISA 2022 data found that students distracted by digital devices during class scored lower on average, and the American Academy of Pediatrics notes there are no official screen-time limits for schools — the focus is on active vs. passive use. The real question is: are you using your phone, or is it using you?",
+    },
+    {
+      kind: "h2",
+      text: "What 'Limit Screen Time' Actually Means For Students",
+      id: "what-it-means",
+    },
+    {
+      kind: "p",
+      text: "Limiting screen time doesn't mean deleting every app or going phone-free for a semester. It means protecting the hours that matter — your morning focus block, lecture time, evening study session — and adding enough friction to the rest of the day that mindless scrolling becomes a deliberate choice instead of an autopilot habit.",
+    },
+    {
+      kind: "p",
+      text: "Here's what that looks like in practice: Instagram is hard-locked during your 9am–12pm study block. YouTube has a 20-minute daily session limit after 6pm. TikTok asks you to answer a quiz question from your biology notes before it opens. WhatsApp and messages stay unrestricted because you actually need them.",
+    },
+    {
+      kind: "h2",
+      text: "Step 1: Measure Your Baseline (One Week)",
+      id: "step-1-baseline",
+    },
+    {
+      kind: "p",
+      text: "Before you restrict anything, check your phone's built-in screen time report. On iPhone, go to Settings → Screen Time. On Android, go to Settings → Digital Wellbeing. Look at your daily average and note your top three apps. Most students are shocked. The number is usually 30–50% higher than they'd guessed.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Write down your current daily average.",
+        "Identify your top 3 time-sink apps (usually Instagram, TikTok, YouTube, Snapchat, or Reddit).",
+        "Note the times of day you use them most: mornings before class, between lectures, evenings after dinner.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "Step 2: Set Study-First Hours (The Non-Negotiable Block)",
+      id: "step-2-study-hours",
+    },
+    {
+      kind: "p",
+      text: "Pick one 2- to 4-hour block each day when you need uninterrupted focus. For most students, this is either mornings (9am–12pm) or evenings (7pm–10pm). During this block, your distracting apps stay locked. No delays, no negotiations — they simply won't open.",
+    },
+    {
+      kind: "p",
+      text: "On iPhone, use the built-in Screen Time feature: go to Settings → Screen Time → App Limits, select your time-sink apps, and set Downtime to cover your focus hours. For stricter enforcement, use a dedicated <a href=\"/study-app-blocker\" style=\"text-decoration: underline; color: var(--accent);\">study app blocker</a> like Untap that prevents you from disabling the lock mid-session.",
+    },
+    {
+      kind: "p",
+      text: "On Android, use Digital Wellbeing's Focus Mode or a third-party app blocker. Untap works on both platforms and adds features like quiz-from-your-notes before an app unlocks — turning the urge to scroll into a chance for retrieval practice.",
+    },
+    {
+      kind: "h2",
+      text: "Step 3: Add Friction Outside Study Hours",
+      id: "step-3-friction",
+    },
+    {
+      kind: "p",
+      text: "Hard blocks work during study hours, but they feel punishing for the rest of the day. Outside your focus block, use friction-based limits instead: a 10-second delay before Instagram opens, a 30-minute daily cap on YouTube, a quiz from your study notes before TikTok launches.",
+    },
+    {
+      kind: "p",
+      text: "Friction doesn't stop you from using the app — it just slows you down enough to ask yourself, 'Do I actually want to open this right now, or did my thumb do it on autopilot?' In one 2024 study published in JAMA Network Open, friction-based interventions produced larger sustained reductions in anxiety than hard blocks, and users stuck with them longer because they felt in control.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Set a 10-second open delay on your top 2 time-sink apps.",
+        "Add a 20- to 30-minute daily session limit on video apps.",
+        "Turn on over-consumption notifications at 30 minutes per app.",
+      ],
+    },
+    {
+      kind: "h2",
+      text: "Step 4: Use Study-To-Unlock For Exam Prep",
+      id: "step-4-study-to-unlock",
+    },
+    {
+      kind: "p",
+      text: "If you're a student using Untap, the <a href=\"/study-to-unlock\" style=\"text-decoration: underline; color: var(--accent);\">study-to-unlock feature</a> is built for exam season. You upload your lecture notes, flashcards, or photos of handwritten summaries. When you try to open Instagram or TikTok, Untap shows a question generated from your material. A correct answer unlocks the app; a wrong answer sends you back to your notes.",
+    },
+    {
+      kind: "p",
+      text: "This turns every distraction attempt into a retrieval-practice session — one of the highest-yield study techniques according to cognitive science research. Instead of fighting the urge to scroll, you redirect it into active learning.",
+    },
+    {
+      kind: "quote",
+      text: "Great app for focus. This helped me in my focus for competative exams.",
+      cite: "OJAS CHAUDHARI, Google Play",
+    },
+    {
+      kind: "h2",
+      text: "Step 5: Protect Your Sleep (The Highest-Leverage Win)",
+      id: "step-5-sleep",
+    },
+    {
+      kind: "p",
+      text: "Across every screen-time study, removing phones from the bedroom or hard-blocking entertainment apps after 10pm produces the fastest measurable gains in sleep quality and next-day focus. If you only change one thing, change nighttime phone use.",
+    },
+    {
+      kind: "p",
+      text: "Set a hard lock on all social and video apps from 10pm to 7am. Keep calls, texts, and alarms unrestricted. Most students notice they fall asleep faster and wake up less groggy within a week.",
+    },
+    {
+      kind: "h2",
+      text: "Step 6: Lock Your Settings (So Future-You Can't Cheat)",
+      id: "step-6-lock-settings",
+    },
+    {
+      kind: "p",
+      text: "The most common reason students give up on screen-time limits? They turn them off at 11pm during a moment of low willpower and never turn them back on. Solve this by locking your settings behind a password held by someone else: a roommate, a friend, a study partner.",
+    },
+    {
+      kind: "p",
+      text: "In Untap, this is called Friend Lock. A trusted person sets a password on your app restrictions, and you can't change the settings without that password. It sounds extreme until you realize how often a tired, frustrated future-you sabotages the plan present-you just set.",
+    },
+    {
+      kind: "h2",
+      text: "What Students Actually See When They Limit Screen Time",
+      id: "what-students-see",
+    },
+    {
+      kind: "p",
+      text: "Here's what students using Untap report in verified Google Play reviews:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Hyder Ali: 'awesome app for getting back into your life. this app has cut my screen time from 8hrs to 2hrs a day only.'",
+        "Mukelabai Chimba: 'Helped me a lot during exam season'",
+        "Abdullah Azaam: 'the app is very useful for students who easily get distracted by the mobile. I totally recommend this app'",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Results vary by habit and setup, but the pattern is consistent: protecting study hours, adding friction to distracting apps, and locking settings makes a measurable difference. Untap users report saving an average of 3.5 hours of screen time per day, and 85% notice less doomscrolling within the first week.",
+    },
+    {
+      kind: "stat",
+      value: "4.4 / 5",
+      label: "Google Play rating from 724 reviews",
+    },
+    {
+      kind: "h2",
+      text: "The Setup That Works For Semester-Long Habits",
+      id: "semester-long-setup",
+    },
+    {
+      kind: "p",
+      text: "One-week challenges fail because they rely on motivation. Semester-long habits work because they change the default. Here's the sustainable setup:",
+    },
+    {
+      kind: "ol",
+      items: [
+        "Hard-lock your worst apps during one daily study block (2–4 hours).",
+        "Add friction outside that block: delays, session caps, quiz-to-unlock.",
+        "Protect your sleep: hard-lock entertainment apps after 10pm.",
+        "Lock your settings with Friend Lock so you can't undo it at midnight.",
+        "Keep messages, calls, and school apps unrestricted — this isn't digital abstinence.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Start soft (10-second delays) for the first week, then tighten to moderate (session caps and scheduled locks) by week two. Most students find the new rhythm feels normal by week three.",
+    },
+    {
+      kind: "h2",
+      text: "FAQ: Limit Screen Time For Students",
+      id: "faq",
+    },
+    {
+      kind: "h3",
+      text: "How Many Hours Of Screen Time Is Normal For A College Student?",
+    },
+    {
+      kind: "p",
+      text: "There's no official 'normal' — the American Academy of Pediatrics states there are no set screen-time limits for students and emphasizes quality of use over quantity. However, most college students report 4–6 hours of non-academic phone use per day. The question isn't whether that's normal, it's whether it's serving you. If your phone time is cutting into study, sleep, or activities you value, it's worth changing.",
+    },
+    {
+      kind: "h3",
+      text: "Can I Limit Screen Time Without Deleting Apps?",
+    },
+    {
+      kind: "p",
+      text: "Yes. Deleting apps rarely works because you reinstall them within a week. A better approach is to add friction: use hard locks during study hours, set session limits for the rest of the day, and require a pause (a breathing exercise, a quiz, or a 10-second delay) before the app opens. You keep the apps, but you use them on purpose instead of out of habit.",
+    },
+    {
+      kind: "h3",
+      text: "Will Limiting Screen Time Help My Grades?",
+    },
+    {
+      kind: "p",
+      text: "Research from the London School of Economics found that test scores improved after schools introduced mobile phone bans, with the largest gains for lower-attaining students. Separately, studies show that having a phone on your desk — even face-down and silent — reduces performance on cognitive tasks. Limiting screen time during study hours gives you back the focus and working memory those distractions were stealing.",
+    },
+    {
+      kind: "h3",
+      text: "What's The Best App To Limit Screen Time For Students?",
+    },
+    {
+      kind: "p",
+      text: "<a href=\"/study-app-blocker\" style=\"text-decoration: underline; color: var(--accent);\">Untap</a> is built specifically for students. It offers hard locks for study hours, friction-based delays for the rest of the day, and a quiz-to-unlock feature that turns distraction into retrieval practice. It works on both iPhone and Android, and the core features are free. Other popular options include Apple Screen Time (built-in but easy to bypass), Opal (strong blocks but expensive), and one sec (great for a single breathing pause but limited friction types).",
+    },
+    {
+      kind: "h3",
+      text: "How Do I Stop Myself From Turning Off Screen Time Limits?",
+    },
+    {
+      kind: "p",
+      text: "Use Friend Lock or a similar accountability feature. Give a trusted person (roommate, friend, study partner) the password to your screen-time settings. That way, a tired, frustrated future-you can't disable the restrictions at midnight without asking for help — which is usually enough friction to stop the impulse.",
+    },
+    {
+      kind: "h3",
+      text: "Does Limiting Screen Time Work During Exam Season?",
+    },
+    {
+      kind: "p",
+      text: "Yes, if you set it up before exam season starts. Trying to implement new restrictions the day before an exam usually fails because you're already stressed. Set your study-hour locks and friction limits at the start of the semester, tighten them gradually, and by the time exams arrive, the habits are already in place. For exam-specific tactics, see the related guide on <a href=\"/blog/reduce-screen-time-during-exam-preparation\" style=\"text-decoration: underline; color: var(--accent);\">reducing screen time during exam preparation</a>.",
+    },
+    {
+      kind: "h3",
+      text: "Can I Still Use My Phone For School If I Limit Screen Time?",
+    },
+    {
+      kind: "p",
+      text: "Absolutely. Screen-time limits are app-specific, not phone-wide. You restrict Instagram, TikTok, YouTube, and other distracting apps during study hours, but leave email, school portals, messaging apps, and any tools you actually need for class fully available. The goal is to protect your focus, not to make your phone unusable.",
+    },
+    {
+      kind: "h2",
+      text: "Start Small, Tighten Gradually",
+      id: "start-small",
+    },
+    {
+      kind: "p",
+      text: "You don't have to lock everything on day one. Start with one 2-hour study block, add friction to your top two time-sink apps, and protect your sleep. Run that setup for a week. If it feels sustainable, tighten it. If it feels punishing, ease off.",
+    },
+    {
+      kind: "p",
+      text: "The goal isn't perfect discipline. It's building a setup that makes focused work the path of least resistance. Download Untap free on <a href=\"/for-students\" style=\"text-decoration: underline; color: var(--accent);\">iOS or Android for students</a>, set your first study block, and check back in a week. For more on turning distraction into retrieval practice, see the <a href=\"/study-to-unlock\" style=\"text-decoration: underline; color: var(--accent);\">study-to-unlock feature page</a>. For exam-specific tactics, see <a href=\"/blog/reduce-screen-time-during-exam-preparation\" style=\"text-decoration: underline; color: var(--accent);\">how to reduce screen time during exam preparation</a>.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
