@@ -125,17 +125,17 @@ const reviews = [
 
 export default function ReviewsPage() {
   return (
-    <section className="px-6 py-20 sm:py-28">
-      <div className="mx-auto flex w-full max-w-5xl flex-col">
+    <section className="px-6 py-32 pt-40 sm:py-40">
+      <div className="mx-auto flex w-full max-w-6xl flex-col">
         <div className="flex flex-col items-center text-center">
-          <h1 className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
-            Real 5-Star Google Play Reviews
+          <p className="eyebrow-label text-[var(--muted)]">REVIEWS</p>
+          <h1 className="mt-5 text-balance text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
+            Real 5-star Google Play reviews
           </h1>
-          <p className="text-balance text-3xl font-medium leading-[1.2] tracking-tight sm:text-4xl md:text-5xl">
-            Verbatim from{" "}
-            <span className="text-[var(--accent)]">actual users</span>.
+          <p className="mt-2 text-balance text-4xl font-normal leading-[1.1] tracking-tight text-[var(--accent)] sm:text-5xl md:text-6xl">
+            Verbatim from actual users
           </p>
-          <p className="mt-6 max-w-xl text-balance text-base leading-7 text-[var(--muted)] sm:text-lg">
+          <p className="mt-8 max-w-2xl text-balance text-base leading-relaxed text-[var(--muted)] sm:text-lg">
             These reviews are quoted exactly as written by users on the{" "}
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
@@ -149,11 +149,11 @@ export default function ReviewsPage() {
           </p>
         </div>
 
-        <ul className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review) => (
             <li
               key={review.name}
-              className="flex flex-col justify-between rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 transition-colors hover:border-[var(--accent)]"
+              className="flex flex-col justify-between rounded border border-[var(--border)] bg-[var(--card)] p-8 transition-colors hover:border-[var(--accent)]"
             >
               <p className="text-balance text-base leading-7">
                 “{review.quote}”
