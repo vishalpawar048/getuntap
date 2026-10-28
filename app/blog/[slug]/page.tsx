@@ -64,6 +64,20 @@ export default async function BlogPostPage({
 
   const url = `${SITE_URL}/blog/${post.slug}`;
 
+  // Find FAQ sections for FAQPage schema
+  const faqItems: Array<{ question: string; answer: string }> = [];
+  let currentQuestion: string | null = null;
+  
+  for (let i = 0; i < post.body.length; i++) {
+    const block = post.body[i];
+    if (block.kind === "h3") {
+      currentQuestion = block.text;
+    } else if (block.kind === "p" && currentQuestion) {
+      faqItems.push({ question: currentQuestion, answer: block.text });
+      currentQuestion = null;
+    }
+  }
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -122,44 +136,18 @@ export default async function BlogPostPage({
     ],
   };
 
-  // Generate FAQ JSON-LD if the post has an FAQ section
-  let faqJsonLd = null;
-  const faqSectionIndex = post.body.findIndex(
-    (block) =>
-      block.kind === "h2" &&
-      (block.text.toLowerCase().includes("faq") ||
-        block.text.toLowerCase().includes("frequently asked"))
-  );
-
-  if (faqSectionIndex !== -1) {
-    const faqItems = [];
-    for (let i = faqSectionIndex + 1; i < post.body.length; i++) {
-      const block = post.body[i];
-      if (block.kind === "h2") break; // Stop at next H2
-      if (block.kind === "h3") {
-        const question = block.text;
-        const nextBlock = post.body[i + 1];
-        if (nextBlock && nextBlock.kind === "p") {
-          faqItems.push({
-            "@type": "Question",
-            name: question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: nextBlock.text,
-            },
-          });
-        }
-      }
-    }
-
-    if (faqItems.length > 0) {
-      faqJsonLd = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqItems,
-      };
-    }
-  }
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  } : null;
 
   const jsonLdData = faqJsonLd
     ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
