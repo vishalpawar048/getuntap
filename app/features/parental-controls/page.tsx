@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Parental Controls – Screen Time For Kids",
@@ -43,7 +50,7 @@ const featuresSection = [
   {
     n: "07",
     title: "Usage Reports",
-    body: "Daily, weekly, and monthly breakdowns show exactly where your child's screen time is going. Real data to back up real conversations.",
+    body: "Daily, weekly, and monthly breakdowns show exactly where your child's screen time is going. Real data to back up real conversations. A good screen time parental control app should give you that visibility.",
   },
 ];
 
@@ -69,7 +76,7 @@ const faqs = [
   },
   {
     q: "Can My Child Get Around The Restrictions?",
-    a: "Not without your password. Friend Lock means your child cannot change their app limits or session locks without the trusted adult who set the password. Prevent Uninstall also stops them from deleting the app during an active session.",
+    a: "Not without your password. Friend Lock means your child cannot change their app limits or session locks without the trusted adult who set the password. Prevent Uninstall also stops them from deleting the app during an active session. That is what makes it a dependable screen time parental control app for families.",
   },
   {
     q: "Why Is Untap A Better Alternative To ScreenZen And Opal For Parents?",
@@ -77,7 +84,7 @@ const faqs = [
   },
   {
     q: "Can I Set Different Limits For Different Apps?",
-    a: "Yes. Each app gets its own rules. TikTok can have a 30-minute daily limit, YouTube can be locked until after school, Instagram can have a 10-second open delay. You set it per app, not as a single blanket restriction.",
+    a: "Yes. Each app gets its own rules. TikTok can have a 30-minute daily limit, YouTube can be locked until after school, Instagram can have a 10-second open delay. You set it per app, not as a single blanket restriction. That flexibility is what to look for in apps to control children's screen time.",
   },
   {
     q: "Is My Child's Data Private?",
@@ -86,6 +93,95 @@ const faqs = [
 ];
 
 export default function ParentalControlPage() {
+ const softwareAppJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      name: "Untap",
+      alternateName: [
+        "Untap App",
+        "Untap Screen Time",
+        "Untap Screen Time Control",
+      ],
+      applicationCategory: "LifestyleApplication",
+      applicationSubCategory: "Screen Time Control",
+      operatingSystem: "iOS, Android",
+      description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.png`,
+      inLanguage: "en",
+      isFamilyFriendly: true,
+      keywords:
+        "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+      publisher: {
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+      },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          category: "Free",
+        },
+      ],
+      downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      featureList: [
+        "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+        "Soft, moderate, and strict modes",
+        "Friend lock and password-protected settings",
+        "Prevent uninstall",
+        "Daily, weekly, monthly usage reports",
+        "Over-consumption notifications",
+        "Privacy-first: all data stays on device",
+      ],
+    };
+  
+    const organizationJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: SUPPORT_EMAIL,
+      sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+    };
+  
+   const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/features/parental-controls#webpage`,
+  url: `${SITE_URL}/features/parental-controls`,
+  name: "Parental Controls - Screen Time Management",
+  description: String(metadata.description ?? ""),
+  inLanguage: "en",
+  publisher: {
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Parental Controls",
+      item: `${SITE_URL}/features/parental-controls`,
+    },
+  ],
+};
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -98,7 +194,13 @@ export default function ParentalControlPage() {
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      <JsonLd data={[
+        softwareAppJsonLd,
+        organizationJsonLd,
+        webPageJsonLd,
+        faqJsonLd,
+        breadcrumbJsonLd,
+      ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -149,7 +251,7 @@ export default function ParentalControlPage() {
               </p>
 
               <p>
-                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds — even when your child really wants it not to.
+                That is what <a href="https://www.getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Does. Not shame. Not a scary red timer. Just a calm, firm barrier that holds even when your child really wants it not to.
               </p>
 
               <p>
@@ -212,7 +314,7 @@ export default function ParentalControlPage() {
                 </p>
 
                 <p>
-                  The problem is not the idea — it is how easy those tools are to bypass. A child who is motivated enough can get around Apple's built-in screen time limit in under two minutes. What parents actually need is something that requires a trusted adult to change — not just a setting a determined twelve-year-old can Google their way out of.
+                  The problem is not the idea — it is how easy those tools are to bypass. A child who is motivated enough can get around Apple's built-in screen time limit in under two minutes. What parents actually need is something that requires a trusted adult to change — not just a setting a determined twelve-year-old can Google their way out of. That is where a real screen time parental control app earns its place.
                 </p>
 
                 <p>
@@ -332,7 +434,7 @@ export default function ParentalControlPage() {
               </p>
 
               <p>
-                Daily, weekly, and monthly reports show the real pattern. Not what your child tells you they use. What they actually use. Most parents are genuinely surprised when they see the numbers — and it gives you a real conversation to have with your child, based on facts rather than arguments.
+                Daily, weekly, and monthly reports show the real pattern. Not what your child tells you they use. What they actually use. Most parents are genuinely surprised when they see the numbers — and it gives you a real conversation to have with your child, based on facts rather than arguments. The best apps to control children's screen time make that conversation easier.
               </p>
 
               <p className="text-[var(--foreground)]">
@@ -386,7 +488,7 @@ export default function ParentalControlPage() {
               Second, Prevent Uninstall keeps the app in place during active sessions — the child cannot delete Untap to get around a lock, the way they might with other tools.
             </p>
             <p>
-              Third, Untap works equally well on both Android and iOS right now — not as a recent add-on, but as a core part of how the app was built from the start. For mixed-device households, that matters.
+              Third, Untap works equally well on both Android and iOS right now — not as a recent add-on, but as a core part of how the app was built from the start. For mixed-device households, that matters. Not all apps to control children's screen time treat both platforms equally.
             </p>
             <p className="text-white">
               And everything runs locally on the device. No data leaves the phone, no ad networks, no external servers. For a screen time parental control app handling your child's usage data, that should be the baseline — not a premium feature.

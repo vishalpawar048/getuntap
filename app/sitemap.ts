@@ -43,6 +43,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+  url: `${SITE_URL}/features/app-blocker`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}/features/focus-mode`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}/features/parental-controls`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}/features/screen-time-control`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}/features/social-media-control`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}/features/stop-doomscrolling-app`,
+  lastModified: now,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+    {
       url: `${SITE_URL}/blog`,
       lastModified: now,
       changeFrequency: "weekly",

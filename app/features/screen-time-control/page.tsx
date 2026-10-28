@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Screen Time Control – Reduce Screen Time",
@@ -85,6 +92,95 @@ const faqs = [
 ];
 
 export default function ScreenTimeControlPage() {
+ const softwareAppJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      name: "Untap",
+      alternateName: [
+        "Untap App",
+        "Untap Screen Time",
+        "Untap Screen Time Control",
+      ],
+      applicationCategory: "LifestyleApplication",
+      applicationSubCategory: "Screen Time Control",
+      operatingSystem: "iOS, Android",
+      description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.png`,
+      inLanguage: "en",
+      isFamilyFriendly: true,
+      keywords:
+        "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+      publisher: {
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+      },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          category: "Free",
+        },
+      ],
+      downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      featureList: [
+        "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+        "Soft, moderate, and strict modes",
+        "Friend lock and password-protected settings",
+        "Prevent uninstall",
+        "Daily, weekly, monthly usage reports",
+        "Over-consumption notifications",
+        "Privacy-first: all data stays on device",
+      ],
+    };
+  
+    const organizationJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: SUPPORT_EMAIL,
+      sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+    };
+  
+   const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/features/screen-time-control#webpage`,
+  url: `${SITE_URL}/features/screen-time-control`,
+  name: "Screen Time Control – Reduce Screen Time",
+  description: String(metadata.description ?? ""),
+  inLanguage: "en",
+  publisher: {
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Screen Time Control",
+      item: `${SITE_URL}/features/screen-time-control`,
+    },
+  ],
+};
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -97,7 +193,13 @@ export default function ScreenTimeControlPage() {
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      <JsonLd data={[
+        softwareAppJsonLd,
+        organizationJsonLd,
+        webPageJsonLd,
+        faqJsonLd,
+        breadcrumbJsonLd,
+      ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -143,11 +245,11 @@ export default function ScreenTimeControlPage() {
                 The solution
               </p>
               <p>
-                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem — it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Is built to do.
+                Knowing how much time you are losing is not the same as doing something about it. A real screen time control app does not just show you the problem, it puts friction between you and the habit, so the number actually changes. That is what <a href="https://getuntap.com/" className="text-[var(--accent)] hover:underline">Untap</a> Is built to do.
               </p>
 
               <p>
-                You do not need to delete anything. If your goal is to manage time spent on the phone during work hours, mornings, or evenings with family — you can set a delay, a daily cap, or a hard screen lock time app that only lifts when you say so.
+                You do not need to delete anything. If your goal is to manage time spent on the phone during work hours, mornings, or evenings with family. You can set a delay, a daily cap, or a hard screen lock time app that only lifts when you say so.
               </p>
 
               <p>

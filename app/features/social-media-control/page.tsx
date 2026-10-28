@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Social Media Blocker – Limit Instagram & TikTok",
@@ -29,11 +36,11 @@ const faqs = [
   },
   {
     q: "How Does The Social Media Timing App Work On Android Versus iPhone?",
-    a: "The same way on both. Same delays, same locks, same Friend Lock, same usage reports. The iOS version uses Apple's official APIs so it is stable and update-proof. Android has full feature parity.",
+    a: "The same way on both. Same delays, same locks, same Friend Lock, same usage reports. The iOS version uses Apple's official APIs so it is stable and update-proof. Android has full feature parity. Good apps to limit social media use should offer that parity.",
   },
   {
     q: "Can I Limit Social Media Use For My Kids Without Blocking Everything?",
-    a: "Yes. You can set specific limits per app — Instagram gets 20 minutes, TikTok gets locked until after homework — without touching anything else on their phone. Friend Lock lets you password-protect those settings so they cannot be changed without you.",
+    a: "Yes. You can set specific limits per app — Instagram gets 20 minutes, TikTok gets locked until after homework — without touching anything else on their phone. Friend Lock lets you password-protect those settings so they cannot be changed without you. That is the kind of control to look for in apps to limit social media use built for families.",
   },
   {
     q: "Will I Lose Access To My Apps Permanently?",
@@ -46,6 +53,95 @@ const faqs = [
 ];
 
 export default function SocialMediaControlPage() {
+  const softwareAppJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      name: "Untap",
+      alternateName: [
+        "Untap App",
+        "Untap Screen Time",
+        "Untap Screen Time Control",
+      ],
+      applicationCategory: "LifestyleApplication",
+      applicationSubCategory: "Screen Time Control",
+      operatingSystem: "iOS, Android",
+      description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+      url: SITE_URL,
+      image: `${SITE_URL}/logo.png`,
+      inLanguage: "en",
+      isFamilyFriendly: true,
+      keywords:
+        "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+      publisher: {
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+      },
+      offers: [
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          category: "Free",
+        },
+      ],
+      downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+      featureList: [
+        "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+        "Soft, moderate, and strict modes",
+        "Friend lock and password-protected settings",
+        "Prevent uninstall",
+        "Daily, weekly, monthly usage reports",
+        "Over-consumption notifications",
+        "Privacy-first: all data stays on device",
+      ],
+    };
+  
+    const organizationJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+      email: SUPPORT_EMAIL,
+      sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+    };
+  
+   const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/features/social-media-control#webpage`,
+  url: `${SITE_URL}/features/social-media-control`,
+  name: "Social Media Control - Limit Your Usage",
+  description: String(metadata.description ?? ""),
+  inLanguage: "en",
+  publisher: {
+    "@type": "Organization",
+    name: ORG_NAME,
+    url: SITE_URL,
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Social Media Control",
+      item: `${SITE_URL}/features/social-media-control`,
+    },
+  ],
+};
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -58,7 +154,13 @@ export default function SocialMediaControlPage() {
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+      <JsonLd data={[
+        softwareAppJsonLd,
+        organizationJsonLd,
+        webPageJsonLd,
+        faqJsonLd,
+        breadcrumbJsonLd,
+      ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -109,7 +211,7 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                That is exactly what Untap does. No guilt trips. No shame charts. Just the right amount of friction at the right moment — so you stay in control of your own time.
+                That is exactly what <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap</a> does. No guilt trips. No shame charts. Just the right amount of friction at the right moment — so you stay in control of your own time.
               </p>
             </div>
 
@@ -160,7 +262,7 @@ export default function SocialMediaControlPage() {
                 </p>
 
                 <p>
-                  Deleting apps feels dramatic in the moment and pointless by Tuesday. What people actually need is not removal — it is resistance. Something that slows the impulse down long enough for your brain to catch up with your thumb. That is the difference between a blunt tool and one that actually works.
+                  Deleting apps feels dramatic in the moment and pointless by Tuesday. What people actually need is not removal — it is resistance. Something that slows the impulse down long enough for your brain to catch up with your thumb. That is the difference between a blunt tool and one that actually works. A good app to limit use of social media should do exactly this.
                 </p>
 
                 <p>
@@ -215,10 +317,13 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Set Instagram to wait 10 seconds before opening during work hours. Give TikTok a 30-minute daily limit. Lock Twitter completely until 6pm. It is your call, and you can adjust it any time your schedule changes.
+                Set Instagram to wait 10 seconds before opening during work hours. Give TikTok a 30-minute daily limit. Lock Twitter completely until 6pm. It is your call, and you can adjust it any time your schedule changes. That flexibility is what makes an app to limit use of social media easy to live with.
               </p>
 
               <p>
+
+                Arjun, an engineering student from Pune, went from 7 hours of daily <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">screen time</a> down to 1.8 hours once he set session limits on his social apps during study hours. Lina V., a therapist in Amsterdam, said Untap made her want to use her phone less — without making her feel guilty for picking it up. That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
+
                 As Kudrat Hargun wrote on Google Play, "decreased my screen time from 10 hours to 4-5 hours literally definitely you should go for it." As Jana Ahmad wrote, "i went from being constantly tired and exhausted...to being my old clear minded self again." That is what a well-set social media timing app actually delivers — a shift in habit, not a punishment.
               </p>
             </div>
@@ -240,11 +345,11 @@ export default function SocialMediaControlPage() {
             </div>
             <div className="space-y-5 text-lg leading-relaxed text-white/60">
               <p>
-                A lot of parents, couples, and study partners end up in a situation where one person needs accountability and the other needs visibility. Most social media timing app tools are designed for solo use only — and fall apart the moment someone really wants to scroll.
+                A lot of parents, couples, and study partners end up in a situation where one person needs accountability and the other needs visibility. Most social media timing app tools are designed for solo use only — and fall apart the moment someone really wants to scroll. The best apps to limit social media use work for both the person scrolling and the person supporting them.
               </p>
 
               <p>
-                Untap was built with that gap in mind. The Friend Lock feature lets someone you trust — a parent, a partner, a study buddy — set a password on your restrictions. You cannot quietly change your limits at 11pm without them. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one...i luvvvv the strict mode and strict focus mode."
+                Untap was built with that gap in mind. The Friend Lock feature lets someone you trust — a parent, a partner, a study buddy — set a password on your restrictions. You cannot quietly change your limits at 11pm without them. As Alia wrote on Google Play, "at this point every single screen time app has failed me...except this one...i luvvvv the strict mode and strict focus mode. That is what turns an app to limit use of social media from a good intention into a habit that holds."
               </p>
 
               <p>
@@ -273,11 +378,13 @@ export default function SocialMediaControlPage() {
               </p>
 
               <p>
-                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. As Gouri Ganesh wrote on Google Play, "I am using it for 4 days. For now this app is lifesaver...i can feel how fresh my life feels like." That kind of visibility is what makes the limits you set actually stick, because you are working from facts, not feelings.
+                Daily, weekly, and monthly reports show your real usage patterns. Not the ones you assume you have. As Gouri Ganesh wrote on Google Play, "I am using it for 4 days. For now this app is lifesaver...i can feel how fresh my life feels like." That kind of visibility is what makes the limits you set actually stick, because you are working from facts, not feelings. That is what separates a useful app to limit use of social media from a guess.
               </p>
 
               <p>
+                On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first week. Those numbers come from real usage data across the app — from users like Amir J. in Toronto who slept better after two weeks, and Sofía G. in Madrid who tried three other tools before Untap was the first one that held past the second week.
                 On average, Untap users save 3.5 hours of screen time a day. And 85 percent notice less doomscrolling within the first week. Those numbers come from real usage data across the app, from users who wrote on Google Play about real results.
+
               </p>
             </div>
           </div>

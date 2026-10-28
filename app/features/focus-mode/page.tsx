@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/app/components/json-ld";
+import {
+  ANDROID_APP_URL,
+  IOS_APP_URL,
+  ORG_NAME,
+  SITE_URL,
+  SUPPORT_EMAIL,
+} from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: "Focus Mode – Brain Focus App",
@@ -98,19 +105,115 @@ const faqs = [
 ];
 
 export default function FocusModePage() {
-  const faqJsonLd = {
+ 
+  const softwareAppJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        name: "Untap",
+        alternateName: [
+          "Untap App",
+          "Untap Screen Time",
+          "Untap Screen Time Control",
+        ],
+        applicationCategory: "LifestyleApplication",
+        applicationSubCategory: "Screen Time Control",
+        operatingSystem: "iOS, Android",
+        description: "Untap protects your focus hours, then limits the rest of the day. Set session caps on brain-rotting apps so a short check does not become an hour.",
+        url: SITE_URL,
+        image: `${SITE_URL}/logo.png`,
+        inLanguage: "en",
+        isFamilyFriendly: true,
+        keywords:
+          "screen time control app, stop doomscrolling, break phone addiction, app blocker, digital wellbeing, focus app, mindful phone usage",
+        publisher: {
+          "@type": "Organization",
+          name: ORG_NAME,
+          url: SITE_URL,
+        },
+        offers: [
+          {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            category: "Free",
+          },
+        ],
+        downloadUrl: [IOS_APP_URL, ANDROID_APP_URL],
+        installUrl: [IOS_APP_URL, ANDROID_APP_URL],
+        featureList: [
+          "Intentional app opening (QR scan, NFC tag, math challenge, breathing exercise, alternate-app suggestion)",
+          "Soft, moderate, and strict modes",
+          "Friend lock and password-protected settings",
+          "Prevent uninstall",
+          "Daily, weekly, monthly usage reports",
+          "Over-consumption notifications",
+          "Privacy-first: all data stays on device",
+        ],
+      };
+    
+      const organizationJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: ORG_NAME,
+        url: SITE_URL,
+        logo: `${SITE_URL}/logo.png`,
+        email: SUPPORT_EMAIL,
+        sameAs: [IOS_APP_URL, ANDROID_APP_URL],
+      };
+    
+     const webPageJsonLd = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/features/focus-mode#webpage`,
+    url: `${SITE_URL}/features/focus-mode`,
+    name: "Focus Mode – Brain Focus App",
+    description: String(metadata.description ?? ""),
+    inLanguage: "en",
+    publisher: {
+      "@type": "Organization",
+      name: ORG_NAME,
+      url: SITE_URL,
+    },
   };
+  
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Focus Mode",
+        item: `${SITE_URL}/features/focus-mode`,
+      },
+    ],
+  };
+  
+    const faqJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    };
 
   return (
     <>
-      <JsonLd data={faqJsonLd} />
+       <JsonLd data={[
+          softwareAppJsonLd,
+          organizationJsonLd,
+          webPageJsonLd,
+          faqJsonLd,
+          breadcrumbJsonLd,
+        ]} />
 
       {/* Hero Section */}
       <section className="section-dark relative isolate overflow-hidden px-6 pb-20 pt-32 sm:pt-40">
@@ -161,7 +264,7 @@ export default function FocusModePage() {
               </p>
 
               <p>
-                A brain focus app changes that path. Untap's focus mode puts a real barrier between your work time and your scroll time, so you stay in the zone without having to fight yourself every five minutes.
+                A brain focus app changes that path. <a href="https://www.getuntap.com" className="text-[var(--accent)] hover:underline">Untap's</a> focus mode puts a real barrier between your work time and your scroll time, so you stay in the zone without having to fight yourself every five minutes.
               </p>
             </div>
 
@@ -307,7 +410,7 @@ export default function FocusModePage() {
               </p>
 
               <p>
-                A student in Pune who used to spend 7 hours a day on her phone brought that down to under 2 hours once she started locking social apps during her study blocks. She did not use the strictest setting. She just used a 15-second delay and a one-hour session limit — and that was enough to break the habit loop.
+                A student in Pune who used to spend 7 hours a day on her phone brought that down to under 2 hours once she started locking <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social apps</a> during her study blocks. She did not use the strictest setting. She just used a 15-second delay and a one-hour session limit — and that was enough to break the habit loop.
               </p>
 
               <p>
@@ -408,7 +511,7 @@ export default function FocusModePage() {
                 One thing that separates Untap from a basic focus lock app is the usage reporting built into the same tool. 
                 </p>
                 <p>
-                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns — not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their doomscrolling within the first seven days, and the reports are a big part of that because they make the problem visible.
+                Before you set any restrictions, you can see exactly where your time is going. Daily, weekly, and monthly reports show your real patterns, not the ones you assume you have. Most people are genuinely surprised. 85 percent of Untap users reduce their <a href="https://www.getuntap.com/features/stop-doomscrolling-app" className="text-[var(--accent)] hover:underline">doomscrolling</a> within the first seven days, and the reports are a big part of that because they make the problem visible.
               </p>
 
               <p className="text-[var(--foreground)]">
