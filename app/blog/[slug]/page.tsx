@@ -64,6 +64,20 @@ export default async function BlogPostPage({
 
   const url = `${SITE_URL}/blog/${post.slug}`;
 
+  // Find FAQ sections for FAQPage schema
+  const faqItems: Array<{ question: string; answer: string }> = [];
+  let currentQuestion: string | null = null;
+  
+  for (let i = 0; i < post.body.length; i++) {
+    const block = post.body[i];
+    if (block.kind === "h3") {
+      currentQuestion = block.text;
+    } else if (block.kind === "p" && currentQuestion) {
+      faqItems.push({ question: currentQuestion, answer: block.text });
+      currentQuestion = null;
+    }
+  }
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -122,29 +136,20 @@ export default async function BlogPostPage({
     ],
   };
 
-  const faqBlocks = post.body.filter((block) => block.kind === "h3");
-  const faqJsonLd =
-    faqBlocks.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqBlocks.map((questionBlock, idx) => {
-            const answerBlock = post.body[post.body.indexOf(questionBlock) + 1];
-            return {
-              "@type": "Question",
-              name:
-                "text" in questionBlock ? questionBlock.text : "",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text:
-                  answerBlock && "text" in answerBlock ? answerBlock.text : "",
-              },
-            };
-          }),
-        }
-      : null;
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  } : null;
 
-  const jsonLdData = faqJsonLd
+  const jsonLdData = faqJsonLd 
     ? [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
     : [articleJsonLd, breadcrumbJsonLd];
 
