@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 const SITE_URL = "https://www.getuntap.com";
 const SITE_NAME = "Untap";
 const TITLE =
-  "Untap: Focus Hours App Blocker – Limit Screen Time";
+  "Untap: Dopamine Detox App – Block Social Media & Stop Brain Rot";
 const DESCRIPTION =
-  "Set focus hours to protect your focus, then limit the rest of the day. Cap sessions on brain-rotting apps. Free for iPhone and Android.";
+  "Block social media apps when you need to focus. Limit them the rest of the day. Block short-form content completely and stop brain rot. Free for iPhone and Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

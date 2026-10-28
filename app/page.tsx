@@ -443,15 +443,15 @@ export default function Home() {
               id="hero-heading"
               className="animate-fade-up max-w-5xl text-balance text-5xl font-normal leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Set focus hours. Limit the rest of the day.
+              Your Dopamine Detox App
             </h1>
 
             <p className="sr-only">
-              Untap is an <a href="https://www.getuntap.com/features/app-blocker" className="text-[var(--accent)] hover:underline">app blocker</a> that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
+              Untap is a <a href="https://www.getuntap.com/features/app-blocker" className="text-[var(--accent)] hover:underline">dopamine detox app</a> that blocks social media when you need to focus, limits them the rest of the day, and stops brain rot from short-form content.
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-3xl text-balance text-lg leading-relaxed text-white/65 sm:text-xl md:text-2xl">
-              Students lose the study session the moment Instagram opens. Everyone else opens it when they are bored and stays until their energy is gone. Set the hours you protect, limit the rest of the day, and check in before the app opens.
+              Block social media apps when you need to focus. Limit them the rest of the day. Block short-form content completely and stop brain rot.
             </p>
 
             <div className="animate-fade-up delay-300 mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
