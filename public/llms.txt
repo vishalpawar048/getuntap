@@ -43,6 +43,7 @@ Other people open Instagram when they are bored. The scroll shortens attention, 
 - /blog/timer-lock-for-apps - Timer lock setup guide
 - /blog/why-short-form-video-feels-like-brain-rot - Why short-form video affects attention and self-control (brain rot research)
 - /blog/how-to-do-a-dopamine-detox - How to do a dopamine detox that actually works
+- /blog/how-to-do-a-digital-detox - Digital detox guide backed by research (reduction vs abstinence, making it last)
 - /case-studies - Real user success stories
 - /features/app-blocker - Timer lock and app blocking features
 - /features/focus-mode - Deep focus mode features
