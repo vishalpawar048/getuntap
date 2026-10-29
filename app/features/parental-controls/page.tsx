@@ -213,7 +213,7 @@ const breadcrumbJsonLd = {
           </span>
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Screen Time Parental Control App:{" "}
-            <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
+            <span className="text-white/50">
               Help Your Kids Use Their Phone — Not The Other Way Around
             </span>
           </h1>

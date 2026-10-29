@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f0eb;
-  --foreground: #111111;
-  --muted: #6b6b6b;
-  --border: #e0d8cf;
-  --accent: #f8711b;
+  --background: #f8f9fb;
+  --foreground: #0a0a0a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --accent: #64748b;
+  --accent-purple: #7c5cff;
+  --accent-pink: #ec4899;
+  --accent-green: #10b981;
   --accent-foreground: #ffffff;
-  --accent-soft: #ffe2cb;
+  --accent-soft: #f1f5f9;
   --card: #ffffff;
-  --dark-bg: #111111;
-  --dark-fg: #f5f0eb;
-  --dark-muted: #999999;
+  --dark-bg: #000000;
+  --dark-fg: #ffffff;
+  --dark-muted: #94a3b8;
+  --nav-bg: #0a0a0a;
 }
 
 @theme inline {
@@ -20,6 +24,9 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-accent: var(--accent);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-green: var(--accent-green);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-soft: var(--accent-soft);
   --color-card: var(--card);
@@ -31,6 +38,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 @keyframes fade-up {
@@ -100,6 +109,15 @@ body {
 
 .section-dark .text-muted {
   color: var(--dark-muted);
+}
+
+.eyebrow-label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
 }
 
 /* Scroll-triggered reveal animations.

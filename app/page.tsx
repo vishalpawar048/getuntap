@@ -164,13 +164,13 @@ const features = [
         <path d="M12 8v8" />
       </svg>
     ),
-    title: "Set Focus Hours",
+    title: "Set focus hours",
     description: "Pick the hours you need to protect. Class, study, or deep work. During that block, distracting apps stay limited so your focus holds.",
     highlights: [
-      "Class Blocks",
-      "Study Blocks",
-      "Deep Work",
-      "Custom Hours",
+      "Class blocks",
+      "Study blocks",
+      "Deep work",
+      "Custom hours",
     ],
   },
   {
@@ -187,9 +187,9 @@ const features = [
         <path d="M8 11V7a4 4 0 118 0v4" />
       </svg>
     ),
-    title: "Limit The Rest Of The Day",
+    title: "Limit the rest of the day",
     description: "Focus hours come first. After they end, Untap still limits how much of the day those apps can take, so the scroll does not fill every gap.",
-    highlights: ["Daily Caps", "After Focus Hours", "Hard Stops"],
+    highlights: ["Daily caps", "After focus hours", "Hard stops"],
   },
   {
     icon: (
@@ -207,9 +207,9 @@ const features = [
         <path d="M16 15v-6" />
       </svg>
     ),
-    title: "Session Limits On Brain-Rotting Apps",
+    title: "Session limits on brain-rotting apps",
     description: "Cap each session on TikTok, Instagram, YouTube, and the rest. When the session ends, the app stops instead of pulling you into another hour.",
-    highlights: ["TikTok", "Instagram", "YouTube", "Short Sessions"],
+    highlights: ["TikTok", "Instagram", "YouTube", "Short sessions"],
   },
   {
     icon: (
@@ -226,9 +226,9 @@ const features = [
         <path d="M8 16h8" />
       </svg>
     ),
-    title: "A Pause Before The App Opens",
+    title: "A pause before the app opens",
     description: "Answer a few questions from your study notes, read a book, do pushups, or smile. You notice your mood and your progress before cheap content takes the wheel.",
-    highlights: ["Quiz From Notes", "Read A Book", "Pushups", "A Smile"],
+    highlights: ["Quiz from notes", "Read a book", "Pushups", "A smile"],
   },
 ];
 
@@ -248,12 +248,12 @@ function Star({ className = "h-4 w-4" }: { className?: string }) {
 }
 
 const avatarGradients = [
-  "from-[#f8711b] to-[#ffb067]",
+  "from-[#64748b] to-[#94a3b8]",
   "from-[#7c5cff] to-[#b793ff]",
-  "from-[#22c55e] to-[#86efac]",
-  "from-[#06b6d4] to-[#67e8f9]",
-  "from-[#ef4444] to-[#fca5a5]",
-  "from-[#eab308] to-[#fde68a]",
+  "from-[#ec4899] to-[#f9a8d4]",
+  "from-[#8b5cf6] to-[#c4b5fd]",
+  "from-[#52525b] to-[#a1a1aa]",
+  "from-[#a855f7] to-[#d8b4fe]",
 ];
 
 function gradientForName(name: string) {
@@ -269,7 +269,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   const gradient = gradientForName(testimonial.name);
 
   return (
-    <figure className="group relative flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition duration-300 hover:border-white/20 hover:bg-white/[0.07]">
+    <figure className="group relative flex flex-col rounded border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]">
       <div className="flex items-center justify-between gap-2">
         <div
           role="img"
@@ -281,17 +281,17 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
           ))}
         </div>
         {testimonial.result ? (
-          <span className="truncate rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-[var(--accent)]">
+          <span className="eyebrow-label truncate rounded-sm border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-1 text-[9px] text-[var(--accent)]">
             {testimonial.result}
           </span>
         ) : null}
       </div>
 
-      <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-white/75">
+      <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-white/70">
         <p>&ldquo;{testimonial.quote}&rdquo;</p>
       </blockquote>
 
-      <figcaption className="mt-4 flex items-center gap-2.5 border-t border-white/10 pt-3">
+      <figcaption className="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
         <span
           aria-hidden
           className={`grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br ${gradient} text-xs font-semibold text-black/80`}
@@ -299,10 +299,10 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
           {initial}
         </span>
         <div className="min-w-0">
-          <p className="truncate text-xs font-semibold text-white">
+          <p className="truncate text-xs font-medium text-white">
             {testimonial.name}
           </p>
-          <p className="truncate text-[11px] text-white/40">
+          <p className="truncate text-[11px] text-white/50">
             {testimonial.title}
             {testimonial.location ? ` · ${testimonial.location}` : ""}
           </p>
@@ -417,61 +417,61 @@ export default function Home() {
       {/* Hero */}
       <section
         aria-labelledby="hero-heading"
-        className="section-dark relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20"
+        className="section-dark relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
         <Parallax
-          speed={0.3}
+          speed={0.25}
           className="pointer-events-none absolute left-1/2 top-1/3 -z-10 -translate-x-1/2"
         >
-          <div className="h-[34rem] w-[34rem] rounded-full bg-[var(--accent)]/30 blur-3xl" />
+          <div className="h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-[var(--accent-purple)]/15 via-[var(--accent-pink)]/10 to-white/5 blur-3xl" />
         </Parallax>
         <Parallax
-          speed={-0.18}
-          className="pointer-events-none absolute -bottom-32 -right-32 -z-10"
+          speed={-0.15}
+          className="pointer-events-none absolute -bottom-40 -right-40 -z-10"
         >
-          <div className="h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+          <div className="h-[30rem] w-[30rem] rounded-full bg-white/3 blur-3xl" />
         </Parallax>
 
         <Parallax
-          speed={-0.12}
+          speed={-0.1}
           ariaHidden={false}
-          className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center"
+          className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center"
         >
           <div className="text-center">
             <h1
               id="hero-heading"
-              className="animate-fade-up max-w-4xl text-balance text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
+              className="animate-fade-up max-w-5xl text-balance text-5xl font-normal leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Set Focus Hours. Limit The Rest Of The Day.
+              Your Dopamine Detox App
             </h1>
 
             <p className="sr-only">
-              Untap is an <a href="https://www.getuntap.com/features/app-blocker" className="text-[var(--accent)] hover:underline">app blocker</a> that protects your focus hours, then limits the rest of the day, including session caps on brain-rotting apps.
+              Untap is a <a href="https://www.getuntap.com/features/app-blocker" className="text-[var(--accent)] hover:underline">dopamine detox app</a> that blocks social media when you need to focus, limits them the rest of the day, and stops brain rot from short-form content.
             </p>
 
-            <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-2xl text-balance text-lg leading-relaxed text-white/60 sm:text-xl">
-              Students lose the study session the moment Instagram opens. Everyone else opens it when they are bored and stays until their energy is gone. Set the hours you protect, limit the rest of the day, and check in before the app opens.
+            <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-3xl text-balance text-lg leading-relaxed text-white/65 sm:text-xl md:text-2xl">
+              Block social media apps when you need to focus. Limit them the rest of the day. Block short-form content completely and stop brain rot.
             </p>
 
-            <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <div className="animate-fade-up delay-300 mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
                 href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
-                className="group flex items-center gap-3 rounded-full bg-white px-7 py-4 text-base font-medium text-black transition hover:bg-white/90"
+                className="group flex items-center gap-3 rounded bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
-                Download For iOS
+                Download for iOS
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
-                className="group flex items-center gap-3 rounded-full border border-white/20 px-7 py-4 text-base font-medium text-white transition hover:bg-white/10"
+                className="group flex items-center gap-3 rounded border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/10"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                   <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
                 </svg>
-                Download For Android
+                Download for Android
               </a>
             </div>
           </div>
@@ -479,27 +479,27 @@ export default function Home() {
       </section>
 
       {/* Problems Untap solves */}
-      <section className="px-6 py-24 sm:py-32">
+      <section className="px-6 py-32 sm:py-40">
         <div className="mx-auto max-w-6xl">
           <Reveal variant="up">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-              The problem
+            <p className="eyebrow-label text-[var(--muted)]">
+              THE PROBLEM
             </p>
-            <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Social Media Takes The Hour You Meant To Keep
+            <h2 className="mt-5 max-w-3xl text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+              Social media takes the hour you meant to keep
             </h2>
           </Reveal>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
             <Reveal variant="up">
-              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-                  Students
+              <article className="h-full rounded border border-[var(--border)] bg-[var(--card)] p-10">
+                <p className="eyebrow-label text-[var(--accent)]">
+                  STUDENTS
                 </p>
-                <h3 className="mt-4 text-2xl font-bold tracking-tight">
-                  Study Starts. One Notification Ends It.
+                <h3 className="mt-5 text-2xl font-normal tracking-tight sm:text-3xl">
+                  Study starts. One notification ends it.
                 </h3>
-                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                <div className="mt-6 space-y-4 text-base leading-relaxed text-[var(--muted)]">
                   <p>
                     Students want to study, and they also want <a href="https://www.getuntap.com/features/social-media-control" className="text-[var(--accent)] hover:underline">social media </a> in control so other people&apos;s lives do not wreck the day.
                     A status, a friend&apos;s post, or cheap content is enough
@@ -514,14 +514,14 @@ export default function Home() {
               </article>
             </Reveal>
             <Reveal variant="up" delay={120}>
-              <article className="h-full rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-                  Everyone else
+              <article className="h-full rounded border border-[var(--border)] bg-[var(--card)] p-10">
+                <p className="eyebrow-label text-[var(--accent)]">
+                  EVERYONE ELSE
                 </p>
-                <h3 className="mt-4 text-2xl font-bold tracking-tight">
-                  Boredom Opens The App. The App Keeps You.
+                <h3 className="mt-5 text-2xl font-normal tracking-tight sm:text-3xl">
+                  Boredom opens the app. The app keeps you.
                 </h3>
-                <div className="mt-5 space-y-4 text-base leading-relaxed text-[var(--muted)]">
+                <div className="mt-6 space-y-4 text-base leading-relaxed text-[var(--muted)]">
                   <p>
                     People open Instagram because they are bored. Once it is
                     open, the scroll continues. Attention gets shorter, the
@@ -538,39 +538,39 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <Reveal variant="up" className="mt-6">
-            <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-8 sm:p-10">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-                How Untap solves it
+          <Reveal variant="up" className="mt-8">
+            <div className="rounded border border-[var(--border)] bg-[var(--card)] p-10 sm:p-12">
+              <p className="eyebrow-label text-[var(--accent)]">
+                HOW UNTAP SOLVES IT
               </p>
-              <h3 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-                Protect The Hours That Matter. Limit The Rest Of The Day.
+              <h3 className="mt-5 text-3xl font-normal tracking-tight sm:text-4xl">
+                Protect the hours that matter. Limit the rest of the day.
               </h3>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+              <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
                 Set study hours, or the time for a hobby, work, or a book.
                 During that block there is no distraction. For the rest of the
                 day, social media stays limited, so you can still use it as
                 entertainment without letting it rot the day or your mood.
               </p>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
                 When an app does open, Untap asks for a pause first. Students
                 answer a few questions from their notes and see where their
                 study actually stands. Anyone can read a book, do pushups, or
                 simply smile, a short self-check so cheap content does not
                 take the mood with it.
               </p>
-              <ul className="mt-6 flex flex-wrap gap-2">
+              <ul className="mt-8 flex flex-wrap gap-2">
                 {[
-                  "Focus Hours",
-                  "Limit The Rest Of The Day",
-                  "Quiz From Your Notes",
-                  "Read A Book",
+                  "Focus hours",
+                  "Limit the rest of the day",
+                  "Quiz from your notes",
+                  "Read a book",
                   "Pushups",
-                  "A Smile",
+                  "A smile",
                 ].map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-[var(--border)] px-3 py-1.5 text-sm font-medium"
+                    className="rounded-sm border border-[var(--border)] px-3 py-1.5 text-sm font-medium"
                   >
                     {item}
                   </li>
@@ -582,46 +582,45 @@ export default function Home() {
       </section>
 
       {/* Features - dark section */}
-      <section className="section-dark relative isolate overflow-hidden px-6 py-24 sm:py-32">
+      <section className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40">
         <Parallax
-          speed={0.2}
+          speed={0.18}
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2"
         >
-          <div className="h-[28rem] w-[28rem] rounded-full bg-[var(--accent)]/20 blur-3xl" />
+          <div className="h-[32rem] w-[32rem] rounded-full bg-gradient-to-br from-[var(--accent-purple)]/12 via-[var(--accent-pink)]/8 to-white/5 blur-3xl" />
         </Parallax>
-        <Parallax speed={-0.15} className="absolute -bottom-40 right-0 -z-10">
-          <div className="h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+        <Parallax speed={-0.12} className="absolute -bottom-40 right-0 -z-10">
+          <div className="h-96 w-96 rounded-full bg-white/5 blur-3xl" />
         </Parallax>
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(248,113,27,0.18),transparent_32rem)]" />
 
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+          <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-end">
             <Reveal variant="up">
-              <p className="mb-5 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">
-                Focus hours
+              <p className="eyebrow-label mb-6 inline-flex rounded-sm border border-white/10 bg-white/5 px-3 py-1.5 text-[var(--accent)]">
+                FOCUS HOURS
               </p>
-              <h2 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-                Focus Hours First.{" "}
-                <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  Limits After That.
+              <h2 className="max-w-3xl text-4xl font-normal leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
+                Focus hours first.{" "}
+                <span className="text-white/50">
+                  Limits after that.
                 </span>
               </h2>
             </Reveal>
 
             <Reveal variant="up" delay={150}>
-              <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur">
-                <p className="text-lg leading-relaxed text-white/65">
+              <div className="rounded border border-white/10 bg-white/[0.04] p-8">
+                <p className="text-base leading-relaxed text-white/70">
                   Set the block you need to protect. Untap limits distracting
                   apps during those hours, then limits the rest of the day with
                   session caps on the apps that rot your attention.
                 </p>
-                <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-2xl border border-white/10 bg-black/20 text-center">
-                  {["Focus Hours", "Rest Of Day", "Sessions"].map((step) => (
+                <div className="mt-6 grid grid-cols-3 overflow-hidden rounded border border-white/10 bg-black/20 text-center">
+                  {["Focus hours", "Rest of day", "Sessions"].map((step) => (
                     <div
                       key={step}
                       className="border-r border-white/10 px-3 py-4 last:border-r-0"
                     >
-                      <p className="text-sm font-semibold text-white">
+                      <p className="text-xs font-medium uppercase tracking-wider text-white/80">
                         {step}
                       </p>
                     </div>
@@ -646,29 +645,28 @@ export default function Home() {
                 }`}
               >
                 <div
-                  className="group relative h-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:bg-white/[0.09] sm:p-8"
+                  className="group relative h-full overflow-hidden rounded border border-white/10 bg-white/[0.04] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.06] sm:p-10"
                 >
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-                <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--accent)]/10 transition duration-300 group-hover:bg-[var(--accent)]/20" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
                 <div className="relative flex items-start justify-between gap-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[var(--accent)]/30 bg-[var(--accent)]/15 text-[var(--accent)] shadow-lg shadow-[var(--accent)]/10">
+                  <div className="flex h-12 w-12 items-center justify-center rounded border border-white/20 bg-white/5 text-white">
                     {feature.icon}
                   </div>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold text-white/35">
+                  <span className="eyebrow-label text-white/30">
                     0{index + 1}
                   </span>
                 </div>
-                <h3 className="relative mt-8 text-2xl font-bold tracking-tight text-white">
+                <h3 className="relative mt-8 text-xl font-normal tracking-tight text-white sm:text-2xl">
                   {feature.title}
                 </h3>
-                <p className="relative mt-4 max-w-xl leading-relaxed text-white/55">
+                <p className="relative mt-4 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
                   {feature.description}
                 </p>
                 <div className="relative mt-6 flex flex-wrap gap-2">
                   {feature.highlights.map((highlight) => (
                     <span
                       key={highlight}
-                      className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium text-white/55"
+                      className="rounded-sm border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium text-white/60"
                     >
                       {highlight}
                     </span>
@@ -682,68 +680,42 @@ export default function Home() {
       </section>
 
       {/* Control section */}
-      <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-            <Reveal variant="left" className="order-2 flex items-center justify-center md:order-1">
-              <Parallax speed={0.08} ariaHidden={false} className="relative">
-                <div className="flex h-[420px] w-[220px] flex-col rounded-[2.5rem] border-2 border-[var(--foreground)]/10 bg-[var(--dark-bg)] p-6 shadow-2xl">
-                  <div className="flex items-center justify-between">
-                    <div className="h-3 w-3 rounded-full bg-[var(--accent)]" />
-                    <p className="text-xs font-medium text-white/40">Untap</p>
-                    <div className="h-3 w-3 rounded-full bg-white/20" />
-                  </div>
-                  <div className="mt-8 flex-1 space-y-4">
-                    <div className="rounded-xl bg-white/10 p-3">
-                      <p className="text-xs font-medium text-white/70">
-                        Focus Hours
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/40">
-                        9am–1pm · apps limited
-                      </p>
-                    </div>
-                    <div className="rounded-xl bg-white/10 p-3">
-                      <p className="text-xs font-medium text-white/70">
-                        Instagram
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/40">
-                        15 min session cap
-                      </p>
-                    </div>
-                    <div className="rounded-xl bg-[var(--accent)]/20 p-3">
-                      <p className="text-xs font-medium text-[var(--accent)]">
-                        TikTok
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/40">
-                        blocked in focus hours
-                      </p>
-                    </div>
-                    <div className="rounded-xl bg-white/10 p-3">
-                      <p className="text-xs font-medium text-white/70">
-                        Rest Of Day
-                      </p>
-                      <p className="mt-1 text-[10px] text-white/40">
-                        daily cap after focus
-                      </p>
-                    </div>
-                  </div>
+      <section className="px-6 py-32 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-16 md:grid-cols-2 md:items-center md:gap-20">
+            <Reveal variant="left" className="order-2 md:order-1">
+              <div className="space-y-6">
+                <div className="rounded border border-white/10 bg-white/5 p-6">
+                  <p className="eyebrow-label text-white/60">FOCUS HOURS</p>
+                  <p className="mt-3 text-lg font-medium text-white">9am – 5pm</p>
+                  <p className="mt-2 text-sm text-white/50">Apps blocked during study</p>
                 </div>
-              </Parallax>
+                <div className="rounded border border-white/10 bg-white/5 p-6">
+                  <p className="eyebrow-label text-white/60">REST OF DAY</p>
+                  <p className="mt-3 text-lg font-medium text-white">Limited sessions</p>
+                  <p className="mt-2 text-sm text-white/50">30 min cap after focus hours</p>
+                </div>
+                <div className="rounded border border-white/10 bg-white/5 p-6">
+                  <p className="eyebrow-label text-white/60">INSTAGRAM • TIKTOK • YOUTUBE</p>
+                  <p className="mt-3 text-lg font-medium text-white">Session limits</p>
+                  <p className="mt-2 text-sm text-white/50">Hard stop when time ends</p>
+                </div>
+              </div>
             </Reveal>
 
             <Reveal variant="right" delay={120} className="order-1 md:order-2">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                You Control Your Phone{" "}
+              <h2 className="text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl">
+                You control your phone{" "}
                 <span className="text-[var(--muted)]">
-                  (Not The Other Way Around)
+                  (not the other way around)
                 </span>
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
+              <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 Untap protects your focus by starting with the hours that
                 matter, then limiting the rest of the day. Brain-rotting apps
                 get a session cap instead of an open tab.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
+              <p className="mt-5 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 You still choose the schedule. Focus hours stay protected, and
                 the rest of the day stays limited so those apps cannot take
                 whatever time is left.
@@ -756,35 +728,35 @@ export default function Home() {
       {/* Testimonials - dark section */}
       <section
         aria-labelledby="testimonials-heading"
-        className="section-dark relative isolate overflow-hidden px-6 py-16 sm:py-20"
+        className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40"
       >
-        <Parallax speed={0.18} className="absolute -right-32 top-0 -z-10">
-          <div className="h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-3xl" />
+        <Parallax speed={0.15} className="absolute -right-32 top-0 -z-10">
+          <div className="h-72 w-72 rounded-full bg-gradient-to-br from-[var(--accent-purple)]/10 to-[var(--accent-pink)]/10 blur-3xl" />
         </Parallax>
 
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
             <Reveal variant="up">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-                <Star className="h-3.5 w-3.5" />
-                4.4 / 5 from 724 reviews
+              <span className="eyebrow-label inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[var(--accent)]">
+                <Star className="h-3 w-3" />
+                4.4 / 5 FROM 724 REVIEWS
               </span>
               <h2
                 id="testimonials-heading"
-                className="mt-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl"
+                className="mt-5 max-w-2xl text-balance text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl"
               >
-                Loved By People Who{" "}
-                <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
-                  Value Their Time
+                Loved by people who{" "}
+                <span className="text-white/50">
+                  value their time
                 </span>
               </h2>
             </Reveal>
             <Reveal variant="up" delay={120}>
               <a
                 href="/reviews"
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/30 hover:bg-white/5 hover:text-white"
+                className="inline-flex shrink-0 items-center gap-2 rounded border border-white/20 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/40 hover:bg-white/5 hover:text-white"
               >
-                Read All Reviews
+                Read all reviews
                 <svg
                   viewBox="0 0 20 20"
                   fill="none"
@@ -800,7 +772,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="mt-10 grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mt-12 grid auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {testimonials.map((t, index) => (
               <Reveal
                 key={t.name}
@@ -816,21 +788,21 @@ export default function Home() {
       </section>
 
       {/* Mindful section */}
-      <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-3xl text-center">
+      <section className="px-6 py-32 sm:py-40">
+        <div className="mx-auto max-w-4xl text-center">
           <Reveal variant="up">
-            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              Use Your Phone In A{" "}
-              <span className="text-[var(--accent)]">Mindful Way</span>
+            <h2 className="text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+              Use your phone in a{" "}
+              <span className="text-[var(--accent)]">mindful way</span>
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
+            <p className="mt-8 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
               When you use Untap, you quickly start to realize the unhealthy
               usage patterns your phone was causing. The peace of mind and
               happiness this brings is something you won&apos;t want to go back
               from.
             </p>
           </Reveal>
-          <div className="mt-12 grid gap-6 text-left sm:grid-cols-3">
+          <div className="mt-16 grid gap-6 text-left sm:grid-cols-3">
             {[
               {
                 stat: "3.5h",
@@ -850,11 +822,11 @@ export default function Home() {
                 variant="scale"
                 delay={index * 120}
               >
-                <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6">
-                  <p className="text-3xl font-bold text-[var(--accent)]">
+                <div className="rounded border border-[var(--border)] bg-[var(--card)] p-8">
+                  <p className="text-4xl font-light text-[var(--accent)]">
                     {item.stat}
                   </p>
-                  <p className="mt-2 text-sm leading-snug text-[var(--muted)]">
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
                     {item.label}
                   </p>
                 </div>
@@ -865,15 +837,15 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="section-dark px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-12 md:grid-cols-[1fr_1.5fr] md:gap-16">
+      <section className="section-dark px-6 py-32 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-16 md:grid-cols-[1fr_1.8fr] md:gap-20">
             <Reveal variant="left">
-              <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
-                All You Need To Know
+              <h2 className="text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl md:sticky md:top-28">
+                All you need to know
               </h2>
             </Reveal>
-            <div className="space-y-8">
+            <div className="space-y-10">
               {faqs.map((faq, index) => (
                 <Reveal
                   key={faq.q}
@@ -881,11 +853,11 @@ export default function Home() {
                   delay={index * 60}
                   duration={600}
                 >
-                  <div className="border-b border-white/10 pb-8 last:border-0">
-                    <h3 className="text-xl font-bold text-white">
+                  <div className="border-b border-white/10 pb-10 last:border-0">
+                    <h3 className="text-lg font-medium text-white sm:text-xl">
                       {faq.q}
                     </h3>
-                    <p className="mt-3 leading-relaxed text-white/50">
+                    <p className="mt-4 text-base leading-relaxed text-white/60">
                       {faq.a}
                     </p>
                   </div>
@@ -897,33 +869,36 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 py-24 sm:py-32">
-        <Reveal variant="scale" className="mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
-            Download Untap Now And{" "}
+      <section className="relative isolate overflow-hidden px-6 py-32 sm:py-40">
+        <Parallax speed={0.2} className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2">
+          <div className="h-[36rem] w-[36rem] rounded-full bg-gradient-to-br from-[var(--accent-purple)]/10 via-[var(--accent-pink)]/8 to-white/4 blur-3xl" />
+        </Parallax>
+        <Reveal variant="scale" className="relative z-10 mx-auto max-w-5xl text-center">
+          <h2 className="text-4xl font-normal leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            Download Untap now and{" "}
             <span className="text-[var(--accent)]">
-              Reduce Your Screen Time
+              reduce your screen time
             </span>
           </h2>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="https://apps.apple.com/us/app/untap-screen-time-control/id6759078648"
-              className="group flex items-center gap-3 rounded-full bg-[var(--foreground)] px-7 py-4 text-base font-medium text-[var(--background)] transition hover:opacity-90"
+              className="group flex items-center gap-3 rounded bg-[var(--foreground)] px-6 py-3 text-sm font-medium text-[var(--background)] transition hover:opacity-90"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
-              Download For iOS
+              Download for iOS
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.unrotapp.screencontrol"
-              className="group flex items-center gap-3 rounded-full border border-[var(--border)] px-7 py-4 text-base font-medium text-[var(--foreground)] transition hover:bg-[var(--foreground)]/5"
+              className="group flex items-center gap-3 rounded border border-[var(--border)] px-6 py-3 text-sm font-medium text-[var(--foreground)] transition hover:border-[var(--foreground)]/30 hover:bg-[var(--foreground)]/5"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
               </svg>
-              Download For Android
+              Download for Android
             </a>
           </div>
         </Reveal>

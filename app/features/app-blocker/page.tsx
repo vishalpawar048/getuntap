@@ -246,7 +246,7 @@ const breadcrumbJsonLd = {
           </span>
           <h1 className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
             Timer Lock For Apps:{" "}
-            <span className="bg-gradient-to-r from-[var(--accent)] to-[#ffb067] bg-clip-text text-transparent">
+            <span className="text-white/50">
               Best App Blocker Features To Improve Productivity
             </span>
           </h1>
