@@ -234,84 +234,6 @@ const features = [
 
 type Testimonial = (typeof testimonials)[number];
 
-function Star({ className = "h-4 w-4" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden
-      className={className}
-    >
-      <path d="M10 1.5l2.7 5.47 6.04.88-4.37 4.26 1.03 6.01L10 15.27l-5.4 2.84 1.03-6.01L1.26 7.85l6.04-.88L10 1.5z" />
-    </svg>
-  );
-}
-
-const avatarGradients = [
-  "from-[#64748b] to-[#94a3b8]",
-  "from-[#7c5cff] to-[#b793ff]",
-  "from-[#ec4899] to-[#f9a8d4]",
-  "from-[#8b5cf6] to-[#c4b5fd]",
-  "from-[#52525b] to-[#a1a1aa]",
-  "from-[#a855f7] to-[#d8b4fe]",
-];
-
-function gradientForName(name: string) {
-  let hash = 0;
-  for (let i = 0; i < name.length; i++) {
-    hash = (hash * 31 + name.charCodeAt(i)) | 0;
-  }
-  return avatarGradients[Math.abs(hash) % avatarGradients.length];
-}
-
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
-  const initial = testimonial.name.charAt(0).toUpperCase();
-  const gradient = gradientForName(testimonial.name);
-
-  return (
-    <figure className="group relative flex flex-col rounded border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]">
-      <div className="flex items-center justify-between gap-2">
-        <div
-          role="img"
-          aria-label={`Rated ${testimonial.stars} out of 5 stars`}
-          className="flex gap-0.5 text-[var(--accent)]"
-        >
-          {Array.from({ length: testimonial.stars }).map((_, i) => (
-            <Star key={i} className="h-3.5 w-3.5" />
-          ))}
-        </div>
-        {testimonial.result ? (
-          <span className="eyebrow-label truncate rounded-sm border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-1 text-[9px] text-[var(--accent)]">
-            {testimonial.result}
-          </span>
-        ) : null}
-      </div>
-
-      <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-white/70">
-        <p>&ldquo;{testimonial.quote}&rdquo;</p>
-      </blockquote>
-
-      <figcaption className="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
-        <span
-          aria-hidden
-          className={`grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br ${gradient} text-xs font-semibold text-black/80`}
-        >
-          {initial}
-        </span>
-        <div className="min-w-0">
-          <p className="truncate text-xs font-medium text-white">
-            {testimonial.name}
-          </p>
-          <p className="truncate text-[11px] text-white/50">
-            {testimonial.title}
-            {testimonial.location ? ` · ${testimonial.location}` : ""}
-          </p>
-        </div>
-      </figcaption>
-    </figure>
-  );
-}
-
 export default function Home() {
   const softwareAppJsonLd = {
     "@context": "https://schema.org",
@@ -630,7 +552,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="mt-16 grid gap-5 lg:grid-cols-12">
+          <div className="mt-16 grid auto-rows-fr gap-5 lg:grid-cols-12">
             {features.map((feature, index) => (
               <Reveal
                 key={feature.title}
@@ -645,7 +567,7 @@ export default function Home() {
                 }`}
               >
                 <div
-                  className="group relative h-full overflow-hidden rounded border border-white/10 bg-white/[0.04] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.06] sm:p-10"
+                  className="group relative flex h-full flex-col overflow-hidden rounded border border-white/10 bg-white/[0.04] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.06] sm:p-10"
                 >
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
                 <div className="relative flex items-start justify-between gap-6">
@@ -659,7 +581,7 @@ export default function Home() {
                 <h3 className="relative mt-8 text-xl font-normal tracking-tight text-white sm:text-2xl">
                   {feature.title}
                 </h3>
-                <p className="relative mt-4 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
+                <p className="relative mt-4 flex-1 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
                   {feature.description}
                 </p>
                 <div className="relative mt-6 flex flex-wrap gap-2">
@@ -725,68 +647,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials - dark section */}
-      <section
-        aria-labelledby="testimonials-heading"
-        className="section-dark relative isolate overflow-hidden px-6 py-32 sm:py-40"
-      >
-        <Parallax speed={0.15} className="absolute -right-32 top-0 -z-10">
-          <div className="h-72 w-72 rounded-full bg-gradient-to-br from-[var(--accent-purple)]/10 to-[var(--accent-pink)]/10 blur-3xl" />
-        </Parallax>
-
-        <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <Reveal variant="up">
-              <span className="eyebrow-label inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[var(--accent)]">
-                <Star className="h-3 w-3" />
-                4.4 / 5 FROM 724 REVIEWS
-              </span>
-              <h2
-                id="testimonials-heading"
-                className="mt-5 max-w-2xl text-balance text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl"
-              >
-                Loved by people who{" "}
-                <span className="text-white/50">
-                  value their time
-                </span>
-              </h2>
-            </Reveal>
-            <Reveal variant="up" delay={120}>
-              <a
-                href="/reviews"
-                className="inline-flex shrink-0 items-center gap-2 rounded border border-white/20 px-4 py-2 text-xs font-medium text-white/80 transition hover:border-white/40 hover:bg-white/5 hover:text-white"
-              >
-                Read all reviews
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  aria-hidden
-                  className="h-3.5 w-3.5"
-                >
-                  <path d="M4 10h12" />
-                  <path d="M11 5l5 5-5 5" />
-                </svg>
-              </a>
-            </Reveal>
-          </div>
-
-          <div className="mt-12 grid auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {testimonials.map((t, index) => (
-              <Reveal
-                key={t.name}
-                variant="up"
-                delay={(index % 4) * 80}
-                duration={600}
-              >
-                <TestimonialCard testimonial={t} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Mindful section */}
       <section className="px-6 py-32 sm:py-40">
         <div className="mx-auto max-w-4xl text-center">
@@ -802,7 +662,7 @@ export default function Home() {
               from.
             </p>
           </Reveal>
-          <div className="mt-16 grid gap-6 text-left sm:grid-cols-3">
+          <div className="mt-16 grid auto-rows-fr gap-6 text-left sm:grid-cols-3">
             {[
               {
                 stat: "3.5h",
@@ -822,7 +682,7 @@ export default function Home() {
                 variant="scale"
                 delay={index * 120}
               >
-                <div className="rounded border border-[var(--border)] bg-[var(--card)] p-8">
+                <div className="flex h-full flex-col rounded border border-[var(--border)] bg-[var(--card)] p-8">
                   <p className="text-4xl font-light text-[var(--accent)]">
                     {item.stat}
                   </p>
