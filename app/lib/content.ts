@@ -2912,6 +2912,268 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "how-to-do-a-digital-detox",
+  title: "Digital Detox: How To Do One That Actually Lasts",
+  description: "Research shows reducing phone use works as well as quitting. Here's how to design a digital detox that actually sticks — backed by real studies.",
+  publishedAt: "2026-10-29",
+  author: "Untap Team",
+  readMinutes: 11,
+  tags: [
+    "digital detox",
+    "digital wellbeing",
+    "screen time",
+    "phone addiction",
+  ],
+  body: [
+    {
+      kind: "p",
+      text: "Your phone feels glued to your hand. You pick it up without thinking, scroll until your brain feels numb, and wonder where the last hour went. If you're considering a digital detox — taking a deliberate break from your phone or certain apps — you're not alone. The problem is that most digital detox advice is vague (\"just disconnect!\"), extreme (\"delete all social media!\"), or both. Here's what the research actually shows: reducing your phone use can work as well as or better than quitting entirely, the benefits are real but modest, and they fade when old habits return. This guide covers how to design a digital detox that actually sticks, what to expect, and how to make the gains last.",
+    },
+    { kind: "h2", text: "What A Digital Detox Actually Means", id: "what-it-means" },
+    {
+      kind: "p",
+      text: "A digital detox is any intentional reduction in phone or internet use, typically lasting a few days to a few weeks. It doesn't have to mean going completely offline or deleting every app. The goal is to interrupt compulsive phone habits — doomscrolling, checking notifications at red lights, opening Instagram the moment you feel bored — and give your attention, mood, and sleep a chance to recover.",
+    },
+    {
+      kind: "p",
+      text: "Most people frame a digital detox around the things they want back: the ability to focus for more than 10 minutes, better sleep, less comparison anxiety, or just feeling more present. It's not about rejecting technology forever. It's about breaking the autopilot loop.",
+    },
+    { kind: "h2", text: "What The Research Shows About Digital Detoxes", id: "research" },
+    {
+      kind: "p",
+      text: "A growing body of research has tested what happens when people intentionally reduce or stop phone and social media use. Here's what the evidence actually shows:",
+    },
+    {
+      kind: "h3", text: "Reduction Often Works Better Than Abstinence", id: "reduction-vs-abstinence",
+    },
+    {
+      kind: "p",
+      text: "A 2023 study by Brailovskaia and colleagues compared two interventions: one group stopped using their smartphones entirely for seven days, while another group reduced daily use by one hour. Both groups improved on measures of life satisfaction, depression, anxiety, and physical activity compared to a control group. But the reduction group showed stronger and more stable effects over four months of follow-up. Total abstinence led to short-term gains that faded quickly, while cutting back by one hour per day produced lasting change.",
+    },
+    {
+      kind: "p",
+      text: "The researchers suggested a \"sweet spot\" of smartphone use — enough reduction to break compulsive habits, but not so much that you feel cut off from friends, logistics, or helpful tools. Going cold turkey sounds dramatic, but it often backfires.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35389685/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Brailovskaia et al., 2023, Journal of Experimental Psychology: Applied</a>.",
+    },
+    {
+      kind: "h3", text: "Screen Time Limits Improve Mental Health, But Gains Fade Without Maintenance", id: "screen-time-limits",
+    },
+    {
+      kind: "p",
+      text: "A 2025 randomized controlled trial by Pieh and colleagues asked 111 students to limit smartphone use to two hours per day for three weeks. Participants reported improved well-being, fewer depressive symptoms, better sleep quality, and lower stress. The intervention worked — but at follow-up, screen time had rebounded. The benefits were real, but they didn't stick once the limit ended.",
+    },
+    {
+      kind: "p",
+      text: "The lesson: a digital detox can reset your habits, but you need a plan for what happens after the detox ends. If you go back to unlimited scrolling, you'll go back to how you felt before.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/39985031/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Pieh et al., 2025, Randomized Controlled Trial</a>.",
+    },
+    {
+      kind: "h3", text: "One-Week Social Media Breaks Improve Well-Being", id: "social-media-break",
+    },
+    {
+      kind: "p",
+      text: "A 2022 study by Lambert and colleagues randomly assigned 154 participants to either stop using social media (Facebook, Instagram, Twitter, and TikTok) for one week or continue using it as usual. The group that took a break reported significant improvements in well-being, depression, and anxiety compared to the control group. The effect was partly explained by reduced time spent on social media overall.",
+    },
+    {
+      kind: "p",
+      text: "This study shows that even short breaks from social media — just seven days — can produce measurable mental health benefits. You don't need a month-long retreat. A week is enough to notice a difference.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35512731/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Lambert et al., 2022, Cyberpsychology, Behavior, and Social Networking</a>.",
+    },
+    {
+      kind: "h3", text: "Meta-Analysis Shows Small But Consistent Benefits", id: "meta-analysis",
+    },
+    {
+      kind: "p",
+      text: "A recent meta-analysis of randomized controlled trials testing social media detoxes found a small positive effect on well-being (Cohen's d ≈ 0.23). That's not a life-changing effect size, but it's real and consistent across studies. The takeaway: a digital detox won't cure everything, but it does help.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11939267/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Meta-analysis of social media detox RCTs, PMC11939267</a>.",
+    },
+    {
+      kind: "h3", text: "Restricting Phones Broadly Works Better Than Restricting Social Media Alone", id: "broad-restriction",
+    },
+    {
+      kind: "p",
+      text: "A 2024 study with Gen Z participants found that restricting smartphone use broadly (not just social media) produced stronger benefits than targeting social media alone. This suggests that it's not just Instagram or TikTok that's draining you — it's the compulsive phone checking itself.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/39401227/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Gen Z deprivation study, 2024</a>.",
+    },
+    { kind: "h2", text: "How To Design A Digital Detox That Actually Lasts", id: "how-to-design" },
+    {
+      kind: "p",
+      text: "Based on what works in the research, here's a practical plan for a digital detox that doesn't require you to quit your phone entirely or move to the woods.",
+    },
+    { kind: "h3", text: "Step 1: Choose What To Restrict (Start Specific, Not Total)", id: "choose-what-to-restrict" },
+    {
+      kind: "p",
+      text: "Don't try to quit everything at once. Start by restricting the specific apps or activities that drain you most — typically social media feeds (Instagram, TikTok, Facebook, Twitter) and short-form video (Reels, Shorts, YouTube). Keep messaging apps, email, maps, music, and anything you need for work or school. You're detoxing from compulsive scrolling, not from your entire digital life.",
+    },
+    { kind: "h3", text: "Step 2: Set A Clear Duration (7-14 Days Works Best)", id: "set-duration" },
+    {
+      kind: "p",
+      text: "Research shows that one week is enough to feel a difference. If you want deeper recalibration, aim for 10-14 days. Anything shorter than three days won't give you time to adjust, and anything longer than two weeks starts to feel punishing. The goal is a reset, not permanent abstinence.",
+    },
+    { kind: "h3", text: "Step 3: Remove Triggers And Add Friction", id: "remove-triggers" },
+    {
+      kind: "p",
+      text: "Most phone use is unconscious. You pick up your phone before your brain even registers the decision. To break that autopilot loop:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Turn off all non-essential notifications. Push notifications are designed to pull you back in.",
+        "Log out of the apps you're restricting. Logging out doesn't delete your account, but it adds a 10-second barrier that's often enough to stop reflexive opens.",
+        "Move restricted apps off your home screen and into a folder on page three. If you have to hunt for TikTok, you're less likely to open it mindlessly.",
+        "Keep your phone out of your bedroom. Charge it in another room overnight. This one change improves sleep quality for most people within three nights.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "For more on this approach, see our guide on <a href=\"/blog/intentional-friction-behavior-design\" style=\"text-decoration: underline; color: var(--accent);\">intentional friction and behavior design</a>.",
+    },
+    { kind: "h3", text: "Step 4: Replace Phone Time With Something Specific", id: "replace-phone-time" },
+    {
+      kind: "p",
+      text: "If you take away scrolling but don't replace it with anything, you'll just feel bored and cave by day two. Plan one or two specific activities to fill the time you'd normally spend on your phone:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Read a physical book (not on your phone or tablet — the device matters).",
+        "Go for a walk without headphones. Pay attention to what you see and hear.",
+        "Cook a meal from scratch and eat it without looking at a screen.",
+        "Work on a side project, hobby, or creative pursuit you've been putting off.",
+        "Have an actual conversation with someone in your house.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "The first few days will feel boring. That's normal. By day five or six, slower activities start feeling rewarding again. You're retraining your attention.",
+    },
+    { kind: "h3", text: "Step 5: Protect Specific Times And Places", id: "protect-times-places" },
+    {
+      kind: "p",
+      text: "Instead of trying to avoid your phone all day, protect specific contexts where phone use is most disruptive:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>The first 30 minutes after waking up:</strong> Don't check your phone. Get out of bed, brush your teeth, eat breakfast, start your day. Checking your phone first thing trains your brain to need it immediately.",
+        "<strong>Meals:</strong> Eat one meal per day without your phone. If you're with other people, talk to them. If you're alone, notice the food.",
+        "<strong>The hour before bed:</strong> No screens. Read, stretch, journal, or just lie there. Most people notice better sleep within three nights.",
+        "<strong>While driving:</strong> Obvious, but worth saying. If you check your phone at red lights, you're training yourself to crave it during any pause. For more on this, read <a href=\"/blog/watching-reels-while-driving\" style=\"text-decoration: underline; color: var(--accent);\">why watching reels while driving is so dangerous</a>.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Tools like <a href=\"/features/stop-doomscrolling-app\" style=\"text-decoration: underline; color: var(--accent);\">Untap's doomscrolling controls</a> or <a href=\"/features/screen-time-control\" style=\"text-decoration: underline; color: var(--accent);\">screen time limits</a> can enforce these boundaries automatically by adding a pause or a short self-check before distracting apps open.",
+    },
+    { kind: "h3", text: "Step 6: Plan For The Rebound", id: "plan-rebound" },
+    {
+      kind: "p",
+      text: "The end of your digital detox is not a return to unlimited scrolling. It's a transition to intentional use. Before your detox ends, decide:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "Which apps are you reintroducing, and which are you keeping off your phone?",
+        "What boundaries are you keeping? (e.g., phone out of bedroom, one meal per day without screens)",
+        "What friction are you adding to prevent autopilot scrolling? (time limits, logged-out by default, delays before apps open)",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Apps like Untap can help by adding a brief pause or a short quiz before social apps open, so you're less likely to tap them on autopilot. This keeps the benefits of your detox without requiring perfect willpower. Learn more about <a href=\"/how-it-works\" style=\"text-decoration: underline; color: var(--accent);\">how intentional friction works</a>.",
+    },
+    { kind: "h2", text: "What Success Actually Looks Like", id: "what-success-looks-like" },
+    {
+      kind: "p",
+      text: "A successful digital detox doesn't mean you never use your phone again. It means you've broken the autopilot loop. Here are the markers to look for:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "You can sit through a full meal without checking your phone.",
+        "You can read or watch something for 20+ minutes without your mind wandering to Instagram.",
+        "You feel bored sometimes, and you don't immediately reach for a screen.",
+        "You open apps because you have a reason, not because your hand moved on its own.",
+        "You sleep better and wake up less groggy.",
+        "You have more time and energy for things you actually care about.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "If you hit two or three of those by the end of your detox, it worked. The goal isn't perfection. It's control.",
+    },
+    { kind: "h2", text: "Why Most Digital Detoxes Fail (And How To Avoid It)", id: "why-detoxes-fail" },
+    {
+      kind: "p",
+      text: "Most people who try a digital detox give up by day three. Here's why, and how to avoid it:",
+    },
+    {
+      kind: "h3", text: "Mistake 1: Going Too Extreme", id: "mistake-extreme" },
+    {
+      kind: "p",
+      text: "If you try to quit your phone cold turkey, you'll feel cut off, anxious, and resentful. Start with a partial detox — cut out social media and short-form video, but keep messaging, maps, and music. Research shows this works better than total abstinence anyway.",
+    },
+    {
+      kind: "h3", text: "Mistake 2: No Plan For Boredom", id: "mistake-boredom" },
+    {
+      kind: "p",
+      text: "The hardest part of a digital detox is tolerating boredom. Your brain has been trained to reach for stimulation the moment you feel understimulated. If you don't plan for that discomfort, you'll cave. Schedule time for boredom. Sit with it. It gets easier by day four.",
+    },
+    {
+      kind: "h3", text: "Mistake 3: No Strategy For After", id: "mistake-no-strategy" },
+    {
+      kind: "p",
+      text: "A detox is a reset, not a solution. If you go back to unlimited scrolling the day your detox ends, you'll go back to how you felt before. Decide in advance what boundaries you're keeping and what friction you're adding to make intentional use the default.",
+    },
+    { kind: "h2", text: "Frequently Asked Questions", id: "faq" },
+    { kind: "h3", text: "How Long Should A Digital Detox Last?", id: "faq-duration" },
+    {
+      kind: "p",
+      text: "Seven days is the sweet spot for most people. Research shows that one week is enough to produce measurable improvements in well-being, sleep, and mood. If you want deeper recalibration, aim for 10-14 days. Anything longer than two weeks has diminishing returns and becomes harder to sustain. The goal is a reset that you can actually complete, not a permanent lifestyle change you abandon on day three.",
+    },
+    { kind: "h3", text: "Do I Have To Quit My Phone Entirely?", id: "faq-quit-entirely" },
+    {
+      kind: "p",
+      text: "No. Research shows that reducing phone use works as well as or better than total abstinence. Focus on restricting the specific apps or activities that drain you most — typically social media and short-form video. You can still use messaging apps, email, maps, music, and anything you need for work or school. The detox targets compulsive scrolling, not functional phone use.",
+    },
+    { kind: "h3", text: "What If I Slip Up And Use My Phone?", id: "faq-slip-up" },
+    {
+      kind: "p",
+      text: "Start again. You're not trying to be perfect; you're trying to interrupt a pattern. If you slip and spend an hour on TikTok, don't abandon the whole plan. Log out again, remove the app from your home screen, and keep going. Progress is not linear. Most people who complete a successful digital detox slipped at least once.",
+    },
+    { kind: "h3", text: "Will I Miss Important Messages?", id: "faq-miss-messages" },
+    {
+      kind: "p",
+      text: "No. A digital detox doesn't mean ignoring your messages. You're restricting social media feeds and entertainment apps, not communication. You can still check texts, calls, WhatsApp, and email. If you're worried about missing something urgent, tell people you're taking a break from social media but are still reachable by text or call.",
+    },
+    { kind: "h3", text: "What's The Difference Between A Digital Detox And A Dopamine Detox?", id: "faq-dopamine-detox" },
+    {
+      kind: "p",
+      text: "A digital detox is specifically about reducing phone and internet use. A dopamine detox is broader — it's about reducing high-stimulation, low-effort activities (which often include phones, but can also include junk food, video games, or other instant gratifications). Both aim to reset compulsive habits, but a digital detox is narrower in scope. For more on this, read our guide on <a href=\"/blog/how-to-do-a-dopamine-detox\" style=\"text-decoration: underline; color: var(--accent);\">how to do a dopamine detox that actually works</a>.",
+    },
+    { kind: "h3", text: "Can A Digital Detox Help With Phone Addiction?", id: "faq-phone-addiction" },
+    {
+      kind: "p",
+      text: "Yes, but it's not a permanent fix on its own. A digital detox can break the immediate cycle of compulsive phone use and give you a reset, but if you go back to unlimited scrolling afterward, the habits will return. The detox works best as the first step in a longer behavior change process. For a more comprehensive approach, see our <a href=\"/blog/how-to-break-phone-addiction\" style=\"text-decoration: underline; color: var(--accent);\">30-day plan to break phone addiction</a>.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
