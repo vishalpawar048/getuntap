@@ -3174,6 +3174,198 @@ export const blogPosts: Post[] = [
     },
   ],
 },
+{
+  slug: "what-is-digital-wellbeing",
+  title: "What Is Digital Wellbeing? Android and iPhone Guide",
+  description:
+    "Digital wellbeing is everyday balance with your phone—not a detox. Research-backed habits plus Android Digital Wellbeing and iPhone Screen Time tips.",
+  publishedAt: "2026-10-30",
+  author: "Untap Team",
+  readMinutes: 9,
+  tags: [
+    "digital wellbeing",
+    "screen time",
+    "phone habits",
+    "focus",
+  ],
+  body: [
+    {
+      kind: "p",
+      text: "Digital wellbeing is the ongoing balance between using your phone for what matters and not letting feeds, notifications, and autoplay video drain your attention, sleep, and mood. It is not a one-week phone fast or a dramatic \"detox\" — it is how you live with a smartphone day after day: enough connection and utility, without the brain fog, late-night scrolling, or anxiety spiral that many adults describe as brain rot. This guide explains what digital wellbeing means in plain language, what research says about sustainable change, and how to use Android Digital Wellbeing and iPhone Screen Time together with habits that actually stick.",
+    },
+    { kind: "h2", text: "What Digital Wellbeing Means (And What It Is Not)", id: "what-it-means" },
+    {
+      kind: "p",
+      text: "In everyday use, digital wellbeing means feeling in control of your phone instead of reacting to it. You still text friends, pay bills, navigate, listen to music, and check work email — but you are less likely to lose an hour to TikTok without noticing, doomscroll before sleep, or feel your chest tighten after comparison-heavy feeds.",
+    },
+    {
+      kind: "p",
+      text: "That is different from a short reset. A <a href=\"/blog/how-to-do-a-digital-detox\" style=\"text-decoration: underline; color: var(--accent);\">digital detox</a> or <a href=\"/blog/how-to-do-a-dopamine-detox\" style=\"text-decoration: underline; color: var(--accent);\">dopamine detox</a> can jump-start change, but digital wellbeing is the long game: defaults, limits, and routines you keep after the excitement of \"day one\" fades. Think maintenance, not punishment.",
+    },
+    {
+      kind: "p",
+      text: "Google popularized the phrase with its Digital Wellbeing app on Android; researchers such as Büchi and Vanden Abeele study digital wellbeing as a broader concept — autonomy, competence, and healthy relationships with technology. You do not need an academic definition to practice it. You need a system that matches how your phone actually fits into work, parenting, friendships, and downtime.",
+    },
+    { kind: "h2", text: "What Research Says About Sustainable Phone Use", id: "research" },
+    {
+      kind: "p",
+      text: "Studies on phone and social media use rarely endorse \"never touch your phone again.\" They point toward targeted reduction, maintained limits, and breaking the most passive habits — the same pattern behind practical digital wellbeing.",
+    },
+    {
+      kind: "h3", text: "Reduction Often Outlasts Total Abstinence", id: "reduction-vs-abstinence",
+    },
+    {
+      kind: "p",
+      text: "In an experimental intervention study, Brailovskaia and colleagues compared one week of smartphone abstinence with reducing daily use by one hour. Both groups improved on measures such as life satisfaction, depression, anxiety, and physical activity compared with a control group — but the reduction group showed stronger, more stable gains over months of follow-up. Total abstinence produced short-lived benefits for many people, while a modest cutback was easier to sustain and less isolating.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35389685/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Brailovskaia et al. — reduction vs abstinence intervention study</a>.",
+    },
+    {
+      kind: "h3", text: "Screen Time Limits Can Improve Mental Health — If You Keep Them", id: "screen-time-limits",
+    },
+    {
+      kind: "p",
+      text: "A 2025 randomized controlled trial in <em>BMC Medicine</em> (Pieh et al.) assigned healthy students to three weeks of limiting smartphone screen time to two hours per day or to usual use. The limit group reported better well-being, fewer depressive symptoms, better sleep quality, and lower stress after the intervention — with small to medium effect sizes. Screen time rose again after the study ended, approaching baseline by follow-up. The takeaway for digital wellbeing: limits work, but they are not a one-time event. You need ongoing structure, not a three-week sprint you abandon.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://doi.org/10.1186/s12916-025-03944-z\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Pieh et al., 2025, BMC Medicine RCT</a>.",
+    },
+    {
+      kind: "h3", text: "Blocking Mobile Internet Can Shift Attention And Mood", id: "internet-block",
+    },
+    {
+      kind: "p",
+      text: "A randomized controlled trial published in <em>PNAS Nexus</em> tested blocking mobile internet access for two weeks. Participants showed improvements in mental health, well-being, and sustained attention compared with a control condition. The design was strict — not everyone can or should block all mobile data — but it supports a core digital wellbeing idea: when the always-on feed is harder to reach, people feel and focus better.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://academic.oup.com/pnasnexus/article/4/2/pgaf017/8016017\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">PNAS Nexus mobile internet blocking RCT</a>.",
+    },
+    {
+      kind: "h3", text: "Social Media Breaks Help — Modestly And Consistently", id: "meta-analysis",
+    },
+    {
+      kind: "p",
+      text: "A meta-analysis of 20 randomized controlled trials on social media detoxes found small but consistent positive effects on well-being. No single week offline fixes everything, but reducing or pausing high-drain apps is an evidence-backed lever — especially when paired with sleep protection and less passive scrolling. For why feeds hook you in the first place, see <a href=\"/blog/science-of-doomscrolling\" style=\"text-decoration: underline; color: var(--accent);\">the science of doomscrolling</a> and <a href=\"/blog/why-short-form-video-feels-like-brain-rot\" style=\"text-decoration: underline; color: var(--accent);\">why short-form video can feel like brain rot</a>.",
+    },
+    {
+      kind: "p",
+      text: "Reference: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11939267/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Social media detox meta-analysis (20 RCTs)</a>.",
+    },
+    { kind: "h2", text: "Android Digital Wellbeing: Settings Worth Using", id: "android-tools" },
+    {
+      kind: "p",
+      text: "On most Android phones, open <strong>Settings → Digital Wellbeing & parental controls</strong> (or install Google's Digital Wellbeing app from Play if your manufacturer hides it). Treat it as a dashboard, not a guilt meter.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Dashboard:</strong> See which apps eat time. Many people underestimate social and video apps until the chart makes it visible.",
+        "<strong>App timers:</strong> Set daily limits on Instagram, TikTok, YouTube, or mobile games. When the timer expires, the app greys out — a soft stop that beats vague intentions.",
+        "<strong>Focus mode:</strong> Pause distracting apps for a work block, dinner, or study session. Pair with Do Not Disturb so notifications do not pull you back.",
+        "<strong>Bedtime mode / Wind Down:</strong> Grayscale and silence notifications on a schedule. Strong digital wellbeing move for sleep — phone use at night is one of the fastest paths to tired, anxious mornings.",
+        "<strong>Notification controls:</strong> Turn off non-essential badges and lock-screen previews. Most wellbeing gains come from fewer interruptions, not from deleting every app.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Android limits are easy to override with a tap. That is why digital wellbeing on Android works best when you combine timers with friction — logging out of feeds, moving apps off the home screen, or using <a href=\"/features/screen-time-control\" style=\"text-decoration: underline; color: var(--accent);\">stronger screen time controls</a> when willpower alone fails.",
+    },
+    { kind: "h2", text: "iPhone Screen Time: Settings Worth Using", id: "iphone-tools" },
+    {
+      kind: "p",
+      text: "On iPhone and iPad, open <strong>Settings → Screen Time</strong>. If you have skipped it because the weekly report feels naggy, turn on only the pieces you will actually use.",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>App Limits:</strong> Cap daily time for Social, Games, or specific apps. Start with your top one or two time sinks, not every category at once.",
+        "<strong>Downtime:</strong> Schedule hours when only phone, messages, and apps you allow stay available. Many adults use late evening and the first hour after waking.",
+        "<strong>Always Allowed:</strong> Whitelist maps, banking, and messaging so limits feel safe, not reckless.",
+        "<strong>Communication Limits:</strong> Optional for families; useful if you want fewer late-night social notifications without blocking emergency calls.",
+        "<strong>Focus modes:</strong> Tie Work or Personal focus to home-screen layouts and notification rules so your phone looks different when you need depth — similar in spirit to <a href=\"/features/focus-mode\" style=\"text-decoration: underline; color: var(--accent);\">dedicated focus tools</a>.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Screen Time syncs across Apple devices if you use the same Apple ID. Set a Screen Time passcode (or use Family Sharing for a teen's device) so \"Ignore Limit for Today\" is not your default coping strategy.",
+    },
+    { kind: "h2", text: "Daily Habits That Support Digital Wellbeing", id: "daily-habits" },
+    {
+      kind: "p",
+      text: "Built-in tools help only when they sit inside habits you repeat. These patterns show up across research and clinical advice — and they work for office workers, parents, and college students alike.",
+    },
+    {
+      kind: "h3", text: "Protect Sleep And The First Hour Of The Day", id: "sleep-morning",
+    },
+    {
+      kind: "p",
+      text: "Charge your phone outside the bedroom or enable bedtime schedules on both platforms. Avoid feeds within 30–60 minutes of sleep and before breakfast. Sleep and morning attention are where many adults notice digital wellbeing first — less grogginess, less dread scrolling the news.",
+    },
+    {
+      kind: "h3", text: "Target Passive Scrolling, Not All Phone Use", id: "passive-scrolling",
+    },
+    {
+      kind: "p",
+      text: "Research consistently links passive feed consumption — Reels, Shorts, infinite scroll — with worse mood and attention more than messaging or purposeful use. Limit autoplay in YouTube and Instagram, unfollow accounts that spike comparison, and keep one <a href=\"/features/stop-doomscrolling-app\" style=\"text-decoration: underline; color: var(--accent);\">session cap on your worst doomscroll apps</a>. Students are not the only ones who lose an evening to TikTok; the same pattern hits anyone with a commute and a tired brain.",
+    },
+    {
+      kind: "h3", text: "Add Friction At The Moment Of Habit", id: "friction",
+    },
+    {
+      kind: "p",
+      text: "Most opens are automatic. Log out of social apps by default, delete shortcuts from the home screen, and turn off nearly all push notifications. Intentional friction — a pause before an app opens — gives your prefrontal cortex time to ask \"Do I actually want this?\" Learn the design idea in our piece on <a href=\"/blog/intentional-friction-behavior-design\" style=\"text-decoration: underline; color: var(--accent);\">intentional friction and behavior design</a>. Apps like Untap can add that pause alongside timers; built-in limits and third-party friction tools stack well together.",
+    },
+    {
+      kind: "h3", text: "Review Weekly, Adjust One Lever", id: "weekly-review",
+    },
+    {
+      kind: "p",
+      text: "Spend five minutes each Sunday checking Screen Time or Digital Wellbeing charts. Change one thing — tighten one app limit, add one focus hour, or remove one notification category. Digital wellbeing fails when you set fifteen rules on Monday and ignore them by Wednesday.",
+    },
+    {
+      kind: "h3", text: "Keep Human Defaults For Boredom", id: "boredom",
+    },
+    {
+      kind: "p",
+      text: "When you feel understimulated, decide in advance what you do besides unlock: walk, cook, call someone, read on paper. Boredom tolerance is a skill; phones train the opposite. You do not need a perfect offline life — you need alternatives that are easy to reach when the urge spikes.",
+    },
+    { kind: "h2", text: "When A Short Reset Still Helps", id: "short-reset" },
+    {
+      kind: "p",
+      text: "Even with a digital wellbeing mindset, a bounded break can recalibrate habits — especially after a stressful week or when you notice constant phone checking. Treat it as maintenance, not identity: seven to fourteen days of tighter limits on feeds, then return to the ongoing balance above. If you want a structured reset, use a dedicated guide rather than quitting everything cold turkey; research favors reduction over extremes. For broader behavior change, <a href=\"/blog/break-addiction-to-phone\" style=\"text-decoration: underline; color: var(--accent);\">why digital wellbeing tools beat willpower alone</a> explains how friction fits a long-term plan.",
+    },
+    { kind: "h2", text: "Frequently Asked Questions", id: "faq" },
+    { kind: "h3", text: "Is Digital Wellbeing The Same As A Digital Detox?", id: "faq-vs-detox" },
+    {
+      kind: "p",
+      text: "No. Digital wellbeing is long-term balance — daily limits, sleep protection, and intentional use. A digital detox is usually a short, deliberate cutback or break. Detoxes can help you reset, but wellbeing is what you do for months and years afterward.",
+    },
+    { kind: "h3", text: "Do I Need Extra Apps If I Have Screen Time Or Digital Wellbeing?", id: "faq-extra-apps" },
+    {
+      kind: "p",
+      text: "Not always. Built-in tools are enough for many people, especially combined with notification cleanup and app logout. Third-party apps help when you bypass limits easily, need session caps on specific feeds, or want stronger focus locks. Start with free settings; add tools only if you keep overriding defaults.",
+    },
+    { kind: "h3", text: "How Much Phone Time Is \"Healthy\"?", id: "faq-how-much" },
+    {
+      kind: "p",
+      text: "There is no universal minute count. Research interventions often target large reductions — for example, two hours per day of total smartphone screen time in the Pieh trial — but your healthy range depends on job, caregiving, and how you feel. Better signals: Can you stop when you mean to? Do you sleep well? Does your mood drop after scrolling? Use those questions before chasing a single number.",
+    },
+    { kind: "h3", text: "Can Digital Wellbeing Help With Anxiety And Focus?", id: "faq-anxiety-focus" },
+    {
+      kind: "p",
+      text: "Many people report less stress and better focus when they cut passive scrolling and protect sleep — and trials that limit screen time or social media show improvements in well-being and related measures. Phones are not the only factor in anxiety or ADHD, but they are one of the few you can adjust tonight with timers and notifications.",
+    },
+    { kind: "h3", text: "What Should I Set Up First On Android Or iPhone?", id: "faq-first-steps" },
+    {
+      kind: "p",
+      text: "Do three things this week: turn off non-essential notifications, set one daily app limit on your biggest time sink, and keep the phone out of the bedroom at night. Add focus hours or downtime once those stick. Small, stable rules beat an ambitious setup you abandon.",
+    },
+  ],
+},
 ];
 
 export type CaseStudy = {
