@@ -23,6 +23,209 @@ export type PostBlock =
 
 export const blogPosts: Post[] = [
   {
+    slug: "how-to-stop-doomscrolling",
+    title: "How To Stop Doomscrolling: 10 Fixes Backed By Research",
+    description: "How to stop doomscrolling: 10 evidence-backed fixes for news and social feeds that beat willpower. Real research, practical friction.",
+    publishedAt: "2026-11-02",
+    author: "Untap Team",
+    readMinutes: 11,
+    tags: [
+      "doomscrolling",
+      "digital wellbeing",
+      "screen time",
+      "phone addiction",
+    ],
+    body: [
+      {
+        kind: "p",
+        text: "How to stop doomscrolling starts with one insight: friction beats willpower. You open Instagram reflexively, scroll past midnight without meaning to, wake up to crisis news and can't stop reading. The apps are built to keep you there, and telling yourself to \"just stop\" fails because the habit loop fires faster than conscious choice. Here are 10 fixes backed by research — not motivation, not bans — that interrupt the autopilot and help you reclaim your attention, sleep, and mood.",
+      },
+      { kind: "h2", text: "What Doomscrolling Is And Why It's Hard To Stop", id: "what-it-is" },
+      {
+        kind: "p",
+        text: "Doomscrolling is the compulsive consumption of negative or emotionally heavy content — news, social feeds, short videos — even when it makes you feel worse. You scroll through disasters, outrage, or algorithmic doom because your brain is wired to prioritize threats over rewards (negativity bias), and infinite feeds exploit that wiring. One more swipe might reveal something important, so you keep going. But most of the time, you're not finding anything — you're just feeding the loop.",
+      },
+      {
+        kind: "p",
+        text: "Research shows doomscrolling is distinct from general social media overuse: it's driven by negative content, not connection or entertainment. And it's linked to anxiety, poor sleep, reduced wellbeing, and lost time. The behavior doesn't happen because you lack self-control. It happens because the design of feeds — autoplay, infinite scroll, personalized negative content — is optimized to keep you engaged, not to serve your goals. For more on the neuroscience, read our guide on <a href=\"/blog/science-of-doomscrolling\" style=\"text-decoration: underline; color: var(--accent);\">the science of doomscrolling</a>.",
+      },
+      { kind: "h2", text: "What The Research Shows About Stopping Doomscrolling", id: "research" },
+      {
+        kind: "p",
+        text: "Most advice on how to stop doomscrolling relies on willpower: \"be more mindful,\" \"set an intention,\" or \"just delete the app.\" Here's what peer-reviewed studies actually show works:",
+      },
+      {
+        kind: "h3", text: "Friction Before Apps Open Cuts Use By Half", id: "friction-works" },
+      {
+        kind: "p",
+        text: "A 2023 study in PNAS tested a self-nudging app called one sec that adds a brief pause and a cancel option before distracting apps open. Over six weeks, participants reduced target app usage by 57%. The delay itself helped, but the strongest effect came from offering users the choice to cancel the open attempt. That moment of friction brought the conscious brain back online before the autopilot took over.",
+      },
+      {
+        kind: "p",
+        text: "Reference: <a href=\"https://doi.org/10.1073/pnas.2213114120\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Grüning, Riedel & Lorenz-Spreen, 2023, PNAS</a>.",
+      },
+      {
+        kind: "h3", text: "Doomscrolling Predicts Lower Wellbeing", id: "wellbeing-impact" },
+      {
+        kind: "p",
+        text: "In a 2022 validation study of the Doomscrolling Scale, researchers at the University of Florida surveyed 502 participants and found that doomscrolling was significantly correlated with problematic internet use, fear of missing out (FOMO), anxiety, and poor self-control. Men, younger adults, and politically engaged people reported more doomscrolling. The behavior is distinct from passive social media use — it's driven by the compulsive consumption of negative newsfeeds specifically.",
+      },
+      {
+        kind: "p",
+        text: "Reference: <a href=\"https://doi.org/10.1037/tmb0000059\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Sharma, Lee & Johnson, 2022, Technology, Mind, and Behavior</a>.",
+      },
+      {
+        kind: "h3", text: "Doomscrolling Harms Mental Health Through Psychological Distress", id: "mental-health" },
+      {
+        kind: "p",
+        text: "A 2023 study in Turkey tested 460 participants and found that doomscrolling was negatively related to life satisfaction, mental wellbeing, and harmony in life. The relationship was mediated by psychological distress: doomscrolling increased distress, which in turn lowered wellbeing. The findings held across three separate studies validating a 15-item and 4-item Doomscrolling Scale.",
+      },
+      {
+        kind: "p",
+        text: "Reference: <a href=\"https://doi.org/10.1007/s11482-022-10110-7\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Satici et al., 2022, Applied Research in Quality of Life</a>.",
+      },
+      {
+        kind: "h3", text: "Reducing Phone Use By One Hour Works Better Than Total Abstinence", id: "reduction-vs-abstinence" },
+      {
+        kind: "p",
+        text: "A 2023 experimental study compared two groups: one stopped using smartphones entirely for seven days, another reduced daily use by one hour. Both groups improved on life satisfaction, depression, anxiety, and physical activity compared to controls. But the one-hour reduction group showed stronger and more stable effects over four months. The researchers suggested a \"sweet spot\" of phone use: enough reduction to break compulsive habits without the backlash of total abstinence.",
+      },
+      {
+        kind: "p",
+        text: "Reference: <a href=\"https://pubmed.ncbi.nlm.nih.gov/35389685/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration: underline; color: var(--accent);\">Brailovskaia et al., 2023, Journal of Experimental Psychology: Applied</a>.",
+      },
+      { kind: "h2", text: "10 Ways To Stop Doomscrolling That Actually Work", id: "how-to-stop" },
+      {
+        kind: "p",
+        text: "Here are practical, research-backed fixes to interrupt the loop — no willpower required.",
+      },
+      { kind: "h3", text: "1. Add A Pause Before Apps Open", id: "add-pause" },
+      {
+        kind: "p",
+        text: "Most doomscrolling starts reflexively — you open Instagram or X before your brain registers the decision. A brief delay (even 5-10 seconds) before the app opens brings the conscious brain back online and gives you a moment to decide whether you really want to open it. Apps like Untap add this pause automatically: when you tap a distracting app, a short breathing exercise, countdown, or quiz from your own notes appears first. You can still open the app, but 40-60% of the time, that moment of friction is enough to make you close it instead.",
+      },
+      {
+        kind: "p",
+        text: "Learn more about <a href=\"/features/stop-doomscrolling-app\" style=\"text-decoration: underline; color: var(--accent);\">how app delays stop doomscrolling</a>.",
+      },
+      { kind: "h3", text: "2. Turn Off All Non-Essential Notifications", id: "turn-off-notifications" },
+      {
+        kind: "p",
+        text: "Push notifications pull you back into feeds. Every alert trains your brain to check your phone reflexively. Turn off notifications for social media, news apps, and anything that's not urgent (texts, calls, calendar reminders are fine). Most people who do this report feeling less anxious within 48 hours.",
+      },
+      { kind: "h3", text: "3. Log Out Of Doom-Triggering Apps By Default", id: "log-out" },
+      {
+        kind: "p",
+        text: "Logging out doesn't delete your account, but it adds a 10-second barrier that's often enough to stop reflexive opens. If you have to type your password before scrolling, you're forced to make a conscious choice. This works especially well for news apps, Twitter/X, Reddit, and political feeds.",
+      },
+      { kind: "h3", text: "4. Move Distracting Apps Off Your Home Screen", id: "move-apps" },
+      {
+        kind: "p",
+        text: "Visual cues trigger habits. If TikTok or Instagram is on your home screen, you'll tap it without thinking. Move doomscrolling apps into a folder on page three or four. If you have to hunt for the app, you're less likely to open it mindlessly.",
+      },
+      { kind: "h3", text: "5. Set Hard Locks During Vulnerable Times", id: "hard-locks" },
+      {
+        kind: "p",
+        text: "There are specific times when doomscrolling is most harmful: the first 30 minutes after waking up, the hour before bed, and late at night when you're already anxious. During these windows, block the apps entirely rather than relying on a delay. Most screen time control apps (including Untap) let you schedule hard locks by time and day.",
+      },
+      {
+        kind: "p",
+        text: "For more, see our guide on <a href=\"/features/focus-mode\" style=\"text-decoration: underline; color: var(--accent);\">focus mode and scheduled locks</a>.",
+      },
+      { kind: "h3", text: "6. Curate Your Feed To Reduce Negative Content", id: "curate-feed" },
+      {
+        kind: "p",
+        text: "Algorithms learn from what you engage with. If you doom-scroll through outrage and disaster, the algorithm will serve you more. Actively mute, unfollow, or hide accounts that post emotionally heavy or enraging content. Follow accounts that post helpful, calm, or entertaining content instead. Over a few days, your feed will shift.",
+      },
+      { kind: "h3", text: "7. Replace Bedtime Scrolling With A Physical Book Or Audiobook", id: "bedtime-scrolling" },
+      {
+        kind: "p",
+        text: "Scrolling in bed is one of the most common doomscrolling triggers: you're tired, your defenses are down, and your phone is right there. Keep your phone charging in another room overnight and put a physical book or Kindle (with blue light filter) on your nightstand instead. Most people who try this report better sleep within three nights.",
+      },
+      {
+        kind: "p",
+        text: "Learn more about <a href=\"/blog/what-is-digital-wellbeing\" style=\"text-decoration: underline; color: var(--accent);\">building sustainable digital wellbeing habits</a>.",
+      },
+      { kind: "h3", text: "8. Block Keywords And Domains That Trigger Doom Spirals", id: "block-keywords" },
+      {
+        kind: "p",
+        text: "Some apps let you block specific websites or keywords (e.g., \"breaking news,\" \"crisis,\" political terms). This prevents in-browser bypasses and stops algorithmic rabbit holes before they start. Untap includes website and keyword blocking so you can't just open Chrome when Instagram is locked.",
+      },
+      { kind: "h3", text: "9. Set A Daily Time Cap On Social Media And News Apps", id: "time-cap" },
+      {
+        kind: "p",
+        text: "Instead of trying to quit entirely, set a reasonable daily limit (e.g., 30 minutes for Instagram, 15 minutes for news apps). Once you hit the limit, the app locks for the rest of the day. This forces you to budget your scrolling and makes you more intentional about when and why you open the app.",
+      },
+      { kind: "h3", text: "10. Do A Short Digital Detox To Reset Your Baseline", id: "digital-detox" },
+      {
+        kind: "p",
+        text: "If you've been doomscrolling for months, your brain has adapted to constant stimulation and negative content. A 7-14 day break from social feeds and news apps can reset your tolerance. You'll feel bored and twitchy for the first three days, but by day five or six, slower activities start feeling rewarding again. After the detox, reintroduce apps with friction in place (delays, time caps, hard locks) so you don't slide back into compulsive scrolling.",
+      },
+      {
+        kind: "p",
+        text: "For a full plan, read our guide on <a href=\"/blog/how-to-do-a-digital-detox\" style=\"text-decoration: underline; color: var(--accent);\">how to do a digital detox that actually lasts</a>.",
+      },
+      { kind: "h2", text: "What Success Looks Like", id: "success" },
+      {
+        kind: "p",
+        text: "Stopping doomscrolling doesn't mean never checking the news or deleting social media forever. Success looks like:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "You open apps intentionally, not reflexively. You know why you're there.",
+          "You can close the app after five minutes instead of scrolling until your brain feels numb.",
+          "You don't check your phone first thing in the morning or last thing before bed.",
+          "You feel less anxious, sleep better, and have attention left for things that matter.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "One user described the shift this way:",
+      },
+      {
+        kind: "quote",
+        text: "at this point every single screen time app has failed me and my self-control except this one...i luvvvv the strict mode and strict focus mode",
+        cite: "Alia, Google Play",
+      },
+      {
+        kind: "p",
+        text: "The goal is not perfection. It's having your phone serve you instead of the other way around.",
+      },
+      { kind: "h2", text: "Frequently Asked Questions", id: "faq" },
+      { kind: "h3", text: "How long does it take to stop doomscrolling?" },
+      {
+        kind: "p",
+        text: "Most people notice a difference within 3-5 days once they add friction (delays, time caps, hard locks) to their most-used apps. If you've been doomscrolling heavily for months, a 7-14 day digital detox can reset your baseline faster. But the key is consistency: you need to keep the friction in place or old habits will return.",
+      },
+      { kind: "h3", text: "Can I stop doomscrolling without deleting apps?" },
+      {
+        kind: "p",
+        text: "Yes. Research shows that adding intentional friction (a delay, a quiz, a logged-out state) works better than total abstinence for most people. You don't need to delete Instagram or quit Twitter forever. You just need to interrupt the reflexive loop so you're making conscious choices instead of scrolling on autopilot.",
+      },
+      { kind: "h3", text: "Why is doomscrolling worse at night?" },
+      {
+        kind: "p",
+        text: "Your prefrontal cortex — the part of your brain responsible for self-control — is most depleted at night. You've spent all day making decisions, resisting impulses, and staying focused. By 11 PM, your defenses are down, which is why bedtime scrolling so often turns into hour-long doom spirals. The fix: keep your phone out of your bedroom and replace scrolling with a physical book or audiobook.",
+      },
+      { kind: "h3", text: "What's the difference between doomscrolling and just using social media?" },
+      {
+        kind: "p",
+        text: "Doomscrolling is the compulsive consumption of negative or emotionally heavy content — crisis news, outrage, disaster updates — even when it makes you feel worse. General social media use might include messaging friends, checking event details, or browsing entertaining content. The key difference is the emotional tone (negative vs. neutral or positive) and the compulsive, autopilot nature of the behavior.",
+      },
+      { kind: "h3", text: "Do I need an app to stop doomscrolling?" },
+      {
+        kind: "p",
+        text: "Not necessarily, but it helps. You can manually log out of apps, move them off your home screen, turn off notifications, and keep your phone out of your bedroom. But apps like Untap automate the friction: they add a pause, quiz, or hard lock before distracting apps open, so you don't have to rely on willpower in the moment. Most users find this combination — manual habits plus automated friction — works better than either one alone.",
+      },
+      { kind: "h3", text: "Will I miss important news if I stop doomscrolling?" },
+      {
+        kind: "p",
+        text: "No. If something is genuinely important, you'll hear about it from multiple sources: friends, coworkers, email newsletters, or a deliberate check-in once per day. The infinite scroll of breaking news, hot takes, and algorithmic outrage is not keeping you informed — it's keeping you anxious. You can stay informed without doomscrolling by choosing one or two trusted news sources and checking them at a set time each day (e.g., 6 PM) rather than compulsively refreshing throughout the day.",
+      },
+    ],
+  },
+  {
     slug: "app-blocker-for-studying",
     title: "App Blocker For Studying: How To Pick And Set Up The Right One",
     description: "Need an app blocker for studying? Here's how to choose the right friction, set up study sessions, avoid bypassing it, and turn the urge to scroll into quiz-based retrieval practice.",
