@@ -23,6 +23,181 @@ export type PostBlock =
 
 export const blogPosts: Post[] = [
   {
+  slug: "how-to-block-youtube-shorts",
+  title: "How to Block YouTube Shorts: Your Options and What Untap Can Do",
+  description:
+    "Want to stop YouTube Shorts? Compare phone limits, YouTube settings and app blockers, and see how Untap helps you keep control of your screen time.",
+  publishedAt: "2026-11-05",
+  author: "Untap Team",
+  readMinutes: 5,
+  tags: ["YouTube Shorts", "app blocker", "screen time", "doomscrolling"],
+  body: [
+    {
+      kind: "p",
+      text: "YouTube Shorts are built to keep you scrolling. One clip ends and the next begins, so it’s easy to lose twenty minutes without noticing. If you use YouTube for lectures, tutorials or work, the Shorts feed gets in the way. So how do you <strong>block YouTube Shorts</strong> and still keep the videos you need?",
+    },
+    {
+      kind: "p",
+      text: "In this guide, we’ll cover the main options, their trade-offs, and how Untap can help.",
+    },
+    {
+      kind: "h2",
+      text: "Why Shorts are hard to avoid",
+      id: "why-shorts-are-hard-to-avoid",
+    },
+    {
+      kind: "p",
+      text: "Short videos are designed to be watched in a row. Autoplay, swiping and short run times all make it easy to keep going. Willpower rarely works on its own, which is why many people add a little friction between themselves and the feed.",
+    },
+    {
+      kind: "h2",
+      text: "Option 1: Use your phone’s screen time tools",
+      id: "option-1-use-your-phones-screen-time-tools",
+    },
+    {
+      kind: "p",
+      text: "Both iPhone and Android include built-in tools for limiting app use:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>iPhone:</strong> Screen Time lets you set daily limits for apps.",
+        "<strong>Android:</strong> Digital Wellbeing offers app timers and focus modes.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "These tools limit the whole YouTube app, not just Shorts. They’re free and already on your phone, but they’re easy to override when you’re tempted.",
+    },
+    {
+      kind: "h2",
+      text: "Option 2: Check YouTube’s own settings",
+      id: "option-2-check-youtubes-own-settings",
+    },
+    {
+      kind: "p",
+      text: "YouTube’s menus change often, so check the current options inside the app. Turning off notifications and unsubscribing from channels that mainly post Shorts can also reduce how often they appear.",
+    },
+    {
+      kind: "h2",
+      text: "Option 3: Use an app blocker",
+      id: "option-3-use-an-app-blocker",
+    },
+    {
+      kind: "p",
+      text: "An <strong>app blocker</strong> adds a step between you and a distracting app. Here’s how Untap does it:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Short pauses:</strong> A 5, 10 or 30-second pause before the app opens. You can also use a breathing pause, a math problem or a QR code scan.",
+        "<strong>Session locks:</strong> Lock distracting apps for a set block of time.",
+        "<strong>Daily limits:</strong> Cap how long an app can be used each day.",
+        "<strong>Friend Lock:</strong> A trusted person sets a password, so you can’t change your restrictions without it.",
+        "<strong>Prevent Uninstall:</strong> The app stays installed during a session, so you can’t delete it in a weak moment.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "For YouTube, you can lock the app completely until a time you choose, for example until 7pm. We want to be clear about what that means. The lock covers the whole YouTube app, not only Shorts. We don’t currently offer a way to block Shorts on their own while leaving regular videos open, so if you need YouTube for study, set your lock times around your study blocks.",
+    },
+    {
+      kind: "p",
+      text: "Before you rely on any setup, test it on your own phone.",
+    },
+    {
+      kind: "h2",
+      text: "Why a pause helps",
+      id: "why-a-pause-helps",
+    },
+    {
+      kind: "p",
+      text: "A pause gives you a moment to decide whether you really want to open the app. Research supports reducing phone access during focused work:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Ward and colleagues (2017)</strong> found that people performed worse on cognitive tests when their smartphone was on the desk, even when it was switched off, compared with when it was in another room. The study was run in a lab, so it shows a plausible effect rather than a guaranteed outcome. <em>Journal of the Association for Consumer Research</em>, <a href=\"https://www.journals.uchicago.edu/doi/pdfplus/10.1086/691462\" style=\"text-decoration: underline;\" text-color:\"#007bff\">doi:10.1086/691462</a>.",
+        "<strong>Hunt and colleagues (2018)</strong> studied undergraduates who limited their use of several social media platforms to about 10 minutes per platform a day for three weeks. Those who cut back reported less loneliness and depression than those who didn’t. <em>Journal of Social and Clinical Psychology</em>.",
+        "<strong>Beland and Murphy (LSE)</strong> studied school mobile phone bans in England and found that test scores improved after bans were introduced, with the largest gains among lower-attaining students. <a href=\"https://eprints.lse.ac.uk/62574\" style=\"text-decoration: underline;\" text-color:\"#007bff\">Ill Communication: technology, distraction and student performance</a>.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "These studies don’t test Untap or YouTube Shorts directly. They do support the idea that less phone access can help focus, and that’s the principle behind our pause and lock features.",
+    },
+    {
+      kind: "h2",
+      text: "What our users report",
+      id: "what-our-users-report",
+    },
+    {
+      kind: "p",
+      text: "Across our users, people report saving about 3.5 hours of screen time per day on average. About 85% notice less doomscrolling within the first week. One student in Pune reported going from about seven hours of daily use to under two.",
+    },
+    {
+      kind: "p",
+      text: "These are our users’ reported results, not independent findings. Your results will depend on your habits and how you set things up. You can read more about how people use Untap in our <a href=\"https://www.getuntap.com/case-studies\" style=\"text-decoration: underline;\" text-color:\"#007bff\">case studies</a>.",
+    },
+    {
+      kind: "h2",
+      text: "Practical steps",
+      id: "practical-steps",
+    },
+    {
+      kind: "ol",
+      items: [
+        "<strong>Start with a short pause.</strong> Try a 10-second delay first, then move to stricter settings if you need them.",
+        "<strong>Lock during study blocks, not all day.</strong> This keeps YouTube available for the hours you need it.",
+        "<strong>Save lectures in a playlist.</strong> Open the playlist directly, so you aren’t pulled into the feed.",
+        "<strong>Review your screen time weekly.</strong> Compare your total with your goal and adjust.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "If you’re studying for exams, our <a href=\"https://www.getuntap.com/study-app-blocker\" style=\"text-decoration: underline;\" text-color:\"#007bff\">study app blocker</a> adds a quiz step before distracting apps open.",
+    },
+    {
+      kind: "h2",
+      text: "FAQ",
+      id: "faq",
+    },
+    {
+      kind: "h3",
+      text: "Can Untap block only YouTube Shorts?",
+    },
+    {
+      kind: "p",
+      text: "No. Untap locks the whole YouTube app. We don’t currently offer a Shorts-only block.",
+    },
+    {
+      kind: "h3",
+      text: "Can I still watch regular YouTube videos?",
+    },
+    {
+      kind: "p",
+      text: "Not during a full YouTube lock. Set your lock times around the hours you need the app, and test your setup first.",
+    },
+    {
+      kind: "h3",
+      text: "Is a screen time limit enough?",
+    },
+    {
+      kind: "p",
+      text: "Built-in limits are free and useful, but they’re easy to override. A blocker with a pause step or a lock adds more friction.",
+    },
+    {
+      kind: "h2",
+      text: "Conclusion",
+      id: "conclusion",
+    },
+    {
+      kind: "p",
+      text: "To block YouTube Shorts, you can combine phone limits, YouTube’s own settings and an app blocker. Untap’s <strong>app blocker</strong> adds a pause, a lock or a daily limit, and it locks the whole YouTube app rather than only Shorts. Pick the setup that fits your study or work, test it, and adjust as you go. To see how the features work, visit our <a href=\"https://www.getuntap.com/features/app-blocker\" style=\"text-decoration: underline;\" text-color:\"#007bff\">app blocker page</a> or our <a href=\"https://www.getuntap.com/features/stop-doomscrolling-app\" style=\"text-decoration: underline;\" text-color:\"#007bff\">stop doomscrolling page</a>.",
+    },
+  ],
+},
+  {
     slug: "how-to-stop-doomscrolling",
     title: "How To Stop Doomscrolling: 10 Fixes Backed By Research",
     description: "How to stop doomscrolling: 10 evidence-backed fixes for news and social feeds that beat willpower. Real research, practical friction.",
