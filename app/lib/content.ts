@@ -168,7 +168,7 @@ export const blogPosts: Post[] = [
     },
     {
       kind: "p",
-      text: "No. Untap locks the whole YouTube app. We don’t currently offer a Shorts-only block.",
+      text: "Yes. Only shorts can be blocked in Untap for Android.",
     },
     {
       kind: "h3",
@@ -176,7 +176,7 @@ export const blogPosts: Post[] = [
     },
     {
       kind: "p",
-      text: "Not during a full YouTube lock. Set your lock times around the hours you need the app, and test your setup first.",
+      text: "Yes. If shorts are blocked, users can still watch normal videos on YouTube.",
     },
     {
       kind: "h3",
