@@ -22,6 +22,197 @@ export type PostBlock =
   | { kind: "callout"; title: string; text: string };
 
 export const blogPosts: Post[] = [
+ {
+  slug: "how-to-block-games-on-iphone-and-android",
+  title: "How to Block Games on iPhone and Android Without Deleting Them",
+  description:
+    "Want to block games on iPhone or Android without uninstalling them? Learn the built-in limits, how scheduled restrictions differ from daily limits, and how to keep essential apps available.",
+  publishedAt: "2026-11-10",
+  author: "Untap Team",
+  readMinutes: 6,
+  tags: ["block games", "app blocker", "screen time", "iPhone", "Android"],
+  body: [
+    {
+      kind: "p",
+      text: "Deleting a game is the most drastic option, and it often doesn’t last. You reinstall it a week later, or you lose progress you care about. There’s a better middle ground: keep the game on your phone, but make it harder to open during the times you want to focus.",
+    },
+    {
+      kind: "p",
+      text: "This guide shows you how to block games on iPhone and block games on Android, how to <strong><u><a href=\"https://www.getuntap.com/features/screen-time-control\">limit gaming time on phone</a></u></strong> with built-in tools, and how an app blocker can help when those tools aren’t enough.",
+    },
+    {
+      kind: "h2",
+      text: "Start with the built-in tools",
+      id: "start-with-the-built-in-tools",
+    },
+    {
+      kind: "p",
+      text: "<strong>On iPhone</strong>, Screen Time has the basics:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>App Limits:</strong> Go to Settings, then Screen Time, then App Limits. You can set a limit for the Games category, or add individual games by name. Turn on “Block at End of Limit” if you want the app to stop when time runs out.",
+        "<strong>Downtime:</strong> This blocks most apps during a window you set, such as school hours or bedtime. Apps on your Always Allowed list keep working.",
+        "<strong>Content & Privacy Restrictions:</strong> You can stop new app installs, limit multiplayer features in Game Center, and set a Screen Time passcode, so a limit can’t be dismissed with one tap.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "<strong>On Android</strong>, Digital Wellbeing lets you set daily timers for individual apps and use focus modes to pause distracting ones. Family Link is available if you’re managing a child’s device. Menu names vary by phone and version, so check your own settings.",
+    },
+    {
+      kind: "p",
+      text: "These tools are free and useful. But they can be easy to override, and they don’t always handle the kind of limit you want.",
+    },
+    {
+      kind: "h2",
+      text: "Scheduled restrictions vs daily limits",
+      id: "scheduled-restrictions-vs-daily-limits",
+    },
+    {
+      kind: "p",
+      text: "These two options do different jobs, so it helps to know which one you need:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Daily limits</strong> cap the total time you can spend in an app or group of apps. For example, an hour of games per day. The allowance resets each day, but the app stays open until you hit the cap.",
+        "<strong>Scheduled restrictions</strong> block an app during set hours, such as weekday evenings or after 9pm. They don’t care how much time you’ve spent.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "A daily limit works well if you want to play a bit but avoid long sessions. A schedule works better if you want games off during school, study or sleep. Many people use both.",
+    },
+    {
+      kind: "p",
+      text: "One tip: a timed block doesn’t know when a match ends. If possible, set the start time between rounds, so you don’t get cut off mid-game.",
+    },
+    {
+      kind: "h2",
+      text: "Block a specific game without deleting it",
+      id: "block-a-specific-game-without-deleting-it",
+    },
+    {
+      kind: "p",
+      text: "When you want a single game blocked and the rest of your phone left alone, use an app blocker. Untap works on individual apps, so you can choose which ones to restrict and leave the rest unchanged. Our features include:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>Pauses:</strong> A short delay, a breathing pause, a math problem or a QR scan before an app opens.",
+        "<strong>Session locks:</strong> Lock a chosen app for a set time block.",
+        "<strong>Daily time limits:</strong> A cap on how long you can use an app each day.",
+        "<strong>Prevent Uninstall:</strong> The app stays installed during a session, so you can’t delete it in a weak moment.",
+        "<strong>Friend Lock:</strong> A trusted person sets a password on your restrictions, so you can’t quietly turn them off late at night.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Our examples on the <u><a href=\"https://www.getuntap.com/features/app-blocker\">app blocker page</a></u> focus on social apps, so check that your game appears in the app list before you rely on it. Test the setup on your own phone first.",
+    },
+    {
+      kind: "h2",
+      text: "Keep essential apps available",
+      id: "keep-essential-apps-available",
+    },
+    {
+      kind: "p",
+      text: "The goal is to restrict games, not your whole phone. Here’s how to keep the apps you need:",
+    },
+    {
+      kind: "ul",
+      items: [
+        "<strong>On iPhone:</strong> Add essential apps, such as messaging, banking and calls, to the Always Allowed list used during Downtime.",
+        "<strong>On Android:</strong> Set timers only on the apps you want to limit, so your other apps stay open.",
+        "<strong>With Untap:</strong> Choose the games you want to block, and leave your calls, messages, maps and work apps alone.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "Check your phone’s focus or do-not-disturb settings too, so important calls still come through.",
+    },
+    {
+      kind: "h2",
+      text: "How to set realistic limits, for you or your child",
+      id: "how-to-set-realistic-limits-for-you-or-your-child",
+    },
+    {
+      kind: "p",
+      text: "A good limit is one you can follow, not one that sounds strict on paper. Start with a clear goal, such as no games on school nights, and build from there.",
+    },
+    {
+      kind: "p",
+      text: "The American Academy of Pediatrics no longer recommends fixed hourly limits by age. Instead, it suggests a family media plan, which sets rules around what media displaces, such as sleep, homework, physical activity and family time. You can use the AAP’s Family Media Plan tool to build one. The AAP advises avoiding screens for about an hour before bed and keeping phones out of bedrooms overnight, both of which can be useful gaming rules. <u>(<a href=\"https://www.seattlechildrens.org/health-safety/parenting/screen-time/\" style=\"text-decoration: underline;\" text-color:\"#007bff\">Seattle Children’s summary of AAP guidance</a>)</u>",
+    },
+    {
+      kind: "p",
+      text: "For older children, involve them in setting the rules. A limit they helped choose is easier to keep, and it opens a conversation rather than a fight.",
+    },
+    {
+      kind: "p",
+      text: "Research also suggests that focus can improve when a phone is out of reach. In a lab study, Ward and colleagues (2017) found that people performed worse on cognitive tests when their smartphone was on the desk, even when it was switched off, compared with when it was in another room. The study didn’t test games or children, so treat it as a general principle rather than proof for gaming. <u>(<a href=\"https://www.journals.uchicago.edu/doi/pdfplus/10.1086/691462\">Journal of the Association for Consumer Research</a>)</u>",
+    },
+    {
+      kind: "h2",
+      text: "Practical steps",
+      id: "practical-steps",
+    },
+    {
+      kind: "ol",
+      items: [
+        "<strong>Pick one goal.</strong> For example, no games during study or after 9pm.",
+        "<strong>Choose the right tool.</strong> Use a daily limit for total time, or a schedule for set hours.",
+        "<strong>Block only what you need.</strong> Keep essential apps available.",
+        "<strong>Make the limit hard to override.</strong> Use a passcode, a trusted person or a pause step.",
+        "<strong>Review it weekly.</strong> Adjust the limits if they’re too strict or too loose.",
+      ],
+    },
+    {
+      kind: "p",
+      text: "If you’re studying and games are the main distraction, our <u><a href=\"https://www.getuntap.com/study-app-blocker\">study app blocker</a></u> adds a quiz step before distracting apps open. You can also read more about how people use Untap in our <u><a href=\"https://www.getuntap.com/case-studies\">case studies</a></u>.",
+    },
+    {
+      kind: "h2",
+      text: "FAQ",
+      id: "faq",
+    },
+    {
+      kind: "h3",
+      text: "Can I block a game without uninstalling it?",
+    },
+    {
+      kind: "p",
+      text: "Yes. Built-in tools and app blockers can restrict an app without removing it. Check that your chosen game can be selected in the tool you use.",
+    },
+    {
+      kind: "h3",
+      text: "What’s the difference between a schedule and a daily limit?",
+    },
+    {
+      kind: "p",
+      text: "A schedule blocks an app during set hours. A daily limit caps how long you can use it in a day.",
+    },
+    {
+      kind: "h3",
+      text: "Can I keep messaging apps available?",
+    },
+    {
+      kind: "p",
+      text: "Yes. On iPhone, add them to the Always Allowed list. On Android, don’t set timers on them.",
+    },
+    {
+      kind: "h2",
+      text: "Conclusion",
+      id: "conclusion",
+    },
+    {
+      kind: "p",
+      text: "You don’t need to delete a game to stop playing it. Use the built-in tools on your phone, decide between a daily limit and a schedule, and add an app blocker for stronger friction. Keep the apps you need, set limits you can follow, and review them as you go.",
+    },
+  ],
+},
   {
   slug: "how-to-block-youtube-shorts",
   title: "How to Block YouTube Shorts: Your Options and What Untap Can Do",
