@@ -21,7 +21,7 @@ const SITE_NAME = "Untap";
 const TITLE =
   "Untap: Focus Hours App Blocker – Limit Screen Time";
 const DESCRIPTION =
-  "Set focus hours to protect your focus, then limit the rest of the day. Cap sessions on brain-rotting apps. Free for iPhone and Android.";
+  "Untap app set focus hours to protect your focus, then limit the rest of the day. Cap sessions on brain-rotting apps. Free for iPhone and Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

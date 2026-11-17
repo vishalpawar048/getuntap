@@ -365,7 +365,7 @@ export default function Home() {
               id="hero-heading"
               className="animate-fade-up max-w-5xl text-balance text-5xl font-normal leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Your Dopamine Detox App
+              Untap: Your Dopamine Detox App
             </h1>
 
             <p className="sr-only">
@@ -373,7 +373,7 @@ export default function Home() {
             </p>
 
             <p className="animate-fade-up delay-200 mx-auto mt-8 max-w-3xl text-balance text-lg leading-relaxed text-white/65 sm:text-xl md:text-2xl">
-              Block social media apps when you need to focus. Limit them the rest of the day. Block short-form content completely and stop brain rot.
+              Untap is a <a href="https://www.getuntap.com/features/screen-time-control" className="text-[var(--accent)] hover:underline">screen time control app</a> that helps you stop doomscrolling and break phone addiction with intentional friction. Take back your time, focus on what matters, and reclaim hours of your day.
             </p>
 
             <div className="animate-fade-up delay-300 mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -430,7 +430,7 @@ export default function Home() {
                   <p>
                     They sit down to study. A notification appears. Instagram
                     opens, the mind switches, and the scroll keeps going. Mood
-                    drops. The study block is gone.
+                    drops. The <u><a href="https://www.getuntap.com/study-app-blocker" className="text-[var(--accent)] hover:underline">study block</a></u> is gone.
                   </p>
                 </div>
               </article>
